@@ -77,14 +77,15 @@ function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Ove
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
 
 function renderAging(container, aging){
-  // key = exact bucket name as computed/returned in dashboard_data.json (unchanged);
-  // label = display text only (section 3: show SLA overdue days, not raw bucket name).
+  // Shared by both views (כניסה ראשונה / כניסה עדכנית) -- labels must stay
+  // identical in both. key = exact bucket name as returned in
+  // dashboard_data.json; label = display text (currently same as key).
   const buckets = [
     { key: "עד יום עסקים אחד", label: "עד יום עסקים אחד", cls: "" },
     { key: "2 ימי עסקים", label: "2 ימי עסקים", cls: "" },
-    { key: "3 ימי עסקים", label: "חריגה של 1 יום עסקים", cls: "mid" },
-    { key: "4–5 ימי עסקים", label: "חריגה של 2–3 ימי עסקים", cls: "late" },
-    { key: "יותר מ־5 ימי עסקים", label: "חריגה של יותר מ־3 ימי עסקים", cls: "late" },
+    { key: "3 ימי עסקים", label: "3 ימי עסקים", cls: "mid" },
+    { key: "4–5 ימי עסקים", label: "4–5 ימי עסקים", cls: "late" },
+    { key: "יותר מ־5 ימי עסקים", label: "יותר מ־5 ימי עסקים", cls: "late" },
   ];
   container.innerHTML = buckets.map(b => {
     const v = aging && aging[b.key] !== undefined ? aging[b.key] : 0;
