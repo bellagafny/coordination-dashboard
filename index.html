@@ -19,8 +19,10 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
   <div class="card bad"><div class="v" id="cwOver">–</div><div class="k">Over SLA</div></div>
   <div class="card warn"><div class="v" id="cwReentry">–</div><div class="k">חזרו וממתינות כעת</div></div>
 </div>
-<h3>פילוח חריגות לפי הכניסה האחרונה לממתין לתאום</h3>
-<div class="aging" id="agingBlock"></div>
+<h3>פילוח לפי כניסה ראשונה לממתין לתאום</h3>
+<div class="aging" id="agingFirstEntryBlock"></div>
+<h3>פילוח לפי כניסה עדכנית לממתין לתאום</h3>
+<div class="aging" id="agingLatestEntryBlock"></div>
 <h3>פירוט הזמנות Over SLA</h3>
 <div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>כניסה אחרונה לממתין</th><th>כניסה ראשונה לממתין</th><th>ימי עסקים SLA</th><th>SLA</th><th>וותק לפי כניסה אחרונה</th></tr></thead><tbody id="overSlaBody"></tbody></table></div>
 </section>
@@ -117,7 +119,8 @@ fetch('dashboard_data.json', {cache: 'no-store'})
     document.getElementById('cwOver').textContent = cw.overSla ?? '–';
     document.getElementById('cwReentry').textContent = cw.reentryCurrentlyWaiting ?? '–';
 
-    renderAging(document.getElementById('agingBlock'), (data.waitingAging || {}).byLastEntry);
+    renderAging(document.getElementById('agingFirstEntryBlock'), (data.waitingAging || {}).bySlaStart);
+    renderAging(document.getElementById('agingLatestEntryBlock'), (data.waitingAging || {}).byLastEntry);
     renderOverSla(document.getElementById('overSlaBody'), data.overSlaOrders || []);
 
     const re = data.reentries || {};
