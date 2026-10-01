@@ -31,7 +31,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 <h3>פילוח לפי כניסה ראשונה</h3>
 <div class="aging" id="agingFirstEntryBlock"></div>
 <h3>פירוט הזמנות חורגות לפי כניסה ראשונה</h3>
-<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>כניסה ראשונה לממתין</th><th>כניסה אחרונה לממתין</th><th>ימי עסקים</th><th>SLA</th></tr></thead><tbody id="detailFirstEntryBody"></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>כניסה ראשונה לממתין</th><th>כניסה אחרונה לממתין</th><th>ימי עסקים</th><th>פילוח חריגה</th></tr></thead><tbody id="detailFirstEntryBody"></tbody></table></div>
 </div>
 
 <div class="coord-view" id="viewLatestEntry" style="display:none">
@@ -45,7 +45,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 <h3>פילוח לפי כניסה עדכנית</h3>
 <div class="aging" id="agingLatestEntryBlock"></div>
 <h3>פירוט הזמנות חורגות לפי כניסה עדכנית</h3>
-<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>כניסה ראשונה לממתין</th><th>כניסה אחרונה לממתין</th><th>ימי עסקים</th><th>SLA</th></tr></thead><tbody id="detailLatestEntryBody"></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>כניסה ראשונה לממתין</th><th>כניסה אחרונה לממתין</th><th>ימי עסקים</th><th>פילוח חריגה</th></tr></thead><tbody id="detailLatestEntryBody"></tbody></table></div>
 </div>
 </section>
 
@@ -92,6 +92,17 @@ function renderAging(container, aging){
   }).join('');
 }
 
+function agingBucketLabel(businessDays){
+  // Mirrors waiting.py's aging_bucket() exactly -- same existing bucket
+  // definitions reused for display here, no new business rule.
+  const n = Number(businessDays);
+  if (n <= 1) return "עד יום עסקים אחד";
+  if (n === 2) return "2 ימי עסקים";
+  if (n === 3) return "3 ימי עסקים";
+  if (n <= 5) return "4–5 ימי עסקים";
+  return "יותר מ־5 ימי עסקים";
+}
+
 function renderOverSlaDetail(tbody, rows, businessDaysKey){
   const sorted = rows.slice().sort((a, b) => Number(b[businessDaysKey]) - Number(a[businessDaysKey]));
   tbody.innerHTML = sorted.map(r => `<tr>
@@ -100,7 +111,7 @@ function renderOverSlaDetail(tbody, rows, businessDaysKey){
     <td>${esc(r.firstWaitingEntry)}</td>
     <td>${esc(r.currentWaitingEntry)}</td>
     <td>${esc(r[businessDaysKey])}</td>
-    <td class="${slaClass(r.sla)}">${esc(r.sla)}</td>
+    <td>${agingBucketLabel(r[businessDaysKey])}</td>
   </tr>`).join('');
 }
 
