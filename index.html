@@ -154,7 +154,7 @@ fetch('dashboard_data.json', {cache: 'no-store'})
   .then(data => {
     const meta = data.metadata || {};
     document.getElementById('metaLine').textContent =
-      `מקור: ${meta.sourceFile || '—'} | נכון ל־${meta.dataAsOf || '—'} | רענון אחרון: ${meta.lastRefresh || '—'}`;
+      `נכון ל־${meta.dataAsOf || '—'} | רענון אחרון: ${meta.lastRefresh || '—'}`;
 
     const banner = document.getElementById('statusBanner');
     const ok = meta.refreshStatus === 'PASSED';
