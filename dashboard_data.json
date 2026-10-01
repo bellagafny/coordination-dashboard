@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastRefresh": "01/10/2026 09:30",
-    "dataAsOf": "01/10/2026 09:29",
-    "sourceFile": "STATUS_b070213_20261001_0910SS.XLS",
+    "lastRefresh": "01/10/2026 10:00",
+    "dataAsOf": "01/10/2026 09:50",
+    "sourceFile": "STATUS_b070213_20261001_1010SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 56217,
+    "sourceRowCount": 56220,
     "uniqueOrders": 9466
   },
   "currentWaiting": {
@@ -2549,15 +2549,15 @@
     {
       "date": "01/10/2026",
       "totalOrdersCreated": 12,
-      "enteredWaiting": 14,
-      "exitedWaiting": 1,
+      "enteredWaiting": 15,
+      "exitedWaiting": 2,
       "endingWaitingBalance": 59,
       "firstNextStatus": {
-        "תאום לא סופי": 1
+        "תאום לא סופי": 2
       },
       "finalStatus": {
         "ממתין לתאום": 13,
-        "תאום לא סופי": 1
+        "תאום לא סופי": 2
       }
     }
   ],
@@ -2655,11 +2655,11 @@
       {
         "month": "01/10/2026",
         "totalOrdersCreated": 12,
-        "enteredWaiting": 14,
-        "exitedWaiting": 1,
+        "enteredWaiting": 15,
+        "exitedWaiting": 2,
         "endingWaitingBalance": 59,
         "statusBreakdown": {
-          "תאום לא סופי": 1
+          "תאום לא סופי": 2
         }
       }
     ],
@@ -2747,8 +2747,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 353.2,
-      "calendarDays": 14.72,
+      "calendarHours": 353.55,
+      "calendarDays": 14.73,
       "businessDays": 9
     },
     {
@@ -4007,8 +4007,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 165.8,
-      "calendarDays": 6.91,
+      "calendarHours": 166.15,
+      "calendarDays": 6.92,
       "businessDays": 5
     },
     {
@@ -4211,8 +4211,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 20.12,
-      "calendarDays": 0.84,
+      "calendarHours": 20.47,
+      "calendarDays": 0.85,
       "businessDays": 1
     },
     {
@@ -4475,7 +4475,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=01/10/2026 09:29"
+        "detail": "dataAsOf=01/10/2026 09:50"
       }
     ]
   }
