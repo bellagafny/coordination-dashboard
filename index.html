@@ -29,7 +29,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 </div>
 <h3>פילוח לפי כניסה ראשונה</h3>
 <div class="aging" id="agingFirstEntryBlock"></div>
-<h3>פירוט הזמנות לפי כניסה ראשונה</h3>
+<h3>פירוט הזמנות חורגות לפי כניסה ראשונה</h3>
 <div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>כניסה ראשונה לממתין</th><th>כניסה אחרונה לממתין</th><th>ימי עסקים</th><th>SLA</th></tr></thead><tbody id="detailFirstEntryBody"></tbody></table></div>
 </div>
 
@@ -43,7 +43,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 </div>
 <h3>פילוח לפי כניסה עדכנית</h3>
 <div class="aging" id="agingLatestEntryBlock"></div>
-<h3>פירוט הזמנות לפי כניסה עדכנית</h3>
+<h3>פירוט הזמנות חורגות לפי כניסה עדכנית</h3>
 <div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>כניסה ראשונה לממתין</th><th>כניסה אחרונה לממתין</th><th>ימי עסקים</th><th>SLA</th></tr></thead><tbody id="detailLatestEntryBody"></tbody></table></div>
 </div>
 </section>
@@ -86,13 +86,13 @@ function renderAging(container, aging){
   }).join('');
 }
 
-function renderCurrentWaitingDetail(tbody, rows){
+function renderOverSlaDetail(tbody, rows, businessDaysKey){
   tbody.innerHTML = rows.map(r => `<tr>
     <td>${esc(r.orderNumber)}</td>
     <td>${esc(r.orderDate)}</td>
     <td>${esc(r.firstWaitingEntry)}</td>
     <td>${esc(r.currentWaitingEntry)}</td>
-    <td>${esc(r.businessDays)}</td>
+    <td>${esc(r[businessDaysKey])}</td>
     <td class="${slaClass(r.sla)}">${esc(r.sla)}</td>
   </tr>`).join('');
 }
@@ -150,7 +150,7 @@ fetch('dashboard_data.json', {cache: 'no-store'})
     document.getElementById('cwOver').textContent = cw.overSla ?? '–';
     document.getElementById('cwReentry').textContent = cw.reentryCurrentlyWaiting ?? '–';
     renderAging(document.getElementById('agingFirstEntryBlock'), (data.waitingAging || {}).bySlaStart);
-    renderCurrentWaitingDetail(document.getElementById('detailFirstEntryBody'), data.currentWaitingDetailFirstEntry || []);
+    renderOverSlaDetail(document.getElementById('detailFirstEntryBody'), data.overSlaOrders || [], 'businessDaysSla');
 
     const cwl = data.currentWaitingLatestEntry || {};
     document.getElementById('cwTotalLatest').textContent = cwl.total ?? '–';
@@ -158,7 +158,7 @@ fetch('dashboard_data.json', {cache: 'no-store'})
     document.getElementById('cwOverLatest').textContent = cwl.overSla ?? '–';
     document.getElementById('cwReentryLatest').textContent = cwl.reentryCurrentlyWaiting ?? '–';
     renderAging(document.getElementById('agingLatestEntryBlock'), (data.waitingAging || {}).byLastEntry);
-    renderCurrentWaitingDetail(document.getElementById('detailLatestEntryBody'), data.currentWaitingDetailLatestEntry || []);
+    renderOverSlaDetail(document.getElementById('detailLatestEntryBody'), data.overSlaOrdersLatestEntry || [], 'businessDaysLatestEntry');
 
     const re = data.reentries || {};
     document.getElementById('reentryOrders').textContent = re.uniqueTrueReentryOrders ?? '–';
