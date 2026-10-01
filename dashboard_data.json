@@ -1,28 +1,28 @@
 {
   "metadata": {
-    "lastRefresh": "01/10/2026 11:00",
-    "dataAsOf": "01/10/2026 10:57",
+    "lastRefresh": "01/10/2026 11:30",
+    "dataAsOf": "01/10/2026 11:27",
     "sourceFile": "STATUS_b070213_20261001_1110SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 56251,
-    "uniqueOrders": 9471
+    "sourceRowCount": 56267,
+    "uniqueOrders": 9474
   },
   "currentWaiting": {
-    "total": 56,
-    "withinSla": 23,
+    "total": 57,
+    "withinSla": 24,
     "overSla": 33,
     "reentryCurrentlyWaiting": 8
   },
   "waitingAging": {
     "bySlaStart": {
-      "עד יום עסקים אחד": 17,
+      "עד יום עסקים אחד": 18,
       "2 ימי עסקים": 6,
       "3 ימי עסקים": 18,
       "4–5 ימי עסקים": 7,
       "יותר מ־5 ימי עסקים": 8
     },
     "byLastEntry": {
-      "עד יום עסקים אחד": 21,
+      "עד יום עסקים אחד": 22,
       "2 ימי עסקים": 7,
       "3 ימי עסקים": 17,
       "4–5 ימי עסקים": 7,
@@ -2421,9 +2421,9 @@
         "לברור הסחר": 2
       },
       "finalStatus": {
-        "מאושרת לניפו": 2,
+        "מאושרת לניפו": 1,
         "המתנה לאיסוף": 5,
-        "בוצעה": 42,
+        "בוצעה": 43,
         "ממתין לתאום": 2,
         "תאום לא סופי": 6,
         "תואם מוניטין": 2,
@@ -2489,12 +2489,11 @@
       },
       "finalStatus": {
         "המתנה לאיסוף": 7,
-        "בוצעה": 48,
+        "בוצעה": 49,
         "ממתין לתאום": 6,
         "תיאום עתידי": 2,
         "תאום לא סופי": 9,
-        "תואם מוניטין": 1,
-        "מאושרת לניפו": 1
+        "תואם מוניטין": 1
       }
     },
     {
@@ -2566,15 +2565,15 @@
     },
     {
       "date": "01/10/2026",
-      "totalOrdersCreated": 17,
-      "enteredWaiting": 17,
+      "totalOrdersCreated": 20,
+      "enteredWaiting": 18,
       "exitedWaiting": 7,
-      "endingWaitingBalance": 56,
+      "endingWaitingBalance": 57,
       "firstNextStatus": {
         "תאום לא סופי": 7
       },
       "finalStatus": {
-        "ממתין לתאום": 10,
+        "ממתין לתאום": 11,
         "תאום לא סופי": 7
       }
     }
@@ -2672,10 +2671,10 @@
       },
       {
         "month": "01/10/2026",
-        "totalOrdersCreated": 17,
-        "enteredWaiting": 17,
+        "totalOrdersCreated": 20,
+        "enteredWaiting": 18,
         "exitedWaiting": 7,
-        "endingWaitingBalance": 56,
+        "endingWaitingBalance": 57,
         "statusBreakdown": {
           "תאום לא סופי": 7
         }
@@ -2730,7 +2729,7 @@
         "totalExitedToMonitin": 478,
         "outcomeBreakdown": {
           "המתנה לאיסוף": 11,
-          "בוצעה": 405,
+          "בוצעה": 406,
           "תואם מוניטין": 41,
           "מבוטלת": 6,
           "ממתין לתאום": 1,
@@ -2738,10 +2737,9 @@
           "מאושר לבצוע": 1,
           "תאום לא סופי": 8,
           "אוש אין מלאי": 1,
-          "פתיחה מחדש": 1,
-          "מאושרת לניפו": 1
+          "פתיחה מחדש": 1
         },
-        "pctCompleted": 0.8472803347280334
+        "pctCompleted": 0.8493723849372385
       }
     ]
   },
@@ -2766,8 +2764,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 354.67,
-      "calendarDays": 14.78,
+      "calendarHours": 355.17,
+      "calendarDays": 14.8,
       "businessDays": 9
     },
     {
@@ -4026,8 +4024,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 167.27,
-      "calendarDays": 6.97,
+      "calendarHours": 167.77,
+      "calendarDays": 6.99,
       "businessDays": 5
     },
     {
@@ -4230,8 +4228,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 21.58,
-      "calendarDays": 0.9,
+      "calendarHours": 22.08,
+      "calendarDays": 0.92,
       "businessDays": 1
     },
     {
@@ -4444,7 +4442,7 @@
       {
         "name": "Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "23 + 33 vs total 56"
+        "detail": "24 + 33 vs total 57"
       },
       {
         "name": "Trade Treatment: With Notes + Without Notes = Total",
@@ -4494,7 +4492,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=01/10/2026 10:57"
+        "detail": "dataAsOf=01/10/2026 11:27"
       }
     ]
   }
