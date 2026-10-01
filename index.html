@@ -17,7 +17,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 <section class="section" id="coord"><h2>Dashboard תאום</h2>
 <div class="subnav" id="coordSubnav">
   <button type="button" class="subnav-btn active" data-view="first">כניסה ראשונה</button>
-  <button type="button" class="subnav-btn" data-view="latest">כניסה עדכנית</button>
+  <button type="button" class="subnav-btn" data-view="latest">כניסה אחרונה</button>
 </div>
 
 <div class="coord-view" id="viewFirstEntry">
@@ -35,16 +35,16 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 </div>
 
 <div class="coord-view" id="viewLatestEntry" style="display:none">
-<h3>KPI לפי כניסה עדכנית</h3>
+<h3>KPI לפי כניסה אחרונה</h3>
 <div class="cards">
   <div class="card"><div class="v" id="cwTotalLatest">–</div><div class="k">ממתינות כעת</div></div>
   <div class="card good"><div class="v" id="cwWithinLatest">–</div><div class="k">Within SLA</div></div>
   <div class="card bad"><div class="v" id="cwOverLatest">–</div><div class="k">Over SLA</div></div>
   <div class="card warn"><div class="v" id="cwReentryLatest">–</div><div class="k">חזרו וממתינות כעת</div></div>
 </div>
-<h3>פילוח לפי כניסה עדכנית</h3>
+<h3>פילוח לפי כניסה אחרונה</h3>
 <div class="aging" id="agingLatestEntryBlock"></div>
-<h3>פירוט הזמנות חורגות לפי כניסה עדכנית</h3>
+<h3>פירוט הזמנות חורגות לפי כניסה אחרונה</h3>
 <div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>כניסה ראשונה לממתין</th><th>כניסה אחרונה לממתין</th><th>ימי עסקים</th><th>פילוח חריגה</th></tr></thead><tbody id="detailLatestEntryBody"></tbody></table></div>
 </div>
 </section>
@@ -53,8 +53,8 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 <div class="cards cards-compact">
   <div class="card bad"><div class="v" id="reentryCurrentlyWaiting">–</div><div class="k">ממתינות כעת לאחר חזרה</div></div>
 </div>
-<h3>ממתינות כעת לאחר TRUE Reentry</h3>
-<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>כניסה ראשונה</th><th>כניסה אחרונה</th><th>מספר פרקי המתנה</th><th>ימי עסקים SLA</th><th>SLA</th></tr></thead><tbody id="currentWaitingReentriesBody"></tbody></table></div>
+<h3>ממתינות לתאום יותר מפעם אחת</h3>
+<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>כניסה ראשונה</th><th>כניסה אחרונה</th><th>מספר פרקי המתנה</th><th>פילוח חריגה</th><th>SLA</th></tr></thead><tbody id="currentWaitingReentriesBody"></tbody></table></div>
 </section>
 
 <section class="section" id="trade"><h2>Dashboard טיפול סחר</h2>
@@ -77,7 +77,7 @@ function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Ove
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
 
 function renderAging(container, aging){
-  // Shared by both views (כניסה ראשונה / כניסה עדכנית) -- labels must stay
+  // Shared by both views (כניסה ראשונה / כניסה אחרונה) -- labels must stay
   // identical in both. key = exact bucket name as returned in
   // dashboard_data.json; label = display text (currently same as key).
   const buckets = [
@@ -133,7 +133,7 @@ function renderCurrentWaitingReentries(tbody, rows){
     <td>${esc(r.firstWaitingEntry)}</td>
     <td>${esc(r.currentWaitingEntry)}</td>
     <td>${esc(r.waitingEpisodeCount)}</td>
-    <td>${esc(r.businessDaysSla)}</td>
+    <td>${agingBucketLabel(r.businessDaysSla)}</td>
     <td class="${slaClass(r.sla)}">${esc(r.sla)}</td>
   </tr>`).join('');
 }
