@@ -1,35 +1,89 @@
 {
   "metadata": {
-    "lastRefresh": "01/10/2026 03:07",
+    "lastRefresh": "01/10/2026 06:47",
     "dataAsOf": "30/09/2026 22:06",
-    "sourceFile": "77775555.xlsx",
+    "sourceFile": "011026.xlsx",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 3473,
-    "uniqueOrders": 653
+    "sourceRowCount": 66985,
+    "uniqueOrders": 11373
   },
   "currentWaiting": {
-    "total": 39,
-    "withinSla": 31,
-    "overSla": 8,
-    "reentryCurrentlyWaiting": 4
+    "total": 46,
+    "withinSla": 32,
+    "overSla": 14,
+    "reentryCurrentlyWaiting": 7
   },
   "waitingAging": {
     "bySlaStart": {
-      "עד יום עסקים אחד": 13,
+      "עד יום עסקים אחד": 14,
       "2 ימי עסקים": 18,
-      "3 ימי עסקים": 4,
-      "4–5 ימי עסקים": 3,
-      "יותר מ־5 ימי עסקים": 1
+      "3 ימי עסקים": 5,
+      "4–5 ימי עסקים": 4,
+      "יותר מ־5 ימי עסקים": 5
     },
     "byLastEntry": {
-      "עד יום עסקים אחד": 15,
+      "עד יום עסקים אחד": 18,
       "2 ימי עסקים": 17,
-      "3 ימי עסקים": 3,
+      "3 ימי עסקים": 5,
       "4–5 ימי עסקים": 3,
-      "יותר מ־5 ימי עסקים": 1
+      "יותר מ־5 ימי עסקים": 3
     }
   },
   "overSlaOrders": [
+    {
+      "orderNumber": "SO26S0015507",
+      "orderDate": "11/08/2026",
+      "currentWaitingEntry": "27/09/2026 13:21",
+      "firstWaitingEntry": "13/08/2026 11:01",
+      "businessDaysSla": 31,
+      "sla": "Over SLA",
+      "agingGroupByLastEntry": "3 ימי עסקים"
+    },
+    {
+      "orderNumber": "SO26S0016334",
+      "orderDate": "19/08/2026",
+      "currentWaitingEntry": "27/09/2026 13:57",
+      "firstWaitingEntry": "27/09/2026 13:57",
+      "businessDaysSla": 3,
+      "sla": "Over SLA",
+      "agingGroupByLastEntry": "3 ימי עסקים"
+    },
+    {
+      "orderNumber": "SO26S0017812",
+      "orderDate": "06/09/2026",
+      "currentWaitingEntry": "29/09/2026 11:07",
+      "firstWaitingEntry": "23/09/2026 09:16",
+      "businessDaysSla": 5,
+      "sla": "Over SLA",
+      "agingGroupByLastEntry": "עד יום עסקים אחד"
+    },
+    {
+      "orderNumber": "SO26S0018178",
+      "orderDate": "10/09/2026",
+      "currentWaitingEntry": "29/09/2026 11:35",
+      "firstWaitingEntry": "10/09/2026 12:11",
+      "businessDaysSla": 11,
+      "sla": "Over SLA",
+      "agingGroupByLastEntry": "עד יום עסקים אחד"
+    },
+    {
+      "orderNumber": "SO26S0018289",
+      "orderDate": "14/09/2026",
+      "currentWaitingEntry": "14/09/2026 13:33",
+      "firstWaitingEntry": "14/09/2026 13:33",
+      "businessDaysSla": 10,
+      "sla": "Over SLA",
+      "agingGroupByLastEntry": "יותר מ־5 ימי עסקים"
+    },
+    {
+      "orderNumber": "SO26S0018395",
+      "orderDate": "15/09/2026",
+      "currentWaitingEntry": "15/09/2026 18:00",
+      "firstWaitingEntry": "15/09/2026 18:00",
+      "businessDaysSla": 9,
+      "sla": "Over SLA",
+      "agingGroupByLastEntry": "יותר מ־5 ימי עסקים"
+    },
     {
       "orderNumber": "SO26S0018663",
       "orderDate": "22/09/2026",
@@ -104,13 +158,43 @@
     }
   ],
   "reentries": {
-    "uniqueTrueReentryOrders": 13,
-    "totalReentryEvents": 15,
-    "currentlyWaitingTrueReentries": 4,
-    "openReentryOrders": 7,
-    "closedReentryOrders": 6
+    "uniqueTrueReentryOrders": 459,
+    "totalReentryEvents": 545,
+    "currentlyWaitingTrueReentries": 7,
+    "openReentryOrders": 60,
+    "closedReentryOrders": 399
   },
   "currentWaitingReentries": [
+    {
+      "orderNumber": "SO26S0015507",
+      "firstWaitingEntry": "13/08/2026 11:01",
+      "currentWaitingEntry": "27/09/2026 13:21",
+      "businessDaysCurrentlyWaiting": 3,
+      "businessDaysSla": 31,
+      "sla": "Over SLA",
+      "waitingEpisodeCount": 9,
+      "previousStatusBeforeCurrentEntry": "אוש אין מלאי"
+    },
+    {
+      "orderNumber": "SO26S0017812",
+      "firstWaitingEntry": "23/09/2026 09:16",
+      "currentWaitingEntry": "29/09/2026 11:07",
+      "businessDaysCurrentlyWaiting": 1,
+      "businessDaysSla": 5,
+      "sla": "Over SLA",
+      "waitingEpisodeCount": 2,
+      "previousStatusBeforeCurrentEntry": "לברור הסחר"
+    },
+    {
+      "orderNumber": "SO26S0018178",
+      "firstWaitingEntry": "10/09/2026 12:11",
+      "currentWaitingEntry": "29/09/2026 11:35",
+      "businessDaysCurrentlyWaiting": 1,
+      "businessDaysSla": 11,
+      "sla": "Over SLA",
+      "waitingEpisodeCount": 2,
+      "previousStatusBeforeCurrentEntry": "לברור הסחר"
+    },
     {
       "orderNumber": "SO26S0018994",
       "firstWaitingEntry": "27/09/2026 13:44",
@@ -153,13 +237,83 @@
     }
   ],
   "tradeTreatment": {
-    "total": 1,
+    "total": 8,
     "withinSla": 1,
-    "overSla": 0,
-    "withNotes": 1,
-    "withoutNotes": 0
+    "overSla": 7,
+    "withNotes": 3,
+    "withoutNotes": 5
   },
   "tradeTreatmentWorklist": [
+    {
+      "orderNumber": "SO26S0010287",
+      "currentStatus": "לברור הסחר",
+      "statusDate": "16/09/2026 16:17",
+      "businessDays": 8,
+      "sla": "Over SLA",
+      "previousStatus": "תאום לא סופי",
+      "previousStatusDate": "16/09/2026 16:12",
+      "internalNote": "לקוח טוען שנאסף"
+    },
+    {
+      "orderNumber": "SO26S0011157",
+      "currentStatus": "ממתין ללקוח",
+      "statusDate": "07/09/2026 14:41",
+      "businessDays": 14,
+      "sla": "Over SLA",
+      "previousStatus": "תאום לא סופי",
+      "previousStatusDate": "24/08/2026 10:18",
+      "internalNote": ""
+    },
+    {
+      "orderNumber": "SO26S0013348",
+      "currentStatus": "ממתין ללקוח",
+      "statusDate": "26/08/2026 16:09",
+      "businessDays": 22,
+      "sla": "Over SLA",
+      "previousStatus": "מבוטלת",
+      "previousStatusDate": "19/08/2026 10:42",
+      "internalNote": ""
+    },
+    {
+      "orderNumber": "SO26S0013386",
+      "currentStatus": "ממתין ללקוח",
+      "statusDate": "03/09/2026 14:58",
+      "businessDays": 16,
+      "sla": "Over SLA",
+      "previousStatus": "תאום לא סופי",
+      "previousStatusDate": "24/08/2026 10:08",
+      "internalNote": ""
+    },
+    {
+      "orderNumber": "SO26S0014480",
+      "currentStatus": "ממתין ללקוח",
+      "statusDate": "07/09/2026 15:45",
+      "businessDays": 14,
+      "sla": "Over SLA",
+      "previousStatus": "תאום לא סופי",
+      "previousStatusDate": "26/08/2026 16:30",
+      "internalNote": ""
+    },
+    {
+      "orderNumber": "SO26S0014620",
+      "currentStatus": "ממתין ללקוח",
+      "statusDate": "09/09/2026 12:34",
+      "businessDays": 12,
+      "sla": "Over SLA",
+      "previousStatus": "תאום לא סופי",
+      "previousStatusDate": "24/08/2026 13:34",
+      "internalNote": ""
+    },
+    {
+      "orderNumber": "SO26S0018213",
+      "currentStatus": "לברור הסחר",
+      "statusDate": "24/09/2026 11:41",
+      "businessDays": 4,
+      "sla": "Over SLA",
+      "previousStatus": "ממתין לתאום",
+      "previousStatusDate": "10/09/2026 15:00",
+      "internalNote": "לקוח טוען שנאסף"
+    },
     {
       "orderNumber": "SO26S0019172",
       "currentStatus": "לברור הסחר",
@@ -173,19 +327,2169 @@
   ],
   "tradeNotesSummary": [
     {
+      "note": "ללא הערה",
+      "count": 5,
+      "pct": 0.625
+    },
+    {
+      "note": "לקוח טוען שנאסף",
+      "count": 2,
+      "pct": 0.25
+    },
+    {
       "note": "לקוח טוען שקיבל",
       "count": 1,
-      "pct": 1.0
+      "pct": 0.125
     }
   ],
   "daily": [
     {
-      "date": "20/09/2026",
-      "totalOrdersCreated": 22,
+      "date": "01/05/2026",
+      "totalOrdersCreated": 15,
       "enteredWaiting": 0,
       "exitedWaiting": 0,
       "endingWaitingBalance": 0,
       "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "02/05/2026",
+      "totalOrdersCreated": 4,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "03/05/2026",
+      "totalOrdersCreated": 121,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "04/05/2026",
+      "totalOrdersCreated": 97,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "05/05/2026",
+      "totalOrdersCreated": 85,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "06/05/2026",
+      "totalOrdersCreated": 113,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "07/05/2026",
+      "totalOrdersCreated": 85,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "08/05/2026",
+      "totalOrdersCreated": 7,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "09/05/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "10/05/2026",
+      "totalOrdersCreated": 90,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "11/05/2026",
+      "totalOrdersCreated": 93,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "12/05/2026",
+      "totalOrdersCreated": 109,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "13/05/2026",
+      "totalOrdersCreated": 61,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "14/05/2026",
+      "totalOrdersCreated": 75,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "15/05/2026",
+      "totalOrdersCreated": 3,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "16/05/2026",
+      "totalOrdersCreated": 2,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "17/05/2026",
+      "totalOrdersCreated": 107,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "18/05/2026",
+      "totalOrdersCreated": 107,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "19/05/2026",
+      "totalOrdersCreated": 109,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "20/05/2026",
+      "totalOrdersCreated": 90,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "21/05/2026",
+      "totalOrdersCreated": 8,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "22/05/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "23/05/2026",
+      "totalOrdersCreated": 8,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "24/05/2026",
+      "totalOrdersCreated": 100,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "25/05/2026",
+      "totalOrdersCreated": 93,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "26/05/2026",
+      "totalOrdersCreated": 58,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "27/05/2026",
+      "totalOrdersCreated": 71,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "28/05/2026",
+      "totalOrdersCreated": 105,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "29/05/2026",
+      "totalOrdersCreated": 6,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "30/05/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 0,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "31/05/2026",
+      "totalOrdersCreated": 97,
+      "enteredWaiting": 1,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 1,
+      "firstNextStatus": {},
+      "finalStatus": {
+        "בוצעה": 1
+      }
+    },
+    {
+      "date": "01/06/2026",
+      "totalOrdersCreated": 72,
+      "enteredWaiting": 9,
+      "exitedWaiting": 4,
+      "endingWaitingBalance": 6,
+      "firstNextStatus": {
+        "תואם מוניטין": 2,
+        "מאושרת לניפו": 2
+      },
+      "finalStatus": {
+        "בוצעה": 9
+      }
+    },
+    {
+      "date": "02/06/2026",
+      "totalOrdersCreated": 65,
+      "enteredWaiting": 1,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 7,
+      "firstNextStatus": {},
+      "finalStatus": {
+        "בוצעה": 1
+      }
+    },
+    {
+      "date": "03/06/2026",
+      "totalOrdersCreated": 53,
+      "enteredWaiting": 10,
+      "exitedWaiting": 9,
+      "endingWaitingBalance": 8,
+      "firstNextStatus": {
+        "תואם מוניטין": 5,
+        "מאושרת לניפו": 3,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 9,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "04/06/2026",
+      "totalOrdersCreated": 74,
+      "enteredWaiting": 8,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 16,
+      "firstNextStatus": {},
+      "finalStatus": {
+        "בוצעה": 7,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "05/06/2026",
+      "totalOrdersCreated": 3,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 16,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "06/06/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 8,
+      "endingWaitingBalance": 8,
+      "firstNextStatus": {
+        "תואם מוניטין": 7,
+        "מאושרת לניפו": 1
+      },
+      "finalStatus": {}
+    },
+    {
+      "date": "07/06/2026",
+      "totalOrdersCreated": 116,
+      "enteredWaiting": 11,
+      "exitedWaiting": 6,
+      "endingWaitingBalance": 13,
+      "firstNextStatus": {
+        "תואם מוניטין": 5,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 11
+      }
+    },
+    {
+      "date": "08/06/2026",
+      "totalOrdersCreated": 92,
+      "enteredWaiting": 33,
+      "exitedWaiting": 16,
+      "endingWaitingBalance": 30,
+      "firstNextStatus": {
+        "תואם מוניטין": 15,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "תאום לא סופי": 1,
+        "בוצעה": 31,
+        "יגיעו לאסוף": 1
+      }
+    },
+    {
+      "date": "09/06/2026",
+      "totalOrdersCreated": 50,
+      "enteredWaiting": 17,
+      "exitedWaiting": 20,
+      "endingWaitingBalance": 27,
+      "firstNextStatus": {
+        "תואם מוניטין": 16,
+        "מאושרת לניפו": 3,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 17
+      }
+    },
+    {
+      "date": "10/06/2026",
+      "totalOrdersCreated": 95,
+      "enteredWaiting": 9,
+      "exitedWaiting": 16,
+      "endingWaitingBalance": 20,
+      "firstNextStatus": {
+        "תואם מוניטין": 15,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "מבוטלת": 1,
+        "בוצעה": 8
+      }
+    },
+    {
+      "date": "11/06/2026",
+      "totalOrdersCreated": 83,
+      "enteredWaiting": 15,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 35,
+      "firstNextStatus": {},
+      "finalStatus": {
+        "בוצעה": 14,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "12/06/2026",
+      "totalOrdersCreated": 6,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 35,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "13/06/2026",
+      "totalOrdersCreated": 1,
+      "enteredWaiting": 0,
+      "exitedWaiting": 20,
+      "endingWaitingBalance": 15,
+      "firstNextStatus": {
+        "תואם מוניטין": 20
+      },
+      "finalStatus": {}
+    },
+    {
+      "date": "14/06/2026",
+      "totalOrdersCreated": 114,
+      "enteredWaiting": 26,
+      "exitedWaiting": 12,
+      "endingWaitingBalance": 29,
+      "firstNextStatus": {
+        "תואם מוניטין": 10,
+        "מאושרת לניפו": 1,
+        "מבוטלת": 1
+      },
+      "finalStatus": {
+        "מבוטלת": 2,
+        "בוצעה": 22,
+        "חזרה ובוטלה": 2
+      }
+    },
+    {
+      "date": "15/06/2026",
+      "totalOrdersCreated": 105,
+      "enteredWaiting": 22,
+      "exitedWaiting": 24,
+      "endingWaitingBalance": 27,
+      "firstNextStatus": {
+        "מבוטלת": 2,
+        "תואם מוניטין": 22
+      },
+      "finalStatus": {
+        "בוצעה": 22
+      }
+    },
+    {
+      "date": "16/06/2026",
+      "totalOrdersCreated": 114,
+      "enteredWaiting": 29,
+      "exitedWaiting": 24,
+      "endingWaitingBalance": 32,
+      "firstNextStatus": {
+        "תואם מוניטין": 15,
+        "מאושרת לניפו": 9
+      },
+      "finalStatus": {
+        "בוצעה": 28,
+        "המתנה לאיסוף": 1
+      }
+    },
+    {
+      "date": "17/06/2026",
+      "totalOrdersCreated": 176,
+      "enteredWaiting": 25,
+      "exitedWaiting": 32,
+      "endingWaitingBalance": 25,
+      "firstNextStatus": {
+        "מבוטלת": 1,
+        "תואם מוניטין": 24,
+        "מאושרת לניפו": 5,
+        "מאושר לבצוע": 2
+      },
+      "finalStatus": {
+        "בוצעה": 23,
+        "חסר פרטים": 1,
+        "המתנה לאיסוף": 1
+      }
+    },
+    {
+      "date": "18/06/2026",
+      "totalOrdersCreated": 199,
+      "enteredWaiting": 3,
+      "exitedWaiting": 3,
+      "endingWaitingBalance": 25,
+      "firstNextStatus": {
+        "תואם מוניטין": 3
+      },
+      "finalStatus": {
+        "בוצעה": 2,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "19/06/2026",
+      "totalOrdersCreated": 2,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 25,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "20/06/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 5,
+      "endingWaitingBalance": 20,
+      "firstNextStatus": {
+        "תואם מוניטין": 5
+      },
+      "finalStatus": {}
+    },
+    {
+      "date": "21/06/2026",
+      "totalOrdersCreated": 157,
+      "enteredWaiting": 17,
+      "exitedWaiting": 14,
+      "endingWaitingBalance": 23,
+      "firstNextStatus": {
+        "תואם מוניטין": 11,
+        "מאושרת לניפו": 1,
+        "מאושר לבצוע": 1,
+        "אוש אין מלאי": 1
+      },
+      "finalStatus": {
+        "בוצעה": 16,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "22/06/2026",
+      "totalOrdersCreated": 124,
+      "enteredWaiting": 25,
+      "exitedWaiting": 4,
+      "endingWaitingBalance": 44,
+      "firstNextStatus": {
+        "מאושר לבצוע": 1,
+        "מאושרת לניפו": 3
+      },
+      "finalStatus": {
+        "בוצעה": 25
+      }
+    },
+    {
+      "date": "23/06/2026",
+      "totalOrdersCreated": 96,
+      "enteredWaiting": 34,
+      "exitedWaiting": 37,
+      "endingWaitingBalance": 41,
+      "firstNextStatus": {
+        "תואם מוניטין": 28,
+        "מאושרת לניפו": 8,
+        "מבוטלת": 1
+      },
+      "finalStatus": {
+        "בוצעה": 30,
+        "תאום לא סופי": 1,
+        "חזרה ובוטלה": 1,
+        "מבוטלת": 2
+      }
+    },
+    {
+      "date": "24/06/2026",
+      "totalOrdersCreated": 108,
+      "enteredWaiting": 29,
+      "exitedWaiting": 39,
+      "endingWaitingBalance": 31,
+      "firstNextStatus": {
+        "תואם מוניטין": 34,
+        "מאושרת לניפו": 4,
+        "אוש אין מלאי": 1
+      },
+      "finalStatus": {
+        "בוצעה": 28,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "25/06/2026",
+      "totalOrdersCreated": 78,
+      "enteredWaiting": 41,
+      "exitedWaiting": 2,
+      "endingWaitingBalance": 70,
+      "firstNextStatus": {
+        "מאושרת לניפו": 1,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "מבוטלת": 1,
+        "בוצעה": 37,
+        "המתנה לאיסוף": 1,
+        "חזרה ובוטלה": 2
+      }
+    },
+    {
+      "date": "26/06/2026",
+      "totalOrdersCreated": 4,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 70,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "27/06/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 30,
+      "endingWaitingBalance": 40,
+      "firstNextStatus": {
+        "תואם מוניטין": 30
+      },
+      "finalStatus": {}
+    },
+    {
+      "date": "28/06/2026",
+      "totalOrdersCreated": 127,
+      "enteredWaiting": 50,
+      "exitedWaiting": 36,
+      "endingWaitingBalance": 54,
+      "firstNextStatus": {
+        "תואם מוניטין": 30,
+        "מאושרת לניפו": 5,
+        "מבוטלת": 1
+      },
+      "finalStatus": {
+        "בוצעה": 46,
+        "מבוטלת": 4
+      }
+    },
+    {
+      "date": "29/06/2026",
+      "totalOrdersCreated": 111,
+      "enteredWaiting": 49,
+      "exitedWaiting": 49,
+      "endingWaitingBalance": 54,
+      "firstNextStatus": {
+        "מאושרת לניפו": 4,
+        "תואם מוניטין": 42,
+        "תיאום עתידי": 1,
+        "מבוטלת": 1,
+        "טיוטא": 1
+      },
+      "finalStatus": {
+        "בוצעה": 46,
+        "חזרה ובוטלה": 2,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "30/06/2026",
+      "totalOrdersCreated": 85,
+      "enteredWaiting": 48,
+      "exitedWaiting": 36,
+      "endingWaitingBalance": 66,
+      "firstNextStatus": {
+        "תואם מוניטין": 35,
+        "טיוטא": 1
+      },
+      "finalStatus": {
+        "בוצעה": 45,
+        "חזרה ובוטלה": 2,
+        "המתנה לאיסוף": 1
+      }
+    },
+    {
+      "date": "01/07/2026",
+      "totalOrdersCreated": 80,
+      "enteredWaiting": 33,
+      "exitedWaiting": 25,
+      "endingWaitingBalance": 74,
+      "firstNextStatus": {
+        "תואם מוניטין": 25
+      },
+      "finalStatus": {
+        "חזרה ובוטלה": 1,
+        "בוצעה": 30,
+        "המתנה לאיסוף": 1,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "02/07/2026",
+      "totalOrdersCreated": 71,
+      "enteredWaiting": 39,
+      "exitedWaiting": 44,
+      "endingWaitingBalance": 69,
+      "firstNextStatus": {
+        "מאושרת לניפו": 4,
+        "מאושר לבצוע": 3,
+        "תואם מוניטין": 37
+      },
+      "finalStatus": {
+        "בוצעה": 38,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "03/07/2026",
+      "totalOrdersCreated": 3,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 69,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "04/07/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 1,
+      "exitedWaiting": 7,
+      "endingWaitingBalance": 63,
+      "firstNextStatus": {
+        "תואם מוניטין": 7
+      },
+      "finalStatus": {
+        "בוצעה": 1
+      }
+    },
+    {
+      "date": "05/07/2026",
+      "totalOrdersCreated": 126,
+      "enteredWaiting": 41,
+      "exitedWaiting": 32,
+      "endingWaitingBalance": 72,
+      "firstNextStatus": {
+        "מאושרת לניפו": 3,
+        "טיוטא": 2,
+        "תואם מוניטין": 26,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 38,
+        "חזרה ובוטלה": 1,
+        "מבוטלת": 1,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "06/07/2026",
+      "totalOrdersCreated": 122,
+      "enteredWaiting": 42,
+      "exitedWaiting": 49,
+      "endingWaitingBalance": 65,
+      "firstNextStatus": {
+        "תואם מוניטין": 46,
+        "מאושרת לניפו": 1,
+        "מאושר לבצוע": 1,
+        "מבוטלת": 1
+      },
+      "finalStatus": {
+        "חזרה ובוטלה": 4,
+        "בוצעה": 38
+      }
+    },
+    {
+      "date": "07/07/2026",
+      "totalOrdersCreated": 97,
+      "enteredWaiting": 37,
+      "exitedWaiting": 35,
+      "endingWaitingBalance": 67,
+      "firstNextStatus": {
+        "תואם מוניטין": 26,
+        "חזרה ובוטלה": 1,
+        "מאושר לבצוע": 3,
+        "מאושרת לניפו": 5
+      },
+      "finalStatus": {
+        "בוצעה": 36,
+        "פתיחה מחדש": 1
+      }
+    },
+    {
+      "date": "08/07/2026",
+      "totalOrdersCreated": 85,
+      "enteredWaiting": 27,
+      "exitedWaiting": 33,
+      "endingWaitingBalance": 61,
+      "firstNextStatus": {
+        "תואם מוניטין": 29,
+        "חזרה ובוטלה": 1,
+        "מאושר לבצוע": 1,
+        "מאושרת לניפו": 1,
+        "אשור אובליגו": 1
+      },
+      "finalStatus": {
+        "חזרה ובוטלה": 2,
+        "בוצעה": 24,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "09/07/2026",
+      "totalOrdersCreated": 87,
+      "enteredWaiting": 33,
+      "exitedWaiting": 38,
+      "endingWaitingBalance": 56,
+      "firstNextStatus": {
+        "מאושר לבצוע": 1,
+        "תואם מוניטין": 34,
+        "מאושרת לניפו": 2,
+        "אישור מחיר": 1
+      },
+      "finalStatus": {
+        "בוצעה": 31,
+        "פתיחה מחדש": 1,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "10/07/2026",
+      "totalOrdersCreated": 2,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 56,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "11/07/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 56,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "12/07/2026",
+      "totalOrdersCreated": 145,
+      "enteredWaiting": 56,
+      "exitedWaiting": 37,
+      "endingWaitingBalance": 75,
+      "firstNextStatus": {
+        "תואם מוניטין": 27,
+        "חזרה ובוטלה": 1,
+        "מבוטלת": 3,
+        "טיוטא": 1,
+        "מאושרת לניפו": 5
+      },
+      "finalStatus": {
+        "בוצעה": 51,
+        "חזרה ובוטלה": 3,
+        "תאום לא סופי": 1,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "13/07/2026",
+      "totalOrdersCreated": 112,
+      "enteredWaiting": 53,
+      "exitedWaiting": 40,
+      "endingWaitingBalance": 88,
+      "firstNextStatus": {
+        "תואם מוניטין": 35,
+        "טיוטא": 1,
+        "מאושרת לניפו": 3,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 49,
+        "מבוטלת": 2,
+        "פתיחה מחדש": 1,
+        "המתנה לאיסוף": 1
+      }
+    },
+    {
+      "date": "14/07/2026",
+      "totalOrdersCreated": 119,
+      "enteredWaiting": 63,
+      "exitedWaiting": 76,
+      "endingWaitingBalance": 75,
+      "firstNextStatus": {
+        "תואם מוניטין": 66,
+        "מבוטלת": 2,
+        "מאושרת לניפו": 4,
+        "מאושר לבצוע": 2,
+        "טיוטא": 2
+      },
+      "finalStatus": {
+        "בוצעה": 58,
+        "חזרה ובוטלה": 1,
+        "מבוטלת": 2,
+        "תאום לא סופי": 1,
+        "המתנה לאיסוף": 1
+      }
+    },
+    {
+      "date": "15/07/2026",
+      "totalOrdersCreated": 70,
+      "enteredWaiting": 42,
+      "exitedWaiting": 49,
+      "endingWaitingBalance": 68,
+      "firstNextStatus": {
+        "מאושר לבצוע": 4,
+        "תואם מוניטין": 43,
+        "חזרה ובוטלה": 1,
+        "אישור מחיר": 1
+      },
+      "finalStatus": {
+        "בוצעה": 38,
+        "חסר פרטים": 1,
+        "תאום לא סופי": 1,
+        "מבוטלת": 1,
+        "תואם מוניטין": 1
+      }
+    },
+    {
+      "date": "16/07/2026",
+      "totalOrdersCreated": 82,
+      "enteredWaiting": 34,
+      "exitedWaiting": 23,
+      "endingWaitingBalance": 79,
+      "firstNextStatus": {
+        "תואם מוניטין": 20,
+        "מבוטלת": 1,
+        "אישור מחיר": 1,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 32,
+        "תואם מוניטין": 1,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "17/07/2026",
+      "totalOrdersCreated": 5,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 79,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "18/07/2026",
+      "totalOrdersCreated": 1,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 79,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "19/07/2026",
+      "totalOrdersCreated": 112,
+      "enteredWaiting": 35,
+      "exitedWaiting": 28,
+      "endingWaitingBalance": 86,
+      "firstNextStatus": {
+        "תואם מוניטין": 26,
+        "מבוטלת": 1,
+        "מאושרת לניפו": 1
+      },
+      "finalStatus": {
+        "בוצעה": 34,
+        "ממתין ללקוח": 1
+      }
+    },
+    {
+      "date": "20/07/2026",
+      "totalOrdersCreated": 101,
+      "enteredWaiting": 57,
+      "exitedWaiting": 37,
+      "endingWaitingBalance": 106,
+      "firstNextStatus": {
+        "תואם מוניטין": 32,
+        "אוש אין מלאי": 1,
+        "מבוטלת": 1,
+        "מאושרת לניפו": 1,
+        "מאושר לבצוע": 1,
+        "אשור אובליגו": 1
+      },
+      "finalStatus": {
+        "בוצעה": 52,
+        "מבוטלת": 3,
+        "ממתין ללקוח": 1,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "21/07/2026",
+      "totalOrdersCreated": 92,
+      "enteredWaiting": 61,
+      "exitedWaiting": 34,
+      "endingWaitingBalance": 133,
+      "firstNextStatus": {
+        "תואם מוניטין": 30,
+        "בוצעה": 1,
+        "מבוטלת": 2,
+        "טיוטא": 1
+      },
+      "finalStatus": {
+        "תאום לא סופי": 3,
+        "בוצעה": 52,
+        "מבוטלת": 4,
+        "ממתין ללקוח": 1,
+        "פתיחה מחדש": 1
+      }
+    },
+    {
+      "date": "22/07/2026",
+      "totalOrdersCreated": 141,
+      "enteredWaiting": 73,
+      "exitedWaiting": 43,
+      "endingWaitingBalance": 163,
+      "firstNextStatus": {
+        "תואם מוניטין": 38,
+        "מאושרת לניפו": 3,
+        "טיוטא": 1,
+        "מבוטלת": 1
+      },
+      "finalStatus": {
+        "בוצעה": 68,
+        "תאום לא סופי": 3,
+        "מבוטלת": 2
+      }
+    },
+    {
+      "date": "23/07/2026",
+      "totalOrdersCreated": 88,
+      "enteredWaiting": 42,
+      "exitedWaiting": 40,
+      "endingWaitingBalance": 165,
+      "firstNextStatus": {
+        "טיוטא": 3,
+        "תואם מוניטין": 31,
+        "מאושר לבצוע": 4,
+        "אוש אין מלאי": 1,
+        "מאושרת לניפו": 1
+      },
+      "finalStatus": {
+        "בוצעה": 33,
+        "תאום לא סופי": 2,
+        "ממתין לח\"ח": 1,
+        "מבוטלת": 6
+      }
+    },
+    {
+      "date": "24/07/2026",
+      "totalOrdersCreated": 9,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 165,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "25/07/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 165,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "26/07/2026",
+      "totalOrdersCreated": 141,
+      "enteredWaiting": 52,
+      "exitedWaiting": 46,
+      "endingWaitingBalance": 171,
+      "firstNextStatus": {
+        "תואם מוניטין": 38,
+        "מבוטלת": 3,
+        "מאושר לבצוע": 2,
+        "מאושרת לניפו": 1,
+        "טיוטא": 1,
+        "אוש אין מלאי": 1
+      },
+      "finalStatus": {
+        "בוצעה": 49,
+        "מבוטלת": 2,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "27/07/2026",
+      "totalOrdersCreated": 84,
+      "enteredWaiting": 41,
+      "exitedWaiting": 36,
+      "endingWaitingBalance": 176,
+      "firstNextStatus": {
+        "תואם מוניטין": 30,
+        "מבוטלת": 1,
+        "מאושרת לניפו": 4,
+        "טיוטא": 1
+      },
+      "finalStatus": {
+        "בוצעה": 37,
+        "תאום לא סופי": 1,
+        "חזרה ובוטלה": 1,
+        "מבוטלת": 2
+      }
+    },
+    {
+      "date": "28/07/2026",
+      "totalOrdersCreated": 102,
+      "enteredWaiting": 28,
+      "exitedWaiting": 40,
+      "endingWaitingBalance": 164,
+      "firstNextStatus": {
+        "תואם מוניטין": 37,
+        "מבוטלת": 2,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 24,
+        "תואם מוניטין": 1,
+        "מבוטלת": 1,
+        "המתנה לאיסוף": 1,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "29/07/2026",
+      "totalOrdersCreated": 146,
+      "enteredWaiting": 73,
+      "exitedWaiting": 49,
+      "endingWaitingBalance": 188,
+      "firstNextStatus": {
+        "תואם מוניטין": 42,
+        "מאושר לבצוע": 1,
+        "מבוטלת": 3,
+        "טיוטא": 1,
+        "אוש אין מלאי": 2
+      },
+      "finalStatus": {
+        "בוצעה": 63,
+        "המתנה לאיסוף": 2,
+        "מבוטלת": 7,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "30/07/2026",
+      "totalOrdersCreated": 112,
+      "enteredWaiting": 50,
+      "exitedWaiting": 55,
+      "endingWaitingBalance": 183,
+      "firstNextStatus": {
+        "תואם מוניטין": 51,
+        "מבוטלת": 1,
+        "מאושרת לניפו": 2,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 45,
+        "חזרה ובוטלה": 2,
+        "מבוטלת": 2,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "31/07/2026",
+      "totalOrdersCreated": 5,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 183,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "01/08/2026",
+      "totalOrdersCreated": 1,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 183,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "02/08/2026",
+      "totalOrdersCreated": 141,
+      "enteredWaiting": 74,
+      "exitedWaiting": 51,
+      "endingWaitingBalance": 206,
+      "firstNextStatus": {
+        "ממתין לח\"ח": 2,
+        "תואם מוניטין": 44,
+        "מבוטלת": 3,
+        "טיוטא": 2
+      },
+      "finalStatus": {
+        "בוצעה": 68,
+        "המתנה לאיסוף": 1,
+        "חזרה ובוטלה": 1,
+        "ממתין ללקוח": 1,
+        "מבוטלת": 3
+      }
+    },
+    {
+      "date": "03/08/2026",
+      "totalOrdersCreated": 133,
+      "enteredWaiting": 78,
+      "exitedWaiting": 68,
+      "endingWaitingBalance": 216,
+      "firstNextStatus": {
+        "תואם מוניטין": 61,
+        "מאושרת לניפו": 4,
+        "מאושר לבצוע": 1,
+        "טיוטא": 1,
+        "מבוטלת": 1
+      },
+      "finalStatus": {
+        "בוצעה": 67,
+        "תואם מוניטין": 2,
+        "לברור הסחר": 1,
+        "מבוטלת": 4,
+        "המתנה לאיסוף": 1,
+        "חזרה ובוטלה": 1,
+        "ממתין ללקוח": 1,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "04/08/2026",
+      "totalOrdersCreated": 127,
+      "enteredWaiting": 51,
+      "exitedWaiting": 57,
+      "endingWaitingBalance": 210,
+      "firstNextStatus": {
+        "תואם מוניטין": 50,
+        "מבוטלת": 2,
+        "מאושר לבצוע": 2,
+        "אישור מחיר": 1,
+        "טיוטא": 1,
+        "יגיעו לאסוף": 1
+      },
+      "finalStatus": {
+        "תואם מוניטין": 1,
+        "בוצעה": 46,
+        "חזרה ובוטלה": 3,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "05/08/2026",
+      "totalOrdersCreated": 173,
+      "enteredWaiting": 70,
+      "exitedWaiting": 71,
+      "endingWaitingBalance": 209,
+      "firstNextStatus": {
+        "תואם מוניטין": 67,
+        "מאושר לבצוע": 2,
+        "מבוטלת": 1,
+        "אוש אין מלאי": 1
+      },
+      "finalStatus": {
+        "בוצעה": 64,
+        "מבוטלת": 2,
+        "תאום לא סופי": 1,
+        "המתנה לאיסוף": 2,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "06/08/2026",
+      "totalOrdersCreated": 108,
+      "enteredWaiting": 39,
+      "exitedWaiting": 59,
+      "endingWaitingBalance": 189,
+      "firstNextStatus": {
+        "תואם מוניטין": 54,
+        "טיוטא": 1,
+        "חזרה ובוטלה": 1,
+        "אוש אין מלאי": 2,
+        "מאושרת לניפו": 1
+      },
+      "finalStatus": {
+        "בוצעה": 37,
+        "מבוטלת": 1,
+        "תאום לא סופי": 1
+      }
+    },
+    {
+      "date": "07/08/2026",
+      "totalOrdersCreated": 8,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 189,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "08/08/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 5,
+      "exitedWaiting": 1,
+      "endingWaitingBalance": 193,
+      "firstNextStatus": {
+        "תואם מוניטין": 1
+      },
+      "finalStatus": {
+        "בוצעה": 5
+      }
+    },
+    {
+      "date": "09/08/2026",
+      "totalOrdersCreated": 191,
+      "enteredWaiting": 100,
+      "exitedWaiting": 83,
+      "endingWaitingBalance": 210,
+      "firstNextStatus": {
+        "תואם מוניטין": 81,
+        "בוצעה": 2
+      },
+      "finalStatus": {
+        "בוצעה": 93,
+        "תאום לא סופי": 1,
+        "חזרה ובוטלה": 2,
+        "מבוטלת": 2,
+        "פתיחה מחדש": 1,
+        "מאושרת לניפו": 1
+      }
+    },
+    {
+      "date": "10/08/2026",
+      "totalOrdersCreated": 121,
+      "enteredWaiting": 45,
+      "exitedWaiting": 51,
+      "endingWaitingBalance": 204,
+      "firstNextStatus": {
+        "תואם מוניטין": 46,
+        "חזרה ובוטלה": 1,
+        "מאושר לבצוע": 2,
+        "אוש אין מלאי": 1,
+        "אישור מחיר": 1
+      },
+      "finalStatus": {
+        "בוצעה": 41,
+        "מאושרת לניפו": 1,
+        "מבוטלת": 2,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "11/08/2026",
+      "totalOrdersCreated": 116,
+      "enteredWaiting": 50,
+      "exitedWaiting": 63,
+      "endingWaitingBalance": 191,
+      "firstNextStatus": {
+        "תואם מוניטין": 61,
+        "מבוטלת": 1,
+        "אוש אין מלאי": 1
+      },
+      "finalStatus": {
+        "בוצעה": 45,
+        "תואם מוניטין": 1,
+        "מבוטלת": 2,
+        "חזרה ובוטלה": 2
+      }
+    },
+    {
+      "date": "12/08/2026",
+      "totalOrdersCreated": 89,
+      "enteredWaiting": 49,
+      "exitedWaiting": 64,
+      "endingWaitingBalance": 176,
+      "firstNextStatus": {
+        "תואם מוניטין": 62,
+        "מאושר לבצוע": 2
+      },
+      "finalStatus": {
+        "בוצעה": 44,
+        "חזרה ובוטלה": 3,
+        "המתנה לאיסוף": 1,
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "13/08/2026",
+      "totalOrdersCreated": 131,
+      "enteredWaiting": 69,
+      "exitedWaiting": 54,
+      "endingWaitingBalance": 191,
+      "firstNextStatus": {
+        "תואם מוניטין": 50,
+        "מבוטלת": 1,
+        "מאושרת לניפו": 1,
+        "אוש אין מלאי": 2
+      },
+      "finalStatus": {
+        "חזרה ובוטלה": 3,
+        "מבוטלת": 5,
+        "בוצעה": 56,
+        "תאום לא סופי": 3,
+        "ממתין לתאום": 1,
+        "אוש אין מלאי": 1
+      }
+    },
+    {
+      "date": "14/08/2026",
+      "totalOrdersCreated": 5,
+      "enteredWaiting": 3,
+      "exitedWaiting": 8,
+      "endingWaitingBalance": 186,
+      "firstNextStatus": {
+        "תואם מוניטין": 8
+      },
+      "finalStatus": {
+        "בוצעה": 3
+      }
+    },
+    {
+      "date": "15/08/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 186,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "16/08/2026",
+      "totalOrdersCreated": 165,
+      "enteredWaiting": 60,
+      "exitedWaiting": 73,
+      "endingWaitingBalance": 173,
+      "firstNextStatus": {
+        "מבוטלת": 4,
+        "תואם מוניטין": 62,
+        "תיאום עתידי": 3,
+        "מאושר לבצוע": 1,
+        "מאושרת לניפו": 1,
+        "טיוטא": 2
+      },
+      "finalStatus": {
+        "בוצעה": 52,
+        "תואם מוניטין": 1,
+        "תאום לא סופי": 2,
+        "מבוטלת": 4,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "17/08/2026",
+      "totalOrdersCreated": 119,
+      "enteredWaiting": 55,
+      "exitedWaiting": 61,
+      "endingWaitingBalance": 167,
+      "firstNextStatus": {
+        "תואם מוניטין": 50,
+        "תיאום עתידי": 5,
+        "מבוטלת": 2,
+        "מאושרת לניפו": 1,
+        "אוש אין מלאי": 1,
+        "טיוטא": 1,
+        "בדיקת אובליג": 1
+      },
+      "finalStatus": {
+        "בוצעה": 47,
+        "מבוטלת": 4,
+        "חזרה ובוטלה": 3,
+        "פתיחה מחדש": 1
+      }
+    },
+    {
+      "date": "18/08/2026",
+      "totalOrdersCreated": 117,
+      "enteredWaiting": 86,
+      "exitedWaiting": 95,
+      "endingWaitingBalance": 158,
+      "firstNextStatus": {
+        "תואם מוניטין": 67,
+        "תיאום עתידי": 11,
+        "מאושרת לניפו": 8,
+        "חזרה ובוטלה": 2,
+        "אוש אין מלאי": 2,
+        "מאושר לבצוע": 3,
+        "מבוטלת": 1,
+        "תואם להתקנה": 1
+      },
+      "finalStatus": {
+        "בוצעה": 73,
+        "תאום לא סופי": 1,
+        "לברור הסחר": 1,
+        "מבוטלת": 4,
+        "ממתין ללקוח": 1,
+        "תואם מוניטין": 2,
+        "חזרה ובוטלה": 1,
+        "המתנה לאיסוף": 2,
+        "אוש אין מלאי": 1
+      }
+    },
+    {
+      "date": "19/08/2026",
+      "totalOrdersCreated": 105,
+      "enteredWaiting": 56,
+      "exitedWaiting": 51,
+      "endingWaitingBalance": 163,
+      "firstNextStatus": {
+        "תואם מוניטין": 46,
+        "תיאום עתידי": 2,
+        "מאושרת לניפו": 1,
+        "אוש אין מלאי": 2
+      },
+      "finalStatus": {
+        "תואם מוניטין": 1,
+        "בוצעה": 50,
+        "חזרה ובוטלה": 1,
+        "תאום לא סופי": 1,
+        "מבוטלת": 3
+      }
+    },
+    {
+      "date": "20/08/2026",
+      "totalOrdersCreated": 134,
+      "enteredWaiting": 40,
+      "exitedWaiting": 86,
+      "endingWaitingBalance": 117,
+      "firstNextStatus": {
+        "תיאום עתידי": 8,
+        "תואם מוניטין": 63,
+        "לברור הסחר": 5,
+        "המתנה לאיסוף": 1,
+        "אוש אין מלאי": 4,
+        "מאושרת לניפו": 1,
+        "יגיעו לאסוף": 2,
+        "תואם להתקנה": 1,
+        "מבוטלת": 1
+      },
+      "finalStatus": {
+        "בוצעה": 35,
+        "מבוטלת": 1,
+        "חזרה ובוטלה": 1,
+        "תאום לא סופי": 2,
+        "מאושר לבצוע": 1
+      }
+    },
+    {
+      "date": "21/08/2026",
+      "totalOrdersCreated": 5,
+      "enteredWaiting": 0,
+      "exitedWaiting": 11,
+      "endingWaitingBalance": 106,
+      "firstNextStatus": {
+        "תואם מוניטין": 10,
+        "מאושרת לניפו": 1
+      },
+      "finalStatus": {}
+    },
+    {
+      "date": "22/08/2026",
+      "totalOrdersCreated": 2,
+      "enteredWaiting": 3,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 109,
+      "firstNextStatus": {},
+      "finalStatus": {
+        "מבוטלת": 1,
+        "בוצעה": 2
+      }
+    },
+    {
+      "date": "23/08/2026",
+      "totalOrdersCreated": 168,
+      "enteredWaiting": 104,
+      "exitedWaiting": 100,
+      "endingWaitingBalance": 113,
+      "firstNextStatus": {
+        "תואם מוניטין": 69,
+        "תיאום עתידי": 3,
+        "לברור הסחר": 8,
+        "תאום לא סופי": 5,
+        "ממתין ללקוח": 1,
+        "אוש אין מלאי": 9,
+        "מבוטלת": 2,
+        "מאושרת לניפו": 3
+      },
+      "finalStatus": {
+        "מבוטלת": 7,
+        "בוצעה": 87,
+        "ממתין לתאום": 2,
+        "חזרה ובוטלה": 2,
+        "תאום לא סופי": 3,
+        "תואם מוניטין": 3
+      }
+    },
+    {
+      "date": "24/08/2026",
+      "totalOrdersCreated": 139,
+      "enteredWaiting": 96,
+      "exitedWaiting": 99,
+      "endingWaitingBalance": 110,
+      "firstNextStatus": {
+        "תואם מוניטין": 36,
+        "תאום לא סופי": 49,
+        "מאושרת לניפו": 9,
+        "לברור הסחר": 3,
+        "מאושר לבצוע": 1,
+        "טיוטא": 1
+      },
+      "finalStatus": {
+        "חזרה ובוטלה": 2,
+        "בוצעה": 82,
+        "מבוטלת": 5,
+        "מאושרת לניפו": 1,
+        "תאום לא סופי": 2,
+        "פתיחה מחדש": 2,
+        "תואם מוניטין": 2
+      }
+    },
+    {
+      "date": "25/08/2026",
+      "totalOrdersCreated": 136,
+      "enteredWaiting": 69,
+      "exitedWaiting": 87,
+      "endingWaitingBalance": 92,
+      "firstNextStatus": {
+        "תואם מוניטין": 37,
+        "תאום לא סופי": 31,
+        "לברור הסחר": 5,
+        "מאושרת לניפו": 8,
+        "אוש אין מלאי": 1,
+        "מבוטלת": 1,
+        "טיוטא": 3,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 58,
+        "מבוטלת": 4,
+        "חזרה ובוטלה": 1,
+        "ממתין לתאום": 2,
+        "תואם מוניטין": 3,
+        "מאושרת לניפו": 1
+      }
+    },
+    {
+      "date": "26/08/2026",
+      "totalOrdersCreated": 111,
+      "enteredWaiting": 52,
+      "exitedWaiting": 107,
+      "endingWaitingBalance": 37,
+      "firstNextStatus": {
+        "תאום לא סופי": 61,
+        "לברור הסחר": 19,
+        "תואם מוניטין": 22,
+        "מבוטלת": 1,
+        "בוצעה": 1,
+        "ממתין ללקוח": 1,
+        "אוש אין מלאי": 1,
+        "אישור מחיר": 1
+      },
+      "finalStatus": {
+        "בוצעה": 47,
+        "תאום לא סופי": 1,
+        "חזרה ובוטלה": 2,
+        "אוש אין מלאי": 1,
+        "מאושרת לניפו": 1
+      }
+    },
+    {
+      "date": "27/08/2026",
+      "totalOrdersCreated": 104,
+      "enteredWaiting": 64,
+      "exitedWaiting": 66,
+      "endingWaitingBalance": 35,
+      "firstNextStatus": {
+        "תאום לא סופי": 34,
+        "אוש אין מלאי": 3,
+        "מאושרת לניפו": 3,
+        "תואם מוניטין": 22,
+        "מבוטלת": 2,
+        "לברור הסחר": 1,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 52,
+        "ממתין לתאום": 2,
+        "מאושרת לניפו": 1,
+        "מבוטלת": 3,
+        "תאום לא סופי": 2,
+        "חזרה ובוטלה": 1,
+        "תואם מוניטין": 3
+      }
+    },
+    {
+      "date": "28/08/2026",
+      "totalOrdersCreated": 4,
+      "enteredWaiting": 0,
+      "exitedWaiting": 1,
+      "endingWaitingBalance": 34,
+      "firstNextStatus": {
+        "תאום לא סופי": 1
+      },
+      "finalStatus": {}
+    },
+    {
+      "date": "29/08/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 34,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "30/08/2026",
+      "totalOrdersCreated": 125,
+      "enteredWaiting": 66,
+      "exitedWaiting": 58,
+      "endingWaitingBalance": 42,
+      "firstNextStatus": {
+        "תאום לא סופי": 29,
+        "תואם מוניטין": 19,
+        "אוש אין מלאי": 7,
+        "טיוטא": 2,
+        "לברור הסחר": 1
+      },
+      "finalStatus": {
+        "בוצעה": 51,
+        "ממתין לתאום": 1,
+        "מבוטלת": 3,
+        "תואם מוניטין": 9,
+        "תאום לא סופי": 1,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "31/08/2026",
+      "totalOrdersCreated": 139,
+      "enteredWaiting": 108,
+      "exitedWaiting": 72,
+      "endingWaitingBalance": 78,
+      "firstNextStatus": {
+        "תואם מוניטין": 33,
+        "תאום לא סופי": 33,
+        "חזרה ובוטלה": 1,
+        "לברור הסחר": 2,
+        "אוש אין מלאי": 2,
+        "אישור מחיר": 1
+      },
+      "finalStatus": {
+        "חזרה ובוטלה": 1,
+        "בוצעה": 96,
+        "מאושרת לניפו": 1,
+        "תואם מוניטין": 5,
+        "תאום לא סופי": 1,
+        "המתנה לאיסוף": 1,
+        "מבוטלת": 3
+      }
+    },
+    {
+      "date": "01/09/2026",
+      "totalOrdersCreated": 142,
+      "enteredWaiting": 74,
+      "exitedWaiting": 82,
+      "endingWaitingBalance": 70,
+      "firstNextStatus": {
+        "חזרה ובוטלה": 1,
+        "תואם מוניטין": 32,
+        "לברור הסחר": 3,
+        "תאום לא סופי": 32,
+        "מאושר לבצוע": 1,
+        "אשור אובליגו": 1,
+        "מאושרת לניפו": 3,
+        "ממתין ללקוח": 1,
+        "אוש אין מלאי": 6,
+        "מבוטלת": 2
+      },
+      "finalStatus": {
+        "בוצעה": 58,
+        "חזרה ובוטלה": 2,
+        "המתנה לאיסוף": 2,
+        "תואם מוניטין": 3,
+        "אוש אין מלאי": 3,
+        "מבוטלת": 4,
+        "תאום לא סופי": 1,
+        "מאושרת לניפו": 1
+      }
+    },
+    {
+      "date": "02/09/2026",
+      "totalOrdersCreated": 111,
+      "enteredWaiting": 65,
+      "exitedWaiting": 68,
+      "endingWaitingBalance": 67,
+      "firstNextStatus": {
+        "תואם מוניטין": 35,
+        "תאום לא סופי": 24,
+        "אוש אין מלאי": 6,
+        "מאושר לבצוע": 1,
+        "מאושרת לניפו": 2
+      },
+      "finalStatus": {
+        "תאום לא סופי": 4,
+        "בוצעה": 54,
+        "מבוטלת": 6,
+        "תואם מוניטין": 1
+      }
+    },
+    {
+      "date": "03/09/2026",
+      "totalOrdersCreated": 95,
+      "enteredWaiting": 65,
+      "exitedWaiting": 68,
+      "endingWaitingBalance": 64,
+      "firstNextStatus": {
+        "מאושרת לניפו": 5,
+        "תאום לא סופי": 18,
+        "תואם מוניטין": 32,
+        "לברור הסחר": 3,
+        "מאושר לבצוע": 1,
+        "אוש אין מלאי": 9
+      },
+      "finalStatus": {
+        "בוצעה": 53,
+        "תאום לא סופי": 2,
+        "מאושרת לניפו": 2,
+        "חזרה ובוטלה": 1,
+        "תואם מוניטין": 2,
+        "מבוטלת": 5
+      }
+    },
+    {
+      "date": "04/09/2026",
+      "totalOrdersCreated": 9,
+      "enteredWaiting": 1,
+      "exitedWaiting": 5,
+      "endingWaitingBalance": 60,
+      "firstNextStatus": {
+        "תאום לא סופי": 2,
+        "תואם מוניטין": 3
+      },
+      "finalStatus": {
+        "בוצעה": 1
+      }
+    },
+    {
+      "date": "05/09/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 1,
+      "exitedWaiting": 4,
+      "endingWaitingBalance": 57,
+      "firstNextStatus": {
+        "תאום לא סופי": 2,
+        "מאושרת לניפו": 2
+      },
+      "finalStatus": {
+        "מבוטלת": 1
+      }
+    },
+    {
+      "date": "06/09/2026",
+      "totalOrdersCreated": 132,
+      "enteredWaiting": 76,
+      "exitedWaiting": 84,
+      "endingWaitingBalance": 49,
+      "firstNextStatus": {
+        "תואם מוניטין": 34,
+        "לברור הסחר": 5,
+        "תאום לא סופי": 35,
+        "מאושר לבצוע": 2,
+        "מאושרת לניפו": 1,
+        "ממתין ללקוח": 1,
+        "מבוטלת": 2,
+        "אוש אין מלאי": 4
+      },
+      "finalStatus": {
+        "בוצעה": 60,
+        "תואם מוניטין": 8,
+        "תאום לא סופי": 2,
+        "מבוטלת": 3,
+        "המתנה לאיסוף": 2,
+        "מאושרת לניפו": 1
+      }
+    },
+    {
+      "date": "07/09/2026",
+      "totalOrdersCreated": 94,
+      "enteredWaiting": 67,
+      "exitedWaiting": 65,
+      "endingWaitingBalance": 51,
+      "firstNextStatus": {
+        "תואם מוניטין": 28,
+        "אוש אין מלאי": 1,
+        "תאום לא סופי": 32,
+        "לברור הסחר": 2,
+        "מאושרת לניפו": 1,
+        "מאושר לבצוע": 1
+      },
+      "finalStatus": {
+        "בוצעה": 55,
+        "תואם מוניטין": 4,
+        "תאום לא סופי": 2,
+        "לחיוב בלבד": 1,
+        "מבוטלת": 3,
+        "חזרה ובוטלה": 1,
+        "מאושרת לניפו": 1
+      }
+    },
+    {
+      "date": "08/09/2026",
+      "totalOrdersCreated": 98,
+      "enteredWaiting": 46,
+      "exitedWaiting": 65,
+      "endingWaitingBalance": 32,
+      "firstNextStatus": {
+        "תואם מוניטין": 39,
+        "תאום לא סופי": 18,
+        "אוש אין מלאי": 1,
+        "מאושרת לניפו": 4,
+        "מאושר לבצוע": 1,
+        "טיוטא": 1,
+        "ממתין ללקוח": 1
+      },
+      "finalStatus": {
+        "תאום לא סופי": 4,
+        "בוצעה": 32,
+        "תואם מוניטין": 9,
+        "מאושרת לניפו": 1
+      }
+    },
+    {
+      "date": "09/09/2026",
+      "totalOrdersCreated": 78,
+      "enteredWaiting": 52,
+      "exitedWaiting": 46,
+      "endingWaitingBalance": 38,
+      "firstNextStatus": {
+        "תאום לא סופי": 17,
+        "תואם מוניטין": 16,
+        "לברור הסחר": 4,
+        "אוש אין מלאי": 6,
+        "מבוטלת": 2,
+        "המתנה לאיסוף": 1
+      },
+      "finalStatus": {
+        "תאום לא סופי": 3,
+        "בוצעה": 27,
+        "תואם מוניטין": 15,
+        "מבוטלת": 5,
+        "מאושרת לניפו": 1,
+        "מאושר לבצוע": 1
+      }
+    },
+    {
+      "date": "10/09/2026",
+      "totalOrdersCreated": 71,
+      "enteredWaiting": 45,
+      "exitedWaiting": 47,
+      "endingWaitingBalance": 36,
+      "firstNextStatus": {
+        "תואם מוניטין": 25,
+        "מאושרת לניפו": 4,
+        "תאום לא סופי": 17,
+        "מבוטלת": 1
+      },
+      "finalStatus": {
+        "בוצעה": 26,
+        "תואם מוניטין": 9,
+        "אוש אין מלאי": 1,
+        "מאושרת לניפו": 1,
+        "תאום לא סופי": 5,
+        "המתנה לאיסוף": 1,
+        "ממתין לתאום": 1,
+        "לברור הסחר": 1
+      }
+    },
+    {
+      "date": "11/09/2026",
+      "totalOrdersCreated": 8,
+      "enteredWaiting": 1,
+      "exitedWaiting": 5,
+      "endingWaitingBalance": 32,
+      "firstNextStatus": {
+        "תאום לא סופי": 2,
+        "מאושרת לניפו": 2,
+        "תואם מוניטין": 1
+      },
+      "finalStatus": {
+        "בוצעה": 1
+      }
+    },
+    {
+      "date": "12/09/2026",
+      "totalOrdersCreated": 0,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 32,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "13/09/2026",
+      "totalOrdersCreated": 11,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 32,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "14/09/2026",
+      "totalOrdersCreated": 98,
+      "enteredWaiting": 49,
+      "exitedWaiting": 58,
+      "endingWaitingBalance": 23,
+      "firstNextStatus": {
+        "לברור הסחר": 2,
+        "מאושרת לניפו": 1,
+        "תאום לא סופי": 34,
+        "תואם מוניטין": 19,
+        "מבוטלת": 2
+      },
+      "finalStatus": {
+        "המתנה לאיסוף": 1,
+        "בוצעה": 42,
+        "חזרה ובוטלה": 1,
+        "מבוטלת": 2,
+        "תואם מוניטין": 1,
+        "תאום לא סופי": 1,
+        "ממתין לתאום": 1
+      }
+    },
+    {
+      "date": "15/09/2026",
+      "totalOrdersCreated": 68,
+      "enteredWaiting": 44,
+      "exitedWaiting": 33,
+      "endingWaitingBalance": 34,
+      "firstNextStatus": {
+        "תאום לא סופי": 13,
+        "מאושרת לניפו": 2,
+        "תואם מוניטין": 15,
+        "לברור הסחר": 3
+      },
+      "finalStatus": {
+        "מאושרת לניפו": 2,
+        "תאום לא סופי": 2,
+        "תואם מוניטין": 6,
+        "בוצעה": 31,
+        "אוש אין מלאי": 1,
+        "המתנה לאיסוף": 1,
+        "ממתין לתאום": 1
+      }
+    },
+    {
+      "date": "16/09/2026",
+      "totalOrdersCreated": 97,
+      "enteredWaiting": 53,
+      "exitedWaiting": 60,
+      "endingWaitingBalance": 27,
+      "firstNextStatus": {
+        "תאום לא סופי": 32,
+        "תואם מוניטין": 26,
+        "נדרש שינוי": 1,
+        "אושר לשינוי": 1
+      },
+      "finalStatus": {
+        "תאום לא סופי": 6,
+        "לברור הסחר": 1,
+        "בוצעה": 41,
+        "תואם מוניטין": 2,
+        "מבוטלת": 1,
+        "המתנה לאיסוף": 2
+      }
+    },
+    {
+      "date": "17/09/2026",
+      "totalOrdersCreated": 113,
+      "enteredWaiting": 60,
+      "exitedWaiting": 50,
+      "endingWaitingBalance": 37,
+      "firstNextStatus": {
+        "תאום לא סופי": 27,
+        "לברור הסחר": 2,
+        "תואם מוניטין": 21
+      },
+      "finalStatus": {
+        "פתיחה מחדש": 1,
+        "תאום לא סופי": 2,
+        "בוצעה": 49,
+        "חזרה ובוטלה": 1,
+        "תואם מוניטין": 3,
+        "מבוטלת": 2,
+        "המתנה לאיסוף": 2
+      }
+    },
+    {
+      "date": "18/09/2026",
+      "totalOrdersCreated": 7,
+      "enteredWaiting": 5,
+      "exitedWaiting": 2,
+      "endingWaitingBalance": 40,
+      "firstNextStatus": {
+        "מוניטין תאום": 1,
+        "מאושרת לניפו": 1
+      },
+      "finalStatus": {
+        "בוצעה": 4,
+        "חזרה ובוטלה": 1
+      }
+    },
+    {
+      "date": "19/09/2026",
+      "totalOrdersCreated": 2,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 40,
+      "firstNextStatus": {},
+      "finalStatus": {}
+    },
+    {
+      "date": "20/09/2026",
+      "totalOrdersCreated": 22,
+      "enteredWaiting": 0,
+      "exitedWaiting": 1,
+      "endingWaitingBalance": 39,
+      "firstNextStatus": {
+        "תואם מוניטין": 1
+      },
       "finalStatus": {}
     },
     {
@@ -193,61 +2497,70 @@
       "totalOrdersCreated": 1,
       "enteredWaiting": 0,
       "exitedWaiting": 0,
-      "endingWaitingBalance": 0,
+      "endingWaitingBalance": 39,
       "firstNextStatus": {},
       "finalStatus": {}
     },
     {
       "date": "22/09/2026",
       "totalOrdersCreated": 108,
-      "enteredWaiting": 48,
-      "exitedWaiting": 38,
-      "endingWaitingBalance": 10,
+      "enteredWaiting": 78,
+      "exitedWaiting": 95,
+      "endingWaitingBalance": 22,
       "firstNextStatus": {
-        "תאום לא סופי": 22,
-        "תואם מוניטין": 16
+        "תואם מוניטין": 49,
+        "תאום לא סופי": 42,
+        "לברור הסחר": 3,
+        "אישור מחיר": 1
       },
       "finalStatus": {
-        "בוצעה": 40,
-        "תאום לא סופי": 7,
+        "בוצעה": 61,
+        "מאושר לבצוע": 1,
+        "תואם מוניטין": 5,
+        "חזרה ובוטלה": 1,
+        "מבוטלת": 1,
+        "תאום לא סופי": 8,
         "ממתין לתאום": 1
       }
     },
     {
       "date": "23/09/2026",
       "totalOrdersCreated": 118,
-      "enteredWaiting": 52,
-      "exitedWaiting": 44,
-      "endingWaitingBalance": 18,
+      "enteredWaiting": 65,
+      "exitedWaiting": 53,
+      "endingWaitingBalance": 34,
       "firstNextStatus": {
-        "תואם מוניטין": 12,
-        "תאום לא סופי": 30,
+        "תאום לא סופי": 36,
+        "מאושרת לניפו": 2,
+        "תואם מוניטין": 13,
         "לברור הסחר": 2
       },
       "finalStatus": {
-        "בוצעה": 39,
+        "בוצעה": 46,
+        "מאושרת לניפו": 2,
+        "המתנה לאיסוף": 5,
+        "ממתין לתאום": 2,
+        "תאום לא סופי": 6,
         "תואם מוניטין": 2,
-        "תאום לא סופי": 5,
-        "המתנה לאיסוף": 2,
         "פתיחה מחדש": 1,
-        "מאושרת לניפו": 1,
-        "מבוטלת": 1,
-        "ממתין לתאום": 1
+        "מבוטלת": 1
       }
     },
     {
       "date": "24/09/2026",
       "totalOrdersCreated": 95,
-      "enteredWaiting": 42,
-      "exitedWaiting": 29,
-      "endingWaitingBalance": 31,
+      "enteredWaiting": 49,
+      "exitedWaiting": 42,
+      "endingWaitingBalance": 41,
       "firstNextStatus": {
-        "תואם מוניטין": 6,
-        "תאום לא סופי": 22,
-        "לברור הסחר": 1
+        "תואם מוניטין": 13,
+        "לברור הסחר": 4,
+        "תאום לא סופי": 25
       },
       "finalStatus": {
-        "בוצעה": 30,
+        "תואם מוניטין": 3,
+        "מאושר לבצוע": 1,
+        "בוצעה": 33,
         "תאום לא סופי": 7,
         "ממתין לתאום": 2,
         "מאושרת לניפו": 2,
@@ -259,7 +2572,7 @@
       "totalOrdersCreated": 6,
       "enteredWaiting": 0,
       "exitedWaiting": 2,
-      "endingWaitingBalance": 29,
+      "endingWaitingBalance": 39,
       "firstNextStatus": {
         "תאום לא סופי": 2
       },
@@ -268,50 +2581,54 @@
     {
       "date": "26/09/2026",
       "totalOrdersCreated": 0,
-      "enteredWaiting": 0,
+      "enteredWaiting": 1,
       "exitedWaiting": 1,
-      "endingWaitingBalance": 28,
+      "endingWaitingBalance": 39,
       "firstNextStatus": {
         "תאום לא סופי": 1
       },
-      "finalStatus": {}
+      "finalStatus": {
+        "תואם מוניטין": 1
+      }
     },
     {
       "date": "27/09/2026",
       "totalOrdersCreated": 117,
-      "enteredWaiting": 60,
-      "exitedWaiting": 51,
-      "endingWaitingBalance": 37,
+      "enteredWaiting": 77,
+      "exitedWaiting": 59,
+      "endingWaitingBalance": 57,
       "firstNextStatus": {
-        "תאום לא סופי": 33,
-        "תואם מוניטין": 17,
+        "תאום לא סופי": 38,
+        "תואם מוניטין": 20,
         "אישור מחיר": 1
       },
       "finalStatus": {
-        "בוצעה": 40,
-        "ממתין לתאום": 4,
-        "תאום לא סופי": 8,
-        "המתנה לאיסוף": 5,
-        "תיאום עתידי": 1,
-        "תואם מוניטין": 1,
+        "תואם מוניטין": 2,
+        "בוצעה": 50,
+        "המתנה לאיסוף": 7,
+        "ממתין לתאום": 6,
+        "תיאום עתידי": 2,
+        "תאום לא סופי": 9,
         "מאושר לבצוע": 1
       }
     },
     {
       "date": "28/09/2026",
       "totalOrdersCreated": 74,
-      "enteredWaiting": 50,
-      "exitedWaiting": 49,
-      "endingWaitingBalance": 38,
+      "enteredWaiting": 55,
+      "exitedWaiting": 67,
+      "endingWaitingBalance": 45,
       "firstNextStatus": {
-        "תאום לא סופי": 25,
-        "תואם מוניטין": 21,
-        "תיאום עתידי": 3
+        "תואם מוניטין": 32,
+        "תאום לא סופי": 31,
+        "תיאום עתידי": 4
       },
       "finalStatus": {
-        "בוצעה": 23,
+        "המתנה לאיסוף": 1,
+        "בוצעה": 24,
+        "תאום לא סופי": 6,
+        "אוש אין מלאי": 1,
         "מבוטלת": 3,
-        "תאום לא סופי": 4,
         "תואם מוניטין": 1,
         "ממתין לתאום": 18,
         "לברור הסחר": 1
@@ -320,19 +2637,20 @@
     {
       "date": "29/09/2026",
       "totalOrdersCreated": 72,
-      "enteredWaiting": 37,
-      "exitedWaiting": 28,
-      "endingWaitingBalance": 47,
+      "enteredWaiting": 42,
+      "exitedWaiting": 32,
+      "endingWaitingBalance": 55,
       "firstNextStatus": {
+        "תאום לא סופי": 14,
         "מבוטלת": 2,
-        "תואם מוניטין": 16,
-        "תאום לא סופי": 10
+        "תואם מוניטין": 16
       },
       "finalStatus": {
+        "תאום לא סופי": 9,
+        "ממתין לתאום": 9,
+        "מאושרת לניפו": 1,
         "בוצעה": 17,
         "פתיחה מחדש": 1,
-        "ממתין לתאום": 7,
-        "תאום לא סופי": 7,
         "המתנה לאיסוף": 2,
         "תואם מוניטין": 3
       }
@@ -340,63 +2658,1607 @@
     {
       "date": "30/09/2026",
       "totalOrdersCreated": 40,
-      "enteredWaiting": 22,
-      "exitedWaiting": 30,
-      "endingWaitingBalance": 39,
+      "enteredWaiting": 26,
+      "exitedWaiting": 35,
+      "endingWaitingBalance": 46,
       "firstNextStatus": {
-        "תואם מוניטין": 11,
+        "תואם מוניטין": 14,
+        "מבוטלת": 1,
+        "תאום לא סופי": 14,
         "פתיחה מחדש": 1,
         "מאושרת לניפו": 1,
-        "תאום לא סופי": 13,
         "לברור הסחר": 2,
         "נדרש שינוי": 2
       },
       "finalStatus": {
-        "ממתין לתאום": 12,
+        "מבוטלת": 1,
+        "תאום לא סופי": 7,
+        "ממתין לתאום": 13,
+        "תואם מוניטין": 1,
         "בוצעה": 3,
-        "המתנה לאיסוף": 1,
-        "תאום לא סופי": 6
+        "המתנה לאיסוף": 1
       }
     }
   ],
   "monthly": {
     "coordinationFlow": [
       {
-        "month": "01/09/2026",
-        "totalOrdersCreated": 653,
-        "enteredWaiting": 311,
-        "exitedWaiting": 272,
-        "endingWaitingBalance": 39,
+        "month": "01/05/2026",
+        "totalOrdersCreated": 1919,
+        "enteredWaiting": 1,
+        "exitedWaiting": 0,
+        "endingWaitingBalance": 1,
+        "statusBreakdown": {}
+      },
+      {
+        "month": "01/06/2026",
+        "totalOrdersCreated": 2310,
+        "enteredWaiting": 511,
+        "exitedWaiting": 446,
+        "endingWaitingBalance": 66,
         "statusBreakdown": {
-          "תאום לא סופי": 158,
-          "תואם מוניטין": 99,
-          "לברור הסחר": 5,
-          "אישור מחיר": 1,
-          "תיאום עתידי": 3,
-          "מבוטלת": 2,
-          "פתיחה מחדש": 1,
-          "מאושרת לניפו": 1,
-          "נדרש שינוי": 2
+          "תואם מוניטין": 374,
+          "מאושרת לניפו": 50,
+          "מאושר לבצוע": 10,
+          "מבוטלת": 7,
+          "אוש אין מלאי": 2,
+          "תיאום עתידי": 1,
+          "טיוטא": 2
+        }
+      },
+      {
+        "month": "01/07/2026",
+        "totalOrdersCreated": 2340,
+        "enteredWaiting": 1013,
+        "exitedWaiting": 896,
+        "endingWaitingBalance": 183,
+        "statusBreakdown": {
+          "תואם מוניטין": 776,
+          "מאושרת לניפו": 41,
+          "מאושר לבצוע": 28,
+          "טיוטא": 14,
+          "מבוטלת": 22,
+          "חזרה ובוטלה": 4,
+          "אשור אובליגו": 2,
+          "אישור מחיר": 3,
+          "אוש אין מלאי": 5,
+          "בוצעה": 1
+        }
+      },
+      {
+        "month": "01/08/2026",
+        "totalOrdersCreated": 2917,
+        "enteredWaiting": 1492,
+        "exitedWaiting": 1597,
+        "endingWaitingBalance": 78,
+        "statusBreakdown": {
+          "ממתין לח\"ח": 2,
+          "תואם מוניטין": 1121,
+          "מבוטלת": 23,
+          "טיוטא": 14,
+          "מאושרת לניפו": 42,
+          "מאושר לבצוע": 16,
+          "אישור מחיר": 4,
+          "יגיעו לאסוף": 3,
+          "אוש אין מלאי": 39,
+          "חזרה ובוטלה": 5,
+          "בוצעה": 3,
+          "תיאום עתידי": 32,
+          "בדיקת אובליג": 1,
+          "תואם להתקנה": 2,
+          "לברור הסחר": 44,
+          "המתנה לאיסוף": 1,
+          "תאום לא סופי": 243,
+          "ממתין ללקוח": 2
+        }
+      },
+      {
+        "month": "01/09/2026",
+        "totalOrdersCreated": 1887,
+        "enteredWaiting": 1097,
+        "exitedWaiting": 1129,
+        "endingWaitingBalance": 46,
+        "statusBreakdown": {
+          "חזרה ובוטלה": 1,
+          "תואם מוניטין": 484,
+          "לברור הסחר": 35,
+          "תאום לא סופי": 508,
+          "מאושר לבצוע": 7,
+          "אשור אובליגו": 1,
+          "מאושרת לניפו": 31,
+          "ממתין ללקוח": 3,
+          "אוש אין מלאי": 33,
+          "מבוטלת": 12,
+          "טיוטא": 1,
+          "המתנה לאיסוף": 1,
+          "נדרש שינוי": 3,
+          "אושר לשינוי": 1,
+          "מוניטין תאום": 1,
+          "אישור מחיר": 2,
+          "תיאום עתידי": 4,
+          "פתיחה מחדש": 1
         }
       }
     ],
     "monitinOutcomes": [
       {
-        "month": "01/09/2026",
-        "totalExitedToMonitin": 99,
+        "month": "01/06/2026",
+        "totalExitedToMonitin": 374,
         "outcomeBreakdown": {
-          "בוצעה": 85,
-          "תואם מוניטין": 5,
-          "המתנה לאיסוף": 4,
-          "פתיחה מחדש": 1,
-          "תאום לא סופי": 3,
-          "מאושר לבצוע": 1
+          "בוצעה": 353,
+          "תאום לא סופי": 4,
+          "מבוטלת": 2,
+          "חזרה ובוטלה": 11,
+          "המתנה לאיסוף": 3,
+          "חסר פרטים": 1
         },
-        "pctCompleted": 0.8585858585858586
+        "pctCompleted": 0.9438502673796791
+      },
+      {
+        "month": "01/07/2026",
+        "totalExitedToMonitin": 776,
+        "outcomeBreakdown": {
+          "בוצעה": 745,
+          "מבוטלת": 10,
+          "חזרה ובוטלה": 9,
+          "המתנה לאיסוף": 5,
+          "תאום לא סופי": 3,
+          "פתיחה מחדש": 2,
+          "תואם מוניטין": 1,
+          "ממתין ללקוח": 1
+        },
+        "pctCompleted": 0.9600515463917526
+      },
+      {
+        "month": "01/08/2026",
+        "totalExitedToMonitin": 1121,
+        "outcomeBreakdown": {
+          "בוצעה": 1062,
+          "תואם מוניטין": 10,
+          "המתנה לאיסוף": 5,
+          "חזרה ובוטלה": 23,
+          "לברור הסחר": 1,
+          "מבוטלת": 14,
+          "תאום לא סופי": 2,
+          "פתיחה מחדש": 4
+        },
+        "pctCompleted": 0.9473684210526315
+      },
+      {
+        "month": "01/09/2026",
+        "totalExitedToMonitin": 484,
+        "outcomeBreakdown": {
+          "תאום לא סופי": 9,
+          "בוצעה": 410,
+          "המתנה לאיסוף": 11,
+          "תואם מוניטין": 41,
+          "מבוטלת": 6,
+          "מאושר לבצוע": 3,
+          "חזרה ובוטלה": 2,
+          "אוש אין מלאי": 1,
+          "פתיחה מחדש": 1
+        },
+        "pctCompleted": 0.8471074380165289
       }
     ]
   },
   "tradeDuration": [
+    {
+      "orderNumber": "SO26S0009564",
+      "orderDate": "27/05/2026",
+      "lastEntryDateTime": "24/09/2026 13:09",
+      "exitDateTime": "28/09/2026 15:44",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 98.58,
+      "calendarDays": 4.11,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0010219",
+      "orderDate": "07/06/2026",
+      "lastEntryDateTime": "06/09/2026 14:21",
+      "exitDateTime": "09/09/2026 09:20",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תאום לא סופי",
+      "currentState": "Exited",
+      "calendarHours": 66.98,
+      "calendarDays": 2.79,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0010287",
+      "orderDate": "08/06/2026",
+      "lastEntryDateTime": "16/09/2026 16:17",
+      "exitDateTime": null,
+      "nextStatus": null,
+      "currentStatus": "לברור הסחר",
+      "currentState": "Still in לברור הסחר",
+      "calendarHours": 341.82,
+      "calendarDays": 14.24,
+      "businessDays": 8
+    },
+    {
+      "orderNumber": "SO26S0010432",
+      "orderDate": "10/06/2026",
+      "lastEntryDateTime": "26/08/2026 09:53",
+      "exitDateTime": "14/09/2026 11:32",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 457.65,
+      "calendarDays": 19.07,
+      "businessDays": 12
+    },
+    {
+      "orderNumber": "SO26S0010471",
+      "orderDate": "11/06/2026",
+      "lastEntryDateTime": "26/08/2026 10:39",
+      "exitDateTime": "08/09/2026 10:01",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 311.37,
+      "calendarDays": 12.97,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0010709",
+      "orderDate": "15/06/2026",
+      "lastEntryDateTime": "28/09/2026 10:46",
+      "exitDateTime": "28/09/2026 15:02",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "המתנה לאיסוף",
+      "currentState": "Exited",
+      "calendarHours": 4.27,
+      "calendarDays": 0.18,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0010853",
+      "orderDate": "16/06/2026",
+      "lastEntryDateTime": "26/08/2026 14:32",
+      "exitDateTime": "16/09/2026 09:53",
+      "nextStatus": "חסר פרטים",
+      "currentStatus": "חסר פרטים",
+      "currentState": "Exited",
+      "calendarHours": 499.35,
+      "calendarDays": 20.81,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0011169",
+      "orderDate": "18/06/2026",
+      "lastEntryDateTime": "23/08/2026 14:27",
+      "exitDateTime": "10/09/2026 14:27",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 432.0,
+      "calendarDays": 18.0,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0011485",
+      "orderDate": "22/06/2026",
+      "lastEntryDateTime": "20/08/2026 16:15",
+      "exitDateTime": "16/09/2026 14:25",
+      "nextStatus": "המתנה לאיסוף",
+      "currentStatus": "המתנה לאיסוף",
+      "currentState": "Exited",
+      "calendarHours": 646.17,
+      "calendarDays": 26.92,
+      "businessDays": 18
+    },
+    {
+      "orderNumber": "SO26S0011800",
+      "orderDate": "25/06/2026",
+      "lastEntryDateTime": "26/08/2026 10:57",
+      "exitDateTime": "14/09/2026 13:48",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "המתנה לאיסוף",
+      "currentState": "Exited",
+      "calendarHours": 458.85,
+      "calendarDays": 19.12,
+      "businessDays": 12
+    },
+    {
+      "orderNumber": "SO26S0011913",
+      "orderDate": "28/06/2026",
+      "lastEntryDateTime": "20/08/2026 15:29",
+      "exitDateTime": "07/09/2026 14:29",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 431.0,
+      "calendarDays": 17.96,
+      "businessDays": 12
+    },
+    {
+      "orderNumber": "SO26S0012652",
+      "orderDate": "08/07/2026",
+      "lastEntryDateTime": "20/08/2026 16:46",
+      "exitDateTime": "25/08/2026 08:39",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 111.88,
+      "calendarDays": 4.66,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0012919",
+      "orderDate": "12/07/2026",
+      "lastEntryDateTime": "26/08/2026 14:38",
+      "exitDateTime": "16/09/2026 14:25",
+      "nextStatus": "המתנה לאיסוף",
+      "currentStatus": "המתנה לאיסוף",
+      "currentState": "Exited",
+      "calendarHours": 503.78,
+      "calendarDays": 20.99,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0012958",
+      "orderDate": "12/07/2026",
+      "lastEntryDateTime": "01/09/2026 13:42",
+      "exitDateTime": "07/09/2026 15:25",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 145.72,
+      "calendarDays": 6.07,
+      "businessDays": 4
+    },
+    {
+      "orderNumber": "SO26S0013101",
+      "orderDate": "14/07/2026",
+      "lastEntryDateTime": "26/08/2026 11:39",
+      "exitDateTime": "15/09/2026 14:26",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תאום לא סופי",
+      "currentState": "Exited",
+      "calendarHours": 482.78,
+      "calendarDays": 20.12,
+      "businessDays": 13
+    },
+    {
+      "orderNumber": "SO26S0013144",
+      "orderDate": "14/07/2026",
+      "lastEntryDateTime": "26/08/2026 11:31",
+      "exitDateTime": "31/08/2026 07:52",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 116.35,
+      "calendarDays": 4.85,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0013371",
+      "orderDate": "19/07/2026",
+      "lastEntryDateTime": "24/09/2026 15:51",
+      "exitDateTime": "26/09/2026 19:50",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תואם מוניטין",
+      "currentState": "Exited",
+      "calendarHours": 51.98,
+      "calendarDays": 2.17,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0013508",
+      "orderDate": "20/07/2026",
+      "lastEntryDateTime": "23/08/2026 10:08",
+      "exitDateTime": "14/09/2026 12:26",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 530.3,
+      "calendarDays": 22.1,
+      "businessDays": 15
+    },
+    {
+      "orderNumber": "SO26S0013709",
+      "orderDate": "22/07/2026",
+      "lastEntryDateTime": "23/08/2026 10:23",
+      "exitDateTime": "10/09/2026 10:45",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 432.37,
+      "calendarDays": 18.02,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0013803",
+      "orderDate": "23/07/2026",
+      "lastEntryDateTime": "31/08/2026 11:13",
+      "exitDateTime": "08/09/2026 12:14",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 193.02,
+      "calendarDays": 8.04,
+      "businessDays": 6
+    },
+    {
+      "orderNumber": "SO26S0014008",
+      "orderDate": "26/07/2026",
+      "lastEntryDateTime": "26/08/2026 10:42",
+      "exitDateTime": "08/09/2026 10:37",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 311.92,
+      "calendarDays": 13.0,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0014035",
+      "orderDate": "26/07/2026",
+      "lastEntryDateTime": "24/08/2026 09:21",
+      "exitDateTime": "24/09/2026 11:53",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 746.53,
+      "calendarDays": 31.11,
+      "businessDays": 20
+    },
+    {
+      "orderNumber": "SO26S0014047",
+      "orderDate": "27/07/2026",
+      "lastEntryDateTime": "25/08/2026 14:43",
+      "exitDateTime": "03/09/2026 16:25",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 217.7,
+      "calendarDays": 9.07,
+      "businessDays": 7
+    },
+    {
+      "orderNumber": "SO26S0014255",
+      "orderDate": "29/07/2026",
+      "lastEntryDateTime": "08/09/2026 11:59",
+      "exitDateTime": "09/09/2026 12:39",
+      "nextStatus": "תואם מוניטין",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 24.67,
+      "calendarDays": 1.03,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0014338",
+      "orderDate": "29/07/2026",
+      "lastEntryDateTime": "23/08/2026 09:56",
+      "exitDateTime": "10/09/2026 12:10",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 434.23,
+      "calendarDays": 18.09,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0014374",
+      "orderDate": "30/07/2026",
+      "lastEntryDateTime": "01/09/2026 14:33",
+      "exitDateTime": "15/09/2026 14:19",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 335.77,
+      "calendarDays": 13.99,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0014398",
+      "orderDate": "30/07/2026",
+      "lastEntryDateTime": "24/08/2026 09:22",
+      "exitDateTime": "27/08/2026 10:15",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 72.88,
+      "calendarDays": 3.04,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0014442",
+      "orderDate": "30/07/2026",
+      "lastEntryDateTime": "25/08/2026 10:09",
+      "exitDateTime": "14/09/2026 10:15",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 480.1,
+      "calendarDays": 20.0,
+      "businessDays": 13
+    },
+    {
+      "orderNumber": "SO26S0014599",
+      "orderDate": "02/08/2026",
+      "lastEntryDateTime": "09/09/2026 13:57",
+      "exitDateTime": "10/09/2026 11:23",
+      "nextStatus": "תואם מוניטין",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 21.43,
+      "calendarDays": 0.89,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0014609",
+      "orderDate": "02/08/2026",
+      "lastEntryDateTime": "26/08/2026 11:59",
+      "exitDateTime": "08/09/2026 08:39",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 308.67,
+      "calendarDays": 12.86,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0014619",
+      "orderDate": "02/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:57",
+      "exitDateTime": "08/09/2026 08:39",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 309.7,
+      "calendarDays": 12.9,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0014813",
+      "orderDate": "04/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:58",
+      "exitDateTime": "08/09/2026 10:19",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 311.35,
+      "calendarDays": 12.97,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0014908",
+      "orderDate": "05/08/2026",
+      "lastEntryDateTime": "23/08/2026 10:04",
+      "exitDateTime": "10/09/2026 12:29",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 434.42,
+      "calendarDays": 18.1,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0015236",
+      "orderDate": "09/08/2026",
+      "lastEntryDateTime": "25/08/2026 12:59",
+      "exitDateTime": "08/09/2026 10:38",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 333.65,
+      "calendarDays": 13.9,
+      "businessDays": 10
+    },
+    {
+      "orderNumber": "SO26S0015237",
+      "orderDate": "09/08/2026",
+      "lastEntryDateTime": "26/08/2026 21:45",
+      "exitDateTime": "08/09/2026 10:55",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 301.17,
+      "calendarDays": 12.55,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0015382",
+      "orderDate": "10/08/2026",
+      "lastEntryDateTime": "27/08/2026 14:14",
+      "exitDateTime": "15/09/2026 12:10",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תואם מוניטין",
+      "currentState": "Exited",
+      "calendarHours": 453.93,
+      "calendarDays": 18.91,
+      "businessDays": 12
+    },
+    {
+      "orderNumber": "SO26S0015548",
+      "orderDate": "11/08/2026",
+      "lastEntryDateTime": "20/08/2026 16:46",
+      "exitDateTime": "24/08/2026 10:07",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 89.35,
+      "calendarDays": 3.72,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0015699",
+      "orderDate": "13/08/2026",
+      "lastEntryDateTime": "25/08/2026 14:19",
+      "exitDateTime": "07/09/2026 15:53",
+      "nextStatus": "אוש אין מלאי",
+      "currentStatus": "אוש אין מלאי",
+      "currentState": "Exited",
+      "calendarHours": 313.57,
+      "calendarDays": 13.07,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0015745",
+      "orderDate": "13/08/2026",
+      "lastEntryDateTime": "30/08/2026 10:40",
+      "exitDateTime": "31/08/2026 13:05",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 26.42,
+      "calendarDays": 1.1,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0015932",
+      "orderDate": "16/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:42",
+      "exitDateTime": "07/09/2026 14:56",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 292.23,
+      "calendarDays": 12.18,
+      "businessDays": 8
+    },
+    {
+      "orderNumber": "SO26S0015987",
+      "orderDate": "16/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:06",
+      "exitDateTime": "06/09/2026 12:51",
+      "nextStatus": "חסר פרטים",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 266.75,
+      "calendarDays": 11.11,
+      "businessDays": 7
+    },
+    {
+      "orderNumber": "SO26S0016078",
+      "orderDate": "17/08/2026",
+      "lastEntryDateTime": "30/08/2026 09:02",
+      "exitDateTime": "02/09/2026 15:19",
+      "nextStatus": "מאושרת לניפו",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 78.28,
+      "calendarDays": 3.26,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0016182",
+      "orderDate": "18/08/2026",
+      "lastEntryDateTime": "23/08/2026 16:00",
+      "exitDateTime": "10/09/2026 12:06",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 428.1,
+      "calendarDays": 17.84,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0016232",
+      "orderDate": "18/08/2026",
+      "lastEntryDateTime": "31/08/2026 15:40",
+      "exitDateTime": "01/09/2026 08:27",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 16.78,
+      "calendarDays": 0.7,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0016267",
+      "orderDate": "19/08/2026",
+      "lastEntryDateTime": "27/08/2026 10:22",
+      "exitDateTime": "09/09/2026 09:10",
+      "nextStatus": "אישור מחיר",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 310.8,
+      "calendarDays": 12.95,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0016271",
+      "orderDate": "19/08/2026",
+      "lastEntryDateTime": "27/08/2026 14:25",
+      "exitDateTime": "08/09/2026 11:09",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 284.73,
+      "calendarDays": 11.86,
+      "businessDays": 8
+    },
+    {
+      "orderNumber": "SO26S0016332",
+      "orderDate": "19/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:40",
+      "exitDateTime": "15/09/2026 11:30",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 480.83,
+      "calendarDays": 20.03,
+      "businessDays": 13
+    },
+    {
+      "orderNumber": "SO26S0016338",
+      "orderDate": "19/08/2026",
+      "lastEntryDateTime": "25/08/2026 15:43",
+      "exitDateTime": "15/09/2026 09:46",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 498.05,
+      "calendarDays": 20.75,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0016339",
+      "orderDate": "19/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:59",
+      "exitDateTime": "08/09/2026 10:23",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 311.4,
+      "calendarDays": 12.97,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0016373",
+      "orderDate": "20/08/2026",
+      "lastEntryDateTime": "14/09/2026 16:16",
+      "exitDateTime": "15/09/2026 11:17",
+      "nextStatus": "ממתין ללקוח",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 19.02,
+      "calendarDays": 0.79,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0016443",
+      "orderDate": "20/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:06",
+      "exitDateTime": "26/08/2026 13:35",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 3.48,
+      "calendarDays": 0.15,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0016448",
+      "orderDate": "20/08/2026",
+      "lastEntryDateTime": "01/09/2026 12:41",
+      "exitDateTime": "09/09/2026 06:23",
+      "nextStatus": "תואם מוניטין",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 185.7,
+      "calendarDays": 7.74,
+      "businessDays": 6
+    },
+    {
+      "orderNumber": "SO26S0016464",
+      "orderDate": "20/08/2026",
+      "lastEntryDateTime": "24/08/2026 10:42",
+      "exitDateTime": "14/09/2026 12:00",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 505.3,
+      "calendarDays": 21.05,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0016470",
+      "orderDate": "20/08/2026",
+      "lastEntryDateTime": "26/08/2026 09:56",
+      "exitDateTime": "01/09/2026 10:43",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 144.78,
+      "calendarDays": 6.03,
+      "businessDays": 4
+    },
+    {
+      "orderNumber": "SO26S0016532",
+      "orderDate": "23/08/2026",
+      "lastEntryDateTime": "03/09/2026 12:16",
+      "exitDateTime": "08/09/2026 08:35",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 116.32,
+      "calendarDays": 4.85,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0016551",
+      "orderDate": "23/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:34",
+      "exitDateTime": "31/08/2026 16:00",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 125.43,
+      "calendarDays": 5.23,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0016557",
+      "orderDate": "23/08/2026",
+      "lastEntryDateTime": "03/09/2026 14:18",
+      "exitDateTime": "07/09/2026 12:59",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 94.68,
+      "calendarDays": 3.95,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0016564",
+      "orderDate": "23/08/2026",
+      "lastEntryDateTime": "26/08/2026 10:46",
+      "exitDateTime": "10/09/2026 12:08",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תואם מוניטין",
+      "currentState": "Exited",
+      "calendarHours": 361.37,
+      "calendarDays": 15.06,
+      "businessDays": 11
+    },
+    {
+      "orderNumber": "SO26S0016576",
+      "orderDate": "23/08/2026",
+      "lastEntryDateTime": "25/08/2026 15:18",
+      "exitDateTime": "15/09/2026 11:05",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 499.78,
+      "calendarDays": 20.82,
+      "businessDays": 14
+    },
+    {
+      "orderNumber": "SO26S0016596",
+      "orderDate": "23/08/2026",
+      "lastEntryDateTime": "25/08/2026 14:19",
+      "exitDateTime": "30/08/2026 11:26",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 117.12,
+      "calendarDays": 4.88,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0016623",
+      "orderDate": "23/08/2026",
+      "lastEntryDateTime": "24/08/2026 11:00",
+      "exitDateTime": "28/09/2026 15:43",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 844.72,
+      "calendarDays": 35.2,
+      "businessDays": 22
+    },
+    {
+      "orderNumber": "SO26S0016685",
+      "orderDate": "24/08/2026",
+      "lastEntryDateTime": "25/08/2026 12:46",
+      "exitDateTime": "25/08/2026 12:47",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תואם מוניטין",
+      "currentState": "Exited",
+      "calendarHours": 0.02,
+      "calendarDays": 0.0,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0016723",
+      "orderDate": "24/08/2026",
+      "lastEntryDateTime": "27/08/2026 14:28",
+      "exitDateTime": "01/09/2026 09:19",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 114.85,
+      "calendarDays": 4.79,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0016729",
+      "orderDate": "24/08/2026",
+      "lastEntryDateTime": "27/08/2026 09:21",
+      "exitDateTime": "31/08/2026 11:02",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 97.68,
+      "calendarDays": 4.07,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0016794",
+      "orderDate": "25/08/2026",
+      "lastEntryDateTime": "09/09/2026 13:24",
+      "exitDateTime": "15/09/2026 10:42",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 141.3,
+      "calendarDays": 5.89,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0016861",
+      "orderDate": "25/08/2026",
+      "lastEntryDateTime": "24/09/2026 14:19",
+      "exitDateTime": "24/09/2026 15:52",
+      "nextStatus": "המתנה לאיסוף",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 1.55,
+      "calendarDays": 0.06,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0016907",
+      "orderDate": "25/08/2026",
+      "lastEntryDateTime": "31/08/2026 15:22",
+      "exitDateTime": "01/09/2026 07:13",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 15.85,
+      "calendarDays": 0.66,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0016974",
+      "orderDate": "26/08/2026",
+      "lastEntryDateTime": "26/08/2026 14:49",
+      "exitDateTime": "31/08/2026 14:11",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 119.37,
+      "calendarDays": 4.97,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017015",
+      "orderDate": "26/08/2026",
+      "lastEntryDateTime": "30/08/2026 16:26",
+      "exitDateTime": "31/08/2026 10:58",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 18.53,
+      "calendarDays": 0.77,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0017017",
+      "orderDate": "26/08/2026",
+      "lastEntryDateTime": "24/09/2026 10:28",
+      "exitDateTime": "27/09/2026 07:22",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 68.9,
+      "calendarDays": 2.87,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0017069",
+      "orderDate": "27/08/2026",
+      "lastEntryDateTime": "02/09/2026 14:20",
+      "exitDateTime": "03/09/2026 11:33",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 21.22,
+      "calendarDays": 0.88,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0017107",
+      "orderDate": "27/08/2026",
+      "lastEntryDateTime": "30/08/2026 14:44",
+      "exitDateTime": "01/09/2026 10:40",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 43.93,
+      "calendarDays": 1.83,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0017170",
+      "orderDate": "30/08/2026",
+      "lastEntryDateTime": "06/09/2026 11:16",
+      "exitDateTime": "08/09/2026 10:41",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 47.42,
+      "calendarDays": 1.98,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0017183",
+      "orderDate": "30/08/2026",
+      "lastEntryDateTime": "22/09/2026 10:55",
+      "exitDateTime": "27/09/2026 07:21",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 116.43,
+      "calendarDays": 4.85,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017188",
+      "orderDate": "30/08/2026",
+      "lastEntryDateTime": "31/08/2026 11:40",
+      "exitDateTime": "01/09/2026 12:48",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 25.13,
+      "calendarDays": 1.05,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0017247",
+      "orderDate": "30/08/2026",
+      "lastEntryDateTime": "02/09/2026 14:10",
+      "exitDateTime": "08/09/2026 10:44",
+      "nextStatus": "ממתין ללקוח",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 140.57,
+      "calendarDays": 5.86,
+      "businessDays": 4
+    },
+    {
+      "orderNumber": "SO26S0017299",
+      "orderDate": "31/08/2026",
+      "lastEntryDateTime": "14/09/2026 09:49",
+      "exitDateTime": "29/09/2026 10:57",
+      "nextStatus": "לחיוב בלבד",
+      "currentStatus": "לחיוב בלבד",
+      "currentState": "Exited",
+      "calendarHours": 361.13,
+      "calendarDays": 15.05,
+      "businessDays": 9
+    },
+    {
+      "orderNumber": "SO26S0017305",
+      "orderDate": "31/08/2026",
+      "lastEntryDateTime": "07/09/2026 10:54",
+      "exitDateTime": "15/09/2026 09:42",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 190.8,
+      "calendarDays": 7.95,
+      "businessDays": 5
+    },
+    {
+      "orderNumber": "SO26S0017315",
+      "orderDate": "31/08/2026",
+      "lastEntryDateTime": "06/09/2026 15:17",
+      "exitDateTime": "10/09/2026 14:12",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 94.92,
+      "calendarDays": 3.95,
+      "businessDays": 4
+    },
+    {
+      "orderNumber": "SO26S0017351",
+      "orderDate": "31/08/2026",
+      "lastEntryDateTime": "01/09/2026 10:23",
+      "exitDateTime": "02/09/2026 11:57",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 25.57,
+      "calendarDays": 1.07,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0017355",
+      "orderDate": "31/08/2026",
+      "lastEntryDateTime": "06/09/2026 10:49",
+      "exitDateTime": "09/09/2026 10:56",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תואם מוניטין",
+      "currentState": "Exited",
+      "calendarHours": 72.12,
+      "calendarDays": 3.0,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017383",
+      "orderDate": "31/08/2026",
+      "lastEntryDateTime": "03/09/2026 12:45",
+      "exitDateTime": "15/09/2026 08:58",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 284.22,
+      "calendarDays": 11.84,
+      "businessDays": 7
+    },
+    {
+      "orderNumber": "SO26S0017426",
+      "orderDate": "01/09/2026",
+      "lastEntryDateTime": "22/09/2026 17:10",
+      "exitDateTime": "27/09/2026 07:36",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 110.43,
+      "calendarDays": 4.6,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017447",
+      "orderDate": "01/09/2026",
+      "lastEntryDateTime": "07/09/2026 14:52",
+      "exitDateTime": "14/09/2026 10:33",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 163.68,
+      "calendarDays": 6.82,
+      "businessDays": 4
+    },
+    {
+      "orderNumber": "SO26S0017463",
+      "orderDate": "01/09/2026",
+      "lastEntryDateTime": "01/09/2026 11:36",
+      "exitDateTime": "06/09/2026 09:17",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 117.68,
+      "calendarDays": 4.9,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017477",
+      "orderDate": "01/09/2026",
+      "lastEntryDateTime": "06/09/2026 09:11",
+      "exitDateTime": "06/09/2026 09:12",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 0.02,
+      "calendarDays": 0.0,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0017494",
+      "orderDate": "01/09/2026",
+      "lastEntryDateTime": "22/09/2026 11:18",
+      "exitDateTime": "27/09/2026 07:35",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 116.28,
+      "calendarDays": 4.85,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017511",
+      "orderDate": "01/09/2026",
+      "lastEntryDateTime": "07/09/2026 09:59",
+      "exitDateTime": "07/09/2026 14:26",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 4.45,
+      "calendarDays": 0.19,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0017568",
+      "orderDate": "02/09/2026",
+      "lastEntryDateTime": "07/09/2026 09:49",
+      "exitDateTime": "10/09/2026 14:13",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 76.4,
+      "calendarDays": 3.18,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017588",
+      "orderDate": "02/09/2026",
+      "lastEntryDateTime": "22/09/2026 19:37",
+      "exitDateTime": "27/09/2026 07:15",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 107.63,
+      "calendarDays": 4.48,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017630",
+      "orderDate": "02/09/2026",
+      "lastEntryDateTime": "03/09/2026 13:33",
+      "exitDateTime": "03/09/2026 15:50",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 2.28,
+      "calendarDays": 0.1,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0017639",
+      "orderDate": "02/09/2026",
+      "lastEntryDateTime": "09/09/2026 12:37",
+      "exitDateTime": "14/09/2026 10:24",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 117.78,
+      "calendarDays": 4.91,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0017644",
+      "orderDate": "02/09/2026",
+      "lastEntryDateTime": "22/09/2026 11:43",
+      "exitDateTime": "22/09/2026 12:53",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 1.17,
+      "calendarDays": 0.05,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0017656",
+      "orderDate": "02/09/2026",
+      "lastEntryDateTime": "06/09/2026 10:43",
+      "exitDateTime": "10/09/2026 12:05",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 97.37,
+      "calendarDays": 4.06,
+      "businessDays": 4
+    },
+    {
+      "orderNumber": "SO26S0017666",
+      "orderDate": "03/09/2026",
+      "lastEntryDateTime": "06/09/2026 10:47",
+      "exitDateTime": "06/09/2026 11:11",
+      "nextStatus": "תואם מוניטין",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 0.4,
+      "calendarDays": 0.02,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0017767",
+      "orderDate": "06/09/2026",
+      "lastEntryDateTime": "10/09/2026 09:52",
+      "exitDateTime": "24/09/2026 11:23",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תואם מוניטין",
+      "currentState": "Exited",
+      "calendarHours": 337.52,
+      "calendarDays": 14.06,
+      "businessDays": 7
+    },
+    {
+      "orderNumber": "SO26S0017812",
+      "orderDate": "06/09/2026",
+      "lastEntryDateTime": "24/09/2026 15:43",
+      "exitDateTime": "29/09/2026 11:07",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "ממתין לתאום",
+      "currentState": "Exited",
+      "calendarHours": 115.4,
+      "calendarDays": 4.81,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0017854",
+      "orderDate": "06/09/2026",
+      "lastEntryDateTime": "09/09/2026 13:44",
+      "exitDateTime": "10/09/2026 09:03",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 19.32,
+      "calendarDays": 0.8,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0017857",
+      "orderDate": "06/09/2026",
+      "lastEntryDateTime": "14/09/2026 15:41",
+      "exitDateTime": "15/09/2026 11:20",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 19.65,
+      "calendarDays": 0.82,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0017863",
+      "orderDate": "06/09/2026",
+      "lastEntryDateTime": "22/09/2026 13:51",
+      "exitDateTime": "24/09/2026 11:30",
+      "nextStatus": "חזרה ובוטלה",
+      "currentStatus": "חזרה ובוטלה",
+      "currentState": "Exited",
+      "calendarHours": 45.65,
+      "calendarDays": 1.9,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0017971",
+      "orderDate": "07/09/2026",
+      "lastEntryDateTime": "09/09/2026 09:59",
+      "exitDateTime": "15/09/2026 10:40",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 144.68,
+      "calendarDays": 6.03,
+      "businessDays": 3
+    },
+    {
+      "orderNumber": "SO26S0018001",
+      "orderDate": "08/09/2026",
+      "lastEntryDateTime": "09/09/2026 15:35",
+      "exitDateTime": "14/09/2026 10:32",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 114.95,
+      "calendarDays": 4.79,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0018022",
+      "orderDate": "08/09/2026",
+      "lastEntryDateTime": "17/09/2026 14:11",
+      "exitDateTime": "17/09/2026 16:45",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 2.57,
+      "calendarDays": 0.11,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0018071",
+      "orderDate": "08/09/2026",
+      "lastEntryDateTime": "22/09/2026 15:43",
+      "exitDateTime": "24/09/2026 10:32",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תואם מוניטין",
+      "currentState": "Exited",
+      "calendarHours": 42.82,
+      "calendarDays": 1.78,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0018102",
+      "orderDate": "09/09/2026",
+      "lastEntryDateTime": "09/09/2026 14:37",
+      "exitDateTime": "14/09/2026 10:26",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 115.82,
+      "calendarDays": 4.83,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0018178",
+      "orderDate": "10/09/2026",
+      "lastEntryDateTime": "28/09/2026 09:51",
+      "exitDateTime": "29/09/2026 11:35",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "ממתין לתאום",
+      "currentState": "Exited",
+      "calendarHours": 25.73,
+      "calendarDays": 1.07,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0018186",
+      "orderDate": "10/09/2026",
+      "lastEntryDateTime": "15/09/2026 10:59",
+      "exitDateTime": "15/09/2026 12:03",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "תאום לא סופי",
+      "currentState": "Exited",
+      "calendarHours": 1.07,
+      "calendarDays": 0.04,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0018213",
+      "orderDate": "10/09/2026",
+      "lastEntryDateTime": "24/09/2026 11:41",
+      "exitDateTime": null,
+      "nextStatus": null,
+      "currentStatus": "לברור הסחר",
+      "currentState": "Still in לברור הסחר",
+      "calendarHours": 154.42,
+      "calendarDays": 6.43,
+      "businessDays": 4
+    },
+    {
+      "orderNumber": "SO26S0018222",
+      "orderDate": "10/09/2026",
+      "lastEntryDateTime": "14/09/2026 13:56",
+      "exitDateTime": "14/09/2026 21:43",
+      "nextStatus": "טיוטא",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 7.78,
+      "calendarDays": 0.32,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0018230",
+      "orderDate": "10/09/2026",
+      "lastEntryDateTime": "15/09/2026 15:07",
+      "exitDateTime": "16/09/2026 09:56",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 18.82,
+      "calendarDays": 0.78,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0018270",
+      "orderDate": "14/09/2026",
+      "lastEntryDateTime": "17/09/2026 10:41",
+      "exitDateTime": "22/09/2026 10:32",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 119.85,
+      "calendarDays": 4.99,
+      "businessDays": 1
+    },
+    {
+      "orderNumber": "SO26S0018296",
+      "orderDate": "14/09/2026",
+      "lastEntryDateTime": "15/09/2026 09:58",
+      "exitDateTime": "15/09/2026 10:40",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 0.7,
+      "calendarDays": 0.03,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0018362",
+      "orderDate": "15/09/2026",
+      "lastEntryDateTime": "17/09/2026 10:49",
+      "exitDateTime": "17/09/2026 16:41",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 5.87,
+      "calendarDays": 0.24,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0018393",
+      "orderDate": "15/09/2026",
+      "lastEntryDateTime": "17/09/2026 11:51",
+      "exitDateTime": "17/09/2026 12:48",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 0.95,
+      "calendarDays": 0.04,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0018431",
+      "orderDate": "16/09/2026",
+      "lastEntryDateTime": "22/09/2026 11:49",
+      "exitDateTime": "24/09/2026 10:38",
+      "nextStatus": "ממתין לתאום",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 46.82,
+      "calendarDays": 1.95,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0018438",
+      "orderDate": "16/09/2026",
+      "lastEntryDateTime": "16/09/2026 11:36",
+      "exitDateTime": "16/09/2026 11:36",
+      "nextStatus": "נדרש שינוי",
+      "currentStatus": "תאום לא סופי",
+      "currentState": "Exited",
+      "calendarHours": 0.0,
+      "calendarDays": 0.0,
+      "businessDays": 0
+    },
+    {
+      "orderNumber": "SO26S0018552",
+      "orderDate": "17/09/2026",
+      "lastEntryDateTime": "23/09/2026 13:32",
+      "exitDateTime": "27/09/2026 07:29",
+      "nextStatus": "בוצעה",
+      "currentStatus": "בוצעה",
+      "currentState": "Exited",
+      "calendarHours": 89.95,
+      "calendarDays": 3.75,
+      "businessDays": 2
+    },
+    {
+      "orderNumber": "SO26S0018635",
+      "orderDate": "18/09/2026",
+      "lastEntryDateTime": "22/09/2026 16:54",
+      "exitDateTime": "24/09/2026 11:23",
+      "nextStatus": "מבוטלת",
+      "currentStatus": "מבוטלת",
+      "currentState": "Exited",
+      "calendarHours": 42.48,
+      "calendarDays": 1.77,
+      "businessDays": 2
+    },
     {
       "orderNumber": "SO26S0018701",
       "orderDate": "22/09/2026",
@@ -496,43 +4358,198 @@
   ],
   "tradeMonthlyTrend": [
     {
+      "month": "01/08/2026",
+      "entered": 56,
+      "exited": 56,
+      "stillOpen": 0,
+      "pctStillOpen": 0.0,
+      "avgBusinessDaysExited": 8.553571428571429,
+      "medianBusinessDaysExited": 9.0,
+      "exitedWithin2": 10,
+      "exited3Plus": 46,
+      "pctWithin2": 0.17857142857142858,
+      "pct3Plus": 0.8214285714285714
+    },
+    {
       "month": "01/09/2026",
-      "entered": 8,
-      "exited": 7,
-      "stillOpen": 1,
-      "pctStillOpen": 0.125,
-      "avgBusinessDaysExited": 0.42857142857142855,
-      "medianBusinessDaysExited": 0,
-      "exitedWithin2": 7,
-      "exited3Plus": 0,
-      "pctWithin2": 1.0,
-      "pct3Plus": 0.0
+      "entered": 70,
+      "exited": 67,
+      "stillOpen": 3,
+      "pctStillOpen": 0.04285714285714286,
+      "avgBusinessDaysExited": 2.014925373134328,
+      "medianBusinessDaysExited": 2,
+      "exitedWithin2": 44,
+      "exited3Plus": 23,
+      "pctWithin2": 0.6567164179104478,
+      "pct3Plus": 0.34328358208955223
     }
   ],
   "tradeExactDays": [
     {
+      "month": "01/08/2026",
+      "businessDays": 0,
+      "count": 2
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 1,
+      "count": 5
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 2,
+      "count": 3
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 3,
+      "count": 8
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 4,
+      "count": 1
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 6,
+      "count": 1
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 7,
+      "count": 2
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 8,
+      "count": 2
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 9,
+      "count": 9
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 10,
+      "count": 1
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 11,
+      "count": 1
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 12,
+      "count": 4
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 13,
+      "count": 3
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 14,
+      "count": 10
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 15,
+      "count": 1
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 18,
+      "count": 1
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 20,
+      "count": 1
+    },
+    {
+      "month": "01/08/2026",
+      "businessDays": 22,
+      "count": 1
+    },
+    {
       "month": "01/09/2026",
       "businessDays": 0,
-      "count": 5
+      "count": 20
     },
     {
       "month": "01/09/2026",
       "businessDays": 1,
-      "count": 3
+      "count": 14
+    },
+    {
+      "month": "01/09/2026",
+      "businessDays": 2,
+      "count": 11
+    },
+    {
+      "month": "01/09/2026",
+      "businessDays": 3,
+      "count": 12
+    },
+    {
+      "month": "01/09/2026",
+      "businessDays": 4,
+      "count": 6
+    },
+    {
+      "month": "01/09/2026",
+      "businessDays": 5,
+      "count": 1
+    },
+    {
+      "month": "01/09/2026",
+      "businessDays": 6,
+      "count": 1
+    },
+    {
+      "month": "01/09/2026",
+      "businessDays": 7,
+      "count": 2
+    },
+    {
+      "month": "01/09/2026",
+      "businessDays": 8,
+      "count": 1
+    },
+    {
+      "month": "01/09/2026",
+      "businessDays": 9,
+      "count": 2
     }
   ],
   "tradeManagementSummary": [
     {
+      "month": "01/08/2026",
+      "total": 56,
+      "d0_1": 7,
+      "d2": 3,
+      "d3": 8,
+      "d4_5": 1,
+      "d6Plus": 37,
+      "pctWithin2": 0.17857142857142858,
+      "pctWithin3": 0.32142857142857145,
+      "maxBusinessDays": 22
+    },
+    {
       "month": "01/09/2026",
-      "total": 8,
-      "d0_1": 8,
-      "d2": 0,
-      "d3": 0,
-      "d4_5": 0,
-      "d6Plus": 0,
-      "pctWithin2": 1.0,
-      "pctWithin3": 1.0,
-      "maxBusinessDays": 1
+      "total": 70,
+      "d0_1": 34,
+      "d2": 11,
+      "d3": 12,
+      "d4_5": 7,
+      "d6Plus": 6,
+      "pctWithin2": 0.6428571428571429,
+      "pctWithin3": 0.8142857142857143,
+      "maxBusinessDays": 9
     }
   ],
   "validation": {
@@ -541,37 +4558,37 @@
       {
         "name": "Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "31 + 8 vs total 39"
+        "detail": "32 + 14 vs total 46"
       },
       {
         "name": "Trade Treatment: With Notes + Without Notes = Total",
         "passed": true,
-        "detail": "1 + 0 vs total 1"
+        "detail": "3 + 5 vs total 8"
       },
       {
         "name": "Trade Treatment: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "1 + 0 vs total 1"
+        "detail": "1 + 7 vs total 8"
       },
       {
         "name": "Current Waiting reentries reconcile with TRUE-reentry population",
         "passed": true,
-        "detail": "4 rows vs KPI 4"
+        "detail": "7 rows vs KPI 7"
       },
       {
         "name": "Over-SLA detail unique-order count equals Over-SLA KPI",
         "passed": true,
-        "detail": "8 rows (8 unique) vs KPI 8"
+        "detail": "14 rows (14 unique) vs KPI 14"
       },
       {
         "name": "Trade worklist unique-order count equals Trade Treatment Total",
         "passed": true,
-        "detail": "1 rows (1 unique) vs total 1"
+        "detail": "8 rows (8 unique) vs total 8"
       },
       {
         "name": "Trade Duration: one row per unique order, no duplicates",
         "passed": true,
-        "detail": "8 rows, 8 unique"
+        "detail": "126 rows, 126 unique"
       },
       {
         "name": "Trade Duration: no null/1900 dates",
@@ -581,12 +4598,12 @@
       {
         "name": "Exact-day monthly totals reconcile to Trade Duration population",
         "passed": true,
-        "detail": "8 vs 8"
+        "detail": "126 vs 126"
       },
       {
         "name": "Management-summary totals reconcile to exact-day totals",
         "passed": true,
-        "detail": "8 vs 8"
+        "detail": "126 vs 126"
       },
       {
         "name": "Data As Of is not a 1900 placeholder date",
