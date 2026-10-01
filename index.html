@@ -5,6 +5,7 @@
 main{max-width:1280px;margin:auto;padding:16px}.section{background:white;border:1px solid var(--line);border-radius:8px;margin-bottom:22px;padding:14px}.section h2{margin:-14px -14px 14px;padding:10px 14px;background:var(--navy);color:white;font-size:19px}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(135px,1fr));gap:8px}.card{color:white;border-radius:5px;padding:12px;text-align:center;background:var(--blue)}.card .v{font-size:28px;font-weight:800}.card .k{font-size:12px;margin-top:7px;font-weight:bold}.good{background:var(--green)}.bad{background:var(--red)}.warn{background:var(--orange)}
 h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-bottom:5px;margin-top:18px}.aging{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.aging .card{color:#315a24;background:var(--greenSoft);border:1px solid #a9d18e}.aging .mid{background:var(--yellowSoft);color:#7f6000}.aging .late{background:var(--redSoft);color:#8b0000}
 .subnav{display:flex;gap:8px;margin-bottom:16px}.subnav-btn{cursor:pointer;border:1px solid var(--blue);background:white;color:var(--blue);border-radius:18px;padding:7px 16px;font-weight:bold;font-size:13px}.subnav-btn.active{background:var(--blue);color:white}
+.cards.cards-compact{display:inline-grid;grid-template-columns:max-content}
 .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:5px}table{border-collapse:collapse;width:100%;min-width:800px;font-size:12.5px}th,td{padding:8px 9px;border:1px solid #e2e6eb;text-align:right;white-space:nowrap}th{background:var(--blue);color:white}tbody tr:nth-child(even){background:#f8fafc}.sla-good{background:var(--greenSoft);color:#315a24;font-weight:bold}.sla-bad{background:var(--redSoft);color:#9c0006;font-weight:bold}.note{font-size:11px;color:#667085}
 .status-banner{font-size:12px;padding:8px 14px;border-radius:6px;margin:0 0 14px}.status-ok{background:var(--greenSoft);color:#315a24}.status-bad{background:var(--redSoft);color:#8b0000}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
@@ -49,9 +50,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 </section>
 
 <section class="section" id="exceptions"><h2>Dashboard חריגי תאום</h2>
-<div class="cards">
-  <div class="card"><div class="v" id="reentryOrders">–</div><div class="k">TRUE Reentry הזמנות</div></div>
-  <div class="card warn"><div class="v" id="reentryEvents">–</div><div class="k">אירועי חזרה</div></div>
+<div class="cards cards-compact">
   <div class="card bad"><div class="v" id="reentryCurrentlyWaiting">–</div><div class="k">ממתינות כעת לאחר חזרה</div></div>
 </div>
 <h3>ממתינות כעת לאחר TRUE Reentry</h3>
@@ -78,16 +77,24 @@ function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Ove
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
 
 function renderAging(container, aging){
-  const order = ["עד יום עסקים אחד","2 ימי עסקים","3 ימי עסקים","4–5 ימי עסקים","יותר מ־5 ימי עסקים"];
-  const cls = ["","","mid","late","late"];
-  container.innerHTML = order.map((label, i) => {
-    const v = aging && aging[label] !== undefined ? aging[label] : 0;
-    return `<div class="card ${cls[i]}"><div class="v">${v}</div><div class="k">${label}</div></div>`;
+  // key = exact bucket name as computed/returned in dashboard_data.json (unchanged);
+  // label = display text only (section 3: show SLA overdue days, not raw bucket name).
+  const buckets = [
+    { key: "עד יום עסקים אחד", label: "עד יום עסקים אחד", cls: "" },
+    { key: "2 ימי עסקים", label: "2 ימי עסקים", cls: "" },
+    { key: "3 ימי עסקים", label: "חריגה של 1 יום עסקים", cls: "mid" },
+    { key: "4–5 ימי עסקים", label: "חריגה של 2–3 ימי עסקים", cls: "late" },
+    { key: "יותר מ־5 ימי עסקים", label: "חריגה של יותר מ־3 ימי עסקים", cls: "late" },
+  ];
+  container.innerHTML = buckets.map(b => {
+    const v = aging && aging[b.key] !== undefined ? aging[b.key] : 0;
+    return `<div class="card ${b.cls}"><div class="v">${v}</div><div class="k">${b.label}</div></div>`;
   }).join('');
 }
 
 function renderOverSlaDetail(tbody, rows, businessDaysKey){
-  tbody.innerHTML = rows.map(r => `<tr>
+  const sorted = rows.slice().sort((a, b) => Number(b[businessDaysKey]) - Number(a[businessDaysKey]));
+  tbody.innerHTML = sorted.map(r => `<tr>
     <td>${esc(r.orderNumber)}</td>
     <td>${esc(r.orderDate)}</td>
     <td>${esc(r.firstWaitingEntry)}</td>
@@ -161,8 +168,6 @@ fetch('dashboard_data.json', {cache: 'no-store'})
     renderOverSlaDetail(document.getElementById('detailLatestEntryBody'), data.overSlaOrdersLatestEntry || [], 'businessDaysLatestEntry');
 
     const re = data.reentries || {};
-    document.getElementById('reentryOrders').textContent = re.uniqueTrueReentryOrders ?? '–';
-    document.getElementById('reentryEvents').textContent = re.totalReentryEvents ?? '–';
     document.getElementById('reentryCurrentlyWaiting').textContent = re.currentlyWaitingTrueReentries ?? '–';
     renderCurrentWaitingReentries(document.getElementById('currentWaitingReentriesBody'), data.currentWaitingReentries || []);
 
