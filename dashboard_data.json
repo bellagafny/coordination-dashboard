@@ -1,28 +1,34 @@
 {
   "metadata": {
-    "lastRefresh": "01/10/2026 13:00",
-    "dataAsOf": "01/10/2026 12:58",
+    "lastRefresh": "01/10/2026 13:30",
+    "dataAsOf": "01/10/2026 13:29",
     "sourceFile": "STATUS_b070213_20261001_0110SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 56285,
-    "uniqueOrders": 9479
+    "sourceRowCount": 56301,
+    "uniqueOrders": 9486
   },
   "currentWaiting": {
-    "total": 54,
-    "withinSla": 21,
+    "total": 55,
+    "withinSla": 22,
     "overSla": 33,
+    "reentryCurrentlyWaiting": 8
+  },
+  "currentWaitingLatestEntry": {
+    "total": 55,
+    "withinSla": 27,
+    "overSla": 28,
     "reentryCurrentlyWaiting": 8
   },
   "waitingAging": {
     "bySlaStart": {
-      "עד יום עסקים אחד": 15,
+      "עד יום עסקים אחד": 16,
       "2 ימי עסקים": 6,
       "3 ימי עסקים": 18,
       "4–5 ימי עסקים": 7,
       "יותר מ־5 ימי עסקים": 8
     },
     "byLastEntry": {
-      "עד יום עסקים אחד": 19,
+      "עד יום עסקים אחד": 20,
       "2 ימי עסקים": 7,
       "3 ימי עסקים": 17,
       "4–5 ימי עסקים": 7,
@@ -326,6 +332,232 @@
       "businessDaysSla": 3,
       "sla": "Over SLA",
       "agingGroupByLastEntry": "3 ימי עסקים"
+    }
+  ],
+  "overSlaOrdersLatestEntry": [
+    {
+      "orderNumber": "SO26S0015507",
+      "orderDate": "11/08/2026",
+      "currentWaitingEntry": "27/09/2026 13:21",
+      "firstWaitingEntry": "13/08/2026 11:01",
+      "businessDaysLatestEntry": 4,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0016334",
+      "orderDate": "19/08/2026",
+      "currentWaitingEntry": "27/09/2026 13:57",
+      "firstWaitingEntry": "27/09/2026 13:57",
+      "businessDaysLatestEntry": 4,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0018289",
+      "orderDate": "14/09/2026",
+      "currentWaitingEntry": "14/09/2026 13:33",
+      "firstWaitingEntry": "14/09/2026 13:33",
+      "businessDaysLatestEntry": 11,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0018395",
+      "orderDate": "15/09/2026",
+      "currentWaitingEntry": "15/09/2026 18:00",
+      "firstWaitingEntry": "15/09/2026 18:00",
+      "businessDaysLatestEntry": 10,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0018663",
+      "orderDate": "22/09/2026",
+      "currentWaitingEntry": "22/09/2026 12:06",
+      "firstWaitingEntry": "22/09/2026 12:06",
+      "businessDaysLatestEntry": 7,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0018866",
+      "orderDate": "23/09/2026",
+      "currentWaitingEntry": "23/09/2026 15:22",
+      "firstWaitingEntry": "23/09/2026 15:22",
+      "businessDaysLatestEntry": 6,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0018883",
+      "orderDate": "23/09/2026",
+      "currentWaitingEntry": "24/09/2026 10:04",
+      "firstWaitingEntry": "24/09/2026 10:04",
+      "businessDaysLatestEntry": 5,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0018884",
+      "orderDate": "23/09/2026",
+      "currentWaitingEntry": "24/09/2026 10:58",
+      "firstWaitingEntry": "24/09/2026 10:58",
+      "businessDaysLatestEntry": 5,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0018971",
+      "orderDate": "24/09/2026",
+      "currentWaitingEntry": "27/09/2026 13:34",
+      "firstWaitingEntry": "27/09/2026 13:34",
+      "businessDaysLatestEntry": 4,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019026",
+      "orderDate": "27/09/2026",
+      "currentWaitingEntry": "27/09/2026 13:55",
+      "firstWaitingEntry": "27/09/2026 13:55",
+      "businessDaysLatestEntry": 4,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019085",
+      "orderDate": "27/09/2026",
+      "currentWaitingEntry": "27/09/2026 14:24",
+      "firstWaitingEntry": "27/09/2026 14:24",
+      "businessDaysLatestEntry": 4,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019097",
+      "orderDate": "27/09/2026",
+      "currentWaitingEntry": "28/09/2026 10:25",
+      "firstWaitingEntry": "28/09/2026 10:25",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019100",
+      "orderDate": "27/09/2026",
+      "currentWaitingEntry": "28/09/2026 09:57",
+      "firstWaitingEntry": "28/09/2026 09:57",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019111",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:35",
+      "firstWaitingEntry": "28/09/2026 14:35",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019112",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:35",
+      "firstWaitingEntry": "28/09/2026 14:35",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019113",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:35",
+      "firstWaitingEntry": "28/09/2026 14:35",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019114",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:34",
+      "firstWaitingEntry": "28/09/2026 14:34",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019115",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 10:06",
+      "firstWaitingEntry": "28/09/2026 10:06",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019116",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:34",
+      "firstWaitingEntry": "28/09/2026 14:34",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019117",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:34",
+      "firstWaitingEntry": "28/09/2026 14:34",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019118",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:34",
+      "firstWaitingEntry": "28/09/2026 14:34",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019119",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:34",
+      "firstWaitingEntry": "28/09/2026 14:34",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019120",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:34",
+      "firstWaitingEntry": "28/09/2026 14:34",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019121",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:33",
+      "firstWaitingEntry": "28/09/2026 14:33",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019133",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 10:28",
+      "firstWaitingEntry": "28/09/2026 10:28",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019151",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:30",
+      "firstWaitingEntry": "28/09/2026 14:30",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019154",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 13:48",
+      "firstWaitingEntry": "28/09/2026 13:48",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
+    },
+    {
+      "orderNumber": "SO26S0019165",
+      "orderDate": "28/09/2026",
+      "currentWaitingEntry": "28/09/2026 14:17",
+      "firstWaitingEntry": "28/09/2026 14:17",
+      "businessDaysLatestEntry": 3,
+      "sla": "Over SLA"
     }
   ],
   "reentries": {
@@ -2565,15 +2797,15 @@
     },
     {
       "date": "01/10/2026",
-      "totalOrdersCreated": 25,
-      "enteredWaiting": 19,
+      "totalOrdersCreated": 32,
+      "enteredWaiting": 20,
       "exitedWaiting": 11,
-      "endingWaitingBalance": 54,
+      "endingWaitingBalance": 55,
       "firstNextStatus": {
         "תאום לא סופי": 11
       },
       "finalStatus": {
-        "ממתין לתאום": 8,
+        "ממתין לתאום": 9,
         "תאום לא סופי": 11
       }
     }
@@ -2671,10 +2903,10 @@
       },
       {
         "month": "01/10/2026",
-        "totalOrdersCreated": 25,
-        "enteredWaiting": 19,
+        "totalOrdersCreated": 32,
+        "enteredWaiting": 20,
         "exitedWaiting": 11,
-        "endingWaitingBalance": 54,
+        "endingWaitingBalance": 55,
         "statusBreakdown": {
           "תאום לא סופי": 11
         }
@@ -2764,8 +2996,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 356.68,
-      "calendarDays": 14.86,
+      "calendarHours": 357.2,
+      "calendarDays": 14.88,
       "businessDays": 9
     },
     {
@@ -4024,8 +4256,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 169.28,
-      "calendarDays": 7.05,
+      "calendarHours": 169.8,
+      "calendarDays": 7.08,
       "businessDays": 5
     },
     {
@@ -4228,8 +4460,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 23.6,
-      "calendarDays": 0.98,
+      "calendarHours": 24.12,
+      "calendarDays": 1.0,
       "businessDays": 1
     },
     {
@@ -4442,7 +4674,7 @@
       {
         "name": "Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "21 + 33 vs total 54"
+        "detail": "22 + 33 vs total 55"
       },
       {
         "name": "Trade Treatment: With Notes + Without Notes = Total",
@@ -4455,6 +4687,26 @@
         "detail": "1 + 7 vs total 8"
       },
       {
+        "name": "Latest Entry Current Waiting: Within SLA + Over SLA = Total",
+        "passed": true,
+        "detail": "27 + 28 vs total 55"
+      },
+      {
+        "name": "Reentries-currently-waiting consistent across First/Latest Entry views",
+        "passed": true,
+        "detail": "first=8 vs latest=8"
+      },
+      {
+        "name": "First Entry aging buckets reconcile with Current Waiting KPI",
+        "passed": true,
+        "detail": "55 vs 55"
+      },
+      {
+        "name": "Latest Entry aging buckets reconcile with Current Waiting KPI",
+        "passed": true,
+        "detail": "55 vs 55"
+      },
+      {
         "name": "Current Waiting reentries reconcile with TRUE-reentry population",
         "passed": true,
         "detail": "8 rows vs KPI 8"
@@ -4463,6 +4715,11 @@
         "name": "Over-SLA detail unique-order count equals Over-SLA KPI",
         "passed": true,
         "detail": "33 rows (33 unique) vs KPI 33"
+      },
+      {
+        "name": "Latest Entry Over-SLA detail unique-order count equals Latest Entry Over-SLA KPI",
+        "passed": true,
+        "detail": "28 rows (28 unique) vs KPI 28"
       },
       {
         "name": "Trade worklist unique-order count equals Trade Treatment Total",
@@ -4492,7 +4749,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=01/10/2026 12:58"
+        "detail": "dataAsOf=01/10/2026 13:29"
       }
     ]
   }
