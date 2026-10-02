@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "02/10/2026 08:00",
-    "dataAsOf": "01/10/2026 19:16",
+    "lastRefresh": "02/10/2026 08:30",
+    "dataAsOf": "02/10/2026 08:01",
     "sourceFile": "STATUS_b070213_20261002_0810SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 56392,
-    "uniqueOrders": 9500
+    "sourceRowCount": 56393,
+    "uniqueOrders": 9501
   },
   "currentWaiting": {
     "total": 60,
@@ -2808,6 +2808,15 @@
         "תאום לא סופי": 21,
         "ממתין לתאום": 14
       }
+    },
+    {
+      "date": "02/10/2026",
+      "totalOrdersCreated": 1,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 60,
+      "firstNextStatus": {},
+      "finalStatus": {}
     }
   ],
   "monthly": {
@@ -2903,7 +2912,7 @@
       },
       {
         "month": "01/10/2026",
-        "totalOrdersCreated": 46,
+        "totalOrdersCreated": 47,
         "enteredWaiting": 35,
         "exitedWaiting": 21,
         "endingWaitingBalance": 60,
@@ -2996,8 +3005,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 362.98,
-      "calendarDays": 15.12,
+      "calendarHours": 375.73,
+      "calendarDays": 15.66,
       "businessDays": 9
     },
     {
@@ -4256,8 +4265,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 175.58,
-      "calendarDays": 7.32,
+      "calendarHours": 188.33,
+      "calendarDays": 7.85,
       "businessDays": 5
     },
     {
@@ -4460,8 +4469,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 29.9,
-      "calendarDays": 1.25,
+      "calendarHours": 42.65,
+      "calendarDays": 1.78,
       "businessDays": 1
     },
     {
@@ -4749,7 +4758,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=01/10/2026 19:16"
+        "detail": "dataAsOf=02/10/2026 08:01"
       }
     ]
   }
