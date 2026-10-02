@@ -1,34 +1,34 @@
 {
   "metadata": {
-    "lastRefresh": "02/10/2026 17:30",
-    "dataAsOf": "02/10/2026 15:51",
-    "sourceFile": "STATUS_b070213_20261002_0510SS.XLS",
+    "lastRefresh": "02/10/2026 18:00",
+    "dataAsOf": "02/10/2026 17:37",
+    "sourceFile": "STATUS_b070213_20261002_0610SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 56396,
+    "sourceRowCount": 56397,
     "uniqueOrders": 9503
   },
   "currentWaiting": {
-    "total": 59,
-    "withinSla": 26,
+    "total": 58,
+    "withinSla": 25,
     "overSla": 33,
     "reentryCurrentlyWaiting": 8
   },
   "currentWaitingLatestEntry": {
-    "total": 59,
-    "withinSla": 31,
+    "total": 58,
+    "withinSla": 30,
     "overSla": 28,
     "reentryCurrentlyWaiting": 8
   },
   "waitingAging": {
     "bySlaStart": {
-      "עד יום עסקים אחד": 20,
+      "עד יום עסקים אחד": 19,
       "2 ימי עסקים": 6,
       "3 ימי עסקים": 18,
       "4–5 ימי עסקים": 7,
       "יותר מ־5 ימי עסקים": 8
     },
     "byLastEntry": {
-      "עד יום עסקים אחד": 24,
+      "עד יום עסקים אחד": 23,
       "2 ימי עסקים": 7,
       "3 ימי עסקים": 17,
       "4–5 ימי עסקים": 7,
@@ -2805,18 +2805,18 @@
         "תאום לא סופי": 21
       },
       "finalStatus": {
-        "תאום לא סופי": 21,
-        "ממתין לתאום": 14
+        "תאום לא סופי": 22,
+        "ממתין לתאום": 13
       }
     },
     {
       "date": "02/10/2026",
       "totalOrdersCreated": 3,
       "enteredWaiting": 0,
-      "exitedWaiting": 1,
-      "endingWaitingBalance": 59,
+      "exitedWaiting": 2,
+      "endingWaitingBalance": 58,
       "firstNextStatus": {
-        "תאום לא סופי": 1
+        "תאום לא סופי": 2
       },
       "finalStatus": {}
     }
@@ -2916,10 +2916,10 @@
         "month": "01/10/2026",
         "totalOrdersCreated": 49,
         "enteredWaiting": 35,
-        "exitedWaiting": 22,
-        "endingWaitingBalance": 59,
+        "exitedWaiting": 23,
+        "endingWaitingBalance": 58,
         "statusBreakdown": {
-          "תאום לא סופי": 22
+          "תאום לא סופי": 23
         }
       }
     ],
@@ -3007,8 +3007,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 383.57,
-      "calendarDays": 15.98,
+      "calendarHours": 385.33,
+      "calendarDays": 16.06,
       "businessDays": 9
     },
     {
@@ -4267,8 +4267,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 196.17,
-      "calendarDays": 8.17,
+      "calendarHours": 197.93,
+      "calendarDays": 8.25,
       "businessDays": 5
     },
     {
@@ -4471,8 +4471,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 50.48,
-      "calendarDays": 2.1,
+      "calendarHours": 52.25,
+      "calendarDays": 2.18,
       "businessDays": 1
     },
     {
@@ -4685,7 +4685,7 @@
       {
         "name": "Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "26 + 33 vs total 59"
+        "detail": "25 + 33 vs total 58"
       },
       {
         "name": "Trade Treatment: With Notes + Without Notes = Total",
@@ -4700,7 +4700,7 @@
       {
         "name": "Latest Entry Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "31 + 28 vs total 59"
+        "detail": "30 + 28 vs total 58"
       },
       {
         "name": "Reentries-currently-waiting consistent across First/Latest Entry views",
@@ -4710,12 +4710,12 @@
       {
         "name": "First Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "59 vs 59"
+        "detail": "58 vs 58"
       },
       {
         "name": "Latest Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "59 vs 59"
+        "detail": "58 vs 58"
       },
       {
         "name": "Current Waiting reentries reconcile with TRUE-reentry population",
@@ -4760,7 +4760,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=02/10/2026 15:51"
+        "detail": "dataAsOf=02/10/2026 17:37"
       }
     ]
   }
