@@ -1,34 +1,34 @@
 {
   "metadata": {
-    "lastRefresh": "02/10/2026 19:30",
-    "dataAsOf": "02/10/2026 18:53",
-    "sourceFile": "STATUS_b070213_20261002_0710SS.XLS",
+    "lastRefresh": "02/10/2026 20:00",
+    "dataAsOf": "02/10/2026 19:49",
+    "sourceFile": "STATUS_b070213_20261002_0810SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 56398,
+    "sourceRowCount": 56401,
     "uniqueOrders": 9503
   },
   "currentWaiting": {
-    "total": 57,
-    "withinSla": 24,
+    "total": 60,
+    "withinSla": 27,
     "overSla": 33,
     "reentryCurrentlyWaiting": 8
   },
   "currentWaitingLatestEntry": {
-    "total": 57,
-    "withinSla": 29,
+    "total": 60,
+    "withinSla": 32,
     "overSla": 28,
     "reentryCurrentlyWaiting": 8
   },
   "waitingAging": {
     "bySlaStart": {
-      "עד יום עסקים אחד": 18,
+      "עד יום עסקים אחד": 21,
       "2 ימי עסקים": 6,
       "3 ימי עסקים": 18,
       "4–5 ימי עסקים": 7,
       "יותר מ־5 ימי עסקים": 8
     },
     "byLastEntry": {
-      "עד יום עסקים אחד": 22,
+      "עד יום עסקים אחד": 25,
       "2 ימי עסקים": 7,
       "3 ימי עסקים": 17,
       "4–5 ימי עסקים": 7,
@@ -2812,13 +2812,15 @@
     {
       "date": "02/10/2026",
       "totalOrdersCreated": 3,
-      "enteredWaiting": 0,
+      "enteredWaiting": 3,
       "exitedWaiting": 3,
-      "endingWaitingBalance": 57,
+      "endingWaitingBalance": 60,
       "firstNextStatus": {
         "תאום לא סופי": 3
       },
-      "finalStatus": {}
+      "finalStatus": {
+        "ממתין לתאום": 3
+      }
     }
   ],
   "monthly": {
@@ -2915,9 +2917,9 @@
       {
         "month": "01/10/2026",
         "totalOrdersCreated": 49,
-        "enteredWaiting": 35,
+        "enteredWaiting": 38,
         "exitedWaiting": 24,
-        "endingWaitingBalance": 57,
+        "endingWaitingBalance": 60,
         "statusBreakdown": {
           "תאום לא סופי": 24
         }
@@ -3007,8 +3009,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 386.6,
-      "calendarDays": 16.11,
+      "calendarHours": 387.53,
+      "calendarDays": 16.15,
       "businessDays": 9
     },
     {
@@ -4267,8 +4269,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 199.2,
-      "calendarDays": 8.3,
+      "calendarHours": 200.13,
+      "calendarDays": 8.34,
       "businessDays": 5
     },
     {
@@ -4471,8 +4473,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 53.52,
-      "calendarDays": 2.23,
+      "calendarHours": 54.45,
+      "calendarDays": 2.27,
       "businessDays": 1
     },
     {
@@ -4685,7 +4687,7 @@
       {
         "name": "Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "24 + 33 vs total 57"
+        "detail": "27 + 33 vs total 60"
       },
       {
         "name": "Trade Treatment: With Notes + Without Notes = Total",
@@ -4700,7 +4702,7 @@
       {
         "name": "Latest Entry Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "29 + 28 vs total 57"
+        "detail": "32 + 28 vs total 60"
       },
       {
         "name": "Reentries-currently-waiting consistent across First/Latest Entry views",
@@ -4710,12 +4712,12 @@
       {
         "name": "First Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "57 vs 57"
+        "detail": "60 vs 60"
       },
       {
         "name": "Latest Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "57 vs 57"
+        "detail": "60 vs 60"
       },
       {
         "name": "Current Waiting reentries reconcile with TRUE-reentry population",
@@ -4760,7 +4762,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=02/10/2026 18:53"
+        "detail": "dataAsOf=02/10/2026 19:49"
       }
     ]
   }
