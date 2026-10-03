@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "03/10/2026 11:30",
-    "dataAsOf": "02/10/2026 19:49",
-    "sourceFile": "STATUS_b070213_20261003_1110SS.XLS",
+    "lastRefresh": "03/10/2026 12:00",
+    "dataAsOf": "03/10/2026 11:51",
+    "sourceFile": "STATUS_b070213_20261003_1210SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 56401,
-    "uniqueOrders": 9503
+    "sourceRowCount": 56403,
+    "uniqueOrders": 9504
   },
   "currentWaiting": {
     "total": 60,
@@ -2821,6 +2821,15 @@
       "finalStatus": {
         "ממתין לתאום": 3
       }
+    },
+    {
+      "date": "03/10/2026",
+      "totalOrdersCreated": 1,
+      "enteredWaiting": 0,
+      "exitedWaiting": 0,
+      "endingWaitingBalance": 60,
+      "firstNextStatus": {},
+      "finalStatus": {}
     }
   ],
   "monthly": {
@@ -2916,7 +2925,7 @@
       },
       {
         "month": "01/10/2026",
-        "totalOrdersCreated": 49,
+        "totalOrdersCreated": 50,
         "enteredWaiting": 38,
         "exitedWaiting": 24,
         "endingWaitingBalance": 60,
@@ -3009,8 +3018,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 387.53,
-      "calendarDays": 16.15,
+      "calendarHours": 403.57,
+      "calendarDays": 16.82,
       "businessDays": 9
     },
     {
@@ -4269,8 +4278,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 200.13,
-      "calendarDays": 8.34,
+      "calendarHours": 216.17,
+      "calendarDays": 9.01,
       "businessDays": 5
     },
     {
@@ -4473,8 +4482,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 54.45,
-      "calendarDays": 2.27,
+      "calendarHours": 70.48,
+      "calendarDays": 2.94,
       "businessDays": 1
     },
     {
@@ -4762,7 +4771,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=02/10/2026 19:49"
+        "detail": "dataAsOf=03/10/2026 11:51"
       }
     ]
   }
