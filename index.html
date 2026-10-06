@@ -6,6 +6,7 @@ main{max-width:1280px;margin:auto;padding:16px}.section{background:white;border:
 h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-bottom:5px;margin-top:18px}.aging{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.aging .card{color:#315a24;background:var(--greenSoft);border:1px solid #a9d18e}.aging .mid{background:var(--yellowSoft);color:#7f6000}.aging .late{background:var(--redSoft);color:#8b0000}
 .subnav{display:flex;gap:8px;margin-bottom:16px}.subnav-btn{cursor:pointer;border:1px solid var(--blue);background:white;color:var(--blue);border-radius:18px;padding:7px 16px;font-weight:bold;font-size:13px}.subnav-btn.active{background:var(--blue);color:white}
 .cards.cards-compact{display:inline-grid;grid-template-columns:max-content}
+.cards.cards-today{margin-bottom:20px}
 .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:5px}table{border-collapse:collapse;width:100%;min-width:800px;font-size:12.5px}th,td{padding:8px 9px;border:1px solid #e2e6eb;text-align:right;white-space:nowrap}th{background:var(--blue);color:white}tbody tr:nth-child(even){background:#f8fafc}.sla-good{background:var(--greenSoft);color:#315a24;font-weight:bold}.sla-bad{background:var(--redSoft);color:#9c0006;font-weight:bold}.note{font-size:11px;color:#667085}
 .status-banner{font-size:12px;padding:8px 14px;border-radius:6px;margin:0 0 14px}.status-ok{background:var(--greenSoft);color:#315a24}.status-bad{background:var(--redSoft);color:#8b0000}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
@@ -16,7 +17,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 
 <section class="section" id="coord"><h2>Dashboard תאום</h2>
 <h3>היום</h3>
-<div class="cards">
+<div class="cards cards-today">
   <div class="card"><div class="v" id="todayCreated">–</div><div class="k">סה"כ הזמנות שנוצרו</div></div>
   <div class="card good"><div class="v" id="todayEntered">–</div><div class="k">נכנסו לממתין לתאום</div></div>
   <div class="card warn"><div class="v" id="todayExited">–</div><div class="k">יצאו מממתין לתאום</div></div>
