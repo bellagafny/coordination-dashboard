@@ -15,6 +15,12 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 <div id="statusBanner"></div>
 
 <section class="section" id="coord"><h2>Dashboard תאום</h2>
+<h3>היום</h3>
+<div class="cards">
+  <div class="card"><div class="v" id="todayCreated">–</div><div class="k">סה"כ הזמנות שנוצרו</div></div>
+  <div class="card good"><div class="v" id="todayEntered">–</div><div class="k">נכנסו לממתין לתאום</div></div>
+  <div class="card warn"><div class="v" id="todayExited">–</div><div class="k">יצאו מממתין לתאום</div></div>
+</div>
 <div class="subnav" id="coordSubnav">
   <button type="button" class="subnav-btn active" data-view="first">כניסה ראשונה</button>
   <button type="button" class="subnav-btn" data-view="latest">כניסה אחרונה</button>
@@ -162,6 +168,11 @@ fetch('dashboard_data.json', {cache: 'no-store'})
     banner.textContent = ok
       ? 'רענון תקין (Refresh Status: PASSED)'
       : `שים לב: הרענון האחרון לא עבר את בדיקות התקינות (Refresh Status: ${meta.refreshStatus || 'UNKNOWN'}). מוצגים הנתונים התקינים האחרונים.`;
+
+    const today = data.todayCoordination || {};
+    document.getElementById('todayCreated').textContent = today.totalOrdersCreated ?? '–';
+    document.getElementById('todayEntered').textContent = today.enteredWaiting ?? '–';
+    document.getElementById('todayExited').textContent = today.exitedWaiting ?? '–';
 
     const cw = data.currentWaiting || {};
     document.getElementById('cwTotal').textContent = cw.total ?? '–';
