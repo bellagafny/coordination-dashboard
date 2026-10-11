@@ -170,6 +170,7 @@ tr.clickable-row{cursor:pointer}tr.clickable-row:hover{background:#eef3fb}
 <script>
 function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Over SLA' ? 'sla-bad' : ''); }
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
+function escAttr(v){ return esc(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
 function renderAging(container, aging){
   // Shared by both views (כניסה ראשונה / כניסה אחרונה) -- labels must stay
@@ -310,7 +311,7 @@ function parseDMYHM(s){
 }
 
 function renderReturnsGroupTable(tbody, rows, labelKey, onRowClick){
-  tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${esc(r[labelKey])}">
+  tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${escAttr(r[labelKey])}">
     <td>${esc(r[labelKey])}</td>
     <td>${esc(r.returns)}</td>
     <td>${esc(r.exchanges)}</td>
@@ -507,7 +508,7 @@ function groupOrdersByStatusByProvider(orders){
 }
 
 function renderStatusByProviderTable(tbody, rows, onRowClick){
-  tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${esc(r.status)}">
+  tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${escAttr(r.status)}">
     <td>${esc(r.status)}</td>
     <td>${esc(r.mahalav)}</td>
     <td>${esc(r.monitin)}</td>
