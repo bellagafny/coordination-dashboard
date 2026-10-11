@@ -13,7 +13,7 @@ tr.clickable-row{cursor:pointer}tr.clickable-row:hover{background:#eef3fb}
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 </style></head><body>
-<header><h1>דשבורד תיאום הזמנות</h1><p id="metaLine">טוען נתונים…</p><nav><a href="#coord">תאום</a><a href="#exceptions">חריגי תאום</a><a href="#trade">טיפול סחר</a><a href="#returns-mahalav">החזרות/החלפות מחלב</a><a href="#returns-monitin">החזרות/החלפות מוניטין</a></nav></header><main>
+<header><h1>דשבורד תיאום הזמנות</h1><p id="metaLine">טוען נתונים…</p><nav><a href="#coord">תאום</a><a href="#exceptions">חריגי תאום</a><a href="#trade">טיפול סחר</a><a href="#returns-mahalav">החזרות/החלפות מחלב</a><a href="#returns-monitin">החזרות/החלפות מוניטין</a><a href="#returns-summary">סיכום החזרות והחלפות</a></nav></header><main>
 
 <div id="statusBanner"></div>
 
@@ -132,6 +132,34 @@ tr.clickable-row{cursor:pointer}tr.clickable-row:hover{background:#eef3fb}
 </div>
 <h3 id="retMonitinDetailTitle">פירוט הזמנות</h3>
 <div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>אחריות מי</th></tr></thead><tbody id="retMonitinDetailBody"></tbody></table></div>
+</section>
+
+<section class="section" id="returns-summary"><h2>Dashboard סיכום החזרות והחלפות</h2>
+<div id="retSummaryBanner"></div>
+<div class="cards">
+  <div class="card"><div class="v" id="retSummaryTotal">–</div><div class="k">סה"כ הזמנות פתוחות (שני הספקים)</div></div>
+  <div class="card good"><div class="v" id="retSummaryReturns">–</div><div class="k">סה"כ החזרות (015)</div></div>
+  <div class="card warn"><div class="v" id="retSummaryExchanges">–</div><div class="k">סה"כ החלפות (102)</div></div>
+</div>
+
+<h3>השוואת ספקים</h3>
+<div class="table-wrap"><table><thead><tr><th>חברת שליחויות</th><th>החזרות 015</th><th>החלפות 102</th><th>סה"כ הזמנות פתוחות</th></tr></thead><tbody id="retSummaryProviderBody"></tbody></table></div>
+
+<h3>השוואת אחריות מי</h3>
+<div class="table-wrap"><table><thead><tr><th>אחריות מי</th><th>מחלב</th><th>מוניטין</th><th>סה"כ</th><th>החזרות 015 (משולב)</th><th>החלפות 102 (משולב)</th></tr></thead><tbody id="retSummaryRespBody"></tbody></table></div>
+
+<h3>פילוח לפי סטטוס הזמנה (שני הספקים)</h3>
+<div class="table-wrap"><table><thead><tr><th>סטטוס הזמנה</th><th>מחלב</th><th>מוניטין</th><th>סה"כ</th></tr></thead><tbody id="retSummaryStatusBody"></tbody></table></div>
+
+<div class="returns-toolbar">
+  <div class="returns-breadcrumb" id="retSummaryBreadcrumb">סיכום</div>
+  <div class="returns-actions">
+    <button type="button" class="subnav-btn" id="retSummaryShowAll">הצג את כל ההזמנות</button>
+    <button type="button" class="subnav-btn export-btn" id="retSummaryExportBtn" disabled>ייצוא לאקסל ⬇</button>
+  </div>
+</div>
+<h3 id="retSummaryDetailTitle">פירוט הזמנות</h3>
+<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>אחריות מי</th></tr></thead><tbody id="retSummaryDetailBody"></tbody></table></div>
 </section>
 
 <p class="note" id="footNote">הנתונים נטענים אוטומטית מתוך dashboard_data.json, המרוענן על ידי צינור העיבוד (Python).</p>
@@ -420,6 +448,151 @@ function setupReturnsTab(prefix, providerLabel, section){
   showAll();
 }
 
+// ===== סיכום החזרות והחלפות (6th tab): combines both providers, reusing
+// renderReturnsDetail/exportReturnsToExcel/renderReturnsBanner as-is. No
+// new data source -- everything is derived client-side from the SAME
+// returns_data.json already fetched for the two per-provider tabs. =====
+
+function combineProviderOrders(providers){
+  const mahalav = (providers['מחלב'] || {}).orders || [];
+  const monitin = (providers['מוניטין'] || {}).orders || [];
+  return mahalav.concat(monitin);
+}
+
+function renderProviderComparisonTable(tbody, providers){
+  const rows = ['מחלב', 'מוניטין'].map(name => {
+    const sec = providers[name] || { returns: 0, exchanges: 0, total: 0 };
+    return { provider: name, returns: sec.returns || 0, exchanges: sec.exchanges || 0, total: sec.total || 0 };
+  });
+  tbody.innerHTML = rows.map(r => `<tr>
+    <td>${esc(r.provider)}</td>
+    <td>${esc(r.returns)}</td>
+    <td>${esc(r.exchanges)}</td>
+    <td>${esc(r.total)}</td>
+  </tr>`).join('');
+}
+
+function renderResponsibilityComparisonTable(tbody, orders){
+  const map = new Map();
+  orders.forEach(o => {
+    if (!map.has(o.responsibility)) map.set(o.responsibility, { responsibility: o.responsibility, mahalav: 0, monitin: 0, returns: 0, exchanges: 0, total: 0 });
+    const b = map.get(o.responsibility);
+    if (o.provider === 'מחלב') b.mahalav++;
+    else if (o.provider === 'מוניטין') b.monitin++;
+    if (o.orderType === '015') b.returns++;
+    else if (o.orderType === '102') b.exchanges++;
+    b.total++;
+  });
+  const rows = Array.from(map.values()).sort((a, b) => b.total - a.total);
+  tbody.innerHTML = rows.map(r => `<tr>
+    <td>${esc(r.responsibility)}</td>
+    <td>${esc(r.mahalav)}</td>
+    <td>${esc(r.monitin)}</td>
+    <td>${esc(r.total)}</td>
+    <td>${esc(r.returns)}</td>
+    <td>${esc(r.exchanges)}</td>
+  </tr>`).join('');
+}
+
+function groupOrdersByStatusByProvider(orders){
+  const map = new Map();
+  orders.forEach(o => {
+    if (!map.has(o.orderStatus)) map.set(o.orderStatus, { status: o.orderStatus, mahalav: 0, monitin: 0, total: 0 });
+    const b = map.get(o.orderStatus);
+    if (o.provider === 'מחלב') b.mahalav++;
+    else if (o.provider === 'מוניטין') b.monitin++;
+    b.total++;
+  });
+  return Array.from(map.values()).sort((a, b) => b.total - a.total);
+}
+
+function renderStatusByProviderTable(tbody, rows, onRowClick){
+  tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${esc(r.status)}">
+    <td>${esc(r.status)}</td>
+    <td>${esc(r.mahalav)}</td>
+    <td>${esc(r.monitin)}</td>
+    <td>${esc(r.total)}</td>
+  </tr>`).join('');
+  tbody.querySelectorAll('tr').forEach(tr => {
+    tr.addEventListener('click', () => onRowClick(tr.dataset.key));
+  });
+}
+
+function setupReturnsSummaryTab(providers){
+  const els = {
+    total: document.getElementById('retSummaryTotal'),
+    returns: document.getElementById('retSummaryReturns'),
+    exchanges: document.getElementById('retSummaryExchanges'),
+    providerBody: document.getElementById('retSummaryProviderBody'),
+    respBody: document.getElementById('retSummaryRespBody'),
+    statusBody: document.getElementById('retSummaryStatusBody'),
+    breadcrumb: document.getElementById('retSummaryBreadcrumb'),
+    showAllBtn: document.getElementById('retSummaryShowAll'),
+    exportBtn: document.getElementById('retSummaryExportBtn'),
+    detailTitle: document.getElementById('retSummaryDetailTitle'),
+    detailBody: document.getElementById('retSummaryDetailBody'),
+  };
+
+  const mahalavSec = providers['מחלב'];
+  const monitinSec = providers['מוניטין'];
+  if (!mahalavSec && !monitinSec){
+    els.total.textContent = '–'; els.returns.textContent = '–'; els.exchanges.textContent = '–';
+    els.providerBody.innerHTML = ''; els.respBody.innerHTML = ''; els.statusBody.innerHTML = ''; els.detailBody.innerHTML = '';
+    els.exportBtn.disabled = true;
+    els.exportBtn.onclick = null;
+    return;
+  }
+
+  const combinedOrders = combineProviderOrders(providers);
+  const totalAll = (mahalavSec ? mahalavSec.total : 0) + (monitinSec ? monitinSec.total : 0);
+  const returnsAll = (mahalavSec ? mahalavSec.returns : 0) + (monitinSec ? monitinSec.returns : 0);
+  const exchangesAll = (mahalavSec ? mahalavSec.exchanges : 0) + (monitinSec ? monitinSec.exchanges : 0);
+
+  els.total.textContent = totalAll;
+  els.returns.textContent = returnsAll;
+  els.exchanges.textContent = exchangesAll;
+  els.exportBtn.disabled = false;
+
+  renderProviderComparisonTable(els.providerBody, providers);
+  renderResponsibilityComparisonTable(els.respBody, combinedOrders);
+
+  let currentStatus = null;
+
+  function currentOrders(){
+    return combinedOrders.filter(o => currentStatus === null || o.orderStatus === currentStatus);
+  }
+
+  function renderCurrentSelection(){
+    renderReturnsDetail(els.detailBody, currentOrders());
+    if (currentStatus === null){
+      els.detailTitle.textContent = 'פירוט הזמנות - כל ההזמנות (שני הספקים)';
+      els.breadcrumb.textContent = 'סיכום';
+    } else {
+      els.detailTitle.textContent = `פירוט הזמנות - סטטוס: ${currentStatus}`;
+      els.breadcrumb.textContent = `סיכום > סטטוס: ${currentStatus}`;
+    }
+  }
+
+  function showAll(){
+    currentStatus = null;
+    renderCurrentSelection();
+  }
+
+  renderStatusByProviderTable(els.statusBody, groupOrdersByStatusByProvider(combinedOrders), (status) => {
+    currentStatus = status;
+    renderCurrentSelection();
+  });
+
+  els.showAllBtn.onclick = showAll;
+  els.exportBtn.onclick = () => exportReturnsToExcel(currentOrders(), {
+    provider: 'משולב',
+    responsibility: null,
+    status: currentStatus,
+  });
+
+  showAll();
+}
+
 function renderReturnsBanner(bannerEl, meta){
   const STALE_HOURS = 26;
   if (meta.refreshStatus && meta.refreshStatus !== 'PASSED'){
@@ -446,13 +619,15 @@ fetch('returns_data.json', {cache: 'no-store'})
 
     renderReturnsBanner(document.getElementById('retMahalavBanner'), meta);
     renderReturnsBanner(document.getElementById('retMonitinBanner'), meta);
+    renderReturnsBanner(document.getElementById('retSummaryBanner'), meta);
 
     setupReturnsTab('retMahalav', 'מחלב', providers['מחלב']);
     setupReturnsTab('retMonitin', 'מוניטין', providers['מוניטין']);
+    setupReturnsSummaryTab(providers);
   })
   .catch(err => {
     const msg = 'לא ניתן היה לטעון את נתוני ההחזרות/החלפות (returns_data.json חסר או שגוי): ' + err.message;
-    ['retMahalavBanner', 'retMonitinBanner'].forEach(id => {
+    ['retMahalavBanner', 'retMonitinBanner', 'retSummaryBanner'].forEach(id => {
       const el = document.getElementById(id);
       el.className = 'status-banner status-bad';
       el.textContent = msg;
