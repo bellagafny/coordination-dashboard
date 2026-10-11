@@ -10,6 +10,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 .table-wrap{overflow:auto;border:1px solid var(--line);border-radius:5px}table{border-collapse:collapse;width:100%;min-width:800px;font-size:12.5px}th,td{padding:8px 9px;border:1px solid #e2e6eb;text-align:right;white-space:nowrap}th{background:var(--blue);color:white}tbody tr:nth-child(even){background:#f8fafc}.sla-good{background:var(--greenSoft);color:#315a24;font-weight:bold}.sla-bad{background:var(--redSoft);color:#9c0006;font-weight:bold}.note{font-size:11px;color:#667085}
 .status-banner{font-size:12px;padding:8px 14px;border-radius:6px;margin:0 0 14px}.status-ok{background:var(--greenSoft);color:#315a24}.status-bad{background:var(--redSoft);color:#8b0000}
 tr.clickable-row{cursor:pointer}tr.clickable-row:hover{background:#eef3fb}
+tr.selected-row{background:#c8d9f3!important}
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 </style></head><body>
@@ -460,20 +461,23 @@ function combineProviderOrders(providers){
   return mahalav.concat(monitin);
 }
 
-function renderProviderComparisonTable(tbody, providers){
+function renderProviderComparisonTable(tbody, providers, onRowClick){
   const rows = ['מחלב', 'מוניטין'].map(name => {
     const sec = providers[name] || { returns: 0, exchanges: 0, total: 0 };
     return { provider: name, returns: sec.returns || 0, exchanges: sec.exchanges || 0, total: sec.total || 0 };
   });
-  tbody.innerHTML = rows.map(r => `<tr>
+  tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${escAttr(r.provider)}">
     <td>${esc(r.provider)}</td>
     <td>${esc(r.returns)}</td>
     <td>${esc(r.exchanges)}</td>
     <td>${esc(r.total)}</td>
   </tr>`).join('');
+  tbody.querySelectorAll('tr').forEach(tr => {
+    tr.addEventListener('click', () => onRowClick(tr.dataset.key, tr));
+  });
 }
 
-function renderResponsibilityComparisonTable(tbody, orders){
+function renderResponsibilityComparisonTable(tbody, orders, onRowClick){
   const map = new Map();
   orders.forEach(o => {
     if (!map.has(o.responsibility)) map.set(o.responsibility, { responsibility: o.responsibility, mahalav: 0, monitin: 0, returns: 0, exchanges: 0, total: 0 });
@@ -485,7 +489,7 @@ function renderResponsibilityComparisonTable(tbody, orders){
     b.total++;
   });
   const rows = Array.from(map.values()).sort((a, b) => b.total - a.total);
-  tbody.innerHTML = rows.map(r => `<tr>
+  tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${escAttr(r.responsibility)}">
     <td>${esc(r.responsibility)}</td>
     <td>${esc(r.mahalav)}</td>
     <td>${esc(r.monitin)}</td>
@@ -493,6 +497,9 @@ function renderResponsibilityComparisonTable(tbody, orders){
     <td>${esc(r.returns)}</td>
     <td>${esc(r.exchanges)}</td>
   </tr>`).join('');
+  tbody.querySelectorAll('tr').forEach(tr => {
+    tr.addEventListener('click', () => onRowClick(tr.dataset.key, tr));
+  });
 }
 
 function groupOrdersByStatusByProvider(orders){
@@ -515,7 +522,7 @@ function renderStatusByProviderTable(tbody, rows, onRowClick){
     <td>${esc(r.total)}</td>
   </tr>`).join('');
   tbody.querySelectorAll('tr').forEach(tr => {
-    tr.addEventListener('click', () => onRowClick(tr.dataset.key));
+    tr.addEventListener('click', () => onRowClick(tr.dataset.key, tr));
   });
 }
 
@@ -554,41 +561,67 @@ function setupReturnsSummaryTab(providers){
   els.exchanges.textContent = exchangesAll;
   els.exportBtn.disabled = false;
 
-  renderProviderComparisonTable(els.providerBody, providers);
-  renderResponsibilityComparisonTable(els.respBody, combinedOrders);
+  // Single active filter at a time: clicking any row in any of the three
+  // breakdown tables (provider / responsibility / status) replaces whatever
+  // was selected before -- one consistent selection, one highlighted row,
+  // one detail list, one export, across all three.
+  let currentFilter = { type: null, value: null };
+  let selectedRowEl = null;
 
-  let currentStatus = null;
+  function selectRowHighlight(trEl){
+    if (selectedRowEl) selectedRowEl.classList.remove('selected-row');
+    selectedRowEl = trEl || null;
+    if (selectedRowEl) selectedRowEl.classList.add('selected-row');
+  }
 
   function currentOrders(){
-    return combinedOrders.filter(o => currentStatus === null || o.orderStatus === currentStatus);
+    if (currentFilter.type === 'provider') return combinedOrders.filter(o => o.provider === currentFilter.value);
+    if (currentFilter.type === 'responsibility') return combinedOrders.filter(o => o.responsibility === currentFilter.value);
+    if (currentFilter.type === 'status') return combinedOrders.filter(o => o.orderStatus === currentFilter.value);
+    return combinedOrders;
   }
 
   function renderCurrentSelection(){
-    renderReturnsDetail(els.detailBody, currentOrders());
-    if (currentStatus === null){
-      els.detailTitle.textContent = 'פירוט הזמנות - כל ההזמנות (שני הספקים)';
+    const orders = currentOrders();
+    const count = orders.length;
+    if (currentFilter.type === null){
+      els.detailTitle.textContent = `פירוט הזמנות - כל ההזמנות (${count})`;
       els.breadcrumb.textContent = 'סיכום';
-    } else {
-      els.detailTitle.textContent = `פירוט הזמנות - סטטוס: ${currentStatus}`;
-      els.breadcrumb.textContent = `סיכום > סטטוס: ${currentStatus}`;
+    } else if (currentFilter.type === 'provider'){
+      els.detailTitle.textContent = `פירוט הזמנות - ספק: ${currentFilter.value} (${count})`;
+      els.breadcrumb.textContent = `סיכום > ספק: ${currentFilter.value}`;
+    } else if (currentFilter.type === 'responsibility'){
+      els.detailTitle.textContent = `פירוט הזמנות - אחריות מי: ${currentFilter.value} (${count})`;
+      els.breadcrumb.textContent = `סיכום > אחריות מי: ${currentFilter.value}`;
+    } else if (currentFilter.type === 'status'){
+      els.detailTitle.textContent = `פירוט הזמנות - סטטוס: ${currentFilter.value} (${count})`;
+      els.breadcrumb.textContent = `סיכום > סטטוס: ${currentFilter.value}`;
     }
+    renderReturnsDetail(els.detailBody, orders);
+  }
+
+  function selectFilter(type, value, trEl){
+    currentFilter = { type, value };
+    selectRowHighlight(trEl);
+    renderCurrentSelection();
+    els.detailTitle.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   function showAll(){
-    currentStatus = null;
+    currentFilter = { type: null, value: null };
+    selectRowHighlight(null);
     renderCurrentSelection();
   }
 
-  renderStatusByProviderTable(els.statusBody, groupOrdersByStatusByProvider(combinedOrders), (status) => {
-    currentStatus = status;
-    renderCurrentSelection();
-  });
+  renderProviderComparisonTable(els.providerBody, providers, (provider, tr) => selectFilter('provider', provider, tr));
+  renderResponsibilityComparisonTable(els.respBody, combinedOrders, (resp, tr) => selectFilter('responsibility', resp, tr));
+  renderStatusByProviderTable(els.statusBody, groupOrdersByStatusByProvider(combinedOrders), (status, tr) => selectFilter('status', status, tr));
 
   els.showAllBtn.onclick = showAll;
   els.exportBtn.onclick = () => exportReturnsToExcel(currentOrders(), {
-    provider: 'משולב',
-    responsibility: null,
-    status: currentStatus,
+    provider: currentFilter.type === 'provider' ? currentFilter.value : 'משולב',
+    responsibility: currentFilter.type === 'responsibility' ? currentFilter.value : null,
+    status: currentFilter.type === 'status' ? currentFilter.value : null,
   });
 
   showAll();
