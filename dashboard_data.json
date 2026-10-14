@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "14/10/2026 16:00",
-    "dataAsOf": "14/10/2026 15:57",
+    "lastRefresh": "14/10/2026 16:30",
+    "dataAsOf": "14/10/2026 16:29",
     "sourceFile": "STATUS_b070213_20261014_0410SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 399769,
-    "uniqueOrders": 64110
+    "sourceRowCount": 399776,
+    "uniqueOrders": 64112
   },
   "currentWaiting": {
     "total": 26,
@@ -8977,9 +8977,9 @@
         "אישור מחיר": 1
       },
       "finalStatus": {
-        "תואם מוניטין": 8,
-        "בוצעה": 34,
+        "בוצעה": 35,
         "תאום לא סופי": 6,
+        "תואם מוניטין": 7,
         "מבוטלת": 4,
         "חזרה ובוטלה": 4,
         "המתנה לאיסוף": 2,
@@ -9029,9 +9029,9 @@
         "תיאום עתידי": 1
       },
       "finalStatus": {
-        "המתנה לאיסוף": 3,
+        "המתנה לאיסוף": 4,
         "בוצעה": 26,
-        "תואם מוניטין": 3,
+        "תואם מוניטין": 2,
         "ממתין לח\"ח": 1,
         "תאום לא סופי": 5,
         "מבוטלת": 2,
@@ -9127,7 +9127,7 @@
     },
     {
       "date": "14/10/2026",
-      "totalOrdersCreated": 60,
+      "totalOrdersCreated": 62,
       "enteredWaiting": 41,
       "exitedWaiting": 32,
       "endingWaitingBalance": 26,
@@ -9149,7 +9149,7 @@
   ],
   "todayCoordination": {
     "date": "14/10/2026",
-    "totalOrdersCreated": 60,
+    "totalOrdersCreated": 62,
     "enteredWaiting": 41,
     "exitedWaiting": 32
   },
@@ -9484,7 +9484,7 @@
       },
       {
         "month": "01/10/2026",
-        "totalOrdersCreated": 975,
+        "totalOrdersCreated": 977,
         "enteredWaiting": 535,
         "exitedWaiting": 556,
         "endingWaitingBalance": 26,
@@ -9572,16 +9572,16 @@
         "month": "01/10/2026",
         "totalExitedToMonitin": 203,
         "outcomeBreakdown": {
-          "בוצעה": 158,
+          "בוצעה": 159,
           "מאושרת לניפו": 5,
-          "תואם מוניטין": 28,
           "תאום לא סופי": 4,
+          "תואם מוניטין": 27,
           "ממתין לתאום": 1,
           "מבוטלת": 1,
           "המתנה לאיסוף": 4,
           "חזרה ובוטלה": 2
         },
-        "pctCompleted": 0.7783251231527094
+        "pctCompleted": 0.7832512315270936
       }
     ]
   },
@@ -11310,8 +11310,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 1.9,
-      "calendarDays": 0.08,
+      "calendarHours": 2.43,
+      "calendarDays": 0.1,
       "businessDays": 0
     },
     {
@@ -11740,7 +11740,7 @@
       "lastEntryDateTime": "13/10/2026 12:15",
       "exitDateTime": "14/10/2026 09:52",
       "nextStatus": "מאושרת לניפו",
-      "currentStatus": "תואם מוניטין",
+      "currentStatus": "המתנה לאיסוף",
       "currentState": "Exited",
       "calendarHours": 21.62,
       "calendarDays": 0.9,
@@ -12091,7 +12091,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=14/10/2026 15:57"
+        "detail": "dataAsOf=14/10/2026 16:29"
       }
     ]
   }
