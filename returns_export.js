@@ -14,7 +14,8 @@ var RETURNS_EXPORT_COLUMNS = [
   { header: "סוג הזמנה", key: "orderType", width: 10 },
   { header: "תאור סוג מכירה", key: "orderTypeDesc", width: 16 },
   { header: "חברת שליחויות שמטפלת בהזמנה", key: "provider", width: 24 },
-  { header: "אחריות מי", key: "responsibility", width: 14 },
+  { header: "גורם אחראי", key: "responsibility", width: 14 },
+  { header: "סוג פעולה", key: "actionType", width: 14 },
 ];
 
 // Standard CSV/XLSX-injection mitigation (OWASP): a cell value that starts
