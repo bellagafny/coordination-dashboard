@@ -11,6 +11,7 @@ h3{font-size:15px;color:var(--navy);border-bottom:2px solid var(--blue);padding-
 .status-banner{font-size:12px;padding:8px 14px;border-radius:6px;margin:0 0 14px}.status-ok{background:var(--greenSoft);color:#315a24}.status-bad{background:var(--redSoft);color:#8b0000}
 tr.clickable-row{cursor:pointer}tr.clickable-row:hover{background:#eef3fb}
 tr.selected-row{background:#c8d9f3!important}
+table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){text-align:center}table.resp-matrix .grp-start{border-right:2px solid var(--navy)}table.resp-matrix td.grp-total{font-weight:bold;background:#eef3fb}table.resp-matrix tfoot td{font-weight:bold;background:#dfe7f3;border-top:2px solid var(--navy)}
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 </style></head><body>
@@ -87,7 +88,7 @@ tr.selected-row{background:#c8d9f3!important}
   <div class="card warn"><div class="v" id="retMahalavExchanges">–</div><div class="k">החלפות פתוחות (102)</div></div>
 </div>
 <h3>פילוח לפי גורם אחראי</h3>
-<div class="table-wrap"><table><thead><tr><th>גורם אחראי</th><th>החזרות 015</th><th>החלפות 102</th><th>סה"כ הזמנות פתוחות</th></tr></thead><tbody id="retMahalavRespBody"></tbody></table></div>
+<div class="table-wrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retMahalavRespBody"></tbody></table></div>
 
 <div id="retMahalavStatusSection" style="display:none">
 <h3 id="retMahalavStatusTitle">פילוח לפי סטטוס הזמנה</h3>
@@ -115,7 +116,7 @@ tr.selected-row{background:#c8d9f3!important}
   <div class="card warn"><div class="v" id="retMonitinExchanges">–</div><div class="k">החלפות פתוחות (102)</div></div>
 </div>
 <h3>פילוח לפי גורם אחראי</h3>
-<div class="table-wrap"><table><thead><tr><th>גורם אחראי</th><th>החזרות 015</th><th>החלפות 102</th><th>סה"כ הזמנות פתוחות</th></tr></thead><tbody id="retMonitinRespBody"></tbody></table></div>
+<div class="table-wrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retMonitinRespBody"></tbody></table></div>
 
 <div id="retMonitinStatusSection" style="display:none">
 <h3 id="retMonitinStatusTitle">פילוח לפי סטטוס הזמנה</h3>
@@ -147,7 +148,7 @@ tr.selected-row{background:#c8d9f3!important}
 <div class="table-wrap"><table><thead><tr><th>חברת שליחויות</th><th>החזרות 015</th><th>החלפות 102</th><th>סה"כ הזמנות פתוחות</th></tr></thead><tbody id="retSummaryProviderBody"></tbody></table></div>
 
 <h3>השוואת גורם אחראי</h3>
-<div class="table-wrap"><table><thead><tr><th>גורם אחראי</th><th>מחלב</th><th>מוניטין</th><th>סה"כ</th><th>החזרות 015 (משולב)</th><th>החלפות 102 (משולב)</th></tr></thead><tbody id="retSummaryRespBody"></tbody></table></div>
+<div class="table-wrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th><th rowspan="2" class="grp-start">מחלב</th><th rowspan="2">מוניטין</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retSummaryRespBody"></tbody></table></div>
 
 <h3>פילוח לפי סטטוס הזמנה (שני הספקים)</h3>
 <div class="table-wrap"><table><thead><tr><th>סטטוס הזמנה</th><th>מחלב</th><th>מוניטין</th><th>סה"כ</th></tr></thead><tbody id="retSummaryStatusBody"></tbody></table></div>
@@ -375,6 +376,7 @@ function setupReturnsTab(prefix, providerLabel, section){
   if (!section){
     els.total.textContent = '–'; els.returns.textContent = '–'; els.exchanges.textContent = '–';
     els.respBody.innerHTML = ''; els.statusBody.innerHTML = ''; els.detailBody.innerHTML = '';
+    if (els.respBody.closest('table').tFoot) els.respBody.closest('table').tFoot.innerHTML = '';
     els.statusSection.style.display = 'none';
     els.backToResp.style.display = 'none'; els.backToStatus.style.display = 'none';
     els.breadcrumb.textContent = providerLabel;
@@ -438,7 +440,8 @@ function setupReturnsTab(prefix, providerLabel, section){
     renderCurrentSelection();
   }
 
-  renderReturnsGroupTable(els.respBody, section.responsibilityBreakdown || [], 'responsibility', showResponsibilityLevel);
+  renderResponsibilityActionTable(els.respBody, section.orders || [],
+    (section.responsibilityBreakdown || []).map(r => r.responsibility), false, showResponsibilityLevel);
   els.showAllBtn.onclick = showAll;
   els.backToResp.onclick = showAll;
   els.backToStatus.onclick = dropStatusFilter;
@@ -478,26 +481,58 @@ function renderProviderComparisonTable(tbody, providers, onRowClick){
   });
 }
 
-function renderResponsibilityComparisonTable(tbody, orders, onRowClick){
-  const map = new Map();
+// Responsibility breakdown by order type (015 / 102) x action type (סוג פעולה), used by all
+// three returns tabs. Action values come as-is from returns_data.json (actionType); any value
+// outside the three known ones (blank or unknown) is counted under "אחר / ריק", a column shown
+// only in the order-type group where such a value exists. Group and row totals count EVERY
+// order, so they always equal the existing returns / exchanges / total figures. The totals row
+// lives in <tfoot>: it is never clickable and never part of the responsibility rows.
+const RETURNS_ACTION_TYPES = ['איסוף בלבד', 'מסירה בלבד', 'מסירה ואיסוף'];
+const RETURNS_ACTION_OTHER = 'אחר / ריק';
+const RETURNS_ORDER_GROUPS = [
+  { code: '015', label: 'החזרות 015', totalLabel: 'סה"כ החזרות' },
+  { code: '102', label: 'החלפות 102', totalLabel: 'סה"כ החלפות' },
+];
+
+function renderResponsibilityActionTable(tbody, orders, rowOrder, withProviders, onRowClick){
+  const actionOf = o => RETURNS_ACTION_TYPES.includes(o.actionType) ? o.actionType : RETURNS_ACTION_OTHER;
+  const groups = RETURNS_ORDER_GROUPS.map(g => ({ ...g, actions: RETURNS_ACTION_TYPES.concat(
+    orders.some(o => o.orderType === g.code && actionOf(o) === RETURNS_ACTION_OTHER) ? [RETURNS_ACTION_OTHER] : []) }));
+  const blank = key => ({ responsibility: key, cells: {}, groupTotals: {}, mahalav: 0, monitin: 0, total: 0 });
+  const map = new Map((rowOrder || []).map(k => [k, blank(k)]));
+  const sum = blank('סה"כ');
   orders.forEach(o => {
-    if (!map.has(o.responsibility)) map.set(o.responsibility, { responsibility: o.responsibility, mahalav: 0, monitin: 0, returns: 0, exchanges: 0, total: 0 });
-    const b = map.get(o.responsibility);
-    if (o.provider === 'מחלב') b.mahalav++;
-    else if (o.provider === 'מוניטין') b.monitin++;
-    if (o.orderType === '015') b.returns++;
-    else if (o.orderType === '102') b.exchanges++;
-    b.total++;
+    if (!map.has(o.responsibility)) map.set(o.responsibility, blank(o.responsibility));
+    [map.get(o.responsibility), sum].forEach(b => {
+      const k = o.orderType + '|' + actionOf(o);
+      b.cells[k] = (b.cells[k] || 0) + 1;
+      b.groupTotals[o.orderType] = (b.groupTotals[o.orderType] || 0) + 1;
+      if (o.provider === 'מחלב') b.mahalav++;
+      else if (o.provider === 'מוניטין') b.monitin++;
+      b.total++;
+    });
   });
-  const rows = Array.from(map.values()).sort((a, b) => b.total - a.total);
+  let rows = Array.from(map.values()).filter(r => r.total > 0);
+  if (!rowOrder) rows = rows.sort((a, b) => b.total - a.total);
+
+  tbody.closest('table').tHead.innerHTML =
+    `<tr><th rowspan="2">גורם אחראי</th>` +
+    groups.map(g => `<th colspan="${g.actions.length + 1}" class="grp-start">${esc(g.label)}</th>`).join('') +
+    `<th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th>` +
+    (withProviders ? `<th rowspan="2" class="grp-start">מחלב</th><th rowspan="2">מוניטין</th>` : '') + `</tr>` +
+    `<tr>` + groups.map(g => g.actions.map((a, i) => `<th${i === 0 ? ' class="grp-start"' : ''}>${esc(a)}</th>`).join('') +
+      `<th>${esc(g.totalLabel)}</th>`).join('') + `</tr>`;
+
+  const cellsOf = r => groups.map(g => g.actions.map((a, i) => `<td${i === 0 ? ' class="grp-start"' : ''}>${r.cells[g.code + '|' + a] || 0}</td>`).join('') +
+      `<td class="grp-total">${r.groupTotals[g.code] || 0}</td>`).join('') +
+    `<td class="grp-start grp-total">${r.total}</td>` +
+    (withProviders ? `<td class="grp-start">${r.mahalav}</td><td>${r.monitin}</td>` : '');
   tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${escAttr(r.responsibility)}">
-    <td>${esc(r.responsibility)}</td>
-    <td>${esc(r.mahalav)}</td>
-    <td>${esc(r.monitin)}</td>
-    <td>${esc(r.total)}</td>
-    <td>${esc(r.returns)}</td>
-    <td>${esc(r.exchanges)}</td>
+    <td>${esc(r.responsibility)}</td>${cellsOf(r)}
   </tr>`).join('');
+  const table = tbody.closest('table');
+  let tfoot = table.tFoot || table.createTFoot();
+  tfoot.innerHTML = rows.length ? `<tr><td>סה"כ</td>${cellsOf(sum)}</tr>` : '';
   tbody.querySelectorAll('tr').forEach(tr => {
     tr.addEventListener('click', () => onRowClick(tr.dataset.key, tr));
   });
@@ -615,7 +650,7 @@ function setupReturnsSummaryTab(providers){
   }
 
   renderProviderComparisonTable(els.providerBody, providers, (provider, tr) => selectFilter('provider', provider, tr));
-  renderResponsibilityComparisonTable(els.respBody, combinedOrders, (resp, tr) => selectFilter('responsibility', resp, tr));
+  renderResponsibilityActionTable(els.respBody, combinedOrders, null, true, (resp, tr) => selectFilter('responsibility', resp, tr));
   renderStatusByProviderTable(els.statusBody, groupOrdersByStatusByProvider(combinedOrders), (status, tr) => selectFilter('status', status, tr));
 
   els.showAllBtn.onclick = showAll;
