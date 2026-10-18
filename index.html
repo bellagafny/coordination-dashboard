@@ -13,6 +13,7 @@ tr.clickable-row{cursor:pointer}tr.clickable-row:hover{background:#eef3fb}
 tr.selected-row{background:#c8d9f3!important}
 table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){text-align:center}table.resp-matrix .grp-start{border-right:2px solid var(--navy)}table.resp-matrix td.grp-total{font-weight:bold;background:#eef3fb}table.resp-matrix tfoot td{font-weight:bold;background:#dfe7f3;border-top:2px solid var(--navy)}
 .subnav.view-toggle{margin:0 0 10px}table.resp-rows{min-width:560px}table.resp-rows th{text-align:center}table.resp-rows td.num{text-align:center}table.resp-rows td.resp-cell{vertical-align:middle;font-weight:bold}table.resp-rows tbody.clickable-row{cursor:pointer}table.resp-rows tbody.clickable-row:hover td{background:#eef3fb}table.resp-rows tbody.selected-row td{background:#c8d9f3!important}table.resp-rows tbody+tbody tr:first-child td{border-top:2px solid var(--navy)}table.resp-rows td.grp-total{font-weight:bold;background:#eef3fb}table.resp-rows tfoot td{font-weight:bold;background:#dfe7f3;border-top:2px solid var(--navy)}
+.status-age-note{margin:0 0 6px}.status-age-note .status-age-warn{color:#8b0000;font-weight:bold}td.status-age-flag{color:#8b0000;font-weight:bold}
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 </style></head><body>
@@ -108,7 +109,8 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   </div>
 </div>
 <h3 id="retMahalavDetailTitle">פירוט הזמנות</h3>
-<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retMahalavDetailBody"></tbody></table></div>
+<p class="note status-age-note" id="retMahalavStatusAgeNote"></p>
+<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>ת.עדכון סטטוס</th><th>ימי עבודה בסטטוס</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retMahalavDetailBody"></tbody></table></div>
 </section>
 
 <section class="section" id="returns-monitin"><h2>Dashboard החזרות/החלפות מוניטין</h2>
@@ -138,7 +140,8 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   </div>
 </div>
 <h3 id="retMonitinDetailTitle">פירוט הזמנות</h3>
-<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retMonitinDetailBody"></tbody></table></div>
+<p class="note status-age-note" id="retMonitinStatusAgeNote"></p>
+<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>ת.עדכון סטטוס</th><th>ימי עבודה בסטטוס</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retMonitinDetailBody"></tbody></table></div>
 </section>
 
 <section class="section" id="returns-summary"><h2>Dashboard סיכום החזרות והחלפות</h2>
@@ -168,7 +171,8 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   </div>
 </div>
 <h3 id="retSummaryDetailTitle">פירוט הזמנות</h3>
-<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retSummaryDetailBody"></tbody></table></div>
+<p class="note status-age-note" id="retSummaryStatusAgeNote"></p>
+<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>ת.עדכון סטטוס</th><th>ימי עבודה בסטטוס</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retSummaryDetailBody"></tbody></table></div>
 </section>
 
 <p class="note" id="footNote">הנתונים נטענים אוטומטית מתוך dashboard_data.json, המרוענן על ידי צינור העיבוד (Python).</p>
@@ -176,6 +180,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 
 <script src="vendor/exceljs.min.js"></script>
 <script src="returns_export.js"></script>
+<script src="returns_status_age.js"></script>
 <script>
 function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Over SLA' ? 'sla-bad' : ''); }
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
@@ -347,11 +352,32 @@ function groupOrdersByStatus(orders){
   return Array.from(buckets.values()).sort((a, b) => b.total - a.total);
 }
 
+// ת.עדכון סטטוס / ימי עבודה בסטטוס: computed once per page load into
+// o._statusAge (returns_status_age.js); the Excel export reads the same values.
+function statusAgeCells(o){
+  const a = o._statusAge;
+  if (!a) return `<td></td><td>—</td>`;
+  const cls = a.flag ? ' class="status-age-flag"' : '';
+  return `<td${cls}>${escAttr(a.dateText)}</td><td${cls}>${escAttr(a.daysText)}</td>`;
+}
+
+function renderStatusAgeNotes(summary){
+  const unavailable = { text: 'ימי עבודה בסטטוס אינם זמינים.', warning: true };
+  const note = (typeof RETURNS_STATUS_AGE === 'undefined') ? Object.assign({ parts: [unavailable] }, unavailable)
+    : RETURNS_STATUS_AGE.noteFor(summary);
+  ['retMahalavStatusAgeNote', 'retMonitinStatusAgeNote', 'retSummaryStatusAgeNote'].forEach(id => {
+    const el = document.getElementById(id);
+    el.innerHTML = note.parts.map(p => `<span${p.warning ? ' class="status-age-warn"' : ''}>${escAttr(p.text)}</span>`).join(' ');
+    el.classList.toggle('status-age-warn', note.warning);
+  });
+}
+
 function renderReturnsDetail(tbody, orders){
   tbody.innerHTML = orders.map(o => `<tr>
     <td>${esc(o.orderNumber)}</td>
     <td>${esc(o.orderDate)}</td>
     <td>${esc(o.orderStatus)}</td>
+    ${statusAgeCells(o)}
     <td>${esc(o.shippingCode)}</td>
     <td>${esc(o.shippingDesc)}</td>
     <td>${esc(o.orderType)}</td>
@@ -745,6 +771,14 @@ fetch('returns_data.json', {cache: 'no-store'})
     renderReturnsBanner(document.getElementById('retMahalavBanner'), meta);
     renderReturnsBanner(document.getElementById('retMonitinBanner'), meta);
     renderReturnsBanner(document.getElementById('retSummaryBanner'), meta);
+
+    let ageSummary = null;
+    try {
+      if (typeof RETURNS_STATUS_AGE !== 'undefined') ageSummary = RETURNS_STATUS_AGE.annotate(providers, meta);
+    } catch (e) {
+      console.warn('status age not computed', e);
+    }
+    renderStatusAgeNotes(ageSummary);
 
     setupReturnsTab('retMahalav', 'מחלב', providers['מחלב']);
     setupReturnsTab('retMonitin', 'מוניטין', providers['מוניטין']);

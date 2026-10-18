@@ -9,6 +9,8 @@ var RETURNS_EXPORT_COLUMNS = [
   { header: "הזמנה", key: "orderNumber", width: 18 },
   { header: "תאריך", key: "orderDate", width: 12 },
   { header: "סטטוס הזמנה", key: "orderStatus", width: 16 },
+  { header: "ת.עדכון סטטוס", key: "statusUpdate", width: 17 },
+  { header: "ימי עבודה בסטטוס", key: "statusAgeDays", width: 14 },
   { header: "קוד אופן משלוח נוסף", key: "shippingCode", width: 12 },
   { header: "תאור אופן משלוח נוסף", key: "shippingDesc", width: 26 },
   { header: "סוג הזמנה", key: "orderType", width: 10 },
@@ -75,11 +77,17 @@ async function exportReturnsToExcel(orders, parts){
 
   orders.forEach(function(o){
     var row = {};
+    // Same per-order values the detail table shows (o._statusAge, computed once on page load).
+    var age = o._statusAge || { dateText: "", daysText: "—", days: null, excelDate: null };
     RETURNS_EXPORT_COLUMNS.forEach(function(c){
       var v = o[c.key];
       if (c.key === "orderDate") {
         var d = parseOrderDateForExcel(v);
         row[c.key] = d || sanitizeForExcelCell(v);
+      } else if (c.key === "statusUpdate") {
+        row[c.key] = age.excelDate || sanitizeForExcelCell(age.dateText);
+      } else if (c.key === "statusAgeDays") {
+        row[c.key] = typeof age.days === "number" ? age.days : sanitizeForExcelCell(age.daysText);
       } else {
         row[c.key] = sanitizeForExcelCell(v);
       }
@@ -89,6 +97,10 @@ async function exportReturnsToExcel(orders, parts){
     var dateCell = addedRow.getCell("orderDate");
     if (dateCell.value instanceof Date) {
       dateCell.numFmt = "dd/mm/yyyy";
+    }
+    var statusUpdateCell = addedRow.getCell("statusUpdate");
+    if (statusUpdateCell.value instanceof Date) {
+      statusUpdateCell.numFmt = "dd/mm/yyyy hh:mm";
     }
     // Force text format on identifier columns so leading zeros ('015',
     // shipping codes like '02'/'55') are never reinterpreted as numbers.
