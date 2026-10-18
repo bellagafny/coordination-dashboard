@@ -1,27 +1,81 @@
 {
   "metadata": {
     "sourceFile": "OPEN_RETURNS_EXCHANGES_20261018.xlsx",
-    "lastRefresh": "18/10/2026 13:08",
+    "lastRefresh": "18/10/2026 22:54",
     "refreshStatus": "PASSED",
-    "totalRecords": 309
+    "totalRecords": 308,
+    "statusUpdateColumnPresent": true,
+    "businessCalendar": {
+      "nonBusinessDates": [
+        "2024-04-22",
+        "2024-04-23",
+        "2024-04-28",
+        "2024-04-29",
+        "2024-05-13",
+        "2024-05-14",
+        "2024-06-11",
+        "2024-06-12",
+        "2024-10-02",
+        "2024-10-03",
+        "2024-10-16",
+        "2024-10-17",
+        "2024-10-23",
+        "2024-10-24",
+        "2025-04-13",
+        "2025-04-30",
+        "2025-05-01",
+        "2025-06-01",
+        "2025-06-02",
+        "2025-09-22",
+        "2025-09-23",
+        "2025-09-24",
+        "2025-10-01",
+        "2025-10-02",
+        "2025-10-06",
+        "2025-10-07",
+        "2025-10-13",
+        "2025-10-14",
+        "2026-04-01",
+        "2026-04-02",
+        "2026-04-07",
+        "2026-04-08",
+        "2026-04-21",
+        "2026-04-22",
+        "2026-05-21",
+        "2026-09-13",
+        "2026-09-20",
+        "2026-09-21",
+        "2027-04-21",
+        "2027-04-22",
+        "2027-04-27",
+        "2027-04-28",
+        "2027-05-11",
+        "2027-05-12",
+        "2027-06-10",
+        "2027-10-03",
+        "2027-10-10",
+        "2027-10-11"
+      ],
+      "validThrough": "2027-10-11"
+    }
   },
   "providers": {
     "מחלב": {
-      "total": 173,
+      "total": 172,
       "returns": 86,
-      "exchanges": 87,
+      "exchanges": 86,
       "responsibilityBreakdown": [
         {
           "responsibility": "לוגיסטיקה",
-          "returns": 73,
-          "exchanges": 87,
-          "total": 160
+          "returns": 70,
+          "exchanges": 85,
+          "total": 155
         },
         {
           "responsibility": "סחר",
-          "returns": 11,
-          "exchanges": 0,
-          "total": 11
+          "returns": 14,
+          "exchanges": 1,
+          "total": 15
         },
         {
           "responsibility": "כספים",
@@ -41,7 +95,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T15:10:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0001682",
@@ -53,7 +109,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2024-01-30T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0003530",
@@ -65,7 +123,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-02-19T17:21:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0004133",
@@ -77,7 +137,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2024-02-26T15:09:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0007146",
@@ -89,7 +151,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-04-04T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0008482",
@@ -101,7 +165,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-03-04T12:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0009324",
@@ -113,19 +179,23 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-04-16T15:58:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0011479",
           "orderDate": "22/05/2024",
-          "orderStatus": "מאושרת לניפו",
+          "orderStatus": "לברור הסחר",
           "shippingCode": "55",
           "shippingDesc": "מחלב-הספקה לבית לקוח",
           "orderType": "102",
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה בלבד"
+          "responsibility": "סחר",
+          "actionType": "מסירה בלבד",
+          "statusUpdate": "2026-10-18T16:57:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0012494",
@@ -137,7 +207,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-06-20T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0016305",
@@ -149,7 +221,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-08-02T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0016838",
@@ -161,7 +235,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2024-07-31T11:29:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0016935",
@@ -173,7 +249,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-26T09:22:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0021525",
@@ -185,7 +263,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-11-28T17:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0023069",
@@ -197,7 +277,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-11-15T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0024357",
@@ -209,7 +291,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-12-05T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0024981",
@@ -221,7 +305,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-11-21T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0026763",
@@ -233,7 +319,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-12-11T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO24S0027184",
@@ -245,7 +333,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2024-12-17T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0000525",
@@ -257,7 +347,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-03-05T14:29:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0000621",
@@ -269,7 +361,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "כספים",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-16T14:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0001751",
@@ -281,7 +375,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-02-10T15:33:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0001946",
@@ -293,7 +389,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-01-28T12:20:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0002156",
@@ -305,7 +403,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-31T14:54:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0004996",
@@ -317,7 +417,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-26T09:15:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0005429",
@@ -329,7 +431,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-03-13T12:24:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0007786",
@@ -341,19 +445,23 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-04-10T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0007912",
           "orderDate": "03/04/2025",
-          "orderStatus": "מאושרת לניפו",
+          "orderStatus": "לברור הסחר",
           "shippingCode": "55",
           "shippingDesc": "מחלב-הספקה לבית לקוח",
           "orderType": "015",
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה בלבד"
+          "responsibility": "סחר",
+          "actionType": "מסירה בלבד",
+          "statusUpdate": "2026-10-18T16:38:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0007997",
@@ -365,7 +473,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-04-10T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0009854",
@@ -377,7 +487,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "כספים",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-05-04T13:31:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0010581",
@@ -389,7 +501,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-05-20T10:56:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0011872",
@@ -401,7 +515,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-06-22T10:24:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0012502",
@@ -413,7 +529,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-06-18T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0013089",
@@ -425,7 +543,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-06-29T12:40:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0013091",
@@ -437,7 +557,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-06-24T15:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0013102",
@@ -449,7 +571,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-07-02T18:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0013624",
@@ -461,7 +585,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-07-02T11:28:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0014023",
@@ -473,7 +599,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-07-07T09:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0014789",
@@ -485,7 +613,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-07-28T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0014920",
@@ -497,7 +627,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-07-16T13:27:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0015068",
@@ -509,7 +641,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-07-28T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0015115",
@@ -521,7 +655,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-08-07T09:20:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0015199",
@@ -533,7 +669,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-07-20T14:12:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0016884",
@@ -545,7 +683,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-08-18T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0016920",
@@ -557,7 +697,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-08-26T12:05:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0017526",
@@ -569,7 +711,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-08-25T15:28:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0018262",
@@ -581,7 +725,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2025-08-28T07:28:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0018420",
@@ -593,7 +739,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-26T09:20:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0018519",
@@ -605,7 +753,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2025-08-31T07:44:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0019681",
@@ -617,7 +767,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-09-13T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0019783",
@@ -629,7 +781,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-09-25T12:32:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0020497",
@@ -641,7 +795,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-10-06T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0021534",
@@ -653,7 +809,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-06-28T13:04:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0021955",
@@ -665,7 +823,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-15T12:59:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0022054",
@@ -677,7 +837,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-10-26T15:32:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0022569",
@@ -689,7 +851,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-11-20T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0022757",
@@ -701,7 +865,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-11-12T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0022784",
@@ -713,7 +879,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-11-12T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0023188",
@@ -725,7 +893,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2025-11-09T12:24:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0023216",
@@ -737,7 +907,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-11-26T09:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0023436",
@@ -749,7 +921,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-09T10:05:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0023549",
@@ -761,7 +935,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-11T15:57:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0023748",
@@ -773,7 +949,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-11-24T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0023807",
@@ -785,7 +963,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-11-21T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0023933",
@@ -797,7 +977,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-11-26T09:41:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024025",
@@ -809,7 +991,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2025-11-20T10:16:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024135",
@@ -821,7 +1005,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-27T15:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024416",
@@ -833,7 +1019,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-05T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024606",
@@ -845,7 +1033,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-04T11:51:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024628",
@@ -857,7 +1047,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-11-26T11:04:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024629",
@@ -869,7 +1061,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-08T16:48:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024632",
@@ -881,7 +1075,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-09T13:20:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024635",
@@ -893,7 +1089,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-21T15:12:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024720",
@@ -905,7 +1103,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-04T10:32:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0024769",
@@ -917,7 +1117,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2025-11-27T11:06:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0025342",
@@ -929,7 +1131,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-17T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0025586",
@@ -941,7 +1145,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-16T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0025743",
@@ -953,7 +1159,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2025-12-28T14:56:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0025938",
@@ -965,7 +1173,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-21T11:12:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0026317",
@@ -977,7 +1187,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-19T17:04:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0026387",
@@ -989,7 +1201,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2025-12-28T08:24:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0026712",
@@ -1001,7 +1215,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-05T10:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0026713",
@@ -1013,7 +1229,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-02T07:04:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO25S0026751",
@@ -1025,19 +1243,23 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-07T10:40:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0000589",
           "orderDate": "11/01/2026",
-          "orderStatus": "מאושרת לניפו",
+          "orderStatus": "לברור הסחר",
           "shippingCode": "55",
           "shippingDesc": "מחלב-הספקה לבית לקוח",
           "orderType": "015",
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה בלבד"
+          "responsibility": "סחר",
+          "actionType": "מסירה בלבד",
+          "statusUpdate": "2026-10-18T16:39:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0000608",
@@ -1049,7 +1271,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-08T13:04:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0001126",
@@ -1061,7 +1285,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-01-20T09:02:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0001259",
@@ -1073,7 +1299,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-01-21T13:44:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0001514",
@@ -1085,7 +1313,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-02T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0001840",
@@ -1097,7 +1327,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-06T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0002122",
@@ -1109,7 +1341,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-04-12T09:15:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0002447",
@@ -1121,7 +1355,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-16T09:28:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0002735",
@@ -1133,7 +1369,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-20T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0002744",
@@ -1145,7 +1383,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-22T09:12:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0003000",
@@ -1157,7 +1397,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-03-02T09:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0003139",
@@ -1169,7 +1411,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-02-27T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0003471",
@@ -1181,7 +1425,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-10T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0003683",
@@ -1193,7 +1439,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-05T09:12:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0003793",
@@ -1205,7 +1453,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-04-28T11:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0003826",
@@ -1217,7 +1467,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-09T12:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0004095",
@@ -1229,7 +1481,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-22T12:16:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0004496",
@@ -1241,7 +1495,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-16T10:56:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0004637",
@@ -1253,7 +1509,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-03-22T11:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0004906",
@@ -1265,7 +1523,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-25T09:44:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0005084",
@@ -1277,7 +1537,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-12T12:56:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0005485",
@@ -1289,7 +1551,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-24T17:19:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0005798",
@@ -1301,7 +1565,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-29T15:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0005864",
@@ -1313,7 +1579,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-03-29T15:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0005960",
@@ -1325,7 +1593,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-04-09T19:23:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0006057",
@@ -1337,7 +1607,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-04-09T11:31:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0006107",
@@ -1349,7 +1621,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-04-05T12:16:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0006750",
@@ -1361,7 +1635,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-04-23T10:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0006919",
@@ -1373,7 +1649,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-04-16T16:34:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0007313",
@@ -1385,7 +1663,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-03T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0007471",
@@ -1397,7 +1677,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-04T15:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0007508",
@@ -1409,7 +1691,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-05T09:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0007866",
@@ -1421,7 +1705,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-04-30T13:22:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008282",
@@ -1433,7 +1719,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-06T16:03:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008330",
@@ -1445,7 +1733,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-13T08:56:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008442",
@@ -1457,7 +1747,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-25T11:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008504",
@@ -1469,7 +1761,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-10T13:01:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008927",
@@ -1481,7 +1775,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-01T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009053",
@@ -1493,7 +1789,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-31T08:48:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009098",
@@ -1505,7 +1803,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-19T09:12:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009226",
@@ -1517,7 +1817,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-31T08:48:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009231",
@@ -1529,7 +1831,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-20T15:28:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009233",
@@ -1541,7 +1845,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-02T11:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009235",
@@ -1553,7 +1859,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-20T15:28:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009238",
@@ -1565,7 +1873,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-11T08:48:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009377",
@@ -1577,7 +1887,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-25T12:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009403",
@@ -1589,7 +1901,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-25T09:28:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009520",
@@ -1601,7 +1915,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-03T14:33:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009643",
@@ -1613,7 +1929,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T12:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009876",
@@ -1625,7 +1943,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-09T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009906",
@@ -1637,7 +1957,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-22T12:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010176",
@@ -1649,7 +1971,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-07T16:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010231",
@@ -1661,7 +1985,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-25T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010387",
@@ -1673,19 +1999,23 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-02T22:14:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010451",
           "orderDate": "10/06/2026",
-          "orderStatus": "מאושרת לניפו",
+          "orderStatus": "לברור הסחר",
           "shippingCode": "55",
           "shippingDesc": "מחלב-הספקה לבית לקוח",
           "orderType": "015",
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה בלבד"
+          "responsibility": "סחר",
+          "actionType": "מסירה בלבד",
+          "statusUpdate": "2026-10-18T16:39:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010752",
@@ -1697,7 +2027,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-06-18T11:44:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010755",
@@ -1709,7 +2041,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-16T09:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0011568",
@@ -1721,7 +2055,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-02T12:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0011688",
@@ -1733,7 +2069,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-06T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0011838",
@@ -1745,7 +2083,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-28T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0011958",
@@ -1757,7 +2097,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-27T12:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012179",
@@ -1769,7 +2111,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-13T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012208",
@@ -1781,7 +2125,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-10T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012294",
@@ -1793,7 +2139,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-14T11:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012450",
@@ -1805,7 +2153,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-13T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012511",
@@ -1817,7 +2167,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-19T12:06:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012541",
@@ -1829,7 +2181,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-12T12:55:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0013507",
@@ -1841,7 +2195,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-31T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0013926",
@@ -1853,7 +2209,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-31T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014134",
@@ -1865,7 +2223,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-11T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015195",
@@ -1877,7 +2237,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T15:55:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015278",
@@ -1889,7 +2251,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T15:54:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015576",
@@ -1901,7 +2265,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-15T09:04:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015595",
@@ -1913,7 +2279,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-12T13:17:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015721",
@@ -1925,7 +2293,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T15:54:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015787",
@@ -1937,7 +2307,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-08-16T11:44:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0016386",
@@ -1949,7 +2321,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-16T15:04:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018166",
@@ -1961,7 +2335,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-09-10T08:43:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018293",
@@ -1973,7 +2349,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-05T16:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018407",
@@ -1985,7 +2363,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-24T12:23:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018852",
@@ -1997,7 +2377,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-29T09:20:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019066",
@@ -2009,19 +2391,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
-        },
-        {
-          "orderNumber": "SO26S0019185",
-          "orderDate": "29/09/2026",
-          "orderStatus": "מאושרת לניפו",
-          "shippingCode": "55",
-          "shippingDesc": "מחלב-הספקה לבית לקוח",
-          "orderType": "102",
-          "orderTypeDesc": "הזמנה להחלפה",
-          "provider": "מחלב",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T16:16:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019568",
@@ -2033,7 +2405,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-07T16:24:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019757",
@@ -2045,7 +2419,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-08T09:23:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019870",
@@ -2057,7 +2433,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-18T16:32:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019896",
@@ -2069,7 +2447,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-16T06:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020135",
@@ -2081,7 +2461,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-13T16:48:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020145",
@@ -2093,7 +2475,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-15T11:59:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020417",
@@ -2105,7 +2489,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מחלב",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-18T16:08:00",
+          "statusUpdateState": "ok"
         }
       ]
     },
@@ -2116,21 +2502,21 @@
       "responsibilityBreakdown": [
         {
           "responsibility": "לוגיסטיקה",
-          "returns": 52,
-          "exchanges": 51,
-          "total": 103
+          "returns": 50,
+          "exchanges": 49,
+          "total": 99
         },
         {
           "responsibility": "סחר",
-          "returns": 29,
-          "exchanges": 2,
-          "total": 31
+          "returns": 30,
+          "exchanges": 4,
+          "total": 34
         },
         {
           "responsibility": "כספים",
-          "returns": 2,
+          "returns": 3,
           "exchanges": 0,
-          "total": 2
+          "total": 3
         }
       ],
       "orders": [
@@ -2144,7 +2530,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-16T14:25:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0003262",
@@ -2156,7 +2544,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-01T07:50:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0005420",
@@ -2168,7 +2558,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-14T13:59:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0005524",
@@ -2180,7 +2572,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-04-13T08:59:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0006408",
@@ -2192,7 +2586,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-12T08:42:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0007518",
@@ -2204,7 +2600,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-13T14:23:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008091",
@@ -2216,7 +2614,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T16:34:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008213",
@@ -2228,7 +2628,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-11T06:43:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008358",
@@ -2240,7 +2642,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-07T09:40:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0008600",
@@ -2252,7 +2656,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-14T14:01:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009412",
@@ -2264,7 +2670,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-12T08:52:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009471",
@@ -2276,19 +2684,23 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-25T13:32:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009538",
           "orderDate": "26/05/2026",
-          "orderStatus": "המתנה לאיסוף",
+          "orderStatus": "לברור הסחר",
           "shippingCode": "96",
           "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
           "orderType": "102",
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה בלבד"
+          "responsibility": "סחר",
+          "actionType": "מסירה בלבד",
+          "statusUpdate": "2026-10-18T16:51:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0009609",
@@ -2300,7 +2712,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-05-31T07:22:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010379",
@@ -2312,7 +2726,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-16T09:53:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010461",
@@ -2324,7 +2740,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-05T14:24:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010834",
@@ -2336,7 +2754,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-18T06:54:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010961",
@@ -2348,7 +2768,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-14T10:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0010994",
@@ -2360,7 +2782,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-12T14:33:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0011485",
@@ -2372,7 +2796,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-04T07:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0011764",
@@ -2384,7 +2810,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-06-28T07:17:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012104",
@@ -2396,7 +2824,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-06T14:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012150",
@@ -2408,7 +2838,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-01T17:33:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012166",
@@ -2420,7 +2852,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-01T15:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012498",
@@ -2432,7 +2866,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-13T14:23:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012589",
@@ -2444,7 +2880,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-21T13:31:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012599",
@@ -2456,7 +2894,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-21T13:31:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012662",
@@ -2468,7 +2908,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-12T08:50:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012779",
@@ -2480,7 +2922,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-09-01T14:25:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0012945",
@@ -2492,7 +2936,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-15T14:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014160",
@@ -2504,7 +2950,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-29T08:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014243",
@@ -2516,7 +2964,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-05T08:22:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014311",
@@ -2528,7 +2978,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "כספים",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-07-29T14:38:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014428",
@@ -2540,7 +2992,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-09T10:59:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014539",
@@ -2552,7 +3006,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-06T14:14:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014893",
@@ -2564,7 +3020,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-09T14:19:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014905",
@@ -2576,7 +3034,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-11T17:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0014999",
@@ -2588,7 +3048,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-19T14:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015135",
@@ -2600,7 +3062,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-23T16:34:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015232",
@@ -2612,7 +3076,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-10T15:39:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015247",
@@ -2624,7 +3090,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "מסירה בלבד"
+          "actionType": "מסירה בלבד",
+          "statusUpdate": "2026-08-25T15:50:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015291",
@@ -2636,7 +3104,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-26T12:43:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015382",
@@ -2648,7 +3118,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T17:14:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015640",
@@ -2660,7 +3132,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-16T11:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015648",
@@ -2672,7 +3146,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-12T08:35:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0015656",
@@ -2684,7 +3160,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-12T14:31:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0016088",
@@ -2696,7 +3174,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-17T15:59:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0016137",
@@ -2708,7 +3188,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-02T08:28:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0016334",
@@ -2720,7 +3202,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-08T14:26:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0016746",
@@ -2732,7 +3216,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T17:14:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0016867",
@@ -2744,19 +3230,23 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-08-25T16:39:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017249",
           "orderDate": "30/08/2026",
-          "orderStatus": "המתנה לאיסוף",
+          "orderStatus": "לברור הסחר",
           "shippingCode": "96",
           "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
           "orderType": "015",
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה בלבד"
+          "responsibility": "סחר",
+          "actionType": "מסירה בלבד",
+          "statusUpdate": "2026-10-18T16:40:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017326",
@@ -2768,7 +3258,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-22T11:24:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017363",
@@ -2780,7 +3272,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-01T13:03:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017492",
@@ -2792,7 +3286,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-02T16:10:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017513",
@@ -2804,7 +3300,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-10T09:24:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017523",
@@ -2816,7 +3314,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-04T14:45:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017592",
@@ -2828,7 +3328,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-03T10:47:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017649",
@@ -2840,7 +3342,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-15T15:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017652",
@@ -2852,19 +3356,23 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-03T15:58:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017742",
           "orderDate": "03/09/2026",
-          "orderStatus": "המתנה לאיסוף",
+          "orderStatus": "לברור הסחר",
           "shippingCode": "96",
           "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
           "orderType": "015",
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה בלבד"
+          "responsibility": "סחר",
+          "actionType": "מסירה בלבד",
+          "statusUpdate": "2026-10-18T16:41:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017810",
@@ -2876,7 +3384,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-06T10:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0017984",
@@ -2888,7 +3398,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-08T16:39:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018058",
@@ -2900,7 +3412,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-10T14:58:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018104",
@@ -2912,7 +3426,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-16T10:43:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018106",
@@ -2924,7 +3440,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-09-09T12:09:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018118",
@@ -2936,19 +3454,23 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-14T11:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018178",
           "orderDate": "10/09/2026",
-          "orderStatus": "תאום לא סופי",
+          "orderStatus": "המתנה לאיסוף",
           "shippingCode": "96",
           "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
           "orderType": "102",
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T17:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018198",
@@ -2960,7 +3482,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-16T09:40:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018212",
@@ -2972,7 +3496,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-15T14:38:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018322",
@@ -2984,7 +3510,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-22T16:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018384",
@@ -2996,7 +3524,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-06T10:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018388",
@@ -3008,7 +3538,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T10:38:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018425",
@@ -3020,7 +3552,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "כספים",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-24T15:29:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018427",
@@ -3032,7 +3566,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-16T10:33:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018429",
@@ -3044,7 +3580,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-16T10:32:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018443",
@@ -3056,7 +3594,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-17T19:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018700",
@@ -3068,7 +3608,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-27T07:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018772",
@@ -3080,7 +3622,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-08T11:57:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018847",
@@ -3092,7 +3636,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-24T09:40:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018903",
@@ -3104,7 +3650,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-24T13:36:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018928",
@@ -3116,7 +3664,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-27T13:16:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018965",
@@ -3128,7 +3678,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-24T15:34:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0018988",
@@ -3140,7 +3692,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T17:22:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019063",
@@ -3152,7 +3706,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-29T14:40:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019068",
@@ -3164,19 +3720,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
-        },
-        {
-          "orderNumber": "SO26S0019072",
-          "orderDate": "27/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-27T13:41:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019077",
@@ -3188,7 +3734,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-09-29T16:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019081",
@@ -3200,19 +3748,23 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-09-28T11:44:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019151",
           "orderDate": "28/09/2026",
-          "orderStatus": "תאום לא סופי",
+          "orderStatus": "המתנה לאיסוף",
           "shippingCode": "96",
           "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
           "orderType": "015",
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T16:39:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019193",
@@ -3224,7 +3776,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-13T07:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019212",
@@ -3236,7 +3790,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T11:11:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019221",
@@ -3248,7 +3804,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-15T07:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019264",
@@ -3260,7 +3818,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-13T16:09:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019296",
@@ -3272,7 +3832,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T17:14:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019313",
@@ -3284,7 +3846,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-04T14:56:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019356",
@@ -3296,7 +3860,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-04T15:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019358",
@@ -3308,7 +3874,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-04T10:44:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019360",
@@ -3320,7 +3888,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-04T10:44:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019398",
@@ -3332,7 +3902,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-04T14:59:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019428",
@@ -3344,7 +3916,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-05T14:07:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019447",
@@ -3356,7 +3930,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-05T14:07:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019505",
@@ -3368,7 +3944,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-05T14:14:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019510",
@@ -3380,7 +3958,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-05T14:13:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019554",
@@ -3392,7 +3972,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-08T16:01:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019578",
@@ -3404,7 +3986,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-06T12:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019597",
@@ -3416,7 +4000,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-07T13:50:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019619",
@@ -3428,7 +4014,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-07T14:09:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019628",
@@ -3440,7 +4028,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-06T15:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019694",
@@ -3452,7 +4042,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-13T07:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019696",
@@ -3464,7 +4056,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-12T15:16:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019728",
@@ -3476,7 +4070,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-08T08:38:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019764",
@@ -3488,7 +4084,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-12T15:16:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019804",
@@ -3500,19 +4098,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
-        },
-        {
-          "orderNumber": "SO26S0019809",
-          "orderDate": "08/10/2026",
-          "orderStatus": "המתנה לאיסוף",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "102",
-          "orderTypeDesc": "הזמנה להחלפה",
-          "provider": "מוניטין",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T13:06:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019843",
@@ -3524,7 +4112,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-11T10:21:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0019882",
@@ -3536,7 +4126,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-12T15:17:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020002",
@@ -3548,7 +4140,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-15T15:47:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020003",
@@ -3560,19 +4154,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
-        },
-        {
-          "orderNumber": "SO26S0020097",
-          "orderDate": "12/10/2026",
-          "orderStatus": "המתנה לאיסוף",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "102",
-          "orderTypeDesc": "הזמנה להחלפה",
-          "provider": "מוניטין",
-          "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-13T14:39:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020147",
@@ -3584,7 +4168,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T15:25:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020176",
@@ -3596,7 +4182,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T15:23:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020183",
@@ -3608,7 +4196,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-15T12:17:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020191",
@@ -3620,7 +4210,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T15:23:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020217",
@@ -3632,7 +4224,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T13:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020218",
@@ -3644,19 +4238,23 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-14T15:43:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020227",
           "orderDate": "14/10/2026",
-          "orderStatus": "מאושרת לניפו",
+          "orderStatus": "המתנה לאיסוף",
           "shippingCode": "02",
           "shippingDesc": "י.ח הובלה והפצה",
           "orderType": "015",
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T16:17:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020228",
@@ -3668,7 +4266,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T09:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020234",
@@ -3680,7 +4280,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T13:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020236",
@@ -3692,7 +4294,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T13:38:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020237",
@@ -3704,7 +4308,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "סחר",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-14T13:38:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020251",
@@ -3716,7 +4322,9 @@
           "orderTypeDesc": "איסוף",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-15T15:08:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020271",
@@ -3728,7 +4336,9 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T10:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020321",
@@ -3740,22 +4350,40 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "איסוף בלבד"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T10:30:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020405",
           "orderDate": "16/10/2026",
-          "orderStatus": "ממתין לתאום",
+          "orderStatus": "המתנה לאיסוף",
           "shippingCode": "96",
           "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
           "orderType": "102",
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T18:00:00",
+          "statusUpdateState": "ok"
         },
         {
           "orderNumber": "SO26S0020426",
+          "orderDate": "18/10/2026",
+          "orderStatus": "המתנה לאיסוף",
+          "shippingCode": "02",
+          "shippingDesc": "י.ח הובלה והפצה",
+          "orderType": "102",
+          "orderTypeDesc": "הזמנה להחלפה",
+          "provider": "מוניטין",
+          "responsibility": "לוגיסטיקה",
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T17:00:00",
+          "statusUpdateState": "ok"
+        },
+        {
+          "orderNumber": "SO26S0020461",
           "orderDate": "18/10/2026",
           "orderStatus": "מאושרת לניפו",
           "shippingCode": "02",
@@ -3764,7 +4392,37 @@
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
           "responsibility": "לוגיסטיקה",
-          "actionType": "מסירה ואיסוף"
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-18T14:58:00",
+          "statusUpdateState": "ok"
+        },
+        {
+          "orderNumber": "SO26S0020513",
+          "orderDate": "18/10/2026",
+          "orderStatus": "אשור אובליגו",
+          "shippingCode": "96",
+          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
+          "orderType": "015",
+          "orderTypeDesc": "איסוף",
+          "provider": "מוניטין",
+          "responsibility": "כספים",
+          "actionType": "איסוף בלבד",
+          "statusUpdate": "2026-10-18T16:28:00",
+          "statusUpdateState": "ok"
+        },
+        {
+          "orderNumber": "SO26S0020532",
+          "orderDate": "18/10/2026",
+          "orderStatus": "אוש אין מלאי",
+          "shippingCode": "96",
+          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
+          "orderType": "102",
+          "orderTypeDesc": "הזמנה להחלפה",
+          "provider": "מוניטין",
+          "responsibility": "סחר",
+          "actionType": "מסירה ואיסוף",
+          "statusUpdate": "2026-10-18T17:26:00",
+          "statusUpdateState": "ok"
         }
       ]
     }
@@ -3775,22 +4433,22 @@
       {
         "name": "מחלב: returns + exchanges = total",
         "passed": true,
-        "detail": "86 + 87 vs total 173"
+        "detail": "86 + 86 vs total 172"
       },
       {
         "name": "מחלב: responsibility breakdown reconciles with provider total",
         "passed": true,
-        "detail": "173 vs 173"
+        "detail": "172 vs 172"
       },
       {
         "name": "מחלב: no duplicate orders, detail count matches total",
         "passed": true,
-        "detail": "173 rows (173 unique) vs total 173"
+        "detail": "172 rows (172 unique) vs total 172"
       },
       {
         "name": "מחלב: status totals within each responsibility reconcile to that responsibility's total",
         "passed": true,
-        "detail": "לוגיסטיקה:160/160, סחר:11/11, כספים:2/2"
+        "detail": "לוגיסטיקה:155/155, סחר:15/15, כספים:2/2"
       },
       {
         "name": "מחלב: no order has a blank responsibility (missing values -> 'לא מוגדר')",
@@ -3801,6 +4459,11 @@
         "name": "מחלב: all order types retain their exact leading-zero form ('015'/'102')",
         "passed": true,
         "detail": "all order types well-formed"
+      },
+      {
+        "name": "מחלב: status update (ת.עדכון סטטוס) value/state consistent for every order",
+        "passed": true,
+        "detail": "all orders consistent"
       },
       {
         "name": "מוניטין: returns + exchanges = total",
@@ -3820,7 +4483,7 @@
       {
         "name": "מוניטין: status totals within each responsibility reconcile to that responsibility's total",
         "passed": true,
-        "detail": "לוגיסטיקה:103/103, סחר:31/31, כספים:2/2"
+        "detail": "לוגיסטיקה:99/99, סחר:34/34, כספים:3/3"
       },
       {
         "name": "מוניטין: no order has a blank responsibility (missing values -> 'לא מוגדר')",
@@ -3831,6 +4494,16 @@
         "name": "מוניטין: all order types retain their exact leading-zero form ('015'/'102')",
         "passed": true,
         "detail": "all order types well-formed"
+      },
+      {
+        "name": "מוניטין: status update (ת.עדכון סטטוס) value/state consistent for every order",
+        "passed": true,
+        "detail": "all orders consistent"
+      },
+      {
+        "name": "business calendar present: non-business dates only, valid, sorted, validThrough = last date",
+        "passed": true,
+        "detail": "48 dates, valid through 2027-10-11"
       }
     ]
   }
