@@ -15,7 +15,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 .subnav.view-toggle{margin:0 0 10px}table.resp-rows{min-width:560px}table.resp-rows th{text-align:center}table.resp-rows td.num{text-align:center}table.resp-rows td.resp-cell{vertical-align:middle;font-weight:bold}table.resp-rows tbody.clickable-row{cursor:pointer}table.resp-rows tbody.clickable-row:hover td{background:#eef3fb}table.resp-rows tbody.selected-row td{background:#c8d9f3!important}table.resp-rows tbody+tbody tr:first-child td{border-top:2px solid var(--navy)}table.resp-rows td.grp-total{font-weight:bold;background:#eef3fb}table.resp-rows tfoot td{font-weight:bold;background:#dfe7f3;border-top:2px solid var(--navy)}
 .status-age-note{margin:0 0 6px}.status-age-note .status-age-warn{color:#8b0000;font-weight:bold}td.status-age-flag{color:#8b0000;font-weight:bold}
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
-.card.unknown{background:#7f8c9b}.card.sla-pick{cursor:pointer}.card.sla-pick:hover{filter:brightness(.95)}.card.sla-active{outline:3px solid var(--navy);outline-offset:2px}.sla-refresh{margin:-6px 0 8px}th.sla-h-good{background:var(--green)}th.sla-h-bad{background:var(--red)}th.sla-h-unknown{background:#7f8c9b}
+.card.unknown{background:#7f8c9b}.card.sla-pick{cursor:pointer}.card.sla-pick:hover{filter:brightness(.95)}.card.sla-active{outline:3px solid var(--navy);outline-offset:2px}.sla-refresh{margin:-6px 0 8px}th.sla-h-good{background:var(--green)}th.sla-h-bad{background:var(--red)}th.sla-h-unknown{background:#7f8c9b}.sla-scope{display:inline-block;margin-inline-start:8px;padding:2px 9px;border-radius:10px;background:#eef3fb;color:var(--navy);font-size:12px;font-weight:bold}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 </style></head><body>
 <header><h1>דשבורד תיאום הזמנות</h1><p id="metaLine">טוען נתונים…</p><nav><a href="#coord">תאום</a><a href="#exceptions">חריגי תאום</a><a href="#trade">טיפול סחר</a><a href="#returns-mahalav">החזרות/החלפות מחלב</a><a href="#returns-monitin">החזרות/החלפות מוניטין</a><a href="#returns-summary">סיכום החזרות והחלפות</a></nav></header><main>
@@ -90,10 +90,10 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   <div class="card good"><div class="v" id="retMahalavReturns">–</div><div class="k">החזרות פתוחות (015)</div></div>
   <div class="card warn"><div class="v" id="retMahalavExchanges">–</div><div class="k">החלפות פתוחות (102)</div></div>
 </div>
-<h3>בקרת SLA — ימי עבודה בסטטוס</h3>
+<h3>בקרת SLA — ימי עבודה בסטטוס<span class="sla-scope" data-scope="retMahalav"></span></h3>
 <p class="note sla-refresh" id="retMahalavSlaRefresh"></p>
 <div class="cards" id="retMahalavSlaCards"></div>
-<h3>פילוח לפי ימי עבודה בסטטוס</h3>
+<h3>פילוח לפי ימי עבודה בסטטוס<span class="sla-scope" data-scope="retMahalav"></span></h3>
 <div class="aging" id="retMahalavSlaAging"></div>
 <h3>פילוח לפי גורם אחראי</h3>
 <div class="subnav view-toggle" id="retMahalavRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button></div>
@@ -126,10 +126,10 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   <div class="card good"><div class="v" id="retMonitinReturns">–</div><div class="k">החזרות פתוחות (015)</div></div>
   <div class="card warn"><div class="v" id="retMonitinExchanges">–</div><div class="k">החלפות פתוחות (102)</div></div>
 </div>
-<h3>בקרת SLA — ימי עבודה בסטטוס</h3>
+<h3>בקרת SLA — ימי עבודה בסטטוס<span class="sla-scope" data-scope="retMonitin"></span></h3>
 <p class="note sla-refresh" id="retMonitinSlaRefresh"></p>
 <div class="cards" id="retMonitinSlaCards"></div>
-<h3>פילוח לפי ימי עבודה בסטטוס</h3>
+<h3>פילוח לפי ימי עבודה בסטטוס<span class="sla-scope" data-scope="retMonitin"></span></h3>
 <div class="aging" id="retMonitinSlaAging"></div>
 <h3>פילוח לפי גורם אחראי</h3>
 <div class="subnav view-toggle" id="retMonitinRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button></div>
@@ -162,10 +162,10 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   <div class="card good"><div class="v" id="retSummaryReturns">–</div><div class="k">סה"כ החזרות (015)</div></div>
   <div class="card warn"><div class="v" id="retSummaryExchanges">–</div><div class="k">סה"כ החלפות (102)</div></div>
 </div>
-<h3>בקרת SLA — ימי עבודה בסטטוס</h3>
+<h3>בקרת SLA — ימי עבודה בסטטוס<span class="sla-scope" data-scope="retSummary"></span></h3>
 <p class="note sla-refresh" id="retSummarySlaRefresh"></p>
 <div class="cards" id="retSummarySlaCards"></div>
-<h3>פילוח לפי ימי עבודה בסטטוס</h3>
+<h3>פילוח לפי ימי עבודה בסטטוס<span class="sla-scope" data-scope="retSummary"></span></h3>
 <div class="aging" id="retSummarySlaAging"></div>
 
 <h3>השוואת ספקים</h3>
@@ -411,6 +411,11 @@ const HAS_RETURNS_SLA = typeof RETURNS_SLA !== 'undefined';
 function slaOfOrder(o){ return HAS_RETURNS_SLA ? RETURNS_SLA.slaOf(o) : 'unknown'; }
 function slaMatches(o, filter){ return !HAS_RETURNS_SLA || RETURNS_SLA.matches(o, filter); }
 function slaLabel(filter){ return filter && HAS_RETURNS_SLA ? RETURNS_SLA.labelOf(filter) : ''; }
+// Scope label next to the two SLA headings (display only): which selection the SLA figures describe.
+function setSlaScope(prefix, responsibility, extra){
+  const text = (responsibility === null ? 'כל הגורמים האחראים' : `גורם אחראי: ${responsibility}`) + (extra ? ` | ${extra}` : '');
+  document.querySelectorAll(`.sla-scope[data-scope="${prefix}"]`).forEach(el => { el.textContent = text; });
+}
 function renderSlaBlock(prefix, orders, filter, onPick){
   if (HAS_RETURNS_SLA) RETURNS_SLA.render(document.getElementById(prefix + 'SlaCards'), document.getElementById(prefix + 'SlaAging'), orders, filter, onPick);
 }
@@ -483,6 +488,7 @@ function setupReturnsTab(prefix, providerLabel, section){
     }
     renderReturnsDetail(els.detailBody, orders);
     renderSlaBlock(prefix, selectionOrders(), currentSla, pickSla);
+    setSlaScope(prefix, currentResponsibility, currentStatus !== null ? `סטטוס: ${currentStatus}` : '');
     els.backToResp.style.display = currentResponsibility !== null ? '' : 'none';
     els.backToStatus.style.display = currentStatus !== null ? '' : 'none';
   }
@@ -786,6 +792,8 @@ function setupReturnsSummaryTab(providers){
     }
     renderReturnsDetail(els.detailBody, orders);
     renderSlaBlock('retSummary', selectionOrders(), currentSla, pickSla);
+    setSlaScope('retSummary', currentFilter.type === 'responsibility' ? currentFilter.value : null,
+      currentFilter.type === 'provider' ? `ספק: ${currentFilter.value}` : (currentFilter.type === 'status' ? `סטטוס: ${currentFilter.value}` : ''));
   }
 
   function pickSla(filter){
