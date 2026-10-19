@@ -15,7 +15,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 .subnav.view-toggle{margin:0 0 10px}table.resp-rows{min-width:560px}table.resp-rows th{text-align:center}table.resp-rows td.num{text-align:center}table.resp-rows td.resp-cell{vertical-align:middle;font-weight:bold}table.resp-rows tbody.clickable-row{cursor:pointer}table.resp-rows tbody.clickable-row:hover td{background:#eef3fb}table.resp-rows tbody.selected-row td{background:#c8d9f3!important}table.resp-rows tbody+tbody tr:first-child td{border-top:2px solid var(--navy)}table.resp-rows td.grp-total{font-weight:bold;background:#eef3fb}table.resp-rows tfoot td{font-weight:bold;background:#dfe7f3;border-top:2px solid var(--navy)}
 .status-age-note{margin:0 0 6px}.status-age-note .status-age-warn{color:#8b0000;font-weight:bold}td.status-age-flag{color:#8b0000;font-weight:bold}
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
-.card.unknown{background:#7f8c9b}.card.sla-pick{cursor:pointer}.card.sla-pick:hover{filter:brightness(.95)}.card.sla-active{outline:3px solid var(--navy);outline-offset:2px}.sla-refresh{margin:-6px 0 8px}th.sla-h-good{background:var(--green)}th.sla-h-bad{background:var(--red)}th.sla-h-unknown{background:#7f8c9b}.sla-scope{display:inline-block;margin-inline-start:8px;padding:2px 9px;border-radius:10px;background:#eef3fb;color:var(--navy);font-size:12px;font-weight:bold}
+.card.unknown{background:#7f8c9b}.card.sla-pick{cursor:pointer}.card.sla-pick:hover{filter:brightness(.95)}.card.sla-active{outline:3px solid var(--navy);outline-offset:2px}.sla-refresh{margin:-6px 0 8px}th.sla-h-good{background:var(--green)}th.sla-h-bad{background:var(--red)}th.sla-h-unknown{background:#7f8c9b}.subnav-btn.back-to-resp-top{margin-inline-start:12px}.sla-scope{display:inline-block;margin-inline-start:8px;padding:2px 9px;border-radius:10px;background:#eef3fb;color:var(--navy);font-size:12px;font-weight:bold}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 </style></head><body>
 <header><h1>דשבורד תיאום הזמנות</h1><p id="metaLine">טוען נתונים…</p><nav><a href="#coord">תאום</a><a href="#exceptions">חריגי תאום</a><a href="#trade">טיפול סחר</a><a href="#returns-mahalav">החזרות/החלפות מחלב</a><a href="#returns-monitin">החזרות/החלפות מוניטין</a><a href="#returns-summary">סיכום החזרות והחלפות</a></nav></header><main>
@@ -96,7 +96,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <h3>פילוח לפי ימי עבודה בסטטוס<span class="sla-scope" data-scope="retMahalav"></span></h3>
 <div class="aging" id="retMahalavSlaAging"></div>
 <h3>פילוח לפי גורם אחראי</h3>
-<div class="subnav view-toggle" id="retMahalavRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button></div>
+<div class="subnav view-toggle" id="retMahalavRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button><button type="button" class="subnav-btn back-to-resp-top" id="retMahalavBackToRespTop" style="display:none">⟵ חזרה לפילוח אחריות</button></div>
 <div class="table-wrap" id="retMahalavRespMatrixWrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retMahalavRespBody"></tbody></table></div>
 <div class="table-wrap" id="retMahalavRespRowsWrap" style="display:none"><table class="resp-rows" id="retMahalavRespRowsTable"><thead><tr><th>גורם אחראי</th><th>סוג הזמנה</th><th>איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ</th></tr></thead></table></div>
 
@@ -132,7 +132,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <h3>פילוח לפי ימי עבודה בסטטוס<span class="sla-scope" data-scope="retMonitin"></span></h3>
 <div class="aging" id="retMonitinSlaAging"></div>
 <h3>פילוח לפי גורם אחראי</h3>
-<div class="subnav view-toggle" id="retMonitinRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button></div>
+<div class="subnav view-toggle" id="retMonitinRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button><button type="button" class="subnav-btn back-to-resp-top" id="retMonitinBackToRespTop" style="display:none">⟵ חזרה לפילוח אחריות</button></div>
 <div class="table-wrap" id="retMonitinRespMatrixWrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retMonitinRespBody"></tbody></table></div>
 <div class="table-wrap" id="retMonitinRespRowsWrap" style="display:none"><table class="resp-rows" id="retMonitinRespRowsTable"><thead><tr><th>גורם אחראי</th><th>סוג הזמנה</th><th>איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ</th></tr></thead></table></div>
 
@@ -172,7 +172,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <div class="table-wrap"><table><thead><tr><th>חברת שליחויות</th><th>החזרות 015</th><th>החלפות 102</th><th>סה"כ הזמנות פתוחות</th></tr></thead><tbody id="retSummaryProviderBody"></tbody></table></div>
 
 <h3>השוואת גורם אחראי</h3>
-<div class="subnav view-toggle" id="retSummaryRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button></div>
+<div class="subnav view-toggle" id="retSummaryRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button><button type="button" class="subnav-btn back-to-resp-top" id="retSummaryBackToRespTop" style="display:none">⟵ חזרה לפילוח אחריות</button></div>
 <div class="table-wrap" id="retSummaryRespMatrixWrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th><th rowspan="2" class="grp-start">מחלב</th><th rowspan="2">מוניטין</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retSummaryRespBody"></tbody></table></div>
 <div class="table-wrap" id="retSummaryRespRowsWrap" style="display:none"><table class="resp-rows" id="retSummaryRespRowsTable"><thead><tr><th>גורם אחראי</th><th>סוג הזמנה</th><th>איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ</th></tr></thead></table></div>
 
@@ -431,6 +431,7 @@ function setupReturnsTab(prefix, providerLabel, section){
     statusBody: document.getElementById(prefix + 'StatusBody'),
     breadcrumb: document.getElementById(prefix + 'Breadcrumb'),
     backToResp: document.getElementById(prefix + 'BackToResp'),
+    backToRespTop: document.getElementById(prefix + 'BackToRespTop'),
     backToStatus: document.getElementById(prefix + 'BackToStatus'),
     showAllBtn: document.getElementById(prefix + 'ShowAll'),
     exportBtn: document.getElementById(prefix + 'ExportBtn'),
@@ -444,7 +445,7 @@ function setupReturnsTab(prefix, providerLabel, section){
     if (els.respBody.closest('table').tFoot) els.respBody.closest('table').tFoot.innerHTML = '';
     renderResponsibilityRowsTable(document.getElementById(prefix + 'RespRowsTable'), [], [], () => {});
     els.statusSection.style.display = 'none';
-    els.backToResp.style.display = 'none'; els.backToStatus.style.display = 'none';
+    els.backToResp.style.display = 'none'; els.backToStatus.style.display = 'none'; els.backToRespTop.style.display = 'none';
     els.breadcrumb.textContent = providerLabel;
     els.exportBtn.disabled = true;
     els.exportBtn.onclick = null;
@@ -490,6 +491,7 @@ function setupReturnsTab(prefix, providerLabel, section){
     renderSlaBlock(prefix, selectionOrders(), currentSla, pickSla);
     setSlaScope(prefix, currentResponsibility, currentStatus !== null ? `סטטוס: ${currentStatus}` : '');
     els.backToResp.style.display = currentResponsibility !== null ? '' : 'none';
+    els.backToRespTop.style.display = els.backToResp.style.display;
     els.backToStatus.style.display = currentStatus !== null ? '' : 'none';
   }
 
@@ -534,6 +536,7 @@ function setupReturnsTab(prefix, providerLabel, section){
     (section.responsibilityBreakdown || []).map(r => r.responsibility), showResponsibilityLevel);
   els.showAllBtn.onclick = showAll;
   els.backToResp.onclick = dropResponsibilityFilter;
+  els.backToRespTop.onclick = dropResponsibilityFilter;
   els.backToStatus.onclick = dropStatusFilter;
   els.exportBtn.onclick = () => exportReturnsToExcel(currentOrders(), {
     provider: providerLabel,
@@ -675,7 +678,7 @@ function renderResponsibilityRowsTable(table, orders, rowOrder, onRowClick){
 // View toggle above each breakdown: switches only which table is visible; the current
 // selection, detail list and export are untouched.
 function setupRespViewToggle(prefix){
-  const buttons = document.querySelectorAll(`#${prefix}RespViewToggle .subnav-btn`);
+  const buttons = document.querySelectorAll(`#${prefix}RespViewToggle .subnav-btn[data-view]`);
   const wraps = { matrix: document.getElementById(prefix + 'RespMatrixWrap'), rows: document.getElementById(prefix + 'RespRowsWrap') };
   buttons.forEach(btn => btn.addEventListener('click', () => {
     buttons.forEach(b => b.classList.toggle('active', b === btn));
@@ -792,6 +795,7 @@ function setupReturnsSummaryTab(providers){
     }
     renderReturnsDetail(els.detailBody, orders);
     renderSlaBlock('retSummary', selectionOrders(), currentSla, pickSla);
+    document.getElementById('retSummaryBackToRespTop').style.display = currentFilter.type === 'responsibility' ? '' : 'none';
     setSlaScope('retSummary', currentFilter.type === 'responsibility' ? currentFilter.value : null,
       currentFilter.type === 'provider' ? `ספק: ${currentFilter.value}` : (currentFilter.type === 'status' ? `סטטוס: ${currentFilter.value}` : ''));
   }
@@ -821,6 +825,12 @@ function setupReturnsSummaryTab(providers){
   renderStatusByProviderTable(els.statusBody, groupOrdersByStatusByProvider(combinedOrders), (status, tr) => selectFilter('status', status, tr));
 
   els.showAllBtn.onclick = showAll;
+  // "חזרה לפילוח אחריות": drops the responsibility selection, keeps the SLA filter (as in the provider tabs).
+  document.getElementById('retSummaryBackToRespTop').onclick = () => {
+    currentFilter = { type: null, value: null };
+    selectRowHighlight(null);
+    renderCurrentSelection();
+  };
   els.exportBtn.onclick = () => exportReturnsToExcel(currentOrders(), {
     provider: currentFilter.type === 'provider' ? currentFilter.value : 'משולב',
     responsibility: currentFilter.type === 'responsibility' ? currentFilter.value : null,
