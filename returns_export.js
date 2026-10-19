@@ -54,6 +54,7 @@ function buildExportFilename(parts){
   var pieces = ["returns_export", parts.provider];
   if (parts.responsibility) pieces.push(parts.responsibility);
   if (parts.status) pieces.push(parts.status);
+  if (parts.sla) pieces.push(parts.sla);
   pieces.push(dateStr);
   // Strip characters invalid in Windows filenames; keep Hebrew text as-is.
   return pieces.join("_").replace(/[\\/:*?"<>|]/g, "") + ".xlsx";

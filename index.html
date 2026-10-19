@@ -15,6 +15,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 .subnav.view-toggle{margin:0 0 10px}table.resp-rows{min-width:560px}table.resp-rows th{text-align:center}table.resp-rows td.num{text-align:center}table.resp-rows td.resp-cell{vertical-align:middle;font-weight:bold}table.resp-rows tbody.clickable-row{cursor:pointer}table.resp-rows tbody.clickable-row:hover td{background:#eef3fb}table.resp-rows tbody.selected-row td{background:#c8d9f3!important}table.resp-rows tbody+tbody tr:first-child td{border-top:2px solid var(--navy)}table.resp-rows td.grp-total{font-weight:bold;background:#eef3fb}table.resp-rows tfoot td{font-weight:bold;background:#dfe7f3;border-top:2px solid var(--navy)}
 .status-age-note{margin:0 0 6px}.status-age-note .status-age-warn{color:#8b0000;font-weight:bold}td.status-age-flag{color:#8b0000;font-weight:bold}
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
+.card.unknown{background:#7f8c9b}.card.sla-pick{cursor:pointer}.card.sla-pick:hover{filter:brightness(.95)}.card.sla-active{outline:3px solid var(--navy);outline-offset:2px}.sla-refresh{margin:-6px 0 8px}th.sla-h-good{background:var(--green)}th.sla-h-bad{background:var(--red)}th.sla-h-unknown{background:#7f8c9b}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 </style></head><body>
 <header><h1>דשבורד תיאום הזמנות</h1><p id="metaLine">טוען נתונים…</p><nav><a href="#coord">תאום</a><a href="#exceptions">חריגי תאום</a><a href="#trade">טיפול סחר</a><a href="#returns-mahalav">החזרות/החלפות מחלב</a><a href="#returns-monitin">החזרות/החלפות מוניטין</a><a href="#returns-summary">סיכום החזרות והחלפות</a></nav></header><main>
@@ -89,6 +90,11 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   <div class="card good"><div class="v" id="retMahalavReturns">–</div><div class="k">החזרות פתוחות (015)</div></div>
   <div class="card warn"><div class="v" id="retMahalavExchanges">–</div><div class="k">החלפות פתוחות (102)</div></div>
 </div>
+<h3>בקרת SLA — ימי עבודה בסטטוס</h3>
+<p class="note sla-refresh" id="retMahalavSlaRefresh"></p>
+<div class="cards" id="retMahalavSlaCards"></div>
+<h3>פילוח לפי ימי עבודה בסטטוס</h3>
+<div class="aging" id="retMahalavSlaAging"></div>
 <h3>פילוח לפי גורם אחראי</h3>
 <div class="subnav view-toggle" id="retMahalavRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button></div>
 <div class="table-wrap" id="retMahalavRespMatrixWrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retMahalavRespBody"></tbody></table></div>
@@ -120,6 +126,11 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   <div class="card good"><div class="v" id="retMonitinReturns">–</div><div class="k">החזרות פתוחות (015)</div></div>
   <div class="card warn"><div class="v" id="retMonitinExchanges">–</div><div class="k">החלפות פתוחות (102)</div></div>
 </div>
+<h3>בקרת SLA — ימי עבודה בסטטוס</h3>
+<p class="note sla-refresh" id="retMonitinSlaRefresh"></p>
+<div class="cards" id="retMonitinSlaCards"></div>
+<h3>פילוח לפי ימי עבודה בסטטוס</h3>
+<div class="aging" id="retMonitinSlaAging"></div>
 <h3>פילוח לפי גורם אחראי</h3>
 <div class="subnav view-toggle" id="retMonitinRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button></div>
 <div class="table-wrap" id="retMonitinRespMatrixWrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retMonitinRespBody"></tbody></table></div>
@@ -151,6 +162,11 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   <div class="card good"><div class="v" id="retSummaryReturns">–</div><div class="k">סה"כ החזרות (015)</div></div>
   <div class="card warn"><div class="v" id="retSummaryExchanges">–</div><div class="k">סה"כ החלפות (102)</div></div>
 </div>
+<h3>בקרת SLA — ימי עבודה בסטטוס</h3>
+<p class="note sla-refresh" id="retSummarySlaRefresh"></p>
+<div class="cards" id="retSummarySlaCards"></div>
+<h3>פילוח לפי ימי עבודה בסטטוס</h3>
+<div class="aging" id="retSummarySlaAging"></div>
 
 <h3>השוואת ספקים</h3>
 <div class="table-wrap"><table><thead><tr><th>חברת שליחויות</th><th>החזרות 015</th><th>החלפות 102</th><th>סה"כ הזמנות פתוחות</th></tr></thead><tbody id="retSummaryProviderBody"></tbody></table></div>
@@ -181,6 +197,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <script src="vendor/exceljs.min.js"></script>
 <script src="returns_export.js"></script>
 <script src="returns_status_age.js"></script>
+<script src="returns_sla.js"></script>
 <script>
 function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Over SLA' ? 'sla-bad' : ''); }
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
@@ -388,6 +405,16 @@ function renderReturnsDetail(tbody, orders){
   </tr>`).join('');
 }
 
+// SLA control (returns_sla.js): only classifies the o._statusAge value shown in the table.
+// The SLA filter combines with the existing responsibility / status / provider selection.
+const HAS_RETURNS_SLA = typeof RETURNS_SLA !== 'undefined';
+function slaOfOrder(o){ return HAS_RETURNS_SLA ? RETURNS_SLA.slaOf(o) : 'unknown'; }
+function slaMatches(o, filter){ return !HAS_RETURNS_SLA || RETURNS_SLA.matches(o, filter); }
+function slaLabel(filter){ return filter && HAS_RETURNS_SLA ? RETURNS_SLA.labelOf(filter) : ''; }
+function renderSlaBlock(prefix, orders, filter, onPick){
+  if (HAS_RETURNS_SLA) RETURNS_SLA.render(document.getElementById(prefix + 'SlaCards'), document.getElementById(prefix + 'SlaAging'), orders, filter, onPick);
+}
+
 function setupReturnsTab(prefix, providerLabel, section){
   const els = {
     total: document.getElementById(prefix + 'Total'),
@@ -416,6 +443,7 @@ function setupReturnsTab(prefix, providerLabel, section){
     els.breadcrumb.textContent = providerLabel;
     els.exportBtn.disabled = true;
     els.exportBtn.onclick = null;
+    renderSlaBlock(prefix, null, null, () => {});
     return;
   }
 
@@ -426,29 +454,42 @@ function setupReturnsTab(prefix, providerLabel, section){
 
   let currentResponsibility = null;
   let currentStatus = null;
+  let currentSla = null;
 
-  function currentOrders(){
+  // Orders of the current responsibility / status selection (SLA cards are counted over these).
+  function selectionOrders(){
     return (section.orders || []).filter(o =>
       (currentResponsibility === null || o.responsibility === currentResponsibility) &&
       (currentStatus === null || o.orderStatus === currentStatus)
     );
   }
 
+  function currentOrders(){
+    return selectionOrders().filter(o => slaMatches(o, currentSla));
+  }
+
   function renderCurrentSelection(){
     const orders = currentOrders();
+    const sla = slaLabel(currentSla);
     if (currentResponsibility === null){
-      els.detailTitle.textContent = 'פירוט הזמנות - כל ההזמנות';
-      els.breadcrumb.textContent = providerLabel;
+      els.detailTitle.textContent = 'פירוט הזמנות - ' + (sla || 'כל ההזמנות');
+      els.breadcrumb.textContent = providerLabel + (sla ? ` > ${sla}` : '');
     } else if (currentStatus === null){
-      els.detailTitle.textContent = `פירוט הזמנות - גורם אחראי: ${currentResponsibility}`;
-      els.breadcrumb.textContent = `${providerLabel} > גורם אחראי: ${currentResponsibility}`;
+      els.detailTitle.textContent = `פירוט הזמנות - גורם אחראי: ${currentResponsibility}` + (sla ? ` | ${sla}` : '');
+      els.breadcrumb.textContent = `${providerLabel} > גורם אחראי: ${currentResponsibility}` + (sla ? ` > ${sla}` : '');
     } else {
-      els.detailTitle.textContent = `פירוט הזמנות - גורם אחראי: ${currentResponsibility} | סטטוס: ${currentStatus}`;
-      els.breadcrumb.textContent = `${providerLabel} > גורם אחראי: ${currentResponsibility} > סטטוס: ${currentStatus}`;
+      els.detailTitle.textContent = `פירוט הזמנות - גורם אחראי: ${currentResponsibility} | סטטוס: ${currentStatus}` + (sla ? ` | ${sla}` : '');
+      els.breadcrumb.textContent = `${providerLabel} > גורם אחראי: ${currentResponsibility} > סטטוס: ${currentStatus}` + (sla ? ` > ${sla}` : '');
     }
     renderReturnsDetail(els.detailBody, orders);
+    renderSlaBlock(prefix, selectionOrders(), currentSla, pickSla);
     els.backToResp.style.display = currentResponsibility !== null ? '' : 'none';
     els.backToStatus.style.display = currentStatus !== null ? '' : 'none';
+  }
+
+  function pickSla(filter){
+    currentSla = HAS_RETURNS_SLA ? RETURNS_SLA.toggle(currentSla, filter) : null;
+    renderCurrentSelection();
   }
 
   function showResponsibilityLevel(resp){
@@ -462,7 +503,14 @@ function setupReturnsTab(prefix, providerLabel, section){
     renderCurrentSelection();
   }
 
+  // "הצג את כל ההזמנות" = full reset (responsibility, status and SLA).
   function showAll(){
+    currentSla = null;
+    dropResponsibilityFilter();
+  }
+
+  // "חזרה לפילוח אחריות": drops responsibility + status, keeps the SLA filter.
+  function dropResponsibilityFilter(){
     currentResponsibility = null;
     currentStatus = null;
     els.statusSection.style.display = 'none';
@@ -479,12 +527,13 @@ function setupReturnsTab(prefix, providerLabel, section){
   renderResponsibilityRowsTable(document.getElementById(prefix + 'RespRowsTable'), section.orders || [],
     (section.responsibilityBreakdown || []).map(r => r.responsibility), showResponsibilityLevel);
   els.showAllBtn.onclick = showAll;
-  els.backToResp.onclick = showAll;
+  els.backToResp.onclick = dropResponsibilityFilter;
   els.backToStatus.onclick = dropStatusFilter;
   els.exportBtn.onclick = () => exportReturnsToExcel(currentOrders(), {
     provider: providerLabel,
     responsibility: currentResponsibility,
     status: currentStatus,
+    sla: slaLabel(currentSla) || null,
   });
 
   showAll();
@@ -536,16 +585,18 @@ function buildResponsibilityActionMatrix(orders, rowOrder){
   const hasOther = code => orders.some(o => (code === null || o.orderType === code) && actionOf(o) === RETURNS_ACTION_OTHER);
   const groups = RETURNS_ORDER_GROUPS.map(g => ({ ...g, actions: RETURNS_ACTION_TYPES.concat(hasOther(g.code) ? [RETURNS_ACTION_OTHER] : []) }));
   const actionsAll = RETURNS_ACTION_TYPES.concat(hasOther(null) ? [RETURNS_ACTION_OTHER] : []);
-  const blank = key => ({ responsibility: key, cells: {}, groupTotals: {}, actionTotals: {}, mahalav: 0, monitin: 0, total: 0 });
+  const blank = key => ({ responsibility: key, cells: {}, groupTotals: {}, actionTotals: {}, sla: { within: 0, over: 0, unknown: 0 }, slaByType: {}, mahalav: 0, monitin: 0, total: 0 });
   const map = new Map((rowOrder || []).map(k => [k, blank(k)]));
   const sum = blank('סה"כ');
   orders.forEach(o => {
     if (!map.has(o.responsibility)) map.set(o.responsibility, blank(o.responsibility));
     [map.get(o.responsibility), sum].forEach(b => {
-      const a = actionOf(o), k = o.orderType + '|' + a;
+      const a = actionOf(o), k = o.orderType + '|' + a, s = slaOfOrder(o);
       b.cells[k] = (b.cells[k] || 0) + 1;
       b.groupTotals[o.orderType] = (b.groupTotals[o.orderType] || 0) + 1;
       b.actionTotals[a] = (b.actionTotals[a] || 0) + 1;
+      b.sla[s]++;
+      b.slaByType[o.orderType + '|' + s] = (b.slaByType[o.orderType + '|' + s] || 0) + 1;
       if (o.provider === 'מחלב') b.mahalav++;
       else if (o.provider === 'מוניטין') b.monitin++;
       b.total++;
@@ -553,23 +604,31 @@ function buildResponsibilityActionMatrix(orders, rowOrder){
   });
   let rows = Array.from(map.values()).filter(r => r.total > 0);
   if (!rowOrder) rows = rows.sort((a, b) => b.total - a.total);
-  return { groups, actionsAll, rows, sum };
+  // SLA columns: Within / Over always; "לא ידוע" only when such orders exist.
+  const slaCols = [
+    { key: 'within', label: 'Within SLA', cls: 'sla-h-good' },
+    { key: 'over', label: 'Over SLA', cls: 'sla-h-bad' },
+  ].concat(sum.sla.unknown ? [{ key: 'unknown', label: 'לא ידוע', cls: 'sla-h-unknown' }] : []);
+  return { groups, actionsAll, rows, sum, slaCols };
 }
 
 function renderResponsibilityActionTable(tbody, orders, rowOrder, withProviders, onRowClick){
-  const { groups, rows, sum } = buildResponsibilityActionMatrix(orders, rowOrder);
+  const { groups, rows, sum, slaCols } = buildResponsibilityActionMatrix(orders, rowOrder);
 
   tbody.closest('table').tHead.innerHTML =
     `<tr><th rowspan="2">גורם אחראי</th>` +
     groups.map(g => `<th colspan="${g.actions.length + 1}" class="grp-start">${esc(g.label)}</th>`).join('') +
     `<th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th>` +
+    `<th colspan="${slaCols.length}" class="grp-start">SLA (ימי עבודה בסטטוס)</th>` +
     (withProviders ? `<th rowspan="2" class="grp-start">מחלב</th><th rowspan="2">מוניטין</th>` : '') + `</tr>` +
     `<tr>` + groups.map(g => g.actions.map((a, i) => `<th${i === 0 ? ' class="grp-start"' : ''}>${esc(a)}</th>`).join('') +
-      `<th>${esc(g.totalLabel)}</th>`).join('') + `</tr>`;
+      `<th>${esc(g.totalLabel)}</th>`).join('') +
+    slaCols.map((c, i) => `<th class="${c.cls}${i === 0 ? ' grp-start' : ''}">${esc(c.label)}</th>`).join('') + `</tr>`;
 
   const cellsOf = r => groups.map(g => g.actions.map((a, i) => `<td${i === 0 ? ' class="grp-start"' : ''}>${r.cells[g.code + '|' + a] || 0}</td>`).join('') +
       `<td class="grp-total">${r.groupTotals[g.code] || 0}</td>`).join('') +
     `<td class="grp-start grp-total">${r.total}</td>` +
+    slaCols.map((c, i) => `<td${i === 0 ? ' class="grp-start"' : ''}>${r.sla[c.key]}</td>`).join('') +
     (withProviders ? `<td class="grp-start">${r.mahalav}</td><td>${r.monitin}</td>` : '');
   tbody.innerHTML = rows.map(r => `<tr class="clickable-row" data-key="${escAttr(r.responsibility)}">
     <td>${esc(r.responsibility)}</td>${cellsOf(r)}
@@ -585,9 +644,10 @@ function renderResponsibilityActionTable(tbody, orders, rowOrder, withProviders,
 // "פילוח בשורות": גורם אחראי | סוג הזמנה | action types | סה"כ. Each responsibility's two rows sit
 // in their own <tbody>, so the pair is one clickable / highlightable unit; 0 is shown as "–".
 function renderResponsibilityRowsTable(table, orders, rowOrder, onRowClick){
-  const { actionsAll, rows, sum } = buildResponsibilityActionMatrix(orders, rowOrder);
+  const { actionsAll, rows, sum, slaCols } = buildResponsibilityActionMatrix(orders, rowOrder);
   const n = v => v ? String(v) : '–';
-  table.tHead.innerHTML = `<tr><th>גורם אחראי</th><th>סוג הזמנה</th>` + actionsAll.map(a => `<th>${esc(a)}</th>`).join('') + `<th>סה"כ</th></tr>`;
+  table.tHead.innerHTML = `<tr><th>גורם אחראי</th><th>סוג הזמנה</th>` + actionsAll.map(a => `<th>${esc(a)}</th>`).join('') + `<th>סה"כ</th>` +
+    slaCols.map(c => `<th class="${c.cls}">${esc(c.label)}</th>`).join('') + `</tr>`;
   table.querySelectorAll('tbody').forEach(b => b.remove());
   rows.forEach(r => {
     const tb = document.createElement('tbody');
@@ -596,13 +656,14 @@ function renderResponsibilityRowsTable(table, orders, rowOrder, onRowClick){
     tb.innerHTML = RETURNS_ORDER_GROUPS.map((g, i) => `<tr>` +
       (i === 0 ? `<td rowspan="${RETURNS_ORDER_GROUPS.length}" class="resp-cell">${esc(r.responsibility)}</td>` : '') +
       `<td>${esc(g.label)}</td>` + actionsAll.map(a => `<td class="num">${n(r.cells[g.code + '|' + a])}</td>`).join('') +
-      `<td class="num grp-total">${n(r.groupTotals[g.code])}</td></tr>`).join('');
+      `<td class="num grp-total">${n(r.groupTotals[g.code])}</td>` +
+      slaCols.map(c => `<td class="num">${n(r.slaByType[g.code + '|' + c.key])}</td>`).join('') + `</tr>`).join('');
     tb.addEventListener('click', () => onRowClick(r.responsibility, tb));
     table.insertBefore(tb, table.tFoot);
   });
   const tfoot = table.tFoot || table.createTFoot();
   tfoot.innerHTML = rows.length ? `<tr><td>סה"כ</td><td></td>` + actionsAll.map(a => `<td class="num">${n(sum.actionTotals[a])}</td>`).join('') +
-    `<td class="num">${n(sum.total)}</td></tr>` : '';
+    `<td class="num">${n(sum.total)}</td>` + slaCols.map(c => `<td class="num">${n(sum.sla[c.key])}</td>`).join('') + `</tr>` : '';
 }
 
 // View toggle above each breakdown: switches only which table is visible; the current
@@ -664,6 +725,7 @@ function setupReturnsSummaryTab(providers){
     renderResponsibilityRowsTable(document.getElementById('retSummaryRespRowsTable'), [], [], () => {});
     els.exportBtn.disabled = true;
     els.exportBtn.onclick = null;
+    renderSlaBlock('retSummary', null, null, () => {});
     return;
   }
 
@@ -681,7 +743,9 @@ function setupReturnsSummaryTab(providers){
   // breakdown tables (provider / responsibility / status) replaces whatever
   // was selected before -- one consistent selection, one highlighted row,
   // one detail list, one export, across all three.
+  // The SLA filter is a separate dimension and combines with currentFilter.
   let currentFilter = { type: null, value: null };
+  let currentSla = null;
   let selectedRowEl = null;
 
   function selectRowHighlight(trEl){
@@ -690,30 +754,43 @@ function setupReturnsSummaryTab(providers){
     if (selectedRowEl) selectedRowEl.classList.add('selected-row');
   }
 
-  function currentOrders(){
+  function selectionOrders(){
     if (currentFilter.type === 'provider') return combinedOrders.filter(o => o.provider === currentFilter.value);
     if (currentFilter.type === 'responsibility') return combinedOrders.filter(o => o.responsibility === currentFilter.value);
     if (currentFilter.type === 'status') return combinedOrders.filter(o => o.orderStatus === currentFilter.value);
     return combinedOrders;
   }
 
+  function currentOrders(){
+    return selectionOrders().filter(o => slaMatches(o, currentSla));
+  }
+
   function renderCurrentSelection(){
     const orders = currentOrders();
     const count = orders.length;
+    const sla = slaLabel(currentSla);
+    const slaTitle = sla ? ` | ${sla}` : '';
+    const slaCrumb = sla ? ` > ${sla}` : '';
     if (currentFilter.type === null){
-      els.detailTitle.textContent = `פירוט הזמנות - כל ההזמנות (${count})`;
-      els.breadcrumb.textContent = 'סיכום';
+      els.detailTitle.textContent = `פירוט הזמנות - ${sla || 'כל ההזמנות'} (${count})`;
+      els.breadcrumb.textContent = 'סיכום' + slaCrumb;
     } else if (currentFilter.type === 'provider'){
-      els.detailTitle.textContent = `פירוט הזמנות - ספק: ${currentFilter.value} (${count})`;
-      els.breadcrumb.textContent = `סיכום > ספק: ${currentFilter.value}`;
+      els.detailTitle.textContent = `פירוט הזמנות - ספק: ${currentFilter.value}${slaTitle} (${count})`;
+      els.breadcrumb.textContent = `סיכום > ספק: ${currentFilter.value}${slaCrumb}`;
     } else if (currentFilter.type === 'responsibility'){
-      els.detailTitle.textContent = `פירוט הזמנות - גורם אחראי: ${currentFilter.value} (${count})`;
-      els.breadcrumb.textContent = `סיכום > גורם אחראי: ${currentFilter.value}`;
+      els.detailTitle.textContent = `פירוט הזמנות - גורם אחראי: ${currentFilter.value}${slaTitle} (${count})`;
+      els.breadcrumb.textContent = `סיכום > גורם אחראי: ${currentFilter.value}${slaCrumb}`;
     } else if (currentFilter.type === 'status'){
-      els.detailTitle.textContent = `פירוט הזמנות - סטטוס: ${currentFilter.value} (${count})`;
-      els.breadcrumb.textContent = `סיכום > סטטוס: ${currentFilter.value}`;
+      els.detailTitle.textContent = `פירוט הזמנות - סטטוס: ${currentFilter.value}${slaTitle} (${count})`;
+      els.breadcrumb.textContent = `סיכום > סטטוס: ${currentFilter.value}${slaCrumb}`;
     }
     renderReturnsDetail(els.detailBody, orders);
+    renderSlaBlock('retSummary', selectionOrders(), currentSla, pickSla);
+  }
+
+  function pickSla(filter){
+    currentSla = HAS_RETURNS_SLA ? RETURNS_SLA.toggle(currentSla, filter) : null;
+    renderCurrentSelection();
   }
 
   function selectFilter(type, value, trEl){
@@ -725,6 +802,7 @@ function setupReturnsSummaryTab(providers){
 
   function showAll(){
     currentFilter = { type: null, value: null };
+    currentSla = null;
     selectRowHighlight(null);
     renderCurrentSelection();
   }
@@ -739,6 +817,7 @@ function setupReturnsSummaryTab(providers){
     provider: currentFilter.type === 'provider' ? currentFilter.value : 'משולב',
     responsibility: currentFilter.type === 'responsibility' ? currentFilter.value : null,
     status: currentFilter.type === 'status' ? currentFilter.value : null,
+    sla: slaLabel(currentSla) || null,
   });
 
   showAll();
@@ -779,6 +858,9 @@ fetch('returns_data.json', {cache: 'no-store'})
       console.warn('status age not computed', e);
     }
     renderStatusAgeNotes(ageSummary);
+    ['retMahalav', 'retMonitin', 'retSummary'].forEach(p => {
+      document.getElementById(p + 'SlaRefresh').textContent = `רענון נתוני ההחזרות האחרון: ${meta.lastRefresh || '—'}`;
+    });
 
     setupReturnsTab('retMahalav', 'מחלב', providers['מחלב']);
     setupReturnsTab('retMonitin', 'מוניטין', providers['מוניטין']);
