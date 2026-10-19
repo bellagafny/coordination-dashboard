@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastRefresh": "19/10/2026 06:30",
-    "dataAsOf": "19/10/2026 00:09",
-    "sourceFile": "STATUS_b070213_20261019_0610SS.XLS",
+    "lastRefresh": "19/10/2026 07:00",
+    "dataAsOf": "19/10/2026 06:46",
+    "sourceFile": "STATUS_b070213_20261019_0710SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 401171,
+    "sourceRowCount": 401172,
     "uniqueOrders": 64381
   },
   "currentWaiting": {
@@ -154,8 +154,8 @@
     "uniqueTrueReentryOrders": 542,
     "totalReentryEvents": 651,
     "currentlyWaitingTrueReentries": 2,
-    "openReentryOrders": 52,
-    "closedReentryOrders": 490
+    "openReentryOrders": 51,
+    "closedReentryOrders": 491
   },
   "currentWaitingReentries": [
     {
@@ -9299,11 +9299,10 @@
         "מאושר לבצוע": 1
       },
       "finalStatus": {
-        "בוצעה": 15,
+        "בוצעה": 16,
         "חזרה ובוטלה": 1,
         "ממתין לתאום": 1,
         "המתנה לאיסוף": 3,
-        "תואם מוניטין": 1,
         "תאום לא סופי": 2,
         "מאושרת לניפו": 1
       }
@@ -9346,11 +9345,10 @@
       },
       "finalStatus": {
         "ממתין לתאום": 20,
-        "בוצעה": 3,
+        "בוצעה": 4,
         "מאושר לבצוע": 1,
         "תאום לא סופי": 24,
-        "מבוטלת": 1,
-        "תואם מוניטין": 1
+        "מבוטלת": 1
       }
     },
     {
@@ -9792,16 +9790,16 @@
         "month": "01/10/2026",
         "totalExitedToMonitin": 228,
         "outcomeBreakdown": {
-          "בוצעה": 204,
+          "בוצעה": 205,
           "מאושרת לניפו": 3,
           "תאום לא סופי": 5,
-          "תואם מוניטין": 6,
+          "תואם מוניטין": 5,
           "מאושר לבצוע": 1,
           "המתנה לאיסוף": 6,
           "מבוטלת": 1,
           "חזרה ובוטלה": 2
         },
-        "pctCompleted": 0.8947368421052632
+        "pctCompleted": 0.8991228070175439
       }
     ]
   },
@@ -9838,8 +9836,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 7.52,
-      "calendarDays": 0.31,
+      "calendarHours": 14.13,
+      "calendarDays": 0.59,
       "businessDays": 1
     },
     {
@@ -9910,8 +9908,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 7.5,
-      "calendarDays": 0.31,
+      "calendarHours": 14.12,
+      "calendarDays": 0.59,
       "businessDays": 1
     },
     {
@@ -9970,8 +9968,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 11.58,
-      "calendarDays": 0.48,
+      "calendarHours": 18.2,
+      "calendarDays": 0.76,
       "businessDays": 1
     },
     {
@@ -10066,8 +10064,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 7.28,
-      "calendarDays": 0.3,
+      "calendarHours": 13.9,
+      "calendarDays": 0.58,
       "businessDays": 1
     },
     {
@@ -10138,8 +10136,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 7.5,
-      "calendarDays": 0.31,
+      "calendarHours": 14.12,
+      "calendarDays": 0.59,
       "businessDays": 1
     },
     {
@@ -11098,8 +11096,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 7.48,
-      "calendarDays": 0.31,
+      "calendarHours": 14.1,
+      "calendarDays": 0.59,
       "businessDays": 1
     },
     {
@@ -11350,8 +11348,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 7.47,
-      "calendarDays": 0.31,
+      "calendarHours": 14.08,
+      "calendarDays": 0.59,
       "businessDays": 1
     },
     {
@@ -12080,7 +12078,7 @@
       "lastEntryDateTime": "18/10/2026 14:51",
       "exitDateTime": "18/10/2026 18:22",
       "nextStatus": "ממתין לתאום",
-      "currentStatus": "תואם מוניטין",
+      "currentStatus": "בוצעה",
       "currentState": "Exited",
       "calendarHours": 3.52,
       "calendarDays": 0.15,
@@ -12419,7 +12417,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=19/10/2026 00:09"
+        "detail": "dataAsOf=19/10/2026 06:46"
       }
     ]
   }
