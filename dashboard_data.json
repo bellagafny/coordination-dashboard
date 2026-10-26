@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "26/10/2026 07:00",
-    "dataAsOf": "26/10/2026 06:55",
+    "lastRefresh": "26/10/2026 07:30",
+    "dataAsOf": "26/10/2026 07:22",
     "sourceFile": "STATUS_b070213_20261026_0710SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 404860,
-    "uniqueOrders": 64938
+    "sourceRowCount": 404865,
+    "uniqueOrders": 64939
   },
   "currentWaiting": {
     "total": 25,
@@ -86,8 +86,8 @@
     "uniqueTrueReentryOrders": 562,
     "totalReentryEvents": 676,
     "currentlyWaitingTrueReentries": 1,
-    "openReentryOrders": 50,
-    "closedReentryOrders": 512
+    "openReentryOrders": 51,
+    "closedReentryOrders": 511
   },
   "currentWaitingReentries": [
     {
@@ -8844,9 +8844,10 @@
       },
       "finalStatus": {
         "תואם מוניטין": 2,
-        "בוצעה": 47,
+        "בוצעה": 46,
         "תאום לא סופי": 5,
         "מבוטלת": 4,
+        "פתיחה מחדש": 1,
         "חזרה ובוטלה": 1
       }
     },
@@ -9215,11 +9216,12 @@
         "טיוטא": 1
       },
       "finalStatus": {
-        "בוצעה": 43,
+        "בוצעה": 41,
         "תאום לא סופי": 3,
         "מאושר לבצוע": 1,
         "מבוטלת": 1,
         "תואם מוניטין": 1,
+        "פתיחה מחדש": 2,
         "ממתין לתאום": 1
       }
     },
@@ -9360,7 +9362,7 @@
     },
     {
       "date": "26/10/2026",
-      "totalOrdersCreated": 0,
+      "totalOrdersCreated": 1,
       "enteredWaiting": 21,
       "exitedWaiting": 6,
       "endingWaitingBalance": 25,
@@ -9375,7 +9377,7 @@
   ],
   "todayCoordination": {
     "date": "26/10/2026",
-    "totalOrdersCreated": 0,
+    "totalOrdersCreated": 1,
     "enteredWaiting": 21,
     "exitedWaiting": 6
   },
@@ -9710,7 +9712,7 @@
       },
       {
         "month": "01/10/2026",
-        "totalOrdersCreated": 1821,
+        "totalOrdersCreated": 1822,
         "enteredWaiting": 841,
         "exitedWaiting": 863,
         "endingWaitingBalance": 25,
@@ -9801,16 +9803,17 @@
         "month": "01/10/2026",
         "totalExitedToMonitin": 334,
         "outcomeBreakdown": {
-          "בוצעה": 302,
+          "בוצעה": 301,
           "תואם מוניטין": 10,
           "מאושרת לניפו": 3,
           "תאום לא סופי": 4,
           "המתנה לאיסוף": 10,
           "מאושר לבצוע": 2,
           "מבוטלת": 1,
-          "חזרה ובוטלה": 2
+          "חזרה ובוטלה": 2,
+          "פתיחה מחדש": 1
         },
-        "pctCompleted": 0.9041916167664671
+        "pctCompleted": 0.9011976047904192
       }
     ]
   },
@@ -9907,8 +9910,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 19.03,
-      "calendarDays": 0.79,
+      "calendarHours": 19.48,
+      "calendarDays": 0.81,
       "businessDays": 1
     },
     {
@@ -12187,8 +12190,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 15.0,
-      "calendarDays": 0.62,
+      "calendarHours": 15.45,
+      "calendarDays": 0.64,
       "businessDays": 1
     },
     {
@@ -12199,8 +12202,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 14.83,
-      "calendarDays": 0.62,
+      "calendarHours": 15.28,
+      "calendarDays": 0.64,
       "businessDays": 1
     }
   ],
@@ -12536,7 +12539,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=26/10/2026 06:55"
+        "detail": "dataAsOf=26/10/2026 07:22"
       }
     ]
   }
