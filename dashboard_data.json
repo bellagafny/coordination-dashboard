@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "26/10/2026 13:30",
-    "dataAsOf": "26/10/2026 13:29",
-    "sourceFile": "STATUS_b070213_20261026_0110SS.XLS",
+    "lastRefresh": "26/10/2026 14:00",
+    "dataAsOf": "26/10/2026 13:58",
+    "sourceFile": "STATUS_b070213_20261026_0210SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 405242,
-    "uniqueOrders": 64984
+    "sourceRowCount": 405257,
+    "uniqueOrders": 64987
   },
   "currentWaiting": {
     "total": 11,
@@ -8757,9 +8757,9 @@
       },
       "finalStatus": {
         "בוצעה": 67,
-        "תאום לא סופי": 6,
+        "תאום לא סופי": 7,
         "בטיפול קמש": 1,
-        "תיאום עתידי": 3,
+        "תיאום עתידי": 2,
         "מאושרת לניפו": 1,
         "חזרה ובוטלה": 1,
         "תואם מוניטין": 1,
@@ -9305,18 +9305,18 @@
     },
     {
       "date": "26/10/2026",
-      "totalOrdersCreated": 46,
-      "enteredWaiting": 52,
-      "exitedWaiting": 51,
+      "totalOrdersCreated": 49,
+      "enteredWaiting": 54,
+      "exitedWaiting": 53,
       "endingWaitingBalance": 11,
       "firstNextStatus": {
-        "תאום לא סופי": 23,
+        "תאום לא סופי": 25,
         "תואם מוניטין": 26,
         "מבוטלת": 1,
         "אשור אובליגו": 1
       },
       "finalStatus": {
-        "תאום לא סופי": 17,
+        "תאום לא סופי": 19,
         "תואם מוניטין": 25,
         "מבוטלת": 1,
         "ממתין לתאום": 9
@@ -9325,9 +9325,9 @@
   ],
   "todayCoordination": {
     "date": "26/10/2026",
-    "totalOrdersCreated": 46,
-    "enteredWaiting": 52,
-    "exitedWaiting": 51
+    "totalOrdersCreated": 49,
+    "enteredWaiting": 54,
+    "exitedWaiting": 53
   },
   "monthly": {
     "coordinationFlow": [
@@ -9660,12 +9660,12 @@
       },
       {
         "month": "01/10/2026",
-        "totalOrdersCreated": 1867,
-        "enteredWaiting": 872,
-        "exitedWaiting": 908,
+        "totalOrdersCreated": 1870,
+        "enteredWaiting": 874,
+        "exitedWaiting": 910,
         "endingWaitingBalance": 11,
         "statusBreakdown": {
-          "תאום לא סופי": 439,
+          "תאום לא סופי": 441,
           "תואם מוניטין": 360,
           "לברור הסחר": 40,
           "מאושרת לניפו": 12,
@@ -12151,8 +12151,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 21.4,
-      "calendarDays": 0.89,
+      "calendarHours": 21.88,
+      "calendarDays": 0.91,
       "businessDays": 1
     }
   ],
@@ -12488,7 +12488,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=26/10/2026 13:29"
+        "detail": "dataAsOf=26/10/2026 13:58"
       }
     ]
   }
