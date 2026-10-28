@@ -1,34 +1,34 @@
 {
   "metadata": {
-    "lastRefresh": "28/10/2026 15:30",
-    "dataAsOf": "28/10/2026 15:27",
-    "sourceFile": "STATUS_b070213_20261028_0310SS.XLS",
+    "lastRefresh": "28/10/2026 16:00",
+    "dataAsOf": "28/10/2026 15:55",
+    "sourceFile": "STATUS_b070213_20261028_0410SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 406258,
-    "uniqueOrders": 65151
+    "sourceRowCount": 406270,
+    "uniqueOrders": 65153
   },
   "currentWaiting": {
-    "total": 43,
-    "withinSla": 40,
+    "total": 38,
+    "withinSla": 35,
     "overSla": 3,
     "reentryCurrentlyWaiting": 5
   },
   "currentWaitingLatestEntry": {
-    "total": 43,
-    "withinSla": 42,
+    "total": 38,
+    "withinSla": 37,
     "overSla": 1,
     "reentryCurrentlyWaiting": 5
   },
   "waitingAging": {
     "bySlaStart": {
-      "עד יום עסקים אחד": 38,
+      "עד יום עסקים אחד": 33,
       "2 ימי עסקים": 2,
       "3 ימי עסקים": 0,
       "4–5 ימי עסקים": 0,
       "יותר מ־5 ימי עסקים": 3
     },
     "byLastEntry": {
-      "עד יום עסקים אחד": 41,
+      "עד יום עסקים אחד": 36,
       "2 ימי עסקים": 1,
       "3 ימי עסקים": 1,
       "4–5 ימי עסקים": 0,
@@ -8568,8 +8568,8 @@
       "finalStatus": {
         "בוצעה": 44,
         "מאושרת לניפו": 2,
-        "תואם מוניטין": 2,
-        "תאום לא סופי": 1
+        "תואם מוניטין": 1,
+        "תאום לא סופי": 2
       }
     },
     {
@@ -9283,11 +9283,11 @@
       },
       "finalStatus": {
         "בוצעה": 43,
-        "תואם מוניטין": 1,
+        "תואם מוניטין": 2,
         "תאום לא סופי": 2,
         "מבוטלת": 1,
         "ממתין לתאום": 1,
-        "המתנה לאיסוף": 2
+        "המתנה לאיסוף": 1
       }
     },
     {
@@ -9310,7 +9310,8 @@
         "בוצעה": 41,
         "תאום לא סופי": 2,
         "מבוטלת": 4,
-        "המתנה לאיסוף": 5
+        "תואם מוניטין": 1,
+        "המתנה לאיסוף": 4
       }
     },
     {
@@ -9357,10 +9358,10 @@
         "תאום לא סופי": 3,
         "בוצעה": 22,
         "בדיקת אובליג": 2,
-        "תואם מוניטין": 3,
-        "המתנה לאיסוף": 4,
+        "תואם מוניטין": 4,
         "מאושרת לניפו": 2,
         "מבוטלת": 2,
+        "המתנה לאיסוף": 3,
         "לברור הסחר": 1
       }
     },
@@ -9443,22 +9444,22 @@
     },
     {
       "date": "28/10/2026",
-      "totalOrdersCreated": 100,
+      "totalOrdersCreated": 102,
       "enteredWaiting": 82,
-      "exitedWaiting": 55,
-      "endingWaitingBalance": 43,
+      "exitedWaiting": 60,
+      "endingWaitingBalance": 38,
       "firstNextStatus": {
-        "תואם מוניטין": 24,
-        "תאום לא סופי": 22,
+        "תואם מוניטין": 28,
+        "תאום לא סופי": 23,
         "מאושרת לניפו": 2,
         "לברור הסחר": 5,
         "מבוטלת": 1,
         "טיוטא": 1
       },
       "finalStatus": {
-        "תואם מוניטין": 9,
-        "תאום לא סופי": 21,
-        "ממתין לתאום": 42,
+        "תואם מוניטין": 13,
+        "תאום לא סופי": 22,
+        "ממתין לתאום": 37,
         "בוצעה": 8,
         "לברור הסחר": 2
       }
@@ -9466,9 +9467,9 @@
   ],
   "todayCoordination": {
     "date": "28/10/2026",
-    "totalOrdersCreated": 100,
+    "totalOrdersCreated": 102,
     "enteredWaiting": 82,
-    "exitedWaiting": 55
+    "exitedWaiting": 60
   },
   "monthly": {
     "coordinationFlow": [
@@ -9801,13 +9802,13 @@
       },
       {
         "month": "01/10/2026",
-        "totalOrdersCreated": 2034,
+        "totalOrdersCreated": 2036,
         "enteredWaiting": 966,
-        "exitedWaiting": 970,
-        "endingWaitingBalance": 43,
+        "exitedWaiting": 975,
+        "endingWaitingBalance": 38,
         "statusBreakdown": {
-          "תאום לא סופי": 468,
-          "תואם מוניטין": 384,
+          "תאום לא סופי": 469,
+          "תואם מוניטין": 388,
           "לברור הסחר": 45,
           "מאושרת לניפו": 14,
           "תיאום עתידי": 6,
@@ -9891,13 +9892,13 @@
       },
       {
         "month": "01/10/2026",
-        "totalExitedToMonitin": 384,
+        "totalExitedToMonitin": 388,
         "outcomeBreakdown": {
           "בוצעה": 338,
-          "תואם מוניטין": 19,
+          "תואם מוניטין": 26,
           "מאושרת לניפו": 3,
           "תאום לא סופי": 3,
-          "המתנה לאיסוף": 12,
+          "המתנה לאיסוף": 9,
           "מאושר לבצוע": 1,
           "בדיקת אובליג": 1,
           "ממתין לתאום": 2,
@@ -9905,7 +9906,7 @@
           "חזרה ובוטלה": 2,
           "פתיחה מחדש": 2
         },
-        "pctCompleted": 0.8802083333333334
+        "pctCompleted": 0.8711340206185567
       }
     ]
   },
@@ -12282,8 +12283,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 3.43,
-      "calendarDays": 0.14,
+      "calendarHours": 3.9,
+      "calendarDays": 0.16,
       "businessDays": 0
     },
     {
@@ -12318,8 +12319,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 71.37,
-      "calendarDays": 2.97,
+      "calendarHours": 71.83,
+      "calendarDays": 2.99,
       "businessDays": 3
     },
     {
@@ -12330,8 +12331,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 3.02,
-      "calendarDays": 0.13,
+      "calendarHours": 3.48,
+      "calendarDays": 0.15,
       "businessDays": 0
     },
     {
@@ -12342,8 +12343,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 3.42,
-      "calendarDays": 0.14,
+      "calendarHours": 3.88,
+      "calendarDays": 0.16,
       "businessDays": 0
     },
     {
@@ -12354,8 +12355,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 0.17,
-      "calendarDays": 0.01,
+      "calendarHours": 0.63,
+      "calendarDays": 0.03,
       "businessDays": 0
     }
   ],
@@ -12616,7 +12617,7 @@
       {
         "name": "Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "40 + 3 vs total 43"
+        "detail": "35 + 3 vs total 38"
       },
       {
         "name": "Trade Treatment: With Notes + Without Notes = Total",
@@ -12631,7 +12632,7 @@
       {
         "name": "Latest Entry Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "42 + 1 vs total 43"
+        "detail": "37 + 1 vs total 38"
       },
       {
         "name": "Reentries-currently-waiting consistent across First/Latest Entry views",
@@ -12641,12 +12642,12 @@
       {
         "name": "First Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "43 vs 43"
+        "detail": "38 vs 38"
       },
       {
         "name": "Latest Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "43 vs 43"
+        "detail": "38 vs 38"
       },
       {
         "name": "Current Waiting reentries reconcile with TRUE-reentry population",
@@ -12691,7 +12692,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=28/10/2026 15:27"
+        "detail": "dataAsOf=28/10/2026 15:55"
       }
     ]
   }
