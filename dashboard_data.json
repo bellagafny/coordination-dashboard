@@ -1,10 +1,10 @@
 {
   "metadata": {
-    "lastRefresh": "29/10/2026 17:00",
-    "dataAsOf": "29/10/2026 16:44",
+    "lastRefresh": "29/10/2026 17:30",
+    "dataAsOf": "29/10/2026 17:27",
     "sourceFile": "STATUS_b070213_20261029_0510SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 406917,
+    "sourceRowCount": 406919,
     "uniqueOrders": 65253
   },
   "currentWaiting": {
@@ -9287,10 +9287,11 @@
       },
       "finalStatus": {
         "בוצעה": 44,
-        "תואם מוניטין": 2,
+        "תואם מוניטין": 1,
         "תאום לא סופי": 2,
         "מבוטלת": 1,
-        "לברור הסחר": 1
+        "לברור הסחר": 1,
+        "המתנה לאיסוף": 1
       }
     },
     {
@@ -9313,8 +9314,7 @@
         "בוצעה": 42,
         "תאום לא סופי": 2,
         "מבוטלת": 4,
-        "תואם מוניטין": 1,
-        "המתנה לאיסוף": 3
+        "המתנה לאיסוף": 4
       }
     },
     {
@@ -9361,9 +9361,10 @@
         "תאום לא סופי": 3,
         "בוצעה": 28,
         "בדיקת אובליג": 2,
-        "תואם מוניטין": 2,
+        "המתנה לאיסוף": 1,
         "מאושרת לניפו": 1,
         "מבוטלת": 2,
+        "תואם מוניטין": 1,
         "לברור הסחר": 1
       }
     },
@@ -9460,12 +9461,13 @@
         "טיוטא": 1
       },
       "finalStatus": {
-        "תואם מוניטין": 14,
+        "תואם מוניטין": 13,
         "תאום לא סופי": 21,
         "ממתין לתאום": 16,
         "בוצעה": 33,
         "לברור הסחר": 4,
-        "מבוטלת": 2
+        "מבוטלת": 2,
+        "המתנה לאיסוף": 1
       }
     },
     {
@@ -9919,10 +9921,10 @@
         "totalExitedToMonitin": 415,
         "outcomeBreakdown": {
           "בוצעה": 372,
-          "תואם מוניטין": 23,
+          "תואם מוניטין": 20,
           "מאושרת לניפו": 3,
           "תאום לא סופי": 3,
-          "המתנה לאיסוף": 5,
+          "המתנה לאיסוף": 8,
           "מאושר לבצוע": 1,
           "בדיקת אובליג": 1,
           "ממתין לתאום": 1,
@@ -11900,8 +11902,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 6.27,
-      "calendarDays": 0.26,
+      "calendarHours": 6.98,
+      "calendarDays": 0.29,
       "businessDays": 0
     },
     {
@@ -12272,8 +12274,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 5.77,
-      "calendarDays": 0.24,
+      "calendarHours": 6.48,
+      "calendarDays": 0.27,
       "businessDays": 0
     },
     {
@@ -12344,8 +12346,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 28.72,
-      "calendarDays": 1.2,
+      "calendarHours": 29.43,
+      "calendarDays": 1.23,
       "businessDays": 1
     },
     {
@@ -12380,8 +12382,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 96.65,
-      "calendarDays": 4.03,
+      "calendarHours": 97.37,
+      "calendarDays": 4.06,
       "businessDays": 4
     },
     {
@@ -12392,8 +12394,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 28.3,
-      "calendarDays": 1.18,
+      "calendarHours": 29.02,
+      "calendarDays": 1.21,
       "businessDays": 1
     },
     {
@@ -12416,8 +12418,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 5.15,
-      "calendarDays": 0.21,
+      "calendarHours": 5.87,
+      "calendarDays": 0.24,
       "businessDays": 0
     },
     {
@@ -12428,8 +12430,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 25.45,
-      "calendarDays": 1.06,
+      "calendarHours": 26.17,
+      "calendarDays": 1.09,
       "businessDays": 1
     }
   ],
@@ -12765,7 +12767,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=29/10/2026 16:44"
+        "detail": "dataAsOf=29/10/2026 17:27"
       }
     ]
   }
