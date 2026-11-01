@@ -17,8 +17,9 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
 .card.unknown{background:#7f8c9b}.card.sla-pick{cursor:pointer}.card.sla-pick:hover{filter:brightness(.95)}.card.sla-active{outline:3px solid var(--navy);outline-offset:2px}.sla-refresh{margin:-6px 0 8px}th.sla-h-good{background:var(--green)}th.sla-h-bad{background:var(--red)}th.sla-h-unknown{background:#7f8c9b}.subnav-btn.back-to-resp-top{margin-inline-start:12px}.sla-scope{display:inline-block;margin-inline-start:8px;padding:2px 9px;border-radius:10px;background:#eef3fb;color:var(--navy);font-size:12px;font-weight:bold}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
+#inventory td.num,#inventory th{text-align:center}#inventory td.num{direction:ltr}#inventory td:first-child{text-align:right}th.inv-sortable{cursor:pointer;user-select:none}th.inv-sortable:hover{background:var(--navy)}.inv-sort-ind{font-size:11px}.inv-good{color:#2e7d32;font-weight:bold}.inv-bad{color:var(--red);font-weight:bold}.inv-neutral{color:var(--navy);font-weight:bold}.inv-flat{color:#667085}.inv-na{color:#667085;font-size:11.5px}
 </style></head><body>
-<header><h1>דשבורד תיאום הזמנות</h1><p id="metaLine">טוען נתונים…</p><nav><a href="#coord">תאום</a><a href="#exceptions">חריגי תאום</a><a href="#trade">טיפול סחר</a><a href="#returns-mahalav">החזרות/החלפות מחלב</a><a href="#returns-monitin">החזרות/החלפות מוניטין</a><a href="#returns-summary">סיכום החזרות והחלפות</a></nav></header><main>
+<header><h1>דשבורד תיאום הזמנות</h1><p id="metaLine">טוען נתונים…</p><nav><a href="#coord">תאום</a><a href="#exceptions">חריגי תאום</a><a href="#trade">טיפול סחר</a><a href="#returns-mahalav">החזרות/החלפות מחלב</a><a href="#returns-monitin">החזרות/החלפות מוניטין</a><a href="#returns-summary">סיכום החזרות והחלפות</a><a href="#inventory">התפתחות מלאי מוצרים מושמשים</a></nav></header><main>
 
 <div id="statusBanner"></div>
 
@@ -191,6 +192,14 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>ת.עדכון סטטוס</th><th>ימי עבודה בסטטוס</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retSummaryDetailBody"></tbody></table></div>
 </section>
 
+<section class="section" id="inventory"><h2>התפתחות מלאי מוצרים מושמשים</h2>
+<div id="invBanner"></div>
+<h3>מבט על לפי מיקום המחסן</h3>
+<p class="note" id="invMeta"></p>
+<p class="note" id="invLegend">צבעי השינוי: ביסודות (יעד: צמצום המלאי) — <span class="inv-good">ירידה במלאי בירוק</span>, <span class="inv-bad">עלייה במלאי באדום</span>. באוברסיז וביד בנימין — <span class="inv-neutral">צבע ניטרלי</span>, ללא קביעה אם השינוי חיובי או שלילי.</p>
+<div class="table-wrap"><table id="invTable"><thead id="invHead"></thead><tbody id="invBody"></tbody></table></div>
+</section>
+
 <p class="note" id="footNote">הנתונים נטענים אוטומטית מתוך dashboard_data.json, המרוענן על ידי צינור העיבוד (Python).</p>
 </main>
 
@@ -198,6 +207,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <script src="returns_export.js"></script>
 <script src="returns_status_age.js"></script>
 <script src="returns_sla.js"></script>
+<script src="inventory.js"></script>
 <script>
 function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Over SLA' ? 'sla-bad' : ''); }
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
