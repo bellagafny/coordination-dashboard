@@ -1,7 +1,7 @@
 {
   "metadata": {
     "sourceFile": "OPEN_RETURNS_EXCHANGES_20261101.xlsx",
-    "lastRefresh": "01/11/2026 11:58",
+    "lastRefresh": "01/11/2026 13:23",
     "refreshStatus": "PASSED",
     "totalRecords": 299,
     "statusUpdateColumnPresent": true,
@@ -2467,19 +2467,13 @@
         {
           "responsibility": "סחר",
           "returns": 31,
-          "exchanges": 3,
-          "total": 34
+          "exchanges": 4,
+          "total": 35
         },
         {
           "responsibility": "כספים",
           "returns": 1,
           "exchanges": 0,
-          "total": 1
-        },
-        {
-          "responsibility": "לא מוגדר",
-          "returns": 0,
-          "exchanges": 1,
           "total": 1
         }
       ],
@@ -3949,7 +3943,7 @@
           "orderType": "102",
           "orderTypeDesc": "הזמנה להחלפה",
           "provider": "מוניטין",
-          "responsibility": "לא מוגדר",
+          "responsibility": "סחר",
           "actionType": "מסירה ואיסוף",
           "statusUpdate": "2026-10-25T16:05:00",
           "statusUpdateState": "ok"
@@ -4363,7 +4357,7 @@
       {
         "name": "מוניטין: status totals within each responsibility reconcile to that responsibility's total",
         "passed": true,
-        "detail": "לוגיסטיקה:94/94, סחר:34/34, כספים:1/1, לא מוגדר:1/1"
+        "detail": "לוגיסטיקה:94/94, סחר:35/35, כספים:1/1"
       },
       {
         "name": "מוניטין: no order has a blank responsibility (missing values -> 'לא מוגדר')",
