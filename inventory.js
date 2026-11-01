@@ -124,8 +124,27 @@
     el.head.appendChild(tr);
   }
 
+  // "עודכן לאחרונה" per location (updatedAt = that location's last successful
+  // update). Created here so index.html needs no change; hidden when the data
+  // has no updatedAt at all (files published before the field existed).
+  function renderUpdated() {
+    var p = document.getElementById('invUpdated');
+    if (!p) {
+      p = make('p', 'note');
+      p.id = 'invUpdated';
+      var wrap = document.getElementById('invTable').parentNode;
+      wrap.parentNode.insertBefore(p, wrap.nextSibling);
+    }
+    var any = data.locations.some(function (l) { return l.updatedAt; });
+    p.style.display = any ? '' : 'none';
+    p.textContent = any ? 'עודכן לאחרונה: ' + data.locations.map(function (l) {
+      return l.location + ' ' + (l.updatedAt || '—');
+    }).join(' | ') : '';
+  }
+
   function render() {
     el.meta.textContent = 'נתונים מצטברים מ-' + data.periodStart + ' ועד מועד הפקת הנתונים';
+    renderUpdated();
     renderHead();
     var rows = data.locations.slice();
     if (sort.key) {
