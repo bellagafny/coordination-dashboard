@@ -1,34 +1,34 @@
 {
   "metadata": {
-    "lastRefresh": "01/11/2026 09:00",
-    "dataAsOf": "01/11/2026 08:59",
+    "lastRefresh": "01/11/2026 09:30",
+    "dataAsOf": "01/11/2026 09:29",
     "sourceFile": "STATUS_b070213_20261101_0911SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 406952,
-    "uniqueOrders": 65269
+    "sourceRowCount": 406987,
+    "uniqueOrders": 65278
   },
   "currentWaiting": {
-    "total": 27,
-    "withinSla": 23,
+    "total": 29,
+    "withinSla": 25,
     "overSla": 4,
     "reentryCurrentlyWaiting": 3
   },
   "currentWaitingLatestEntry": {
-    "total": 27,
-    "withinSla": 26,
+    "total": 29,
+    "withinSla": 28,
     "overSla": 1,
     "reentryCurrentlyWaiting": 3
   },
   "waitingAging": {
     "bySlaStart": {
-      "עד יום עסקים אחד": 9,
+      "עד יום עסקים אחד": 11,
       "2 ימי עסקים": 14,
       "3 ימי עסקים": 0,
       "4–5 ימי עסקים": 3,
       "יותר מ־5 ימי עסקים": 1
     },
     "byLastEntry": {
-      "עד יום עסקים אחד": 10,
+      "עד יום עסקים אחד": 12,
       "2 ימי עסקים": 16,
       "3 ימי עסקים": 0,
       "4–5 ימי עסקים": 1,
@@ -9512,18 +9512,20 @@
     },
     {
       "date": "01/11/2026",
-      "totalOrdersCreated": 11,
-      "enteredWaiting": 0,
+      "totalOrdersCreated": 20,
+      "enteredWaiting": 2,
       "exitedWaiting": 0,
-      "endingWaitingBalance": 27,
+      "endingWaitingBalance": 29,
       "firstNextStatus": {},
-      "finalStatus": {}
+      "finalStatus": {
+        "ממתין לתאום": 2
+      }
     }
   ],
   "todayCoordination": {
     "date": "01/11/2026",
-    "totalOrdersCreated": 11,
-    "enteredWaiting": 0,
+    "totalOrdersCreated": 20,
+    "enteredWaiting": 2,
     "exitedWaiting": 0
   },
   "monthly": {
@@ -9885,10 +9887,10 @@
       },
       {
         "month": "01/11/2026",
-        "totalOrdersCreated": 11,
-        "enteredWaiting": 0,
+        "totalOrdersCreated": 20,
+        "enteredWaiting": 2,
         "exitedWaiting": 0,
-        "endingWaitingBalance": 27,
+        "endingWaitingBalance": 29,
         "statusBreakdown": {}
       }
     ],
@@ -11939,8 +11941,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 70.52,
-      "calendarDays": 2.94,
+      "calendarHours": 71.02,
+      "calendarDays": 2.96,
       "businessDays": 1
     },
     {
@@ -12311,8 +12313,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 70.02,
-      "calendarDays": 2.92,
+      "calendarHours": 70.52,
+      "calendarDays": 2.94,
       "businessDays": 1
     },
     {
@@ -12383,8 +12385,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 92.97,
-      "calendarDays": 3.87,
+      "calendarHours": 93.47,
+      "calendarDays": 3.89,
       "businessDays": 2
     },
     {
@@ -12419,8 +12421,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 160.9,
-      "calendarDays": 6.7,
+      "calendarHours": 161.4,
+      "calendarDays": 6.72,
       "businessDays": 5
     },
     {
@@ -12431,8 +12433,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 92.55,
-      "calendarDays": 3.86,
+      "calendarHours": 93.05,
+      "calendarDays": 3.88,
       "businessDays": 2
     },
     {
@@ -12455,8 +12457,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 69.4,
-      "calendarDays": 2.89,
+      "calendarHours": 69.9,
+      "calendarDays": 2.91,
       "businessDays": 1
     },
     {
@@ -12467,8 +12469,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 89.7,
-      "calendarDays": 3.74,
+      "calendarHours": 90.2,
+      "calendarDays": 3.76,
       "businessDays": 2
     }
   ],
@@ -12734,7 +12736,7 @@
       {
         "name": "Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "23 + 4 vs total 27"
+        "detail": "25 + 4 vs total 29"
       },
       {
         "name": "Trade Treatment: With Notes + Without Notes = Total",
@@ -12749,7 +12751,7 @@
       {
         "name": "Latest Entry Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "26 + 1 vs total 27"
+        "detail": "28 + 1 vs total 29"
       },
       {
         "name": "Reentries-currently-waiting consistent across First/Latest Entry views",
@@ -12759,12 +12761,12 @@
       {
         "name": "First Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "27 vs 27"
+        "detail": "29 vs 29"
       },
       {
         "name": "Latest Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "27 vs 27"
+        "detail": "29 vs 29"
       },
       {
         "name": "Current Waiting reentries reconcile with TRUE-reentry population",
@@ -12809,7 +12811,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=01/11/2026 08:59"
+        "detail": "dataAsOf=01/11/2026 09:29"
       }
     ]
   }
