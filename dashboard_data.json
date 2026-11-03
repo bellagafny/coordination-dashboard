@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "03/11/2026 09:30",
-    "dataAsOf": "03/11/2026 09:25",
-    "sourceFile": "STATUS_b070213_20261103_0911SS.XLS",
+    "lastRefresh": "03/11/2026 10:00",
+    "dataAsOf": "03/11/2026 09:59",
+    "sourceFile": "STATUS_b070213_20261103_1011SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 408128,
-    "uniqueOrders": 65447
+    "sourceRowCount": 408144,
+    "uniqueOrders": 65451
   },
   "currentWaiting": {
     "total": 27,
@@ -9519,9 +9519,9 @@
         "מאושרת לניפו": 1
       },
       "finalStatus": {
-        "תואם מוניטין": 1,
+        "תואם מוניטין": 2,
         "בוצעה": 18,
-        "תאום לא סופי": 5,
+        "תאום לא סופי": 4,
         "מאושרת לניפו": 1,
         "המתנה לאיסוף": 1
       }
@@ -9580,33 +9580,33 @@
         "לברור הסחר": 2
       },
       "finalStatus": {
-        "תואם מוניטין": 5,
+        "תואם מוניטין": 6,
         "בוצעה": 9,
-        "ממתין לתאום": 15,
+        "ממתין לתאום": 14,
         "תאום לא סופי": 12,
         "המתנה לאיסוף": 1
       }
     },
     {
       "date": "03/11/2026",
-      "totalOrdersCreated": 10,
-      "enteredWaiting": 1,
-      "exitedWaiting": 3,
+      "totalOrdersCreated": 14,
+      "enteredWaiting": 2,
+      "exitedWaiting": 4,
       "endingWaitingBalance": 27,
       "firstNextStatus": {
-        "תואם מוניטין": 1,
+        "תואם מוניטין": 2,
         "תאום לא סופי": 2
       },
       "finalStatus": {
-        "ממתין לתאום": 1
+        "ממתין לתאום": 2
       }
     }
   ],
   "todayCoordination": {
     "date": "03/11/2026",
-    "totalOrdersCreated": 10,
-    "enteredWaiting": 1,
-    "exitedWaiting": 3
+    "totalOrdersCreated": 14,
+    "enteredWaiting": 2,
+    "exitedWaiting": 4
   },
   "monthly": {
     "coordinationFlow": [
@@ -9967,14 +9967,14 @@
       },
       {
         "month": "01/11/2026",
-        "totalOrdersCreated": 189,
-        "enteredWaiting": 88,
-        "exitedWaiting": 88,
+        "totalOrdersCreated": 193,
+        "enteredWaiting": 89,
+        "exitedWaiting": 89,
         "endingWaitingBalance": 27,
         "statusBreakdown": {
           "תאום לא סופי": 41,
           "אשור אובליגו": 1,
-          "תואם מוניטין": 42,
+          "תואם מוניטין": 43,
           "אישור מחיר": 1,
           "בוצעה": 1,
           "לברור הסחר": 2
@@ -10061,13 +10061,13 @@
       },
       {
         "month": "01/11/2026",
-        "totalExitedToMonitin": 42,
+        "totalExitedToMonitin": 43,
         "outcomeBreakdown": {
-          "תואם מוניטין": 5,
+          "תואם מוניטין": 6,
           "בוצעה": 35,
           "המתנה לאיסוף": 2
         },
-        "pctCompleted": 0.8333333333333334
+        "pctCompleted": 0.813953488372093
       }
     ]
   },
@@ -12564,8 +12564,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 138.13,
-      "calendarDays": 5.76,
+      "calendarHours": 138.7,
+      "calendarDays": 5.78,
       "businessDays": 4
     },
     {
@@ -12948,7 +12948,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=03/11/2026 09:25"
+        "detail": "dataAsOf=03/11/2026 09:59"
       }
     ]
   }
