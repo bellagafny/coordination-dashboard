@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "08/11/2026 08:30",
-    "dataAsOf": "08/11/2026 08:29",
-    "sourceFile": "STATUS_b070213_20261108_0811SS.XLS",
+    "lastRefresh": "08/11/2026 09:00",
+    "dataAsOf": "08/11/2026 09:00",
+    "sourceFile": "STATUS_b070213_20261108_0911SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 409857,
-    "uniqueOrders": 65778
+    "sourceRowCount": 409877,
+    "uniqueOrders": 65783
   },
   "currentWaiting": {
     "total": 14,
@@ -9649,23 +9649,25 @@
     },
     {
       "date": "08/11/2026",
-      "totalOrdersCreated": 7,
-      "enteredWaiting": 2,
-      "exitedWaiting": 1,
+      "totalOrdersCreated": 12,
+      "enteredWaiting": 3,
+      "exitedWaiting": 2,
       "endingWaitingBalance": 14,
       "firstNextStatus": {
+        "תאום לא סופי": 1,
         "מאושרת לניפו": 1
       },
       "finalStatus": {
-        "ממתין לתאום": 2
+        "ממתין לתאום": 2,
+        "תאום לא סופי": 1
       }
     }
   ],
   "todayCoordination": {
     "date": "08/11/2026",
-    "totalOrdersCreated": 7,
-    "enteredWaiting": 2,
-    "exitedWaiting": 1
+    "totalOrdersCreated": 12,
+    "enteredWaiting": 3,
+    "exitedWaiting": 2
   },
   "monthly": {
     "coordinationFlow": [
@@ -10026,12 +10028,12 @@
       },
       {
         "month": "01/11/2026",
-        "totalOrdersCreated": 520,
-        "enteredWaiting": 201,
-        "exitedWaiting": 214,
+        "totalOrdersCreated": 525,
+        "enteredWaiting": 202,
+        "exitedWaiting": 215,
         "endingWaitingBalance": 14,
         "statusBreakdown": {
-          "תאום לא סופי": 104,
+          "תאום לא סופי": 105,
           "אשור אובליגו": 1,
           "תואם מוניטין": 94,
           "אישור מחיר": 1,
@@ -11143,8 +11145,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 92.07,
-      "calendarDays": 3.84,
+      "calendarHours": 92.58,
+      "calendarDays": 3.86,
       "businessDays": 2
     },
     {
@@ -12115,8 +12117,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 93.03,
-      "calendarDays": 3.88,
+      "calendarHours": 93.55,
+      "calendarDays": 3.9,
       "businessDays": 2
     },
     {
@@ -12487,8 +12489,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 117.17,
-      "calendarDays": 4.88,
+      "calendarHours": 117.68,
+      "calendarDays": 4.9,
       "businessDays": 3
     },
     {
@@ -12643,8 +12645,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 257.2,
-      "calendarDays": 10.72,
+      "calendarHours": 257.72,
+      "calendarDays": 10.74,
       "businessDays": 7
     },
     {
@@ -12667,8 +12669,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 92.78,
-      "calendarDays": 3.87,
+      "calendarHours": 93.3,
+      "calendarDays": 3.89,
       "businessDays": 2
     },
     {
@@ -12679,8 +12681,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 116.67,
-      "calendarDays": 4.86,
+      "calendarHours": 117.18,
+      "calendarDays": 4.88,
       "businessDays": 3
     },
     {
@@ -12691,8 +12693,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 91.05,
-      "calendarDays": 3.79,
+      "calendarHours": 91.57,
+      "calendarDays": 3.82,
       "businessDays": 2
     },
     {
@@ -12703,8 +12705,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 68.52,
-      "calendarDays": 2.85,
+      "calendarHours": 69.03,
+      "calendarDays": 2.88,
       "businessDays": 1
     }
   ],
@@ -13095,7 +13097,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=08/11/2026 08:29"
+        "detail": "dataAsOf=08/11/2026 09:00"
       }
     ]
   }
