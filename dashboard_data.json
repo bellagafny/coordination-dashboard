@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "lastRefresh": "11/11/2026 01:30",
+    "lastRefresh": "11/11/2026 02:00",
     "dataAsOf": "10/11/2026 21:05",
-    "sourceFile": "STATUS_b070213_20261111_0111SS.XLS",
+    "sourceFile": "STATUS_b070213_20261111_0211SS.XLS",
     "refreshStatus": "PASSED",
     "sourceRowCount": 411847,
     "uniqueOrders": 66103
@@ -13126,6 +13126,163 @@
       "maxBusinessDays": 5
     }
   ],
+  "monthlyManagementSummary": {
+    "schemaVersion": 1,
+    "status": "PASSED",
+    "error": null,
+    "basis": "latestRouteAssignment",
+    "dataAsOf": "10/11/2026 21:05",
+    "checks": [
+      {
+        "name": "one entry route per order",
+        "passed": true
+      },
+      {
+        "name": "daily rows cover 1st of month .. dataAsOf",
+        "passed": true
+      },
+      {
+        "name": "daily sum = current month (ordersReceived)",
+        "passed": true
+      },
+      {
+        "name": "daily sum = current month (waitingForCoordination)",
+        "passed": true
+      },
+      {
+        "name": "daily sum = current month (approvedForIssue)",
+        "passed": true
+      },
+      {
+        "name": "daily sum = current month (pickup)",
+        "passed": true
+      },
+      {
+        "name": "daily sum = current month (coordinatedMonitin)",
+        "passed": true
+      },
+      {
+        "name": "non-negative integer counts",
+        "passed": true
+      },
+      {
+        "name": "no counting date after dataAsOf",
+        "passed": true
+      },
+      {
+        "name": "orders received = existing monthly totalOrdersCreated (previous month)",
+        "passed": true
+      },
+      {
+        "name": "orders received = existing monthly totalOrdersCreated (current month)",
+        "passed": true
+      }
+    ],
+    "previousMonth": {
+      "month": "01/10/2026",
+      "from": "01/10/2026",
+      "to": "31/10/2026",
+      "partial": false,
+      "ordersReceived": 2141,
+      "waitingForCoordination": 853,
+      "approvedForIssue": 1003,
+      "pickup": 12,
+      "coordinatedMonitin": 870
+    },
+    "currentMonth": {
+      "month": "01/11/2026",
+      "from": "01/11/2026",
+      "to": "10/11/2026",
+      "partial": true,
+      "ordersReceived": 845,
+      "waitingForCoordination": 310,
+      "approvedForIssue": 386,
+      "pickup": 1,
+      "coordinatedMonitin": 305
+    },
+    "currentMonthDaily": [
+      {
+        "date": "01/11/2026",
+        "ordersReceived": 109,
+        "waitingForCoordination": 40,
+        "approvedForIssue": 35,
+        "pickup": 1,
+        "coordinatedMonitin": 45
+      },
+      {
+        "date": "02/11/2026",
+        "ordersReceived": 70,
+        "waitingForCoordination": 37,
+        "approvedForIssue": 31,
+        "pickup": 0,
+        "coordinatedMonitin": 28
+      },
+      {
+        "date": "03/11/2026",
+        "ordersReceived": 53,
+        "waitingForCoordination": 31,
+        "approvedForIssue": 26,
+        "pickup": 0,
+        "coordinatedMonitin": 39
+      },
+      {
+        "date": "04/11/2026",
+        "ordersReceived": 147,
+        "waitingForCoordination": 39,
+        "approvedForIssue": 56,
+        "pickup": 0,
+        "coordinatedMonitin": 36
+      },
+      {
+        "date": "05/11/2026",
+        "ordersReceived": 97,
+        "waitingForCoordination": 31,
+        "approvedForIssue": 56,
+        "pickup": 0,
+        "coordinatedMonitin": 34
+      },
+      {
+        "date": "06/11/2026",
+        "ordersReceived": 27,
+        "waitingForCoordination": 0,
+        "approvedForIssue": 32,
+        "pickup": 0,
+        "coordinatedMonitin": 0
+      },
+      {
+        "date": "07/11/2026",
+        "ordersReceived": 10,
+        "waitingForCoordination": 0,
+        "approvedForIssue": 8,
+        "pickup": 0,
+        "coordinatedMonitin": 0
+      },
+      {
+        "date": "08/11/2026",
+        "ordersReceived": 144,
+        "waitingForCoordination": 43,
+        "approvedForIssue": 49,
+        "pickup": 0,
+        "coordinatedMonitin": 50
+      },
+      {
+        "date": "09/11/2026",
+        "ordersReceived": 101,
+        "waitingForCoordination": 47,
+        "approvedForIssue": 50,
+        "pickup": 0,
+        "coordinatedMonitin": 35
+      },
+      {
+        "date": "10/11/2026",
+        "ordersReceived": 87,
+        "waitingForCoordination": 42,
+        "approvedForIssue": 43,
+        "pickup": 0,
+        "coordinatedMonitin": 38
+      }
+    ]
+  },
   "validation": {
     "passed": true,
     "checks": [
