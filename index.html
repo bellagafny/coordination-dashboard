@@ -18,6 +18,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 .card.unknown{background:#7f8c9b}.card.sla-pick{cursor:pointer}.card.sla-pick:hover{filter:brightness(.95)}.card.sla-active{outline:3px solid var(--navy);outline-offset:2px}.sla-refresh{margin:-6px 0 8px}th.sla-h-good{background:var(--green)}th.sla-h-bad{background:var(--red)}th.sla-h-unknown{background:#7f8c9b}.subnav-btn.back-to-resp-top{margin-inline-start:12px}.sla-scope{display:inline-block;margin-inline-start:8px;padding:2px 9px;border-radius:10px;background:#eef3fb;color:var(--navy);font-size:12px;font-weight:bold}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 #inventory td.num,#inventory th{text-align:center}#inventory td.num{direction:ltr}#inventory td:first-child{text-align:right}th.inv-sortable{cursor:pointer;user-select:none}th.inv-sortable:hover{background:var(--navy)}.inv-sort-ind{font-size:11px}.inv-good{color:#2e7d32;font-weight:bold}.inv-bad{color:var(--red);font-weight:bold}.inv-neutral{color:var(--navy);font-weight:bold}.inv-flat{color:#667085}.inv-na{color:#667085;font-size:11.5px}
+.mm-wrap{max-width:820px}table.mm-table{min-width:0}table.mm-table th{white-space:normal}@media(max-width:650px){table.mm-table td.mm-label{white-space:normal}}table.mm-table th,table.mm-table td.num{text-align:center}table.mm-table td.mm-label{font-weight:bold}table.mm-table tfoot td{font-weight:bold;background:#dfe7f3;border-top:2px solid var(--navy)}.mm-partial{display:inline-block;margin-inline-start:6px;padding:1px 8px;border-radius:10px;background:var(--yellowSoft);color:#7f6000;font-size:11px;font-weight:bold}details.mm-daily{margin-top:12px}details.mm-daily summary{cursor:pointer;font-weight:bold;color:var(--navy);font-size:14px;padding:6px 0}details.mm-daily table{min-width:560px}.mm-warn{color:#8b0000;font-weight:bold}
 </style></head><body>
 <header><h1>דשבורד תיאום הזמנות</h1><p id="metaLine">טוען נתונים…</p><nav><a href="#coord">תאום</a><a href="#exceptions">חריגי תאום</a><a href="#trade">טיפול סחר</a><a href="#returns-mahalav">החזרות/החלפות מחלב</a><a href="#returns-monitin">החזרות/החלפות מוניטין</a><a href="#returns-summary">סיכום החזרות והחלפות</a><a href="#inventory">התפתחות מלאי מוצרים מושמשים</a></nav></header><main>
 
@@ -29,6 +30,18 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
   <div class="card"><div class="v" id="todayCreated">–</div><div class="k">סה"כ הזמנות שנוצרו</div></div>
   <div class="card good"><div class="v" id="todayEntered">–</div><div class="k">נכנסו לממתין לתאום</div></div>
   <div class="card warn"><div class="v" id="todayExited">–</div><div class="k">יצאו מממתין לתאום</div></div>
+</div>
+<div id="monthlyMgmt">
+<h3>תמונה ניהולית חודשית — שיוך הזמנות לפי המסלול האחרון</h3>
+<p class="note" id="mmUnavailable" hidden>התמונה הניהולית החודשית אינה זמינה ברענון הנוכחי. שאר נתוני הדשבורד אינם מושפעים.</p>
+<div id="mmContent" hidden>
+<p class="note" id="mmNote"><b>שיוך הזמנות לפי המסלול האחרון — לא ספירת כניסות לסטטוס.</b> כל הזמנה נספרת פעם אחת בכל מדד. כל הזמנה משויכת למסלול כניסה אחד בלבד (ממתין לתאום, מאושרת לניפוק או יגיעו לאסוף) לפי המעבר האחרון שלה ביניהם, ונספרת בתאריך אותו מעבר. תואם מוניטין נספר לפי הכניסה האחרונה של ההזמנה לסטטוס. הזמנות שהתקבלו נספרות לפי תאריך ההזמנה. הפירוט היומי כולל את כל ימי החודש, גם שישי ושבת. <b>מאחר שהשיוך נקבע לפי המעבר האחרון, נתוני חודשים קודמים עשויים להשתנות בדיעבד.</b> המספרים שונים מכרטיסי "היום" (נכנסו/יצאו מממתין לתאום), הסופרים כניסות ויציאות. <span id="mmAsOf"></span></p>
+<div class="table-wrap mm-wrap"><table class="mm-table" id="mmTable"><thead id="mmHead"></thead><tbody id="mmRows"></tbody></table></div>
+<details class="mm-daily" id="mmDaily"><summary id="mmDailyTitle">פירוט יומי של החודש הנוכחי</summary>
+<p class="note mm-warn" id="mmDailyWarn" hidden></p>
+<div class="table-wrap mm-wrap"><table class="mm-table" id="mmDailyTable"><thead><tr><th rowspan="2">תאריך</th><th rowspan="2">הזמנות שהתקבלו</th><th colspan="3">שיוך לפי המסלול האחרון</th><th rowspan="2">תואם מוניטין<br>(כניסה אחרונה)</th></tr><tr><th>ממתין לתאום</th><th>מאושרת לניפוק</th><th>יגיעו לאסוף</th></tr></thead><tbody id="mmDailyRows"></tbody><tfoot id="mmDailyFoot"></tfoot></table></div>
+</details>
+</div>
 </div>
 <div class="subnav" id="coordSubnav">
   <button type="button" class="subnav-btn active" data-view="first">כניסה ראשונה</button>
@@ -208,6 +221,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <script src="returns_status_age.js"></script>
 <script src="returns_sla.js"></script>
 <script src="inventory.js"></script>
+<script src="monthly_management.js"></script>
 <script>
 function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Over SLA' ? 'sla-bad' : ''); }
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
@@ -332,8 +346,11 @@ fetch('dashboard_data.json', {cache: 'no-store'})
     document.getElementById('ttWithNotes').textContent = tt.withNotes ?? '–';
     document.getElementById('ttWithoutNotes').textContent = tt.withoutNotes ?? '–';
     renderTradeWorklist(document.getElementById('tradeWorklistBody'), data.tradeTreatmentWorklist || []);
+    // Monthly management summary (independent block; a failure here never affects the rest).
+    if (typeof MONTHLY_MGMT !== 'undefined') { try { MONTHLY_MGMT.render(data); } catch (e) { MONTHLY_MGMT.unavailable(); } }
   })
   .catch(err => {
+    if (typeof MONTHLY_MGMT !== 'undefined') MONTHLY_MGMT.unavailable();
     document.getElementById('metaLine').textContent = 'שגיאה בטעינת dashboard_data.json: ' + err.message;
     const banner = document.getElementById('statusBanner');
     banner.className = 'status-banner status-bad';
