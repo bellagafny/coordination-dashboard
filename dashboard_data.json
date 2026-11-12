@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "12/11/2026 09:00",
-    "dataAsOf": "12/11/2026 08:55",
+    "lastRefresh": "12/11/2026 09:30",
+    "dataAsOf": "12/11/2026 09:30",
     "sourceFile": "STATUS_b070213_20261112_0911SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 412581,
-    "uniqueOrders": 66197
+    "sourceRowCount": 412639,
+    "uniqueOrders": 66199
   },
   "currentWaiting": {
     "total": 38,
@@ -9744,21 +9744,24 @@
     },
     {
       "date": "12/11/2026",
-      "totalOrdersCreated": 7,
-      "enteredWaiting": 3,
-      "exitedWaiting": 0,
+      "totalOrdersCreated": 9,
+      "enteredWaiting": 5,
+      "exitedWaiting": 2,
       "endingWaitingBalance": 38,
-      "firstNextStatus": {},
+      "firstNextStatus": {
+        "תאום לא סופי": 2
+      },
       "finalStatus": {
+        "תאום לא סופי": 2,
         "ממתין לתאום": 3
       }
     }
   ],
   "todayCoordination": {
     "date": "12/11/2026",
-    "totalOrdersCreated": 7,
-    "enteredWaiting": 3,
-    "exitedWaiting": 0
+    "totalOrdersCreated": 9,
+    "enteredWaiting": 5,
+    "exitedWaiting": 2
   },
   "monthly": {
     "coordinationFlow": [
@@ -10119,12 +10122,12 @@
       },
       {
         "month": "01/11/2026",
-        "totalOrdersCreated": 939,
-        "enteredWaiting": 405,
-        "exitedWaiting": 394,
+        "totalOrdersCreated": 941,
+        "enteredWaiting": 407,
+        "exitedWaiting": 396,
         "endingWaitingBalance": 38,
         "statusBreakdown": {
-          "תאום לא סופי": 207,
+          "תאום לא סופי": 209,
           "אשור אובליגו": 1,
           "תואם מוניטין": 156,
           "אישור מחיר": 2,
@@ -12775,8 +12778,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 18.07,
-      "calendarDays": 0.75,
+      "calendarHours": 18.65,
+      "calendarDays": 0.78,
       "businessDays": 1
     },
     {
@@ -12799,8 +12802,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 213.1,
-      "calendarDays": 8.88,
+      "calendarHours": 213.68,
+      "calendarDays": 8.9,
       "businessDays": 7
     },
     {
@@ -12847,8 +12850,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 23.53,
-      "calendarDays": 0.98,
+      "calendarHours": 24.12,
+      "calendarDays": 1.0,
       "businessDays": 1
     },
     {
@@ -12871,8 +12874,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 20.0,
-      "calendarDays": 0.83,
+      "calendarHours": 20.58,
+      "calendarDays": 0.86,
       "businessDays": 1
     },
     {
@@ -12895,8 +12898,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 18.27,
-      "calendarDays": 0.76,
+      "calendarHours": 18.85,
+      "calendarDays": 0.79,
       "businessDays": 1
     },
     {
@@ -13262,7 +13265,7 @@
     "status": "PASSED",
     "error": null,
     "basis": "latestRouteAssignment",
-    "dataAsOf": "12/11/2026 08:55",
+    "dataAsOf": "12/11/2026 09:30",
     "checks": [
       {
         "name": "one entry route per order",
@@ -13325,9 +13328,9 @@
       "from": "01/11/2026",
       "to": "12/11/2026",
       "partial": true,
-      "ordersReceived": 939,
-      "waitingForCoordination": 373,
-      "approvedForIssue": 424,
+      "ordersReceived": 941,
+      "waitingForCoordination": 375,
+      "approvedForIssue": 425,
       "pickup": 3,
       "coordinatedMonitin": 348
     },
@@ -13422,9 +13425,9 @@
       },
       {
         "date": "12/11/2026",
-        "ordersReceived": 7,
-        "waitingForCoordination": 3,
-        "approvedForIssue": 5,
+        "ordersReceived": 9,
+        "waitingForCoordination": 5,
+        "approvedForIssue": 6,
         "pickup": 0,
         "coordinatedMonitin": 0
       }
@@ -13511,7 +13514,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=12/11/2026 08:55"
+        "detail": "dataAsOf=12/11/2026 09:30"
       }
     ]
   }
