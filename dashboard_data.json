@@ -1,11 +1,11 @@
 {
   "metadata": {
-    "lastRefresh": "13/11/2026 17:30",
-    "dataAsOf": "13/11/2026 15:32",
-    "sourceFile": "STATUS_b070213_20261113_0511SS.XLS",
+    "lastRefresh": "13/11/2026 18:00",
+    "dataAsOf": "13/11/2026 17:55",
+    "sourceFile": "STATUS_b070213_20261113_0611SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 413162,
-    "uniqueOrders": 66280
+    "sourceRowCount": 413163,
+    "uniqueOrders": 66281
   },
   "currentWaiting": {
     "total": 43,
@@ -9730,7 +9730,7 @@
     },
     {
       "date": "13/11/2026",
-      "totalOrdersCreated": 7,
+      "totalOrdersCreated": 8,
       "enteredWaiting": 0,
       "exitedWaiting": 1,
       "endingWaitingBalance": 43,
@@ -9742,7 +9742,7 @@
   ],
   "todayCoordination": {
     "date": "13/11/2026",
-    "totalOrdersCreated": 7,
+    "totalOrdersCreated": 8,
     "enteredWaiting": 0,
     "exitedWaiting": 1
   },
@@ -10105,7 +10105,7 @@
       },
       {
         "month": "01/11/2026",
-        "totalOrdersCreated": 1022,
+        "totalOrdersCreated": 1023,
         "enteredWaiting": 451,
         "exitedWaiting": 435,
         "endingWaitingBalance": 43,
@@ -12858,8 +12858,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 50.62,
-      "calendarDays": 2.11,
+      "calendarHours": 53.0,
+      "calendarDays": 2.21,
       "businessDays": 1
     },
     {
@@ -12906,8 +12906,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 26.72,
-      "calendarDays": 1.11,
+      "calendarHours": 29.1,
+      "calendarDays": 1.21,
       "businessDays": 0
     },
     {
@@ -12930,8 +12930,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 28.28,
-      "calendarDays": 1.18,
+      "calendarHours": 30.67,
+      "calendarDays": 1.28,
       "businessDays": 0
     },
     {
@@ -13273,7 +13273,7 @@
     "status": "PASSED",
     "error": null,
     "basis": "latestRouteAssignment",
-    "dataAsOf": "13/11/2026 15:32",
+    "dataAsOf": "13/11/2026 17:55",
     "checks": [
       {
         "name": "one entry route per order",
@@ -13336,7 +13336,7 @@
       "from": "01/11/2026",
       "to": "13/11/2026",
       "partial": true,
-      "ordersReceived": 1022,
+      "ordersReceived": 1023,
       "waitingForCoordination": 415,
       "approvedForIssue": 461,
       "pickup": 3,
@@ -13441,7 +13441,7 @@
       },
       {
         "date": "13/11/2026",
-        "ordersReceived": 7,
+        "ordersReceived": 8,
         "waitingForCoordination": 0,
         "approvedForIssue": 0,
         "pickup": 0,
@@ -13530,7 +13530,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=13/11/2026 15:32"
+        "detail": "dataAsOf=13/11/2026 17:55"
       }
     ]
   }
