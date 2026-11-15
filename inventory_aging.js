@@ -77,6 +77,24 @@
   }
   function h4(t) { return '<h4 class="age-h">' + t + '</h4>'; }
 
+  // Reconciliation cell: "0 ✓" ONLY when both sources hold data of the same date
+  // (status "matched"); with different data dates the difference is shown but is
+  // explicitly NOT a verified reconciliation.
+  function datePart(s) { var m = /\d{2}\/\d{2}\/\d{4}/.exec(s || ''); return m ? m[0] : ''; }
+  function recStatus(g, ageDate) {
+    if (g.reconciliationStatus) return g.reconciliationStatus;
+    var dd = datePart(g.dashboardDate), ad = datePart(ageDate);       // older summary files without status
+    if (!dd || !ad || dd !== ad) return 'dates-differ';
+    return Math.abs(g.difference || 0) < 1e-9 ? 'matched' : 'difference';
+  }
+  function recCell(g, ageDate) {
+    if (recStatus(g, ageDate) === 'dates-differ') {
+      return '<td class="num age-diff" title="תאריכי הנתונים של שני המקורות שונים — ההתאמה לא אומתה">לא אומת — תאריכים שונים' +
+        (g.difference == null ? '' : ' <span class="age-pct">(' + (g.difference > 0 ? '+' : '') + NUM.format(g.difference) + ')</span>') + '</td>';
+    }
+    return diffCell(g.difference);
+  }
+
   function groups(d) {
     return d.locations.concat([Object.assign({ name: 'סה"כ', key: '_total' }, d.total)]);
   }
@@ -141,7 +159,7 @@
     d.locations.forEach(function (l) {
       var s = sku && sku[l.key];
       h += '<tr><td>' + esc(l.name) + '</td><td class="num">' + n(l.dashboardClosing) + '</td><td class="num">' + esc(l.dashboardDate || '') + '</td>' +
-        '<td class="num">' + n(l.netUnits) + '</td>' + diffCell(l.difference) +
+        '<td class="num">' + n(l.netUnits) + '</td>' + recCell(l, m.ageDataDate) +
         (sku ? '<td class="num">' + (s ? n(s.skusMatching) + ' / ' + n(s.skusCompared) : '—') + '</td>' : '') + '</tr>';
     });
     var skuTot = '';
@@ -151,8 +169,16 @@
       skuTot = '<td class="num">' + n(tm) + ' / ' + n(tc) + '</td>';
     }
     h += '<tr class="age-total"><td>סה"כ</td><td class="num">' + n(d.total.dashboardClosing) + '</td><td></td><td class="num">' + n(d.total.netUnits) +
-      '</td>' + diffCell(d.total.difference) + skuTot + '</tr></tbody></table></div>';
-    h += '<p class="note">נתוני גיל המלאי נכונים ל-' + esc(m.ageDataDate) + '. כשתאריכי שני המקורות שונים, הפרשים קטנים צפויים; הפרשים מוצגים כפי שהם ואינם מאוזנים.</p>';
+      '</td>' + recCell(Object.assign({ dashboardDate: d.locations.every(function (l) {
+        return recStatus(l, m.ageDataDate) !== 'dates-differ'; }) ? m.ageDataDate : '' }, d.total), m.ageDataDate) +
+      skuTot + '</tr></tbody></table></div>';
+    var differ = d.locations.filter(function (l) { return recStatus(l, m.ageDataDate) === 'dates-differ'; });
+    if (differ.length) {
+      h += '<p class="note" style="color:#8b0000;font-weight:bold">ההתאמה לא אומתה עבור ' + differ.map(function (l) { return esc(l.name); }).join(', ') +
+        ': נתוני גיל המלאי מ-' + esc(m.ageDataDate) + ' ונתוני טבלת המלאי מתאריך אחר (' +
+        differ.map(function (l) { return esc(l.dashboardDate || '—'); }).join(', ') + '). ההתאמה תאומת כששני המקורות יהיו מאותו תאריך.</p>';
+    }
+    h += '<p class="note">נתוני גיל המלאי נכונים ל-' + esc(m.ageDataDate) + ' (מועד ההפקה בפריוריטי). הפרשים מוצגים כפי שהם ואינם מאוזנים.</p>';
     if (sku) {
       var gaps = [];
       d.control.bySku.forEach(function (s) {
@@ -200,7 +226,6 @@
     var m = d.metadata;
     var html =
       '<div class="age-meta"><span>נתוני גיל המלאי נכונים ל: <b>' + esc(m.ageDataDate) + '</b></span>' +
-      '<span>עודכן: ' + esc(m.generatedAt) + '</span>' +
       (m.sourceFile ? '<span>קובץ מקור: ' + esc(m.sourceFile) + '</span>' : '') + '</div>' +
       h4('גיל מלאי ומלאי ותיק לפי מיקום') + cards(d) +
       h4('התפלגות יחידות לפי קבוצות גיל') + bars(d) +
