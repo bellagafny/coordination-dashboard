@@ -101,6 +101,40 @@ var RETURNS_STAGES = (function () {
     });
   }
 
+  // Four clickable metrics per card: total / within SLA / over SLA / compliance %, plus "לא ידוע"
+  // when such orders exist. onPick(key, slaKey): slaKey null (total, %) | "within" | "over" | "unknown".
+  // The caller filters by stage + that SLA value, so the detail list is exactly the clicked number.
+  // activeSla: the SLA key of the caller's active SLA filter (null = none, any other string = a filter
+  // that is not one of these numbers, e.g. a working-days bucket).
+  function renderDetailed(el, orders, activeKey, activeSla, onPick) {
+    if (!el) return;
+    if (orders === null) { render(el, null); return; }
+    var sum = summarize(orders);
+    el.innerHTML = STAGES.map(function (s) {
+      var r = sum[s.key];
+      var num = function (slaKey, inner) {
+        var on = activeKey === s.key && (activeSla || null) === (slaKey || null);
+        return '<span class="stage-num' + (on ? " stage-num-on" : "") + '" role="button" tabindex="0" aria-pressed="' + on +
+          '" data-stage-key="' + s.key + '" data-sla="' + (slaKey || "") + '">' + inner + "</span>";
+      };
+      return '<div class="card stage-card stage-detailed' + (activeKey === s.key ? " sla-active" : "") + '" data-stage="' + s.key + '">' +
+        '<div class="v">' + num(null, '<span class="stage-n">' + r.n + "</span>") + '</div><div class="k">' + esc(s.label) + "</div>" +
+        '<div class="stage-sub">' +
+        num("within", "<bdi>עומדות ב-SLA</bdi>: <b class=\"stage-within\">" + r.within + "</b>") +
+        num("over", "<bdi>חורגות מ-SLA</bdi>: <b class=\"stage-over\">" + r.over + "</b>") +
+        num(null, "<bdi>עמידה ב-SLA</bdi>: <b class=\"stage-pct\">" + fmtPct(r.pct) + "</b>") +
+        (r.unknown ? num("unknown", "<bdi>לא ידוע</bdi>: <b class=\"stage-unknown\">" + r.unknown + "</b>") : "") +
+        "</div></div>";
+    }).join("");
+    Array.prototype.forEach.call(el.querySelectorAll(".stage-num"), function (n) {
+      var go = function () { onPick(n.dataset.stageKey, n.dataset.sla || null); };
+      n.onclick = function (e) { e.stopPropagation(); go(); };
+      n.onkeydown = function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); go(); }
+      };
+    });
+  }
+
   // Click on the active card again -> clear; else select.
   function toggle(current, picked) {
     return !picked || current === picked ? null : picked;
@@ -113,6 +147,7 @@ var RETURNS_STAGES = (function () {
     summarize: summarize,
     fmtPct: fmtPct,
     render: render,
+    renderDetailed: renderDetailed,
     toggle: toggle,
   };
 })();

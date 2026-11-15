@@ -56,6 +56,9 @@ function buildExportFilename(parts){
     String(today.getDate()).padStart(2, "0");
   var pieces = ["returns_export", parts.provider];
   if (parts.scope) pieces.push(parts.scope);
+  if (parts.period) pieces.push(parts.period);
+  if (parts.orderType) pieces.push(parts.orderType);
+  if (parts.action) pieces.push(parts.action);
   if (parts.responsibility) pieces.push(parts.responsibility);
   if (parts.status) pieces.push(parts.status);
   if (parts.stage) pieces.push(parts.stage);
@@ -65,6 +68,8 @@ function buildExportFilename(parts){
   return pieces.join("_").replace(/[\\/:*?"<>|]/g, "") + ".xlsx";
 }
 
+// parts.extraColumns (optional, management view only): [{header, key, width, valueOf(order)}]
+// appended after the standard columns, as plain text. Without it the workbook is exactly as before.
 async function exportReturnsToExcel(orders, parts){
   if (typeof ExcelJS === "undefined") {
     alert("שגיאה: ספריית הייצוא לאקסל (ExcelJS) לא נטענה. נסה לרענן את הדף.");
@@ -77,7 +82,8 @@ async function exportReturnsToExcel(orders, parts){
     views: [{ rightToLeft: true, state: "frozen", ySplit: 1 }],
   });
 
-  ws.columns = RETURNS_EXPORT_COLUMNS.map(function(c){
+  var extra = (parts && parts.extraColumns) || [];
+  ws.columns = RETURNS_EXPORT_COLUMNS.concat(extra).map(function(c){
     return { header: c.header, key: c.key, width: c.width };
   });
 
@@ -98,6 +104,7 @@ async function exportReturnsToExcel(orders, parts){
         row[c.key] = sanitizeForExcelCell(v);
       }
     });
+    extra.forEach(function(c){ row[c.key] = sanitizeForExcelCell(c.valueOf(o)); });
     var addedRow = ws.addRow(row);
 
     var dateCell = addedRow.getCell("orderDate");
@@ -121,7 +128,7 @@ async function exportReturnsToExcel(orders, parts){
 
   ws.autoFilter = {
     from: { row: 1, column: 1 },
-    to: { row: 1, column: RETURNS_EXPORT_COLUMNS.length },
+    to: { row: 1, column: RETURNS_EXPORT_COLUMNS.length + extra.length },
   };
 
   var buffer = await wb.xlsx.writeBuffer();

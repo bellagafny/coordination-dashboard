@@ -16,6 +16,16 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 .status-age-note{margin:0 0 6px}.status-age-note .status-age-warn{color:#8b0000;font-weight:bold}td.status-age-flag{color:#8b0000;font-weight:bold}
 .returns-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px;margin-top:14px}.returns-breadcrumb{font-size:13px;color:var(--navy);font-weight:bold}.returns-actions{display:flex;gap:8px;flex-wrap:wrap}.subnav-btn.export-btn{background:var(--green);color:white;border-color:var(--green)}.subnav-btn:disabled{opacity:.5;cursor:not-allowed}
 .card.unknown{background:#7f8c9b}.card.sla-pick{cursor:pointer}.card.sla-pick:hover{filter:brightness(.95)}.card.sla-active{outline:3px solid var(--navy);outline-offset:2px}.sla-refresh{margin:-6px 0 8px}th.sla-h-good{background:var(--green)}th.sla-h-bad{background:var(--red)}th.sla-h-unknown{background:#7f8c9b}.subnav-btn.back-to-resp-top{margin-inline-start:12px}.sla-scope{display:inline-block;margin-inline-start:8px;padding:2px 9px;border-radius:10px;background:#eef3fb;color:var(--navy);font-size:12px;font-weight:bold}
+.mg-selbar{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:center;background:#eef3fb;border:1px solid var(--line);border-radius:8px;padding:10px 12px;margin:0 0 10px}.mg-selgrp{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.mg-selgrp .lbl{font-weight:bold;color:var(--navy);font-size:13px;margin-inline-end:2px}.mg-selgrp .cnt{font-weight:normal;opacity:.85}
+.mg-scope{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12.5px;margin:0 0 10px}.mg-t{font-weight:bold;color:var(--navy)}.mg-chip{background:var(--navy);color:#fff;border-radius:12px;padding:3px 10px;font-weight:bold}.mg-chip.mg-per-before{background:#5b6b82}.mg-chip.mg-per-from{background:#2e7d32}.mg-chip.mg-per-cmp{background:var(--blue)}.mg-chip.mg-flt{background:var(--orange)}.subnav-btn.mg-reset{margin-inline-start:6px}
+.mg-note{font-size:12.5px;color:var(--navy);background:#eef3fb;border-inline-start:4px solid var(--blue);padding:7px 10px;margin:0 0 10px}.mg-nodate{font-size:12.5px;color:#8b0000;font-weight:bold;margin:0 0 10px}
+.card.mg-pick,.mg-n,.mg-line,.mg-half[data-ci],.mg-cell,.mg-rowlbl{cursor:pointer}.card.mg-pick:hover,.mg-half[data-ci]:hover{filter:brightness(.95)}.mg-line:hover,.mg-n:hover{text-decoration:underline}
+.card.mg-on{outline:3px solid var(--navy);outline-offset:2px}.mg-n.mg-on .v,.mg-line.mg-on{background:rgba(255,255,255,.35);border-radius:4px;outline:2px solid var(--navy)}
+.card.mg-cmp{padding:8px 8px 9px}.card.mg-cmp>.k{margin:0 0 6px}.mg-halves{display:grid;grid-template-columns:1fr 1fr;gap:5px}.mg-half{border-radius:4px;padding:5px 3px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35)}.aging .mg-half{background:rgba(0,0,0,.04);border-color:rgba(0,0,0,.12)}.mg-hl{font-size:10.5px;font-weight:bold;opacity:.9}.mg-hv{font-size:21px;font-weight:800;line-height:1.15}.mg-half.mg-on{outline:3px solid var(--navy);outline-offset:1px;background:rgba(255,255,255,.5);color:var(--navy)}
+.mg-stage .mg-lines{display:flex;flex-direction:column;gap:2px;font-size:12px;margin-top:7px}.mg-stage-half .v{font-size:21px}.mg-stage-half .mg-lines{font-size:11px;margin-top:4px}.cards.mg-stage-cmp{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+th.mg-th-before{background:#5b6b82}th.mg-th-from{background:#2e7d32}th.mg-sep,td.mg-sep{border-right:2px solid var(--navy)}td.mg-cell{text-align:center}td.mg-cell:hover{background:#ffe7cc}td.mg-cell.mg-on{background:#ffc98f;font-weight:bold}table tfoot td.mg-cell{font-weight:bold;background:#dfe7f3}table.mg-cmp-table th{text-align:center}
+@media(max-width:650px){.cards.mg-stage-cmp{grid-template-columns:1fr}.mg-selbar{gap:8px}}
+.stage-num{cursor:pointer;border-radius:4px;padding:0 3px}.stage-num:hover{text-decoration:underline}.stage-num-on{outline:2px solid var(--navy);background:rgba(255,255,255,.35)}
 .card.stage-pick{cursor:pointer}.card.stage-pick:hover{filter:brightness(.95)}.stage-sub{display:flex;flex-direction:column;gap:2px;font-size:12px;margin-top:7px}.returns-scope-note{margin:-6px 0 12px;font-size:12.5px;color:var(--navy);font-weight:bold}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
 #inventory td.num,#inventory th{text-align:center}#inventory td.num{direction:ltr}#inventory td:first-child{text-align:right}th.inv-sortable{cursor:pointer;user-select:none}th.inv-sortable:hover{background:var(--navy)}.inv-sort-ind{font-size:11px}.inv-good{color:#2e7d32;font-weight:bold}.inv-bad{color:var(--red);font-weight:bold}.inv-neutral{color:var(--navy);font-weight:bold}.inv-flat{color:#667085}.inv-na{color:#667085;font-size:11.5px}
@@ -172,7 +182,11 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 
 <section class="section" id="returns-summary"><h2>Dashboard סיכום החזרות והחלפות</h2>
 <div id="retSummaryBanner"></div>
-<div class="cards">
+<div class="mg-selbar" id="retSummarySelBar"><div class="mg-selgrp" id="retSummarySelProv"></div><div class="mg-selgrp" id="retSummarySelPer"></div></div>
+<div class="mg-scope" id="retSummaryScopeLine" style="display:none"></div>
+<p class="mg-note" id="retSummaryPeriodNote" style="display:none"></p>
+<p class="mg-nodate" id="retSummaryNoDate" style="display:none"></p>
+<div class="cards" id="retSummaryTopCards">
   <div class="card"><div class="v" id="retSummaryTotal">–</div><div class="k">סה"כ הזמנות פתוחות (שני הספקים)</div></div>
   <div class="card good"><div class="v" id="retSummaryReturns">–</div><div class="k">סה"כ החזרות (015)</div></div>
   <div class="card warn"><div class="v" id="retSummaryExchanges">–</div><div class="k">סה"כ החלפות (102)</div></div>
@@ -192,8 +206,9 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <div class="subnav view-toggle" id="retSummaryRespViewToggle"><button type="button" class="subnav-btn active" data-view="matrix">פילוח אופקי</button><button type="button" class="subnav-btn" data-view="rows">פילוח בשורות</button><button type="button" class="subnav-btn back-to-resp-top" id="retSummaryBackToRespTop" style="display:none">⟵ חזרה לפילוח אחריות</button></div>
 <div class="table-wrap" id="retSummaryRespMatrixWrap"><table class="resp-matrix"><thead><tr><th rowspan="2">גורם אחראי</th><th colspan="4" class="grp-start">החזרות 015</th><th colspan="4" class="grp-start">החלפות 102</th><th rowspan="2" class="grp-start">סה"כ הזמנות פתוחות</th><th rowspan="2" class="grp-start">מחלב</th><th rowspan="2">מוניטין</th></tr><tr><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החזרות</th><th class="grp-start">איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ החלפות</th></tr></thead><tbody id="retSummaryRespBody"></tbody></table></div>
 <div class="table-wrap" id="retSummaryRespRowsWrap" style="display:none"><table class="resp-rows" id="retSummaryRespRowsTable"><thead><tr><th>גורם אחראי</th><th>סוג הזמנה</th><th>איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ</th></tr></thead></table></div>
+<div class="table-wrap" id="retSummaryRespCmpWrap" style="display:none"><table class="mg-cmp-table" id="retSummaryRespCmpTable"><thead></thead><tbody></tbody></table></div>
 
-<h3>פילוח לפי סטטוס הזמנה (שני הספקים)</h3>
+<h3 id="retSummaryStatusTitle">פילוח לפי סטטוס הזמנה (שני הספקים)</h3>
 <div class="table-wrap"><table><thead><tr><th>סטטוס הזמנה</th><th>מחלב</th><th>מוניטין</th><th>סה"כ</th></tr></thead><tbody id="retSummaryStatusBody"></tbody></table></div>
 
 <div class="returns-toolbar">
@@ -264,6 +279,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <script src="returns_status_age.js"></script>
 <script src="returns_sla.js"></script>
 <script src="returns_stages.js"></script>
+<script src="returns_mgmt.js"></script>
 <script src="inventory.js"></script>
 <script src="inventory_aging.js"></script>
 <script src="monthly_management.js"></script>
@@ -631,8 +647,8 @@ function combineProviderOrders(providers){
   return mahalav.concat(monitin);
 }
 
-function renderProviderComparisonTable(tbody, providers, onRowClick){
-  const rows = ['מחלב', 'מוניטין'].map(name => {
+function renderProviderComparisonTable(tbody, providers, onRowClick, names){
+  const rows = (names || ['מחלב', 'מוניטין']).map(name => {
     const sec = providers[name] || { returns: 0, exchanges: 0, total: 0 };
     return { provider: name, returns: sec.returns || 0, exchanges: sec.exchanges || 0, total: sec.total || 0 };
   });
@@ -791,6 +807,11 @@ function stageLabel(key){ return key && HAS_RETURNS_STAGES ? RETURNS_STAGES.labe
 function renderStageCards(prefix, orders, key, onPick){
   if (HAS_RETURNS_STAGES) RETURNS_STAGES.render(document.getElementById(prefix + 'StageCards'), orders, key, onPick);
 }
+// "מ-01/10/2026" tab: four clickable metrics per card (returns_stages.js renderDetailed).
+function renderStageCardsDetailed(prefix, orders, key, sla, onPick){
+  const activeSla = sla ? (sla.kind === 'sla' ? sla.key : 'bucket:' + sla.key) : null;
+  if (HAS_RETURNS_STAGES) RETURNS_STAGES.renderDetailed(document.getElementById(prefix + 'StageCards'), orders, key, activeSla, onPick);
+}
 
 // "החזרות והחלפות — מ-01/10/2026": the summary tab with a FIXED population -- orders whose
 // order date ("תאריך", DD/MM/YYYY) is 01/10/2026 or later. An order without a valid date is
@@ -803,6 +824,7 @@ function orderDateKey(o){
 }
 const RETURNS_FROM_OCT_TAB = {
   prefix: 'retOct',
+  detailedStages: true,   // status cards: total / within / over / % -- every number clickable, exact
   crumb: 'מ-01/10/2026',
   scope: 'מ-01-10-2026',
   orderFilter: o => { const k = orderDateKey(o); return k !== null && k >= RETURNS_FROM_DATE_KEY; },
@@ -929,7 +951,8 @@ function setupReturnsSummaryTab(providers, opts){
       els.breadcrumb.textContent = `${crumb} > סטטוס: ${currentFilter.value}${slaCrumb}`;
     }
     renderReturnsDetail(els.detailBody, orders);
-    renderStageCards(P, selectionOrders(), currentStage, pickStage);
+    if (opts.detailedStages) renderStageCardsDetailed(P, selectionOrders(), currentStage, currentSla, pickStageNumber);
+    else renderStageCards(P, selectionOrders(), currentStage, pickStage);
     renderSlaBlock(P, stageOrders(), currentSla, pickSla);
     document.getElementById(P + 'BackToRespTop').style.display = currentFilter.type === 'responsibility' ? '' : 'none';
     const scopeResp = currentFilter.type === 'responsibility' ? currentFilter.value : null;
@@ -940,6 +963,16 @@ function setupReturnsSummaryTab(providers, opts){
 
   function pickSla(filter){
     currentSla = HAS_RETURNS_SLA ? RETURNS_SLA.toggle(currentSla, filter) : null;
+    renderCurrentSelection();
+  }
+
+  // A number in a detailed status card shows exactly its own orders: stage + that SLA value (the
+  // total and the % carry no SLA filter); the same number again clears both.
+  function pickStageNumber(key, slaKey){
+    const target = slaKey ? { kind: 'sla', key: slaKey } : null;
+    const active = currentStage === key && (target ? (HAS_RETURNS_SLA && RETURNS_SLA.sameFilter(currentSla, target)) : !currentSla);
+    currentStage = active ? null : key;
+    currentSla = active ? null : target;
     renderCurrentSelection();
   }
 
@@ -1029,7 +1062,10 @@ fetch('returns_data.json', {cache: 'no-store'})
 
     setupReturnsTab('retMahalav', 'מחלב', providers['מחלב']);
     setupReturnsTab('retMonitin', 'מוניטין', providers['מוניטין']);
-    setupReturnsSummaryTab(providers);
+    // "סיכום החזרות והחלפות" = management view (returns_mgmt.js: provider + period selectors);
+    // without the module the tab falls back to the previous code path.
+    if (typeof RETURNS_MGMT !== 'undefined') RETURNS_MGMT.setup(providers);
+    else setupReturnsSummaryTab(providers);
     setupReturnsSummaryTab(providers, RETURNS_FROM_OCT_TAB);
   })
   .catch(err => {
