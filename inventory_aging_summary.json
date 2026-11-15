@@ -1,0 +1,146 @@
+{
+ "metadata": {
+  "schemaVersion": 1,
+  "public": true,
+  "ageDataDate": "15/11/2026",
+  "generatedAt": "15/11/2026 07:44",
+  "buckets": [
+   {
+    "key": "d0_30",
+    "label": "0–30"
+   },
+   {
+    "key": "d31_60",
+    "label": "31–60"
+   },
+   {
+    "key": "d61_90",
+    "label": "61–90"
+   },
+   {
+    "key": "d91_180",
+    "label": "91–180"
+   },
+   {
+    "key": "d181p",
+    "label": "מעל 180"
+   }
+  ],
+  "method": "גיל ממוצע משוקלל = סכום (יתרה חיובית × ממוצע ימי שהיה) / סכום היתרות החיוביות. יתרות שליליות אינן נכללות בגיל, מוצגות בנפרד ונכללות בהתאמת היתרות (נטו). התפלגות הגיל מבוססת על ממוצע ימי השהייה ברמת רשומת המלאי, ולא על גיל פרטני של כל יחידה."
+ },
+ "locations": [
+  {
+   "key": "yesodot",
+   "name": "יסודות",
+   "dashboardDate": "15/11/2026 06:52",
+   "netUnits": 118,
+   "positiveUnits": 174,
+   "negativeUnits": -56,
+   "weightedAvgDays": 319.0,
+   "buckets": {
+    "d0_30": 20,
+    "d31_60": 6,
+    "d61_90": 2,
+    "d91_180": 21,
+    "d181p": 125
+   },
+   "bucketPct": {
+    "d0_30": 11.5,
+    "d31_60": 3.4,
+    "d61_90": 1.1,
+    "d91_180": 12.1,
+    "d181p": 71.8
+   },
+   "over180Units": 125,
+   "over180Pct": 71.8,
+   "over365Units": 50,
+   "over365Pct": 28.7,
+   "dashboardClosing": 118,
+   "difference": 0
+  },
+  {
+   "key": "overseas",
+   "name": "אוברסיז",
+   "dashboardDate": "15/11/2026 06:53",
+   "netUnits": 516,
+   "positiveUnits": 516,
+   "negativeUnits": 0,
+   "weightedAvgDays": 44.9,
+   "buckets": {
+    "d0_30": 238,
+    "d31_60": 54,
+    "d61_90": 224,
+    "d91_180": 0,
+    "d181p": 0
+   },
+   "bucketPct": {
+    "d0_30": 46.1,
+    "d31_60": 10.5,
+    "d61_90": 43.4,
+    "d91_180": 0.0,
+    "d181p": 0.0
+   },
+   "over180Units": 0,
+   "over180Pct": 0.0,
+   "over365Units": 0,
+   "over365Pct": 0.0,
+   "dashboardClosing": 516,
+   "difference": 0
+  },
+  {
+   "key": "yad_binyamin",
+   "name": "יד בנימין",
+   "dashboardDate": "15/11/2026 06:53",
+   "netUnits": 3118,
+   "positiveUnits": 3119,
+   "negativeUnits": -1,
+   "weightedAvgDays": 95.3,
+   "buckets": {
+    "d0_30": 1195,
+    "d31_60": 455,
+    "d61_90": 172,
+    "d91_180": 896,
+    "d181p": 401
+   },
+   "bucketPct": {
+    "d0_30": 38.3,
+    "d31_60": 14.6,
+    "d61_90": 5.5,
+    "d91_180": 28.7,
+    "d181p": 12.9
+   },
+   "over180Units": 401,
+   "over180Pct": 12.9,
+   "over365Units": 92,
+   "over365Pct": 2.9,
+   "dashboardClosing": 3118,
+   "difference": 0
+  }
+ ],
+ "total": {
+  "netUnits": 3752,
+  "positiveUnits": 3809,
+  "negativeUnits": -57,
+  "weightedAvgDays": 98.7,
+  "buckets": {
+   "d0_30": 1453,
+   "d31_60": 515,
+   "d61_90": 398,
+   "d91_180": 917,
+   "d181p": 526
+  },
+  "bucketPct": {
+   "d0_30": 38.1,
+   "d31_60": 13.5,
+   "d61_90": 10.4,
+   "d91_180": 24.1,
+   "d181p": 13.8
+  },
+  "over180Units": 526,
+  "over180Pct": 13.8,
+  "over365Units": 142,
+  "over365Pct": 3.7,
+  "dashboardClosing": 3752,
+  "difference": 0
+ }
+}

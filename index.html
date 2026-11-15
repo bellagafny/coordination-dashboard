@@ -211,6 +211,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <p class="note" id="invMeta"></p>
 <p class="note" id="invLegend">צבעי השינוי: ביסודות (יעד: צמצום המלאי) — <span class="inv-good">ירידה במלאי בירוק</span>, <span class="inv-bad">עלייה במלאי באדום</span>. באוברסיז וביד בנימין — <span class="inv-neutral">צבע ניטרלי</span>, ללא קביעה אם השינוי חיובי או שלילי.</p>
 <div class="table-wrap"><table id="invTable"><thead id="invHead"></thead><tbody id="invBody"></tbody></table></div>
+<div id="inventory-aging" data-src="inventory_aging_summary.json"><h3 class="age-title">גיל מלאי מוצרים מושמשים</h3><div id="ageRoot"><p class="note">טוען נתוני גיל מלאי…</p></div></div>
 </section>
 
 <p class="note" id="footNote">הנתונים נטענים אוטומטית מתוך dashboard_data.json, המרוענן על ידי צינור העיבוד (Python).</p>
@@ -221,6 +222,7 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 <script src="returns_status_age.js"></script>
 <script src="returns_sla.js"></script>
 <script src="inventory.js"></script>
+<script src="inventory_aging.js"></script>
 <script src="monthly_management.js"></script>
 <script>
 function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Over SLA' ? 'sla-bad' : ''); }
