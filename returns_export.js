@@ -39,11 +39,14 @@ function sanitizeForExcelCell(value){
 // orderDate from returns_data.json is "DD/MM/YYYY" (returns_builder.fmt_date).
 // Returns a real JS Date for a genuine Excel date cell, or null if
 // unparseable/missing (falls back to plain sanitized text).
+// Built as UTC midnight: ExcelJS writes a Date by its UTC value, so a local
+// midnight (new Date(y, m, d)) was written as the previous day 21:00/22:00 for
+// a viewer in Israel. Same wall-clock approach as the "ת.עדכון סטטוס" column.
 function parseOrderDateForExcel(s){
   if (!s) return null;
   var m = String(s).match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
   if (!m) return null;
-  return new Date(+m[3], +m[2] - 1, +m[1]);
+  return new Date(Date.UTC(+m[3], +m[2] - 1, +m[1]));
 }
 
 function buildExportFilename(parts){
@@ -52,8 +55,10 @@ function buildExportFilename(parts){
     String(today.getMonth() + 1).padStart(2, "0") + "-" +
     String(today.getDate()).padStart(2, "0");
   var pieces = ["returns_export", parts.provider];
+  if (parts.scope) pieces.push(parts.scope);
   if (parts.responsibility) pieces.push(parts.responsibility);
   if (parts.status) pieces.push(parts.status);
+  if (parts.stage) pieces.push(parts.stage);
   if (parts.sla) pieces.push(parts.sla);
   pieces.push(dateStr);
   // Strip characters invalid in Windows filenames; keep Hebrew text as-is.
