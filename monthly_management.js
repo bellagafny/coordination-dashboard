@@ -65,7 +65,9 @@ var MONTHLY_MGMT = (function () {
     var partial = '<span class="mm-partial">חלקי — עד ' + esc(ddmm(cur.to)) + '</span>';
 
     el('mmHead').innerHTML = '<tr><th>מדד</th><th>חודש קודם — ' + esc(mmyyyy(prev.month)) +
-      '</th><th>חודש נוכחי — ' + esc(mmyyyy(cur.month)) + ' ' + partial + '</th></tr>';
+      '</th><th><span class="mm-curlbl" data-month="' + esc(mmyyyy(cur.month)) + '">חודש נוכחי</span> — ' + esc(mmyyyy(cur.month)) + ' ' + partial + '</th></tr>';
+    // "חודש נוכחי" only when it is the current month in Israel (DAY_LABELS, index.html; DECISIONS 19)
+    if (typeof DAY_LABELS !== 'undefined') DAY_LABELS.refresh();
     el('mmRows').innerHTML = METRICS.map(function (m) {
       return '<tr data-metric="' + m[0] + '"><td class="mm-label">' + esc(m[1]) + '</td><td class="num">' +
         esc(prev[m[0]]) + '</td><td class="num">' + esc(cur[m[0]]) + '</td></tr>';

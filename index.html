@@ -25,6 +25,72 @@ table.resp-matrix th{text-align:center}table.resp-matrix td:not(:first-child){te
 .mg-stage .mg-lines{display:flex;flex-direction:column;gap:2px;font-size:12px;margin-top:7px}.mg-stage-half .v{font-size:21px}.mg-stage-half .mg-lines{font-size:11px;margin-top:4px}.cards.mg-stage-cmp{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
 th.mg-th-before{background:#5b6b82}th.mg-th-from{background:#2e7d32}th.mg-sep,td.mg-sep{border-right:2px solid var(--navy)}td.mg-cell{text-align:center}td.mg-cell:hover{background:#ffe7cc}td.mg-cell.mg-on{background:#ffc98f;font-weight:bold}table tfoot td.mg-cell{font-weight:bold;background:#dfe7f3}table.mg-cmp-table th{text-align:center}
 @media(max-width:650px){.cards.mg-stage-cmp{grid-template-columns:1fr}.mg-selbar{gap:8px}}
+/* summary tab: sticky filter bar (returns_mgmt.js) */
+#returns-summary{--mg-hdr-h:0px;--mg-fb-h:0px}
+#returns-summary .fb{position:sticky;top:var(--mg-hdr-h);z-index:9;background:#eef3fb;border:1px solid var(--line);border-radius:8px;padding:8px 12px;margin:0 0 12px;box-shadow:0 3px 8px rgba(23,54,93,.14)}
+#returns-summary .fb .mg-selbar{background:none;border:0;padding:0;margin:0}
+#returns-summary .fb .subnav-btn{padding:5px 12px;font-size:12.5px}
+.fb-more>summary{display:none}
+.fb-sel{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-top:8px;padding-top:8px;border-top:1px dashed #b8c6dc}
+.fb-field{display:flex;flex-direction:column;gap:3px;font-size:12px;font-weight:bold;color:var(--navy)}
+.fb-field select{font:inherit;font-weight:normal;font-size:13px;padding:5px 6px;border:1px solid #9fb3d1;border-radius:5px;background:#fff;color:#1f2937;max-width:100%}
+.fb-field select.fb-on{border:2px solid var(--orange);background:#fff4ea;font-weight:bold}
+.fb-status{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center;margin-top:8px;padding-top:8px;border-top:1px dashed #b8c6dc;font-size:12.5px}
+.fb-count{font-weight:bold;color:var(--navy);font-size:13.5px}.fb-count.fb-zero{color:var(--red)}
+.fb-chips{display:flex;flex-wrap:wrap;gap:5px}
+.fb-chip{display:inline-flex;align-items:center;gap:5px;background:var(--orange);color:#fff;border-radius:12px;padding:2px 4px 2px 10px;font-weight:bold;white-space:nowrap}
+.fb-chip.fb-c-prov{background:var(--navy)}.fb-chip.mg-per-before{background:#5b6b82}.fb-chip.mg-per-from{background:#2e7d32}.fb-chip.mg-per-cmp{background:var(--blue)}
+.fb-x{border:0;background:rgba(255,255,255,.3);color:#fff;border-radius:50%;width:19px;height:19px;line-height:17px;padding:0;cursor:pointer;font-weight:bold;font-size:14px}
+.fb-x:hover,.fb-x:focus{background:rgba(255,255,255,.55);color:var(--navy)}
+.fb-none{color:#667085}
+.fb-act{margin-inline-start:auto;display:flex;gap:6px;flex-wrap:wrap}
+#returns-summary .fb-reset{border-color:var(--red);color:var(--red)}#returns-summary .fb-reset:disabled{opacity:.4}
+.fb-empty{margin:8px 0 0;padding:7px 10px;border-radius:6px;background:var(--redSoft);color:#8b0000;font-weight:bold;font-size:12.5px}
+#returns-summary h3,#returns-summary .cards,#returns-summary .aging,#returns-summary .table-wrap,#returns-summary .returns-toolbar{scroll-margin-top:calc(var(--mg-hdr-h) + var(--mg-fb-h) + 10px)}
+#returns-summary .card.mg-stage-on{outline:3px solid var(--navy);outline-offset:2px}
+#returns-summary td.mg-rowlbl{cursor:pointer;font-weight:bold}#returns-summary td.mg-rowlbl:hover{text-decoration:underline}
+#returns-summary tr.mg-empty-row td{text-align:center;color:#8b0000;font-weight:bold;background:#fff7f7}
+#returns-summary tr.mg-per-head td{font-weight:bold;color:#fff;text-align:right}#returns-summary tr.mg-per-head.mg-per-before td{background:#5b6b82}#returns-summary tr.mg-per-head.mg-per-from td{background:#2e7d32}
+#returns-summary td.mg-per-cell{white-space:nowrap;font-weight:bold}#returns-summary td.mg-per-before{color:#4a5568}#returns-summary td.mg-per-from{color:#2e7d32}
+/* filter bar: compact + foldable selectors on phones AND tablets / narrow windows (<=833px; above that the
+   bar shows everything, as on desktop) */
+@media(max-width:833.98px){
+  #returns-summary .fb{padding:6px 8px}
+  .fb-more>summary{display:block;cursor:pointer;font-weight:bold;color:var(--navy);font-size:12.5px;list-style:none}
+  .fb-more>summary::-webkit-details-marker{display:none}
+  .fb-more>summary::before{content:"▾ "}.fb-more:not([open])>summary::before{content:"◂ "}
+  .fb-more[open]{max-height:55vh;overflow:auto}
+  #returns-summary .fb .mg-selbar{margin-top:6px}
+  .fb-sel{gap:6px}
+  .fb-status{margin-top:5px;padding-top:5px;gap:4px 6px}
+  .fb-count{font-size:12.5px}
+  .fb-chips{flex-wrap:nowrap;overflow-x:auto;max-width:100%;padding-bottom:2px}
+  .fb-act{margin-inline-start:0;gap:4px}.fb-act .fb-export{display:none}
+  #returns-summary .fb-act .subnav-btn{padding:3px 9px;font-size:11.5px}
+}
+/* every width: a nav link (or a #section URL) brings the section title BELOW the sticky header, not under it
+   (--page-hdr-h = the header's height, set by the nav script at the end of the page) */
+.section{scroll-margin-top:calc(var(--page-hdr-h,0px) + 6px)}
+/* tablets / narrow windows (740-833px): the links did not fit one row and widened the page (to ~834px);
+   they now wrap onto a second row inside the header -- same links, same look, nothing hidden */
+@media(min-width:740px) and (max-width:833.98px){nav{flex-wrap:wrap}}
+/* phones and narrow tablets (<=739px) -- OPEN_TASKS 19a: the top nav scrolls sideways inside the header instead
+   of widening the page (a wider page pushed every sticky element off the visible screen) or taking 3 rows;
+   the current tab is marked and kept in view (nav script at the end of the page); desktop unchanged */
+@media(max-width:739.98px){
+  nav{flex-wrap:nowrap;overflow-x:auto;overscroll-behavior-x:contain;scrollbar-width:none;gap:6px;margin:8px -18px 0;padding:0 18px 2px;scroll-padding-inline:18px}
+  nav::-webkit-scrollbar{display:none}
+  nav a{flex:0 0 auto;white-space:nowrap;padding:7px 12px;font-size:13px;line-height:1.2}
+  nav a.nav-active{background:#fff;color:var(--navy)}
+  nav.nav-fade-l{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 30px);mask-image:linear-gradient(to right,transparent 0,#000 30px)}
+  nav.nav-fade-r{-webkit-mask-image:linear-gradient(to left,transparent 0,#000 30px);mask-image:linear-gradient(to left,transparent 0,#000 30px)}
+  nav.nav-fade-l.nav-fade-r{-webkit-mask-image:linear-gradient(to right,transparent 0,#000 30px,#000 calc(100% - 30px),transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 30px,#000 calc(100% - 30px),transparent 100%)}
+}
+@media(max-width:650px){
+  nav{margin:8px -12px 0;padding:0 12px 2px;scroll-padding-inline:12px}   /* phone header padding is 12px */
+  header p{font-size:11.5px}
+  .fb-sel{grid-template-columns:1fr 1fr}
+}
 .stage-num{cursor:pointer;border-radius:4px;padding:0 3px}.stage-num:hover{text-decoration:underline}.stage-num-on{outline:2px solid var(--navy);background:rgba(255,255,255,.35)}
 .card.stage-pick{cursor:pointer}.card.stage-pick:hover{filter:brightness(.95)}.stage-sub{display:flex;flex-direction:column;gap:2px;font-size:12px;margin-top:7px}.returns-scope-note{margin:-6px 0 12px;font-size:12.5px;color:var(--navy);font-weight:bold}
 @media(max-width:650px){header{padding:13px 12px}h1{font-size:19px}main{padding:8px}.section{padding:10px}.section h2{margin:-10px -10px 10px}.cards{grid-template-columns:repeat(2,1fr)}.aging{grid-template-columns:repeat(2,1fr)}.aging .card:last-child{grid-column:1/-1}.card .v{font-size:24px}table{font-size:11.5px}.subnav-btn{padding:6px 12px;font-size:12px}}
@@ -36,7 +102,7 @@ th.mg-th-before{background:#5b6b82}th.mg-th-from{background:#2e7d32}th.mg-sep,td
 <div id="statusBanner"></div>
 
 <section class="section" id="coord"><h2>Dashboard תאום</h2>
-<h3>היום</h3>
+<h3 id="todayHeading" data-day="">נתוני יום — (יום הנתונים האחרון)</h3>
 <div class="cards cards-today">
   <div class="card"><div class="v" id="todayCreated">–</div><div class="k">סה"כ הזמנות שנוצרו</div></div>
   <div class="card good"><div class="v" id="todayEntered">–</div><div class="k">נכנסו לממתין לתאום</div></div>
@@ -182,8 +248,23 @@ th.mg-th-before{background:#5b6b82}th.mg-th-from{background:#2e7d32}th.mg-sep,td
 
 <section class="section" id="returns-summary"><h2>Dashboard סיכום החזרות והחלפות</h2>
 <div id="retSummaryBanner"></div>
-<div class="mg-selbar" id="retSummarySelBar"><div class="mg-selgrp" id="retSummarySelProv"></div><div class="mg-selgrp" id="retSummarySelPer"></div></div>
-<div class="mg-scope" id="retSummaryScopeLine" style="display:none"></div>
+<div class="fb" id="retSummaryFilterBar" role="region" aria-label="סינון הלשונית">
+  <details class="fb-more" id="retSummaryFbMore" open>
+    <summary id="retSummaryFbSum">סינון</summary>
+    <div class="mg-selbar" id="retSummarySelBar"><div class="mg-selgrp" id="retSummarySelProv"></div><div class="mg-selgrp" id="retSummarySelPer"></div></div>
+    <div class="fb-sel" id="retSummaryFbSel"></div>
+  </details>
+  <div class="fb-status">
+    <span class="fb-count" id="retSummaryFbCount" aria-live="polite"></span>
+    <span class="fb-chips" id="retSummaryFbChips"></span>
+    <span class="fb-act">
+      <button type="button" class="subnav-btn" id="retSummaryFbToDetail">לפירוט ההזמנות ↓</button>
+      <button type="button" class="subnav-btn export-btn fb-export" id="retSummaryFbExport">ייצוא לאקסל ⬇</button>
+      <button type="button" class="subnav-btn fb-reset" id="retSummaryResetView">⟲ איפוס כל הסינונים</button>
+    </span>
+  </div>
+  <p class="fb-empty" id="retSummaryFbEmpty" hidden>לא נמצאו הזמנות לשילוב הסינונים הנוכחי. הסינונים נשמרו — אפשר להסיר סינון בודד (×) או לאפס את כולם.</p>
+</div>
 <p class="mg-note" id="retSummaryPeriodNote" style="display:none"></p>
 <p class="mg-nodate" id="retSummaryNoDate" style="display:none"></p>
 <div class="cards" id="retSummaryTopCards">
@@ -208,7 +289,7 @@ th.mg-th-before{background:#5b6b82}th.mg-th-from{background:#2e7d32}th.mg-sep,td
 <div class="table-wrap" id="retSummaryRespRowsWrap" style="display:none"><table class="resp-rows" id="retSummaryRespRowsTable"><thead><tr><th>גורם אחראי</th><th>סוג הזמנה</th><th>איסוף בלבד</th><th>מסירה בלבד</th><th>מסירה ואיסוף</th><th>סה"כ</th></tr></thead></table></div>
 <div class="table-wrap" id="retSummaryRespCmpWrap" style="display:none"><table class="mg-cmp-table" id="retSummaryRespCmpTable"><thead></thead><tbody></tbody></table></div>
 
-<h3 id="retSummaryStatusTitle">פילוח לפי סטטוס הזמנה (שני הספקים)</h3>
+<h3 id="retSummaryStatusTitle">פילוח לפי סטטוס הזמנה</h3>
 <div class="table-wrap"><table><thead><tr><th>סטטוס הזמנה</th><th>מחלב</th><th>מוניטין</th><th>סה"כ</th></tr></thead><tbody id="retSummaryStatusBody"></tbody></table></div>
 
 <div class="returns-toolbar">
@@ -220,7 +301,7 @@ th.mg-th-before{background:#5b6b82}th.mg-th-from{background:#2e7d32}th.mg-sep,td
 </div>
 <h3 id="retSummaryDetailTitle">פירוט הזמנות</h3>
 <p class="note status-age-note" id="retSummaryStatusAgeNote"></p>
-<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>סטטוס הזמנה</th><th>ת.עדכון סטטוס</th><th>ימי עבודה בסטטוס</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retSummaryDetailBody"></tbody></table></div>
+<div class="table-wrap"><table><thead><tr><th>מספר הזמנה</th><th>תאריך הזמנה</th><th>תקופה</th><th>סטטוס הזמנה</th><th>ת.עדכון סטטוס</th><th>ימי עבודה בסטטוס</th><th>קוד אופן משלוח</th><th>תאור אופן משלוח</th><th>סוג הזמנה</th><th>תאור סוג הזמנה</th><th>ספק לוגיסטי</th><th>גורם אחראי</th><th>סוג פעולה</th></tr></thead><tbody id="retSummaryDetailBody"></tbody></table></div>
 </section>
 
 <section class="section" id="returns-from-oct"><h2>Dashboard החזרות והחלפות — מ-01/10/2026</h2>
@@ -284,6 +365,47 @@ th.mg-th-before{background:#5b6b82}th.mg-th-from{background:#2e7d32}th.mg-sep,td
 <script src="inventory_aging.js"></script>
 <script src="monthly_management.js"></script>
 <script>
+// Day labels (DECISIONS 19, re-approved 2026-11-16): a figure of ONE day is titled "היום (עד HH:MM)" only when
+// that day is today's date in Israel (Asia/Jerusalem, never the viewer's clock); otherwise
+// "נתוני יום DD/MM/YYYY (יום הנתונים האחרון, עד HH:MM)". HH:MM = the time of the SOURCE data (metadata.dataAsOf =
+// the last status change in the source file) -- never the refresh time or the viewer's clock; shown only when
+// dataAsOf falls on that same day (else no time). Same day rule for the "current month" label of the monthly block.
+// Display only -- the figures and dashboard_data.json are untouched. Re-evaluated every minute and when the
+// tab becomes visible again, so a page left open past midnight does not keep calling yesterday "היום".
+// Elements: [data-day="DD/MM/YYYY" data-asof="HH:MM"] -> day heading; [data-month="MM/YYYY"] -> month label.
+var DAY_LABELS = (function () {
+  function israelToday(now) {
+    try {
+      var parts = new Intl.DateTimeFormat('en-GB', { timeZone: 'Asia/Jerusalem', day: '2-digit', month: '2-digit', year: 'numeric' }).formatToParts(now || new Date());
+      var get = function (k) { var x = parts.filter(function (p) { return p.type === k; })[0]; return x ? x.value : ''; };
+      var d = get('day'), m = get('month'), y = get('year');
+      return /^\d{2}$/.test(d) && /^\d{2}$/.test(m) && /^\d{4}$/.test(y) ? d + '/' + m + '/' + y : null;
+    } catch (e) {
+      return null;   // never claim "היום" when the Israel date cannot be determined
+    }
+  }
+  function dayHeading(day, now, time) {
+    var t = israelToday(now), hm = /^\d{2}:\d{2}$/.test(time || '') ? time : '';
+    if (day && t && day === t) return 'היום' + (hm ? ' (עד ' + hm + ')' : '');
+    return 'נתוני יום ' + (day || '—') + ' (יום הנתונים האחרון' + (hm ? ', עד ' + hm : '') + ')';
+  }
+  // HH:MM of the source data (dataAsOf "DD/MM/YYYY HH:MM") -- only when it is on the same day as the figures
+  function sourceTime(day, dataAsOf) {
+    var m = /^(\d{2}\/\d{2}\/\d{4}) (\d{2}:\d{2})$/.exec(String(dataAsOf || '').trim());
+    return m && day && m[1] === day ? m[2] : '';
+  }
+  function monthLabel(month, now) {
+    var t = israelToday(now);
+    return month && t && t.slice(3) === month ? 'חודש נוכחי' : 'חודש הנתונים האחרון';
+  }
+  function refresh(now) {
+    Array.prototype.forEach.call(document.querySelectorAll('[data-day]'), function (el) { el.textContent = dayHeading(el.getAttribute('data-day'), now, el.getAttribute('data-asof')); });
+    Array.prototype.forEach.call(document.querySelectorAll('[data-month]'), function (el) { el.textContent = monthLabel(el.getAttribute('data-month'), now); });
+  }
+  setInterval(function () { refresh(); }, 60000);
+  document.addEventListener('visibilitychange', function () { if (!document.hidden) refresh(); });
+  return { israelToday: israelToday, dayHeading: dayHeading, sourceTime: sourceTime, monthLabel: monthLabel, refresh: refresh };
+})();
 function slaClass(sla){ return sla === 'Within SLA' ? 'sla-good' : (sla === 'Over SLA' ? 'sla-bad' : ''); }
 function esc(v){ return (v === null || v === undefined) ? '' : String(v); }
 function escAttr(v){ return esc(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
@@ -379,6 +501,9 @@ fetch('dashboard_data.json', {cache: 'no-store'})
     document.getElementById('todayCreated').textContent = today.totalOrdersCreated ?? '–';
     document.getElementById('todayEntered').textContent = today.enteredWaiting ?? '–';
     document.getElementById('todayExited').textContent = today.exitedWaiting ?? '–';
+    document.getElementById('todayHeading').setAttribute('data-day', today.date || '');
+    document.getElementById('todayHeading').setAttribute('data-asof', DAY_LABELS.sourceTime(today.date, meta.dataAsOf));
+    DAY_LABELS.refresh();
 
     const cw = data.currentWaiting || {};
     document.getElementById('cwTotal').textContent = cw.total ?? '–';
@@ -1076,5 +1201,47 @@ fetch('returns_data.json', {cache: 'no-store'})
       el.textContent = msg;
     });
   });
+</script>
+<script>
+// Top nav: the header height for the sections' scroll offset (all widths); the current section's link marked
+// and fade hints while the nav scrolls sideways (visible on phones / narrow tablets only, see the <=739px CSS above).
+(function () {
+  var header = document.querySelector('header'), nav = header && header.querySelector('nav');
+  if (!nav) return;
+  var links = Array.prototype.slice.call(nav.querySelectorAll('a[href^="#"]'));
+  var setHeight = function () { document.documentElement.style.setProperty('--page-hdr-h', Math.round(header.getBoundingClientRect().height) + 'px'); };
+  var fades = function () {
+    var max = nav.scrollWidth - nav.clientWidth, x = Math.abs(nav.scrollLeft);   // RTL: scrollLeft runs 0 .. -max
+    nav.classList.toggle('nav-fade-l', max > 1 && x < max - 1);
+    nav.classList.toggle('nav-fade-r', max > 1 && x > 1);
+  };
+  var active = null;
+  var mark = function () {
+    var line = header.getBoundingClientRect().bottom + 8, cur = null;
+    links.forEach(function (a) {
+      var s = document.getElementById(a.getAttribute('href').slice(1));
+      if (s && s.getBoundingClientRect().top <= line) cur = a;
+    });
+    cur = cur || links[0];
+    if (cur === active) return;
+    if (active) { active.classList.remove('nav-active'); active.removeAttribute('aria-current'); }
+    active = cur;
+    active.classList.add('nav-active');
+    active.setAttribute('aria-current', 'location');
+    if (nav.scrollWidth > nav.clientWidth + 1) {   // keep the current link visible inside a scrolling nav
+      var n = nav.getBoundingClientRect(), r = active.getBoundingClientRect();
+      if (r.left < n.left + 12 || r.right > n.right - 12) nav.scrollLeft += (r.left + r.width / 2) - (n.left + n.width / 2);
+    }
+  };
+  var tick = false;
+  window.addEventListener('scroll', function () {
+    if (tick) return; tick = true;
+    requestAnimationFrame(function () { tick = false; mark(); });
+  }, { passive: true });
+  nav.addEventListener('scroll', fades, { passive: true });
+  window.addEventListener('resize', function () { setHeight(); fades(); mark(); });
+  if (typeof ResizeObserver !== 'undefined') new ResizeObserver(setHeight).observe(header);
+  setHeight(); fades(); mark();
+})();
 </script>
 </body></html>
