@@ -1,34 +1,34 @@
 {
   "metadata": {
-    "lastRefresh": "19/11/2026 09:30",
-    "dataAsOf": "19/11/2026 09:26",
-    "sourceFile": "STATUS_b070213_20261119_0911SS.XLS",
+    "lastRefresh": "19/11/2026 10:00",
+    "dataAsOf": "19/11/2026 10:00",
+    "sourceFile": "STATUS_b070213_20261119_1011SS.XLS",
     "refreshStatus": "PASSED",
-    "sourceRowCount": 416173,
-    "uniqueOrders": 66734
+    "sourceRowCount": 416198,
+    "uniqueOrders": 66740
   },
   "currentWaiting": {
-    "total": 44,
-    "withinSla": 18,
+    "total": 45,
+    "withinSla": 19,
     "overSla": 26,
     "reentryCurrentlyWaiting": 0
   },
   "currentWaitingLatestEntry": {
-    "total": 44,
-    "withinSla": 18,
+    "total": 45,
+    "withinSla": 19,
     "overSla": 26,
     "reentryCurrentlyWaiting": 0
   },
   "waitingAging": {
     "bySlaStart": {
-      "עד יום עסקים אחד": 11,
+      "עד יום עסקים אחד": 12,
       "2 ימי עסקים": 7,
       "3 ימי עסקים": 11,
       "4–5 ימי עסקים": 13,
       "יותר מ־5 ימי עסקים": 2
     },
     "byLastEntry": {
-      "עד יום עסקים אחד": 11,
+      "עד יום עסקים אחד": 12,
       "2 ימי עסקים": 7,
       "3 ימי עסקים": 11,
       "4–5 ימי עסקים": 13,
@@ -490,10 +490,10 @@
   },
   "currentWaitingReentries": [],
   "tradeTreatment": {
-    "total": 15,
-    "withinSla": 9,
+    "total": 14,
+    "withinSla": 8,
     "overSla": 6,
-    "withNotes": 7,
+    "withNotes": 6,
     "withoutNotes": 8
   },
   "tradeTreatmentWorklist": [
@@ -598,16 +598,6 @@
       "internalNote": "לקוח טוען שביטל"
     },
     {
-      "orderNumber": "SO26S0022620",
-      "currentStatus": "לברור הסחר",
-      "statusDate": "18/11/2026 10:33",
-      "businessDays": 1,
-      "sla": "Within SLA",
-      "previousStatus": "ממתין לתאום",
-      "previousStatusDate": "17/11/2026 15:12",
-      "internalNote": "בעיית מלאי"
-    },
-    {
       "orderNumber": "SO26S0022699",
       "currentStatus": "ממתין ללקוח",
       "statusDate": "19/11/2026 08:33",
@@ -652,27 +642,27 @@
     {
       "note": "ללא הערה",
       "count": 8,
-      "pct": 0.5333333333333333
+      "pct": 0.5714285714285714
     },
     {
       "note": "לקוח טוען שביטל",
       "count": 2,
-      "pct": 0.13333333333333333
-    },
-    {
-      "note": "בעיית מלאי",
-      "count": 2,
-      "pct": 0.13333333333333333
+      "pct": 0.14285714285714285
     },
     {
       "note": "לקוח לא עונה",
       "count": 2,
-      "pct": 0.13333333333333333
+      "pct": 0.14285714285714285
     },
     {
       "note": "לקוח טוען שקיבל",
       "count": 1,
-      "pct": 0.06666666666666667
+      "pct": 0.07142857142857142
+    },
+    {
+      "note": "בעיית מלאי",
+      "count": 1,
+      "pct": 0.07142857142857142
     }
   ],
   "daily": [
@@ -10174,11 +10164,10 @@
       "finalStatus": {
         "בוצעה": 39,
         "ממתין לתאום": 11,
-        "מאושר לבצוע": 1,
+        "מאושר לבצוע": 2,
         "תואם מוניטין": 2,
         "המתנה לאיסוף": 4,
         "מאושרת לניפו": 2,
-        "לברור הסחר": 1,
         "תאום לא סופי": 3
       }
     },
@@ -10199,11 +10188,11 @@
         "תאום לא סופי": 10,
         "בוצעה": 18,
         "תואם מוניטין": 6,
-        "מאושר לבצוע": 1,
-        "לברור הסחר": 2,
+        "מאושר לבצוע": 2,
         "מאושרת לניפו": 6,
         "ממתין ללקוח": 2,
-        "המתנה לאיסוף": 2
+        "המתנה לאיסוף": 2,
+        "לברור הסחר": 1
       }
     },
     {
@@ -10227,10 +10216,10 @@
     },
     {
       "date": "19/11/2026",
-      "totalOrdersCreated": 13,
-      "enteredWaiting": 4,
+      "totalOrdersCreated": 19,
+      "enteredWaiting": 5,
       "exitedWaiting": 7,
-      "endingWaitingBalance": 44,
+      "endingWaitingBalance": 45,
       "firstNextStatus": {
         "תואם מוניטין": 3,
         "ממתין ללקוח": 1,
@@ -10238,15 +10227,15 @@
       },
       "finalStatus": {
         "תואם מוניטין": 2,
-        "ממתין לתאום": 1,
+        "ממתין לתאום": 2,
         "תאום לא סופי": 1
       }
     }
   ],
   "todayCoordination": {
     "date": "19/11/2026",
-    "totalOrdersCreated": 13,
-    "enteredWaiting": 4,
+    "totalOrdersCreated": 19,
+    "enteredWaiting": 5,
     "exitedWaiting": 7
   },
   "monthly": {
@@ -10608,10 +10597,10 @@
       },
       {
         "month": "01/11/2026",
-        "totalOrdersCreated": 1476,
-        "enteredWaiting": 697,
+        "totalOrdersCreated": 1482,
+        "enteredWaiting": 698,
         "exitedWaiting": 680,
-        "endingWaitingBalance": 44,
+        "endingWaitingBalance": 45,
         "statusBreakdown": {
           "תאום לא סופי": 323,
           "אשור אובליגו": 1,
@@ -13181,8 +13170,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 20.92,
-      "calendarDays": 0.87,
+      "calendarHours": 21.48,
+      "calendarDays": 0.9,
       "businessDays": 1
     },
     {
@@ -13349,8 +13338,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 18.25,
-      "calendarDays": 0.76,
+      "calendarHours": 18.82,
+      "calendarDays": 0.78,
       "businessDays": 1
     },
     {
@@ -13565,8 +13554,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 93.85,
-      "calendarDays": 3.91,
+      "calendarHours": 94.42,
+      "calendarDays": 3.93,
       "businessDays": 4
     },
     {
@@ -13589,8 +13578,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 18.48,
-      "calendarDays": 0.77,
+      "calendarHours": 19.05,
+      "calendarDays": 0.79,
       "businessDays": 1
     },
     {
@@ -13609,12 +13598,12 @@
       "orderNumber": "SO26S0022620",
       "orderDate": "16/11/2026",
       "lastEntryDateTime": "18/11/2026 10:33",
-      "exitDateTime": null,
-      "nextStatus": null,
-      "currentStatus": "לברור הסחר",
-      "currentState": "Still in לברור הסחר",
-      "calendarHours": 22.88,
-      "calendarDays": 0.95,
+      "exitDateTime": "19/11/2026 09:57",
+      "nextStatus": "מאושר לבצוע",
+      "currentStatus": "מאושר לבצוע",
+      "currentState": "Exited",
+      "calendarHours": 23.4,
+      "calendarDays": 0.97,
       "businessDays": 1
     },
     {
@@ -13625,8 +13614,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 22.48,
-      "calendarDays": 0.94,
+      "calendarHours": 23.05,
+      "calendarDays": 0.96,
       "businessDays": 1
     },
     {
@@ -13637,8 +13626,8 @@
       "nextStatus": null,
       "currentStatus": "לברור הסחר",
       "currentState": "Still in לברור הסחר",
-      "calendarHours": 20.58,
-      "calendarDays": 0.86,
+      "calendarHours": 21.15,
+      "calendarDays": 0.88,
       "businessDays": 1
     },
     {
@@ -13697,15 +13686,15 @@
     {
       "month": "01/11/2026",
       "entered": 38,
-      "exited": 31,
-      "stillOpen": 7,
-      "pctStillOpen": 0.18421052631578946,
-      "avgBusinessDaysExited": 1.2903225806451613,
-      "medianBusinessDaysExited": 1,
-      "exitedWithin2": 24,
+      "exited": 32,
+      "stillOpen": 6,
+      "pctStillOpen": 0.15789473684210525,
+      "avgBusinessDaysExited": 1.28125,
+      "medianBusinessDaysExited": 1.0,
+      "exitedWithin2": 25,
       "exited3Plus": 7,
-      "pctWithin2": 0.7741935483870968,
-      "pct3Plus": 0.22580645161290322
+      "pctWithin2": 0.78125,
+      "pct3Plus": 0.21875
     }
   ],
   "tradeExactDays": [
@@ -13975,7 +13964,7 @@
     "status": "PASSED",
     "error": null,
     "basis": "latestRouteAssignment",
-    "dataAsOf": "19/11/2026 09:26",
+    "dataAsOf": "19/11/2026 10:00",
     "checks": [
       {
         "name": "one entry route per order",
@@ -14038,8 +14027,8 @@
       "from": "01/11/2026",
       "to": "19/11/2026",
       "partial": true,
-      "ordersReceived": 1476,
-      "waitingForCoordination": 629,
+      "ordersReceived": 1482,
+      "waitingForCoordination": 630,
       "approvedForIssue": 643,
       "pickup": 4,
       "coordinatedMonitin": 603
@@ -14191,8 +14180,8 @@
       },
       {
         "date": "19/11/2026",
-        "ordersReceived": 13,
-        "waitingForCoordination": 4,
+        "ordersReceived": 19,
+        "waitingForCoordination": 5,
         "approvedForIssue": 0,
         "pickup": 0,
         "coordinatedMonitin": 5
@@ -14205,22 +14194,22 @@
       {
         "name": "Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "18 + 26 vs total 44"
+        "detail": "19 + 26 vs total 45"
       },
       {
         "name": "Trade Treatment: With Notes + Without Notes = Total",
         "passed": true,
-        "detail": "7 + 8 vs total 15"
+        "detail": "6 + 8 vs total 14"
       },
       {
         "name": "Trade Treatment: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "9 + 6 vs total 15"
+        "detail": "8 + 6 vs total 14"
       },
       {
         "name": "Latest Entry Current Waiting: Within SLA + Over SLA = Total",
         "passed": true,
-        "detail": "18 + 26 vs total 44"
+        "detail": "19 + 26 vs total 45"
       },
       {
         "name": "Reentries-currently-waiting consistent across First/Latest Entry views",
@@ -14230,12 +14219,12 @@
       {
         "name": "First Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "44 vs 44"
+        "detail": "45 vs 45"
       },
       {
         "name": "Latest Entry aging buckets reconcile with Current Waiting KPI",
         "passed": true,
-        "detail": "44 vs 44"
+        "detail": "45 vs 45"
       },
       {
         "name": "Current Waiting reentries reconcile with TRUE-reentry population",
@@ -14255,7 +14244,7 @@
       {
         "name": "Trade worklist unique-order count equals Trade Treatment Total",
         "passed": true,
-        "detail": "15 rows (15 unique) vs total 15"
+        "detail": "14 rows (14 unique) vs total 14"
       },
       {
         "name": "Trade Duration: one row per unique order, no duplicates",
@@ -14280,7 +14269,7 @@
       {
         "name": "Data As Of is not a 1900 placeholder date",
         "passed": true,
-        "detail": "dataAsOf=19/11/2026 09:26"
+        "detail": "dataAsOf=19/11/2026 10:00"
       }
     ]
   }
