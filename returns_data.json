@@ -1,9 +1,9 @@
 {
   "metadata": {
     "sourceFile": "OPEN_RETURNS_EXCHANGES_20261122.xlsx",
-    "lastRefresh": "22/11/2026 13:11",
+    "lastRefresh": "22/11/2026 13:12",
     "refreshStatus": "PASSED",
-    "totalRecords": 275,
+    "totalRecords": 272,
     "statusUpdateColumnPresent": true,
     "businessCalendar": {
       "nonBusinessDates": [
@@ -61,8 +61,8 @@
   },
   "providers": {
     "מחלב": {
-      "total": 159,
-      "returns": 72,
+      "total": 157,
+      "returns": 70,
       "exchanges": 87,
       "responsibilityBreakdown": [
         {
@@ -70,12 +70,6 @@
           "returns": 70,
           "exchanges": 87,
           "total": 157
-        },
-        {
-          "responsibility": "כספים",
-          "returns": 2,
-          "exchanges": 0,
-          "total": 2
         }
       ],
       "orders": [
@@ -318,20 +312,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO25S0000621",
-          "orderDate": "08/01/2025",
-          "orderStatus": "בדיקת אובליג",
-          "shippingCode": "5",
-          "shippingDesc": "מחלב-הספקה לחנות",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מחלב",
-          "responsibility": "כספים",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-02-16T14:36:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO25S0001751",
           "orderDate": "22/01/2025",
           "orderStatus": "מאושרת לניפו",
@@ -413,20 +393,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2025-04-10T06:35:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO25S0009854",
-          "orderDate": "04/05/2025",
-          "orderStatus": "אשור אובליגו",
-          "shippingCode": "5",
-          "shippingDesc": "מחלב-הספקה לחנות",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מחלב",
-          "responsibility": "כספים",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2025-05-04T13:31:00",
           "statusUpdateState": "ok"
         },
         {
@@ -2308,8 +2274,8 @@
       ]
     },
     "מוניטין": {
-      "total": 116,
-      "returns": 53,
+      "total": 115,
+      "returns": 52,
       "exchanges": 63,
       "responsibilityBreakdown": [
         {
@@ -2317,12 +2283,6 @@
           "returns": 52,
           "exchanges": 63,
           "total": 115
-        },
-        {
-          "responsibility": "כספים",
-          "returns": 1,
-          "exchanges": 0,
-          "total": 1
         }
       ],
       "orders": [
@@ -2940,20 +2900,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-11-02T07:30:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0018425",
-          "orderDate": "16/09/2026",
-          "orderStatus": "בדיקת אובליג",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "כספים",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-24T15:29:00",
           "statusUpdateState": "ok"
         },
         {
@@ -3959,22 +3905,22 @@
       {
         "name": "מחלב: returns + exchanges = total",
         "passed": true,
-        "detail": "72 + 87 vs total 159"
+        "detail": "70 + 87 vs total 157"
       },
       {
         "name": "מחלב: responsibility breakdown reconciles with provider total",
         "passed": true,
-        "detail": "159 vs 159"
+        "detail": "157 vs 157"
       },
       {
         "name": "מחלב: no duplicate orders, detail count matches total",
         "passed": true,
-        "detail": "159 rows (159 unique) vs total 159"
+        "detail": "157 rows (157 unique) vs total 157"
       },
       {
         "name": "מחלב: status totals within each responsibility reconcile to that responsibility's total",
         "passed": true,
-        "detail": "לוגיסטיקה:157/157, כספים:2/2"
+        "detail": "לוגיסטיקה:157/157"
       },
       {
         "name": "מחלב: no order has a blank responsibility (missing values -> 'לא מוגדר')",
@@ -3994,22 +3940,22 @@
       {
         "name": "מוניטין: returns + exchanges = total",
         "passed": true,
-        "detail": "53 + 63 vs total 116"
+        "detail": "52 + 63 vs total 115"
       },
       {
         "name": "מוניטין: responsibility breakdown reconciles with provider total",
         "passed": true,
-        "detail": "116 vs 116"
+        "detail": "115 vs 115"
       },
       {
         "name": "מוניטין: no duplicate orders, detail count matches total",
         "passed": true,
-        "detail": "116 rows (116 unique) vs total 116"
+        "detail": "115 rows (115 unique) vs total 115"
       },
       {
         "name": "מוניטין: status totals within each responsibility reconcile to that responsibility's total",
         "passed": true,
-        "detail": "לוגיסטיקה:115/115, כספים:1/1"
+        "detail": "לוגיסטיקה:115/115"
       },
       {
         "name": "מוניטין: no order has a blank responsibility (missing values -> 'לא מוגדר')",
