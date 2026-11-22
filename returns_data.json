@@ -3,7 +3,7 @@
     "sourceFile": "OPEN_RETURNS_EXCHANGES_20261122.xlsx",
     "lastRefresh": "22/11/2026 13:11",
     "refreshStatus": "PASSED",
-    "totalRecords": 327,
+    "totalRecords": 275,
     "statusUpdateColumnPresent": true,
     "businessCalendar": {
       "nonBusinessDates": [
@@ -61,21 +61,15 @@
   },
   "providers": {
     "מחלב": {
-      "total": 163,
-      "returns": 75,
-      "exchanges": 88,
+      "total": 159,
+      "returns": 72,
+      "exchanges": 87,
       "responsibilityBreakdown": [
         {
           "responsibility": "לוגיסטיקה",
           "returns": 70,
           "exchanges": 87,
           "total": 157
-        },
-        {
-          "responsibility": "סחר",
-          "returns": 3,
-          "exchanges": 1,
-          "total": 4
         },
         {
           "responsibility": "כספים",
@@ -237,20 +231,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2024-11-28T17:36:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO24S0016935",
-          "orderDate": "01/08/2024",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "55",
-          "shippingDesc": "מחלב-הספקה לבית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מחלב",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-01-26T09:22:00",
           "statusUpdateState": "ok"
         },
         {
@@ -1948,20 +1928,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0012541",
-          "orderDate": "06/07/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "5",
-          "shippingDesc": "מחלב-הספקה לחנות",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מחלב",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-07-12T12:55:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0012450",
           "orderDate": "06/07/2026",
           "orderStatus": "מאושרת לניפו",
@@ -1973,20 +1939,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-07-13T06:35:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0012511",
-          "orderDate": "06/07/2026",
-          "orderStatus": "חסר פרטים",
-          "shippingCode": "5",
-          "shippingDesc": "מחלב-הספקה לחנות",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מחלב",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-11T09:22:00",
           "statusUpdateState": "ok"
         },
         {
@@ -2352,39 +2304,19 @@
           "actionType": "מסירה ואיסוף",
           "statusUpdate": "2026-11-19T07:52:00",
           "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022836",
-          "orderDate": "18/11/2026",
-          "orderStatus": "אוש אין מלאי",
-          "shippingCode": "5",
-          "shippingDesc": "מחלב-הספקה לחנות",
-          "orderType": "102",
-          "orderTypeDesc": "הזמנה להחלפה",
-          "provider": "מחלב",
-          "responsibility": "סחר",
-          "actionType": "מסירה ואיסוף",
-          "statusUpdate": "2026-11-22T08:14:00",
-          "statusUpdateState": "ok"
         }
       ]
     },
     "מוניטין": {
-      "total": 164,
-      "returns": 98,
-      "exchanges": 66,
+      "total": 116,
+      "returns": 53,
+      "exchanges": 63,
       "responsibilityBreakdown": [
         {
           "responsibility": "לוגיסטיקה",
           "returns": 52,
           "exchanges": 63,
           "total": 115
-        },
-        {
-          "responsibility": "סחר",
-          "returns": 45,
-          "exchanges": 3,
-          "total": 48
         },
         {
           "responsibility": "כספים",
@@ -2462,20 +2394,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-10-20T08:42:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0009377",
-          "orderDate": "24/05/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-09T10:37:00",
           "statusUpdateState": "ok"
         },
         {
@@ -2602,20 +2520,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-10-20T08:42:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0012104",
-          "orderDate": "30/06/2026",
-          "orderStatus": "פתיחה מחדש",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-07-06T14:00:00",
           "statusUpdateState": "ok"
         },
         {
@@ -2801,20 +2705,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0015247",
-          "orderDate": "09/08/2026",
-          "orderStatus": "ממתין לח\"ח",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "102",
-          "orderTypeDesc": "הזמנה להחלפה",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "מסירה בלבד",
-          "statusUpdate": "2026-08-25T15:50:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0014905",
           "orderDate": "05/08/2026",
           "orderStatus": "בדרך למחסן",
@@ -2826,20 +2716,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-10-20T08:42:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0015656",
-          "orderDate": "12/08/2026",
-          "orderStatus": "חסר פרטים",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-08-12T14:31:00",
           "statusUpdateState": "ok"
         },
         {
@@ -2868,20 +2744,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-08-17T15:59:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0016867",
-          "orderDate": "25/08/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-08-25T16:39:00",
           "statusUpdateState": "ok"
         },
         {
@@ -2927,20 +2789,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0017363",
-          "orderDate": "31/08/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-01T13:03:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0016137",
           "orderDate": "18/08/2026",
           "orderStatus": "בדרך למחסן",
@@ -2952,48 +2800,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-10-20T08:42:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0017513",
-          "orderDate": "01/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-10T09:24:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0017652",
-          "orderDate": "02/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-03T15:58:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0017649",
-          "orderDate": "02/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-15T15:00:00",
           "statusUpdateState": "ok"
         },
         {
@@ -3039,34 +2845,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0018104",
-          "orderDate": "09/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-16T10:43:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0018198",
-          "orderDate": "10/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-16T09:40:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0018058",
           "orderDate": "08/09/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -3092,34 +2870,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-09-14T11:30:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0018427",
-          "orderDate": "16/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-16T10:33:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0018429",
-          "orderDate": "16/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-09-16T10:32:00",
           "statusUpdateState": "ok"
         },
         {
@@ -3207,34 +2957,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0018903",
-          "orderDate": "24/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:20:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0018965",
-          "orderDate": "24/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:20:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0018928",
           "orderDate": "24/09/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -3277,20 +2999,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0019068",
-          "orderDate": "27/09/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:19:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0019077",
           "orderDate": "27/09/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -3319,48 +3027,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0019360",
-          "orderDate": "04/10/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:19:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0019505",
-          "orderDate": "05/10/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:19:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0016334",
-          "orderDate": "19/08/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-08T14:26:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0018388",
           "orderDate": "15/09/2026",
           "orderStatus": "בדרך למחסן",
@@ -3372,20 +3038,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-10-18T10:38:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0019510",
-          "orderDate": "05/10/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:19:00",
           "statusUpdateState": "ok"
         },
         {
@@ -3403,20 +3055,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0019728",
-          "orderDate": "07/10/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:19:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0012662",
           "orderDate": "08/07/2026",
           "orderStatus": "בדרך למחסן",
@@ -3428,20 +3066,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "מסירה ואיסוף",
           "statusUpdate": "2026-10-12T08:50:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0019843",
-          "orderDate": "08/10/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:19:00",
           "statusUpdateState": "ok"
         },
         {
@@ -3501,20 +3125,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0019804",
-          "orderDate": "08/10/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:19:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0020003",
           "orderDate": "12/10/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -3543,48 +3153,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0020237",
-          "orderDate": "14/10/2026",
-          "orderStatus": "חסר פרטים",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-14T13:38:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0020236",
-          "orderDate": "14/10/2026",
-          "orderStatus": "חסר פרטים",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-14T13:38:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0020234",
-          "orderDate": "14/10/2026",
-          "orderStatus": "חסר פרטים",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-14T13:08:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0020251",
           "orderDate": "14/10/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -3596,20 +3164,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-10-15T15:08:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0020513",
-          "orderDate": "18/10/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-19T17:19:00",
           "statusUpdateState": "ok"
         },
         {
@@ -3711,34 +3265,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0020867",
-          "orderDate": "22/10/2026",
-          "orderStatus": "פתיחה מחדש",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-10-25T14:20:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0020856",
-          "orderDate": "22/10/2026",
-          "orderStatus": "פתיחה מחדש",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "102",
-          "orderTypeDesc": "הזמנה להחלפה",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "מסירה בלבד",
-          "statusUpdate": "2026-10-28T11:30:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0021343",
           "orderDate": "28/10/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -3823,20 +3349,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0021597",
-          "orderDate": "03/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-03T12:53:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0021774",
           "orderDate": "04/11/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -3848,34 +3360,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-11-05T15:35:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0021687",
-          "orderDate": "04/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-04T14:42:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0021666",
-          "orderDate": "04/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-04T17:10:00",
           "statusUpdateState": "ok"
         },
         {
@@ -3904,76 +3388,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-11-05T16:05:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0021956",
-          "orderDate": "08/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-08T12:14:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0019578",
-          "orderDate": "06/10/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-11T13:10:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0021937",
-          "orderDate": "08/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-08T11:18:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022106",
-          "orderDate": "09/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-09T16:29:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022108",
-          "orderDate": "09/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-09T16:29:00",
           "statusUpdateState": "ok"
         },
         {
@@ -4089,20 +3503,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0022028",
-          "orderDate": "08/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-12T12:24:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0022414",
           "orderDate": "12/11/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -4114,20 +3514,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-11-15T14:08:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022384",
-          "orderDate": "12/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-12T12:23:00",
           "statusUpdateState": "ok"
         },
         {
@@ -4170,48 +3556,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-11-17T14:47:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022594",
-          "orderDate": "16/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-16T13:38:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022735",
-          "orderDate": "17/11/2026",
-          "orderStatus": "לברור הסחר",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-22T11:43:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022781",
-          "orderDate": "17/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-18T09:12:00",
           "statusUpdateState": "ok"
         },
         {
@@ -4299,20 +3643,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0022845",
-          "orderDate": "18/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-18T15:51:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0022282",
           "orderDate": "11/11/2026",
           "orderStatus": "המתנה לאיסוף",
@@ -4397,20 +3727,6 @@
           "statusUpdateState": "ok"
         },
         {
-          "orderNumber": "SO26S0022943",
-          "orderDate": "19/11/2026",
-          "orderStatus": "חסר פרטים",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-19T14:50:00",
-          "statusUpdateState": "ok"
-        },
-        {
           "orderNumber": "SO26S0017592",
           "orderDate": "02/09/2026",
           "orderStatus": "תואם מוניטין",
@@ -4422,48 +3738,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "איסוף בלבד",
           "statusUpdate": "2026-11-19T12:39:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022923",
-          "orderDate": "19/11/2026",
-          "orderStatus": "מאושר לבצוע",
-          "shippingCode": "02",
-          "shippingDesc": "י.ח הובלה והפצה",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-19T16:20:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022829",
-          "orderDate": "18/11/2026",
-          "orderStatus": "מאושר לבצוע",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-22T11:01:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0022931",
-          "orderDate": "19/11/2026",
-          "orderStatus": "תיאום עתידי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "015",
-          "orderTypeDesc": "איסוף",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "איסוף בלבד",
-          "statusUpdate": "2026-11-19T15:58:00",
           "statusUpdateState": "ok"
         },
         {
@@ -4534,20 +3808,6 @@
           "responsibility": "לוגיסטיקה",
           "actionType": "מסירה ואיסוף",
           "statusUpdate": "2026-11-22T10:57:00",
-          "statusUpdateState": "ok"
-        },
-        {
-          "orderNumber": "SO26S0023016",
-          "orderDate": "22/11/2026",
-          "orderStatus": "אוש אין מלאי",
-          "shippingCode": "96",
-          "shippingDesc": "י.ח. הובלה והפצה בית לקוח",
-          "orderType": "102",
-          "orderTypeDesc": "הזמנה להחלפה",
-          "provider": "מוניטין",
-          "responsibility": "סחר",
-          "actionType": "מסירה ואיסוף",
-          "statusUpdate": "2026-11-22T11:45:00",
           "statusUpdateState": "ok"
         },
         {
@@ -4699,22 +3959,22 @@
       {
         "name": "מחלב: returns + exchanges = total",
         "passed": true,
-        "detail": "75 + 88 vs total 163"
+        "detail": "72 + 87 vs total 159"
       },
       {
         "name": "מחלב: responsibility breakdown reconciles with provider total",
         "passed": true,
-        "detail": "163 vs 163"
+        "detail": "159 vs 159"
       },
       {
         "name": "מחלב: no duplicate orders, detail count matches total",
         "passed": true,
-        "detail": "163 rows (163 unique) vs total 163"
+        "detail": "159 rows (159 unique) vs total 159"
       },
       {
         "name": "מחלב: status totals within each responsibility reconcile to that responsibility's total",
         "passed": true,
-        "detail": "לוגיסטיקה:157/157, סחר:4/4, כספים:2/2"
+        "detail": "לוגיסטיקה:157/157, כספים:2/2"
       },
       {
         "name": "מחלב: no order has a blank responsibility (missing values -> 'לא מוגדר')",
@@ -4734,22 +3994,22 @@
       {
         "name": "מוניטין: returns + exchanges = total",
         "passed": true,
-        "detail": "98 + 66 vs total 164"
+        "detail": "53 + 63 vs total 116"
       },
       {
         "name": "מוניטין: responsibility breakdown reconciles with provider total",
         "passed": true,
-        "detail": "164 vs 164"
+        "detail": "116 vs 116"
       },
       {
         "name": "מוניטין: no duplicate orders, detail count matches total",
         "passed": true,
-        "detail": "164 rows (164 unique) vs total 164"
+        "detail": "116 rows (116 unique) vs total 116"
       },
       {
         "name": "מוניטין: status totals within each responsibility reconcile to that responsibility's total",
         "passed": true,
-        "detail": "לוגיסטיקה:115/115, סחר:48/48, כספים:1/1"
+        "detail": "לוגיסטיקה:115/115, כספים:1/1"
       },
       {
         "name": "מוניטין: no order has a blank responsibility (missing values -> 'לא מוגדר')",
